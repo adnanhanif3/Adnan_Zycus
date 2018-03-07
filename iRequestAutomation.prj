@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+   <description></description>
+   <name>iRequestAutomation</name>
+   <tag></tag>
+   <UUID>cea87958-6446-448e-abb0-6fdc0519059b</UUID>
+   <pageLoadTimeout>30</pageLoadTimeout>
+</Project>
