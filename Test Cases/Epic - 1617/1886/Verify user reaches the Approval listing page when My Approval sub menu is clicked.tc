@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify user reaches the Approval listing page when My Approval sub menu is clicked</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f536b624-f1b8-4f19-9280-a7da05ae6ebd</testCaseGuid>
+</TestCaseEntity>

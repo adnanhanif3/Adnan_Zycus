@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify navigating to iRequest home page when clicked on logo in header</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d37e551e-1a90-4d80-8545-153a20a7edd2</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Check for the redirection of Edit Profile to TMS page</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ab3f87b0-617d-4c8a-b4ec-11a515e9b607</testCaseGuid>
+</TestCaseEntity>
