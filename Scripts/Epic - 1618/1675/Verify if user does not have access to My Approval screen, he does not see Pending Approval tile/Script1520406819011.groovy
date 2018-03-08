@@ -19,3 +19,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Common/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementNotPresent(findTestObject('HomePage/Overview/Pending Approval Tile'), 30)
+
+WebUI.closeBrowser()
+
