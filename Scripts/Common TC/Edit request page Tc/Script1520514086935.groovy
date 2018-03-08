@@ -19,19 +19,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common test cases/Login to iRequest'), [:])
+WebUI.callTestCase(findTestCase('Common TC/Login to iRequest'), [:])
 
-WebUI.mouseOver(findTestObject('Homepage/My request xpath'))
+WebUI.mouseOver(findTestObject('Homepage -Repo/My request xpath'))
 
-WebUI.click(findTestObject('Homepage/Service request xpath'))
+WebUI.click(findTestObject('Homepage -Repo/Service request xpath'))
 
 WebUI.takeScreenshot(FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Homepage/Filter button'))
+WebUI.click(findTestObject('Homepage -Repo/Filter button'))
 
-WebUI.click(findTestObject('Homepage/Draft status'))
+WebUI.click(findTestObject('Homepage -Repo/Draft status'))
 
-WebUI.click(findTestObject('Homepage/Service request button'))
+WebUI.click(findTestObject('Homepage -Repo/Service request button'))
 
-WebUI.click(findTestObject('Homepage/Edit request button'))
+WebUI.click(findTestObject('Homepage -Repo/Edit request button'))
 
