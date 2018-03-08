@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Edit request page TC</name>
+   <name>Login</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>a79ce9a4-7af5-43d7-98b0-b26bb6413f9b</testCaseGuid>
+   <testCaseGuid>c17ecdb3-e4bd-41b6-9af4-6c7396c07b34</testCaseGuid>
 </TestCaseEntity>
