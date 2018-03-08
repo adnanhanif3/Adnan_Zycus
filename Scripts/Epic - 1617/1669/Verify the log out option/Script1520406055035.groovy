@@ -19,3 +19,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Common/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('HomePage/Top Nav/UserProfile'), 0)
+
+WebUI.mouseOver(findTestObject('HomePage/Top Nav/UserProfile'))
+
+WebUI.click(findTestObject('HomePage/Top Nav/Logout'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('Login/LoginBtn'), 0)
+
+WebUI.closeBrowser()
+

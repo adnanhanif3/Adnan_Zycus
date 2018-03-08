@@ -19,3 +19,37 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Common/George Login'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('HomePage/Procurement Services/Procurement Services List Grid'), 0)
+
+WebUI.verifyElementPresent(findTestObject('HomePage/Procurement Services/Procurement Services Tile1'), 0)
+
+WebUI.verifyElementText(findTestObject('HomePage/Procurement Services/Procurement Services Tile 1 Create New Button'), 'Create New')
+
+WebUI.verifyElementPresent(findTestObject('HomePage/Procurement Services/Procurement Services Tile 2'), 0)
+
+WebUI.verifyElementText(findTestObject('HomePage/Procurement Services/Procurement Services Tile 2 Create New Button'), 'Create New')
+
+WebUI.verifyElementPresent(findTestObject('HomePage/Procurement Services/Procurement Services Tile 3'), 0)
+
+WebUI.verifyElementText(findTestObject('HomePage/Procurement Services/Procurement Services Tile 3 Create New Button'), 'Create New')
+
+WebUI.verifyElementPresent(findTestObject('HomePage/Procurement Services/Procurement Services Tile 4'), 0)
+
+WebUI.verifyElementText(findTestObject('HomePage/Procurement Services/Procurement Services Tile 4 Create New Button'), 'Create New')
+
+WebUI.verifyElementPresent(findTestObject('HomePage/Procurement Services/Procurement Services Tile 5'), 0)
+
+WebUI.verifyElementText(findTestObject('HomePage/Procurement Services/Procurement Services Tile 5 Create New Button'), 'Create New')
+
+WebUI.verifyElementPresent(findTestObject('HomePage/Procurement Services/Procurement Services Tile 6'), 0)
+
+WebUI.verifyElementText(findTestObject('HomePage/Procurement Services/Procurement Services Tile 6 Create New Button'), 'Create New')
+
+WebUI.click(findTestObject('HomePage/Procurement Services/Procurement Services List Next Button'))
+
+WebUI.click(findTestObject('HomePage/Procurement Services/Procurement Services List Previous Button'))
+
+WebUI.closeBrowser()
+

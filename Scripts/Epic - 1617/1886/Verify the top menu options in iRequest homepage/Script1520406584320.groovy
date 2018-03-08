@@ -19,3 +19,31 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Common/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementPresent(findTestObject('HomePage/Menu Nav/HOME'), 0)
+
+WebUI.verifyElementText(findTestObject('HomePage/Menu Nav/HOME'), 'HOME')
+
+WebUI.verifyElementPresent(findTestObject('HomePage/Menu Nav/TO DOs'), 0)
+
+WebUI.verifyElementText(findTestObject('HomePage/Menu Nav/TO DOs'), 'TO DOS')
+
+WebUI.verifyElementPresent(findTestObject('HomePage/Menu Nav/MY REQUESTS'), 0)
+
+WebUI.verifyElementText(findTestObject('HomePage/Menu Nav/MY REQUESTS'), 'MY REQUEST')
+
+WebUI.verifyElementPresent(findTestObject('HomePage/Menu Nav/HELP DESK'), 0)
+
+WebUI.verifyElementText(findTestObject('HomePage/Menu Nav/HELP DESK'), 'HELP DESK')
+
+WebUI.verifyElementPresent(findTestObject('HomePage/Menu Nav/HOME Highlighted'), 0)
+
+WebUI.verifyElementPresent(findTestObject('HomePage/Menu Nav/TO DOs arrow'), 0)
+
+WebUI.verifyElementPresent(findTestObject('HomePage/Menu Nav/MY REQUESTS arrow'), 0)
+
+WebUI.verifyElementPresent(findTestObject('HomePage/Menu Nav/HELP DESK arrow'), 0)
+
+WebUI.closeBrowser()
+
