@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Click on MyRequest </name>
+   <name>Check whether breadcrum is pointing to the current page</name>
    <tag></tag>
-   <elementGuidId>b541800a-5f8c-4f95-82e3-c799b17990e8</elementGuidId>
+   <elementGuidId>33f549c5-e103-41d8-8cce-cabebe4fd035</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>html/body/dew-app-root/dew-irequest-layout/irequest-header/dew-row[2]/dew-col[2]/dew-flex/dew-flex-item[3]/div/a</value>
+         <value>html/body/dew-app-root/dew-irequest-layout/dew-block/dew-my-requests/dew-sub-header/div/ireq-breadcrumb/ol/li[3]/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

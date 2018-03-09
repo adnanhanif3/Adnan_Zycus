@@ -21,11 +21,13 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Login and Logout/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Epic-2063-My Request Listing Page/Click on MyRequest '), FailureHandling.STOP_ON_FAILURE)
+WebUI.mouseOver(findTestObject('Epic-2063-My Request Listing Page/DDS-1698/Click on MyRequest '))
 
-WebUI.click(findTestObject('Epic-2063-My Request Listing Page/Click on Service Request'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Epic-2063-My Request Listing Page/DDS-1698/Click on Service Request'))
 
 WebUI.delay(5)
+
+WebUI.verifyElementChecked(findTestObject('Epic-2063-My Request Listing Page/DDS-1699/Check thePage Title'), 0)
 
 WebUI.closeBrowser()
 
