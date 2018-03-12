@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Login To irequest portal</name>
+   <name>Verify the selected title on request definition</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>d71468fa-68f6-459a-a8b6-5c608d82ba03</testCaseGuid>
+   <testCaseGuid>bc90b3e2-8f4b-4cc3-9432-03b68eb805c2</testCaseGuid>
 </TestCaseEntity>

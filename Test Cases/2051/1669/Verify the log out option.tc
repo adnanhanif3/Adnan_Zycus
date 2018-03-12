@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Login To irequest portal</name>
+   <name>Verify the log out option</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>d71468fa-68f6-459a-a8b6-5c608d82ba03</testCaseGuid>
+   <testCaseGuid>f8913b0c-da3e-464b-820c-8d746b9eb70f</testCaseGuid>
 </TestCaseEntity>

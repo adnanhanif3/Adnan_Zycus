@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Login To irequest portal</name>
+   <name>Verify the logout option presence in dropdown</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>d71468fa-68f6-459a-a8b6-5c608d82ba03</testCaseGuid>
+   <testCaseGuid>f317743a-2776-4b37-9a77-f99dac32e9b7</testCaseGuid>
 </TestCaseEntity>

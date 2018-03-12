@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the the filtering functionality using Status of a request</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2ad3a742-49a2-453b-b1a1-fde6a1a67e13</testCaseGuid>
+</TestCaseEntity>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Login To irequest portal</name>
+   <name>Login</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>d71468fa-68f6-459a-a8b6-5c608d82ba03</testCaseGuid>
+   <testCaseGuid>8dc11a7f-2362-40f5-b6b8-af05f445c9df</testCaseGuid>
 </TestCaseEntity>

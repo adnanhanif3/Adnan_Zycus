@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify user navigates to My Service Request listing page on click of Service Request sub menu option</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ecc24595-8f5c-491b-9839-258a2aed4218</testCaseGuid>
+</TestCaseEntity>

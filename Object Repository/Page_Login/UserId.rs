@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>UserId</name>
+   <tag></tag>
+   <elementGuidId>5013ce81-ce3b-490a-a04b-3824b1ce9772</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@id='pnl_loginForm']/form/fieldset[3]/div[2]/input</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@id='pnl_loginForm']/form/fieldset[3]/div[2]/input</value>
+   </webElementProperties>
+</WebElementEntity>
