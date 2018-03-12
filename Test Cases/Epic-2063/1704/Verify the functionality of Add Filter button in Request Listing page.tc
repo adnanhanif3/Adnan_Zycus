@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the functionality of Add Filter button in Request Listing page</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cace2ce4-53df-4227-b1c3-937d667bdb64</testCaseGuid>
+</TestCaseEntity>
