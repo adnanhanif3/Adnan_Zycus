@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify the top menu options in iRequest homepage</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>78d3a3fe-429b-43cf-9a70-b5f39d229e0c</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify company logo in iRequest header</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>88007aef-62f1-44ea-8ca7-2895647a129f</testCaseGuid>
-</TestCaseEntity>

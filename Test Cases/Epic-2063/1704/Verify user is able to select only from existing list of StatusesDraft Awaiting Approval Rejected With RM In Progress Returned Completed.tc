@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify user is able to select only from existing list of StatusesDraft Awaiting Approval Rejected With RM In Progress Returned Completed</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>89b2e1ab-8b51-4571-a586-2e884ed56d40</testCaseGuid>
-</TestCaseEntity>

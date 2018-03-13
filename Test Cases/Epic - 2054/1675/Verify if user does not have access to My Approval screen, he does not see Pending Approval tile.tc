@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify if user does not have access to My Approval screen, he does not see Pending Approval tile</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>4ca21c1a-cba2-409e-be4f-dca722826704</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify HOME menu option is clickable</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>f36dfe64-2e80-41e4-98a7-bed7c94e50a0</testCaseGuid>
-</TestCaseEntity>

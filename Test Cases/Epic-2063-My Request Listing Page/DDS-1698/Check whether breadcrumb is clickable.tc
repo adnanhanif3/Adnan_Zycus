@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Check whether breadcrumb is clickable</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>84a36a2d-11b2-4e28-b12a-8d301fc48a2a</testCaseGuid>
-</TestCaseEntity>

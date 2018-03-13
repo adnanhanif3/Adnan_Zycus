@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify if a display name is updated,user sees his updated display name on next login to iRequest</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>ec1b4bf5-8247-43e0-ad67-622780b4a8eb</testCaseGuid>
-</TestCaseEntity>
