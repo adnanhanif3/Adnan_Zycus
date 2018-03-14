@@ -19,13 +19,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('https://smtlogin.zycus.net/sso/login?serviceName=http://test.irequest.zycus.net/#  ')
+WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
-WebUI.sendKeys(findTestObject('Page_Login/GhostUserID'), 'Vinay2@zycus.com')
+WebUI.navigateToUrl('https://smtlogin.zycus.net/sso/login?serviceName=http://test.irequest.zycus.net/#  ')
 
-WebUI.sendKeys(findTestObject('Page_Login/GhoshPassword'), 'Zycus@123')
+WebUI.sendKeys(findTestObject('Login and Logout/Username'), 'ge-all@zycus.com')
 
-WebUI.click(findTestObject('Page_Login/LoginBtn'))
+WebUI.sendKeys(findTestObject('Login and Logout/Password'), 'eProc@123')
+
+WebUI.click(findTestObject('Login and Logout/Login'))
 
