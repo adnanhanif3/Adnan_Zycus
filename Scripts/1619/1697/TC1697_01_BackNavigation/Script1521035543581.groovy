@@ -19,17 +19,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.comment('Check for Back Navigation to Home page')
+
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('null'))
+WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Page_Create Request/icon_BackNavigation'))
 
-WebUI.delay(10)
+String CurrentPageUrl = WebUI.getUrl()
 
-WebUI.click(findTestObject('null'))
-
-WebUI.delay(3)
+WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/irequest/home')
 
 WebUI.closeBrowser()
 

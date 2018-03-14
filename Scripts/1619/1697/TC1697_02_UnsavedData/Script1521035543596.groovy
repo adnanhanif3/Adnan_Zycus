@@ -19,17 +19,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.mouseOver(findTestObject('null'))
-
-WebUI.click(findTestObject('null'))
-
-WebUI.delay(10)
-
-WebUI.click(findTestObject('null'))
-
-WebUI.delay(3)
-
-WebUI.closeBrowser()
+'Not implemeted Popups by dev Team to automate'
+WebUI.comment('Not Implemented to Automate')
 

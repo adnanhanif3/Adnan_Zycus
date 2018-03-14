@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1697_01_BackNavigation</name>
+   <tag></tag>
+   <comment>Check for Back Navigation to Home page</comment>
+   <testCaseGuid>95dfffd2-150b-4abb-8506-17c82082f678</testCaseGuid>
+</TestCaseEntity>

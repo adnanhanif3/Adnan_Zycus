@@ -19,17 +19,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.comment('Home>My Requests>ReqDef_Name')
+
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('null'))
+String RequestDefName = WebUI.getText(findTestObject('Page_Home/Overview/txt_ReqDefTitle'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow'))
 
-WebUI.delay(10)
+WebUI.verifyElementText(findTestObject('Page_Create Request/txt_BreadCrumb_Part1'), 'Home', FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('null'))
+WebUI.verifyElementText(findTestObject('Page_Create Request/txt_BreadCrumb_Part2'), 'My Requests')
 
-WebUI.delay(3)
+WebUI.verifyElementText(findTestObject('Page_Create Request/txt_BreadCrumb_Part3'), RequestDefName)
 
 WebUI.closeBrowser()
 
