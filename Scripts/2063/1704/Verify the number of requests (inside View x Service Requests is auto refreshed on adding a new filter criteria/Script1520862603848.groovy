@@ -19,3 +19,27 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
+
+WebUI.click(findTestObject('Page_Service request/Service request xpath'))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Page_Home/Menu Nav/Add Filter click'))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Page_Home/Menu Nav/With RM'))
+
+WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/View x Requests'), 0)
+
+WebUI.click(findTestObject('Page_Home/Menu Nav/Draft'))
+
+WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/View x Requests'), 0)
+
+WebUI.delay(3)
+
+WebUI.closeBrowser()
+

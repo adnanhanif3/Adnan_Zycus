@@ -21,13 +21,13 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('null'))
+WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Page_Service request/Service request xpath'))
 
 WebUI.delay(10)
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Page_Home/Menu Nav/HOME'))
 
 WebUI.delay(3)
 
