@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>page title</name>
+   <name>Breadcrumb_MyServiceRequest</name>
    <tag></tag>
-   <elementGuidId>fae6f7ee-b6ca-470e-8e4b-100e84897500</elementGuidId>
+   <elementGuidId>d98b7ec9-65a8-4d8d-a3bc-d72ee2c47f5a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='heading']/dew-flex/dew-flex-item[2]/h3</value>
+         <value>//div[@class='heading']/dew-breadcrumb/ol/li[2]/a</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

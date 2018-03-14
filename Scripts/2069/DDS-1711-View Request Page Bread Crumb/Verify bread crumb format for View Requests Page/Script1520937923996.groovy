@@ -19,13 +19,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('https://smtlogin.zycus.net/sso/login?serviceName=http://test.irequest.zycus.net/#  ')
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.maximizeWindow()
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'))
 
-WebUI.sendKeys(findTestObject('Page_Login/GhostUserID'), 'Vinay2@zycus.com')
+WebUI.click(findTestObject('Page_Home/Menu Nav/Submenu Service Request'))
 
-WebUI.sendKeys(findTestObject('Page_Login/GhoshPassword'), 'Zycus@123')
+requestName = WebUI.getText(findTestObject('Page_Service request/Request Name'))
 
-WebUI.click(findTestObject('Page_Login/LoginBtn'))
+WebUI.click(findTestObject('Page_Service request/View Request button'))
+
+WebUI.verifyElementText(findTestObject('Page_View request/Breadcrumb_Home'), 'Home', FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('Page_View request/Breadcrumb_MyServiceRequest'), 'My Service Requests', FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('Page_View request/Breadcrumb_RequestName'), requestName, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.closeBrowser()
 

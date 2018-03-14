@@ -18,14 +18,18 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.junit.After as After
+import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('https://smtlogin.zycus.net/sso/login?serviceName=http://test.irequest.zycus.net/#  ')
+WebUI.callTestCase(findTestCase('Common Test Case/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.maximizeWindow()
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'))
 
-WebUI.sendKeys(findTestObject('Page_Login/GhostUserID'), 'Vinay2@zycus.com')
+WebUI.click(findTestObject('Page_Home/Menu Nav/Submenu Service Request'))
 
-WebUI.sendKeys(findTestObject('Page_Login/GhoshPassword'), 'Zycus@123')
+WebUI.click(findTestObject('Page_Service request/View Request button'))
 
-WebUI.click(findTestObject('Page_Login/LoginBtn'))
+WebUI.getText(findTestObject('View Request Page/basicDetails'))
+
+WebUI.verifyElementText(findTestObject(null), '')
 

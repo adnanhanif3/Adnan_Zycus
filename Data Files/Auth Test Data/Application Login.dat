@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>849b0dfe-cf7b-4106-a98b-0146fa15252e</dataFileGUID>
-   <dataSourceUrl>C:\Users\Prabodh.Ghosh\git\iRequestAutomation\Application Login.xlsx</dataSourceUrl>
+   <dataSourceUrl>C:\Users\adnan.hanif\git\iRequestAutomation\Application Login.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>false</isInternalPath>
    <query></query>

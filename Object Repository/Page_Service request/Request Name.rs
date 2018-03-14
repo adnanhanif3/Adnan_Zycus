@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>page title</name>
+   <name>Request Name</name>
    <tag></tag>
-   <elementGuidId>fae6f7ee-b6ca-470e-8e4b-100e84897500</elementGuidId>
+   <elementGuidId>ac5094f0-79dc-4467-9a46-c1bb913580ba</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='heading']/dew-flex/dew-flex-item[2]/h3</value>
+         <value>//div[@class='rq-box-header py-3 px-3']/dew-row/dew-col[2]/p/span</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
