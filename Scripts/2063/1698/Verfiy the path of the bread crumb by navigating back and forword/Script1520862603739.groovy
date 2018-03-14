@@ -21,15 +21,11 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Login and Logout/Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('null'))
+WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Page_Service request/Service request xpath'))
 
 WebUI.delay(5)
-
-WebUI.click(findTestObject('null'))
-
-WebUI.delay(3)
 
 WebUI.click(findTestObject('null'))
 

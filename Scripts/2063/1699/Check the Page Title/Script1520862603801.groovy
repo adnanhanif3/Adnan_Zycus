@@ -19,15 +19,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Login and Logout/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Epic-2063-My Request Listing Page/DDS-1698/Click on MyRequest '))
+WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
 
-WebUI.click(findTestObject('Epic-2063-My Request Listing Page/DDS-1698/Click on Service Request'))
+WebUI.click(findTestObject('Page_Service request/Service request xpath'))
 
 WebUI.delay(5)
 
-WebUI.verifyElementChecked(findTestObject('Epic-2063-My Request Listing Page/DDS-1699/Check thePage Title'), 0)
+WebUI.verifyElementText(findTestObject('Page_View request/Title of page'), 'My Requests')
 
 WebUI.closeBrowser()
 
