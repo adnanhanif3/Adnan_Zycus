@@ -23,11 +23,15 @@ WebUI.openBrowser('http://test.irequest.zycus.net/#/irequest/home')
 
 WebUI.maximizeWindow()
 
-WebUI.sendKeys(findTestObject('Login credentials/Username xpath'), 'testqa1@zycat.com')
+WebUI.click(findTestObject('Page_Login/GhostUserID'))
 
-WebUI.sendKeys(findTestObject('Login credentials/Password xpath'), 'Test@123')
+WebUI.setText(findTestObject('Page_Login/UserId'), 'testqa1@zycat.com')
 
-WebUI.click(findTestObject('Login credentials/Login button xpath'))
+WebUI.click(findTestObject('Page_Login/GhoshPassword'))
+
+WebUI.setText(findTestObject('Page_Login/Password'), 'Test@123')
+
+WebUI.click(findTestObject('Page_Login/LoginBtn'))
 
 WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
 
@@ -43,9 +47,11 @@ WebUI.click(findTestObject('Page_Service request/Service request button'))
 
 WebUI.delay(3)
 
-text = WebUI.getText(findTestObject('Verify the page title/Get text(req name) for page title verfy'))
+text = WebUI.getText(findTestObject('Page_Edit request/Get text(req name) for page title verfy'))
 
 WebUI.click(findTestObject('Page_Service request/Edit request button'))
 
-WebUI.verifyElementText(findTestObject('Verify the page title/Page title xpath'), text)
+WebUI.verifyElementText(findTestObject('Page_Edit request/Page title xpath'), text)
+
+WebUI.closeBrowser()
 

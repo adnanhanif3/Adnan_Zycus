@@ -21,5 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Edit request page Tc'), [:])
 
-WebUI.acceptAlert()
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Page_Edit request/Cancelbtn'))
 

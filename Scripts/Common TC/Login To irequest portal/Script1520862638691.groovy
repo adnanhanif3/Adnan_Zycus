@@ -23,9 +23,13 @@ WebUI.openBrowser('http://test.irequest.zycus.net/#/irequest/home')
 
 WebUI.maximizeWindow()
 
-WebUI.sendKeys(findTestObject('Login credentials/Username xpath'), 'testqa1@zycat.com')
+WebUI.click(findTestObject('Page_Login/GhostUserID'))
 
-WebUI.sendKeys(findTestObject('Login credentials/Password xpath'), 'Test@123')
+WebUI.setText(findTestObject('Page_Login/UserId'), 'testqa1@zycat.com')
 
-WebUI.click(findTestObject('Login credentials/Login button xpath'))
+WebUI.click(findTestObject('Page_Login/GhoshPassword'))
+
+WebUI.setText(findTestObject('Page_Login/Password'), 'Test@123')
+
+WebUI.click(findTestObject('Page_Login/LoginBtn'))
 

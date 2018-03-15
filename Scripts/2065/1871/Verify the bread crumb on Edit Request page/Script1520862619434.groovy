@@ -23,17 +23,17 @@ WebUI.callTestCase(findTestCase('Common TC/Edit request page Tc'), [:])
 
 WebUI.takeScreenshot(FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Verify the bread crumb/Verify the home'), 5)
+WebUI.verifyElementPresent(findTestObject('Page_Edit request/Home_breadcmb'), 5)
 
-WebUI.verifyElementPresent(findTestObject('Verify the bread crumb/Verify the My service request'), 5)
+WebUI.verifyElementPresent(findTestObject('Page_Edit request/My Service Requests_breadcmb'), 5)
 
-WebUI.verifyElementPresent(findTestObject('Verify the bread crumb/Verify the edit service request'), 5)
+WebUI.verifyElementPresent(findTestObject('Page_Edit request/Edit service request_Breadcmb'), 5)
 
-WebUI.click(findTestObject('Verify the bread crumb/Verify the My service request'))
+WebUI.click(findTestObject('Page_Edit request/My Service Requests_breadcmb'))
 
 WebUI.delay(10)
 
-WebUI.click(findTestObject('Verify the bread crumb/Verify the home'))
+WebUI.click(findTestObject('Page_Edit request/Home_breadcmb'))
 
 WebUI.delay(10)
 
