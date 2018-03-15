@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify the number of requests (inside View x Service Requests is auto refreshed on adding a new filter criteria</name>
+   <name>Verify the number is auto refreshed on adding a new filter criteria</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>e2cb0a11-2f66-4f1c-af31-7cba2ad733e6</testCaseGuid>

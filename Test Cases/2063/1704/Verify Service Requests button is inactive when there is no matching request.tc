@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify that the View x Service Requests button is inactive when there is no matching request based on selected filter</name>
+   <name>Verify Service Requests button is inactive when there is no matching request</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>7933e7a1-c64b-4e15-8523-24d5205d0a5d</testCaseGuid>
