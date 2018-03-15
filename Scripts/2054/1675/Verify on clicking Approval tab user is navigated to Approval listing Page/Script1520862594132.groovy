@@ -25,7 +25,7 @@ WebUI.verifyElementPresent(findTestObject('Page_Home/Overview/Pending Approval T
 
 WebUI.click(findTestObject('Page_Home/Overview/Pending Approval Tile'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Approval Listing /Approval Header'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Approval Listing/Approval Header'), 0)
 
 WebUI.closeBrowser()
 

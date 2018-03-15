@@ -19,11 +19,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Diego Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Home/Overview/Pending Request Count tile'))
-
-WebUI.verifyElementPresent(findTestObject('Request Listing Page/Request Header'), 0)
+WebUI.verifyElementText(findTestObject('Page_Home/Overview/Pending Request Count Number'), '0 Requests')
 
 WebUI.closeBrowser()
 
