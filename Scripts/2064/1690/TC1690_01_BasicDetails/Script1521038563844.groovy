@@ -18,10 +18,53 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Common TC/Diego Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.comment('Verify Basic details section')
 
-WebUI.verifyElementText(findTestObject('Page_Home/Overview/Pending Request Count Number'), '0 Requests')
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow'))
 
+String a = WebUI.getText(findTestObject('Page_Create Request/txt_BasicDetails'))
+
+String[] r = a.split('\n')
+
+println(r)
+
+String[] ip = new String[10]
+
+	ip[0]="Request Name *"
+	ip[1]="Request Type"
+	ip[2]="Sourcing"
+	ip[3]="Urgent Requirement"
+	ip[4]="Yes"
+	ip[5]="No"
+	ip[6]="Request Description"
+	ip[7]="100 Char left"
+	ip[8]="Add Attachments"
+	ip[9]="Browse"
+	
+for(int i=0;i<2;i++)
+{
+	if(ip[i].equals(r[i]))
+	{
+		println "Basic details matched : "+ip[i]+" "+" is Present";
+	}
+	else
+	{
+		println ip[i]+"error at "+i+" "+r[i]+" "+" Missing";
+	}	
+}
+
+for(int i=3;i<10;i++)
+{
+	if(ip[i].equals(r[i]))
+	{
+		println "Basic details matched : "+ip[i]+" "+"is Present";
+	}
+	else
+	{
+		println ip[i]+"error at "+i+" "+r[i]+" "+" Missing";
+	}
+}

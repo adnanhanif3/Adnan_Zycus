@@ -25,9 +25,7 @@ WebUI.verifyElementPresent(findTestObject('Page_Home/Top Nav/UserProfile'), 0)
 
 WebUI.mouseOver(findTestObject('Page_Home/Top Nav/UserProfile'))
 
-WebUI.click(findTestObject('Page_Home/Top Nav/Logout'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyElementPresent(findTestObject('Page_Login/LoginBtn'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Home/Top Nav/Logout'), 0)
 
 WebUI.closeBrowser()
 

@@ -21,9 +21,11 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('https://smtlogin.zycus.net/sso/login?serviceName=http://test.irequest.zycus.net/#/')
 
-WebUI.sendKeys(findTestObject('Page_Login/txt_UserName'), 'vinay2@zycus.com')
+WebUI.sendKeys(findTestObject('Page_Login/GhostUserID'), 'vinay2@zycus.com')
 
-WebUI.sendKeys(findTestObject('Page_Login/txt_Password'), 'Zycus@123')
+WebUI.click(findTestObject('Page_Login/GhoshPassword'))
 
-WebUI.click(findTestObject('Page_Login/btn_Login'))
+WebUI.setText(findTestObject('Page_Login/Password'), 'Zycus@123')
+
+WebUI.click(findTestObject('Page_Login/LoginBtn'))
 

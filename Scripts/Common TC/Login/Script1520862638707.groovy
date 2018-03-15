@@ -29,5 +29,5 @@ WebUI.sendKeys(findTestObject('Login and Logout/Username'), 'ge-all@zycus.com')
 
 WebUI.sendKeys(findTestObject('Login and Logout/Password'), 'eProc@123')
 
-WebUI.click(findTestObject('Login and Logout/Login'))
+WebUI.mouseOver(findTestObject('Login and Logout/Login'))
 

@@ -21,13 +21,9 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Home/Overview/Pending Request Count tile'))
+WebUI.mouseOver(findTestObject('Page_Home/Top Nav/UserDisplayName'))
 
-WebUI.verifyElementPresent(findTestObject('Request Listing Page/Request Header'), 0)
-
-WebUI.click(findTestObject('Page_Home/Top Nav/Logo'))
-
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/HOME Highlighted'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Home/Top Nav/EditProfileLink'), 0)
 
 WebUI.closeBrowser()
 

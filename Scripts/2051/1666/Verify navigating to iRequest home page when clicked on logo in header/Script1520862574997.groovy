@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling
 
 WebUI.click(findTestObject('Page_Home/Overview/Pending Request Count tile'))
 
-WebUI.verifyElementPresent(findTestObject('Request Listing Page/Request Header'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Service request/Request Header'), 0)
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Logo'))
 
