@@ -7,6 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value>//dew-block[@class='d-block position-relative clearfix']/dew-irequest/dew-section[1]/dew-block/dew-block/dew-row/dew-col[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -16,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//dew-block[@class='mx-auto d-block position-relative clearfix']/dew-irequest/dew-section[2]/dew-block/dew-block/dew-row/dew-col[1]/dew-card</value>
+      <value>//dew-block[@class='d-block position-relative clearfix']/dew-irequest/dew-section[1]/dew-block/dew-block/dew-row/dew-col[1]</value>
    </webElementProperties>
 </WebElementEntity>
