@@ -25,7 +25,7 @@ WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'))
 
 WebUI.click(findTestObject('Page_Home/Menu Nav/Submenu Service Request'))
 
-WebUI.verifyElementText(findTestObject('Request Listing Page/Request Header'), 'Service Request')
+WebUI.verifyElementText(findTestObject('Page_Service request/Request Header'), 'Service Request')
 
 WebUI.closeBrowser()
 

@@ -21,9 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/TO DOs'))
-
-WebUI.click(findTestObject('Page_Home/Menu Nav/SubMenu Approval'))
+WebUI.click(findTestObject('Page_Home/Overview/Pending Request Count tile'))
 
 WebUI.click(findTestObject('Page_Home/Menu Nav/HOME'))
 
