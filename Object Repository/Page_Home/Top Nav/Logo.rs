@@ -7,6 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value>//img[@src='api/a/tms/companies/getLogo']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -16,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//img[@src='api/a/tms/companies/d801a7b0-b816-4c71-a52c-71f694cb3da8/getLogo']</value>
+      <value>//img[@src='api/a/tms/companies/getLogo']</value>
    </webElementProperties>
 </WebElementEntity>
