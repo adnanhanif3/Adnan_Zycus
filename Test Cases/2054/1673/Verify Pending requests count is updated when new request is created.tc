@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Pending requests count is updated when new request is created</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5f2bb655-ec13-4f47-b9c6-24f2d9a510bf</testCaseGuid>
+</TestCaseEntity>
