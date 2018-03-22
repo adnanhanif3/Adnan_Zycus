@@ -25,31 +25,17 @@ WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/HELP DESK'))
 
 WebUI.click(findTestObject('Page_Home/Menu Nav/ReportAnIssue'))
 
-WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Module'))
-
-WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Module-Approvals'))
-
 WebUI.click(findTestObject('Page_ReportAnIssuePopUp/MessageType'))
 
-WebUI.click(findTestObject('Page_ReportAnIssuePopUp/MessageType_FunctionalityIssue'))
+WebUI.verifyElementPresent(findTestObject('Page_ReportAnIssuePopUp/MessageType_Feedback'), 0)
 
-WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Priority'))
+WebUI.verifyElementPresent(findTestObject('Page_ReportAnIssuePopUp/MessageType_UsabilityIssue'), 0)
 
-WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Priority_High'))
+WebUI.verifyElementPresent(findTestObject('Page_ReportAnIssuePopUp/MessageType_PerformanceIssue'), 0)
 
-WebUI.setText(findTestObject('Page_ReportAnIssuePopUp/Summary'), 'Test')
+WebUI.verifyElementPresent(findTestObject('Page_ReportAnIssuePopUp/MessageType_Other'), 0)
 
-WebUI.setText(findTestObject('Page_ReportAnIssuePopUp/Description'), 'Test')
+WebUI.verifyElementPresent(findTestObject('Page_ReportAnIssuePopUp/MessageType_FunctionalityIssue'), 0)
 
-WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), 'C:\\\\Users\\\\Prabodh.Ghosh\\\\git\\\\iRequestAutomation\\\\Data Files\\\\App Test Data\\\\FilesToUpload\\\\Airtel.txt')
-
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Submit'))
-
-WebUI.delay(5)
-
-AlertText = WebUI.getAlertText()
-
-WebUI.verifyMatch(AlertText, 'Submitting the issue', false)
+WebUI.closeBrowser()
 
