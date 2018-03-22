@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify message displayed when form is submitted successfully</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7e8be4bf-a85b-468b-99ed-c5cca8c787d6</testCaseGuid>
+</TestCaseEntity>

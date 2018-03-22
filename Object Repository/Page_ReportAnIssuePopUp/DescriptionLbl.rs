@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>DescriptionLbl</name>
+   <tag></tag>
+   <elementGuidId>071e8a6c-25c2-4c52-81f2-5bdbf6539817</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[@class='modal-body']/dew-modal-body/dew-row[2]/dew-col[2]/div/label</value>
+   </webElementProperties>
+</WebElementEntity>

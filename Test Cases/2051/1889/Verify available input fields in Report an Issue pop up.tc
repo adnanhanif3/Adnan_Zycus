@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify available input fields in Report an Issue pop up</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c23cbc7b-4ff1-4687-ac01-22e1861f97bc</testCaseGuid>
+</TestCaseEntity>
