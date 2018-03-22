@@ -23,3 +23,13 @@ WebUI.callTestCase(findTestCase('Common TC/Edit request page Tc'), [:])
 
 WebUI.verifyElementPresent(findTestObject('Page_Edit request/Request_number'), 5)
 
+WebUI.verifyElementPresent(findTestObject('Page_Edit request/Request_type'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Page_Edit request/Urgent_requirement'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Page_Edit request/Request_description'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Page_Edit request/Add_attachments'), 0)
+
+WebUI.closeBrowser()
+

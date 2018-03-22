@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//dew-row[2][@class=&quot;ng-tns-c19-0 row&quot;]/dew-col/span[3]/label/button</value>
+         <value>//dew-col[@class=&quot;d-flex justify-content-start align-items-center ng-tns-c22-0 col&quot;]/span[3]/label</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -19,43 +19,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('http://test.irequest.zycus.net/#/irequest/home')
+WebUI.callTestCase(findTestCase('Common TC/Edit request page Tc'), [:])
 
-WebUI.maximizeWindow()
-
-WebUI.click(findTestObject('Page_Login/GhostUserID'))
-
-WebUI.setText(findTestObject('Page_Login/UserId'), 'bobby.charlton@mariners.com')
-
-WebUI.click(findTestObject('Page_Login/GhoshPassword'))
-
-WebUI.setText(findTestObject('Page_Login/Password'), 'iRequest@1234')
-
-WebUI.click(findTestObject('Page_Login/LoginBtn'))
-
-WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
+WebUI.verifyElementClickable(findTestObject('Page_Edit request/My Service Requests_breadcmb'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Service request/Deselect filters 1'))
-
-WebUI.click(findTestObject('Page_Service request/Deselect filters 2'))
-
-WebUI.click(findTestObject('Page_Service request/Deselect filters 3'))
-
-WebUI.click(findTestObject('Page_Service request/Deselect filters 4'))
-
-WebUI.click(findTestObject('Page_Service request/Deselect filters 5'))
-
-WebUI.delay(2)
-
-text = WebUI.getText(findTestObject('Page_Edit request/Get text(req name) for page title verfy'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Page_Service request/Edit request button'))
-
-WebUI.verifyElementText(findTestObject('Page_Edit request/Page title xpath'), text)
+WebUI.verifyElementPresent(findTestObject('Page_Edit request/My service req elment prst'), 0)
 
 WebUI.closeBrowser()
 

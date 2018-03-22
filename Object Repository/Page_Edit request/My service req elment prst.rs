@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Edit request button</name>
+   <name>My service req elment prst</name>
    <tag></tag>
-   <elementGuidId>d8327d48-aa48-44a1-bad8-dfa6dd674ac6</elementGuidId>
+   <elementGuidId>6ae0b5d0-b666-4187-bac4-485bfc1e5630</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;rq-box&quot;]/div[2]/dew-row/dew-col[4]/div/a[1]</value>
+         <value>//div[@class=&quot;tabset&quot;]/div/ul/li[1]/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

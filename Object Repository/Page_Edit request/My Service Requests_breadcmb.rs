@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//ol[@class=&quot;breadcrumb&quot;]/li[2]/a</value>
+         <value>//ol[@class=&quot;breadcrumb p-4&quot;]/li[2]/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

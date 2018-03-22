@@ -21,21 +21,11 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Edit request page Tc'), [:])
 
-WebUI.takeScreenshot(FailureHandling.STOP_ON_FAILURE)
-
 WebUI.verifyElementPresent(findTestObject('Page_Edit request/Home_breadcmb'), 5)
 
 WebUI.verifyElementPresent(findTestObject('Page_Edit request/My Service Requests_breadcmb'), 5)
 
 WebUI.verifyElementPresent(findTestObject('Page_Edit request/Edit service request_Breadcmb'), 5)
-
-WebUI.click(findTestObject('Page_Edit request/My Service Requests_breadcmb'))
-
-WebUI.delay(10)
-
-WebUI.click(findTestObject('Page_Edit request/Home_breadcmb'))
-
-WebUI.delay(10)
 
 WebUI.closeBrowser()
 

@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//dew-block/dew-sourcing-edit/dew-sub-header/div/h3</value>
+         <value>//dew-flex[@class=&quot;d-flex&quot;]/dew-flex-item/h3</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
