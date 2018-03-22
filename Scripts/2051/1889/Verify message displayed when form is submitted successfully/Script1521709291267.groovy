@@ -37,17 +37,17 @@ WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Priority'))
 
 WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Priority_High'))
 
-WebUI.setText(findTestObject('Page_ReportAnIssuePopUp/Summary'), 'I am not able to submit a request')
+WebUI.setText(findTestObject('Page_ReportAnIssuePopUp/Summary'), 'Test')
 
-WebUI.setText(findTestObject('Page_ReportAnIssuePopUp/Description'), '404 error message is encountered.')
+WebUI.setText(findTestObject('Page_ReportAnIssuePopUp/Description'), 'Test')
 
-WebUI.delay(5)
-
-not_run: WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), 'Data Files\\\\App Test Data\\\\FilesToUpload\\\\TextFile')
+WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), 'C:\\\\Users\\\\Prabodh.Ghosh\\\\git\\\\iRequestAutomation\\\\Data Files\\\\App Test Data\\\\FilesToUpload\\\\Airtel.txt')
 
 WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Submit'))
+
+WebUI.delay(5)
 
 AlertText = WebUI.getAlertText()
 
