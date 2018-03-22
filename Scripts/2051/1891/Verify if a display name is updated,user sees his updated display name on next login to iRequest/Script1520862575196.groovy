@@ -21,11 +21,29 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/TO DOs'))
+WebUI.mouseOver(findTestObject('Page_Home/Top Nav/UserDisplayName'))
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/SubMenu Approval'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Home/Top Nav/EditProfileLink'))
 
-WebUI.verifyElementText(findTestObject('Page_Approval Listing /Approval Header'), 'Approvals')
+WebUI.switchToWindowIndex(1)
+
+WebUI.setText(findTestObject('Page_Edit Profile/DisplayNameField'), 'Christiano Ronaldo')
+
+WebUI.click(findTestObject('Page_Edit Profile/SavenClose'))
 
 WebUI.closeBrowser()
+
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('Page_Home/Top Nav/UserDisplayName'), 'Christiano Ronaldo')
+
+WebUI.mouseOver(findTestObject('Page_Home/Top Nav/UserDisplayName'))
+
+WebUI.click(findTestObject('Page_Home/Top Nav/EditProfileLink'))
+
+WebUI.switchToWindowIndex(1)
+
+WebUI.setText(findTestObject('Page_Edit Profile/DisplayNameField'), 'Ronaldo C')
+
+WebUI.click(findTestObject('Page_Edit Profile/SavenClose'))
 
