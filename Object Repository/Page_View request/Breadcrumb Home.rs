@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='heading']/dew-breadcrumb/ol/li[1]/a</value>
+         <value>//div[@class='heading']/ol/li[1]/a</value>
       </entry>
       <entry>
          <key>BASIC</key>

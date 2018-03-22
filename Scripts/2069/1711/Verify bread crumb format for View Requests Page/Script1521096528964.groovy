@@ -31,9 +31,11 @@ WebUI.click(findTestObject('Page_Service request/View Request'))
 
 WebUI.verifyElementText(findTestObject('Page_View request/Breadcrumb Home'), 'Home', FailureHandling.CONTINUE_ON_FAILURE)
 
+WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
+
 WebUI.verifyElementText(findTestObject('Page_View request/Breadcrumb MyServiceRequests'), 'My Service Requests', FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Page_View request/Breadcrumb RequestName'), requestName, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementText(findTestObject('Page_View request/Breadcrumb Service Request'), 'Service Request', FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.closeBrowser()
 
