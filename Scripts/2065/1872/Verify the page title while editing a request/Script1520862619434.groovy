@@ -37,15 +37,15 @@ WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Service request/Deselect filters 1'))
+WebUI.click(findTestObject('Page_Service request/Inprogress deselect'))
 
-WebUI.click(findTestObject('Page_Service request/Deselect filters 2'))
+WebUI.click(findTestObject('Page_Service request/Returned deselect '))
 
-WebUI.click(findTestObject('Page_Service request/Deselect filters 3'))
+WebUI.click(findTestObject('Page_Service request/With RM deselect '))
 
-WebUI.click(findTestObject('Page_Service request/Deselect filters 4'))
+WebUI.click(findTestObject('Page_Service request/Awatting approval deselect '))
 
-WebUI.click(findTestObject('Page_Service request/Deselect filters 5'))
+WebUI.click(findTestObject('Page_Service request/Rejected deselect '))
 
 WebUI.delay(2)
 
