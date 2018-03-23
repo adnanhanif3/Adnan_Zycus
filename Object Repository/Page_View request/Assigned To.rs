@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>PageTitle</name>
+   <name>Assigned To</name>
    <tag></tag>
-   <elementGuidId>e149c0e8-66e8-4092-8ef2-dd1774e16c75</elementGuidId>
+   <elementGuidId>a3d74268-3f7c-4d14-9441-154efb890e7f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-flex[@class=&quot;d-flex align-items-center&quot;]/dew-flex-item[1]/h3</value>
+         <value>//dew-scroll-section[@id='2']/dew-container/dew-paper/dew-section/dew-block/dew-assign-request/div/dew-row/dew-col/dew-col[2]/dew-text</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
