@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify message displayed when email is not configured</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>54b8e51b-7839-4c21-a1bc-70ba4de24960</testCaseGuid>
+</TestCaseEntity>
