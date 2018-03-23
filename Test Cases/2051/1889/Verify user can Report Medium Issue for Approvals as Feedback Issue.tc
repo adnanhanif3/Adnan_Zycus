@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify user can Report Medium Issue for Approvals as Feedback Issue</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d59a7d37-3ef8-48d5-aa8b-e692d7f1cac9</testCaseGuid>
+</TestCaseEntity>

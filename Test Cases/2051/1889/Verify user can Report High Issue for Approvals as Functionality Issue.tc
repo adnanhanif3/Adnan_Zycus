@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify user can Report High Issue for Approvals as Functionality Issue</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>774a86b1-ee15-4cdf-b020-496c94cc78ca</testCaseGuid>
+</TestCaseEntity>

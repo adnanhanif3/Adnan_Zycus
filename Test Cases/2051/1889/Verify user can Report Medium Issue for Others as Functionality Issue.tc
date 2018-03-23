@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify user can Report Medium Issue for Others as Functionality Issue</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5f8c3486-b44a-4289-bacd-b9c6db6dd281</testCaseGuid>
+</TestCaseEntity>
