@@ -35,5 +35,5 @@ WebUI.click(findTestObject('Page_Service request/Rejected deselect '))
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Service request/Edit request button'))
+WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 

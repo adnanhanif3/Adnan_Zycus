@@ -53,7 +53,7 @@ text = WebUI.getText(findTestObject('Page_Edit request/Get text(req name) for pa
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Service request/Edit request button'))
+WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
 WebUI.verifyElementText(findTestObject('Page_Edit request/Page title xpath'), text)
 

@@ -21,15 +21,9 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Edit request page Tc(Draft)'), [:])
 
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Request_number'), 5)
+WebUI.click(findTestObject('Page_Edit request/Requestdescp_field'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Request_type'), 0)
+WebUI.sendKeys(findTestObject('Page_Edit request/Requestdescp_field'), 'Need the requirement as early as possible.')
 
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Urgent_requirement'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Request_description'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Add_attachments'), 0)
-
-WebUI.closeBrowser()
+WebUI.acceptAlert()
 
