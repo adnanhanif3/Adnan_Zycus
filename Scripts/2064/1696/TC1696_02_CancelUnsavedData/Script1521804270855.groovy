@@ -19,19 +19,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.comment('Home>My Requests>ReqDef_Name')
-
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
-
-String RequestDefName = WebUI.getText(findTestObject('Page_Home/Overview/txt_ReqDefTitle'))
-
-WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow'))
-
-WebUI.verifyElementText(findTestObject('Page_Create Request/txt_BreadCrumb_Part1'), 'Home', FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.verifyElementText(findTestObject('Page_Create Request/txt_BreadCrumb_Part2'), 'My Requests')
-
-WebUI.verifyElementText(findTestObject('Page_Create Request/txt_BreadCrumb_Part3'), RequestDefName)
-
-WebUI.closeBrowser()
+'Not implemented Popups to automate'
+WebUI.comment('Not implemented Popups to automate')
 

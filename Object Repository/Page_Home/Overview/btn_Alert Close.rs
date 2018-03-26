@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>icon_BackNavigation</name>
+   <name>btn_Alert Close</name>
    <tag></tag>
-   <elementGuidId>98f1a1bd-f4cb-4552-ab79-17b67f3f3fa8</elementGuidId>
+   <elementGuidId>1147ea21-cdfd-44a7-bdbd-d24b5b44597c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-icon[@icon=&quot;chevron-left&quot;]</value>
+         <value>//button[@class=&quot;close&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

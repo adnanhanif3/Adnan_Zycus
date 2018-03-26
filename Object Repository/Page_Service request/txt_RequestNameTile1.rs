@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>icon_BackNavigation</name>
+   <name>txt_RequestNameTile1</name>
    <tag></tag>
-   <elementGuidId>98f1a1bd-f4cb-4552-ab79-17b67f3f3fa8</elementGuidId>
+   <elementGuidId>c2c29d2d-694b-4d2a-8e17-754ab52d2ed9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-icon[@icon=&quot;chevron-left&quot;]</value>
+         <value>//dew-block/div[2]/div[1]/dew-service-request-card/dew-paper/div/div[1]/dew-row/dew-col[2]/p/span</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

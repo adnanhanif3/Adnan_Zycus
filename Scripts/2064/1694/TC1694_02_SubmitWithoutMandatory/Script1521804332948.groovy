@@ -19,9 +19,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.comment('Check for Back Navigation to Home page')
+WebUI.comment('Verify Create new request Submit')
 
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common Test Cases/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Temp workaround to close API error popup'
 WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandling.CONTINUE_ON_FAILURE)
@@ -32,13 +32,10 @@ WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandlin
 'Temp workaround to close API error popup'
 WebUI.delay(4)
 
-WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow'))
+WebUI.click(findTestObject('Page_Home/btn_CreateNow2'))
 
-WebUI.click(findTestObject('Page_Create Request/icon_BackNavigation'))
+WebUI.click(findTestObject('Page_CreateRequest/21032018/btn_Submit'))
 
-String CurrentPageUrl = WebUI.getUrl()
-
-WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/irequest/home')
-
-WebUI.closeBrowser()
+'Popup is not implemented to proceed'
+WebUI.comment('Popup is not implemented to proceed')
 

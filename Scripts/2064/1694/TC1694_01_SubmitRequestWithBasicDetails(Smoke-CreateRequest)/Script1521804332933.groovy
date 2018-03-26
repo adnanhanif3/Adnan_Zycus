@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.comment('Check for Back Navigation to Home page')
+WebUI.comment('Verify Create new request Submit')
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -32,13 +32,19 @@ WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandlin
 'Temp workaround to close API error popup'
 WebUI.delay(4)
 
-WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow'))
+WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow2'))
 
-WebUI.click(findTestObject('Page_Create Request/icon_BackNavigation'))
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'New request by Katalon')
 
-String CurrentPageUrl = WebUI.getUrl()
+WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
 
-WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/irequest/home')
+WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum')
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+
+WebUI.delay(10)
+
+WebUI.acceptAlert(FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('Page_Service request/txt_RequestNameTile1'), 'New request by Katalon')
 

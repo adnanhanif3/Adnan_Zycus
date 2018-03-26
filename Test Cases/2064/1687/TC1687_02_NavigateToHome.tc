@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1687_02_NavigateToHome</name>
+   <tag></tag>
+   <comment>Verify Navigation to Home page</comment>
+   <testCaseGuid>f6eb7c0d-4434-4c0e-9dc5-46c46ca7fd7b</testCaseGuid>
+</TestCaseEntity>

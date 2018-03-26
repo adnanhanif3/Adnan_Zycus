@@ -19,26 +19,26 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.comment('Check for Back Navigation to Home page')
+WebUI.comment('Home>My Requests>ReqDef_Name')
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 'Temp workaround to close API error popup'
-WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'))
 
 'Temp workaround to close API error popup'
-WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'))
 
 'Temp workaround to close API error popup'
 WebUI.delay(4)
 
-WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow'))
+WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
 
-WebUI.click(findTestObject('Page_Create Request/icon_BackNavigation'))
+WebUI.verifyElementText(findTestObject('Page_Create Request/txt_BreadCrumb_Part1'), 'Home', FailureHandling.CONTINUE_ON_FAILURE)
 
-String CurrentPageUrl = WebUI.getUrl()
+WebUI.verifyElementText(findTestObject('Page_Create Request/txt_BreadCrumb_Part2'), 'Procurement Services')
 
-WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/irequest/home')
+WebUI.verifyElementText(findTestObject('Page_Create Request/txt_BreadCrumb_Part3'), 'New Service Request')
 
 WebUI.closeBrowser()
 

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>icon_BackNavigation</name>
+   <name>btn_Submit</name>
    <tag></tag>
-   <elementGuidId>98f1a1bd-f4cb-4552-ab79-17b67f3f3fa8</elementGuidId>
+   <elementGuidId>738f5028-3ddd-4442-9814-0e96d72c483c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-icon[@icon=&quot;chevron-left&quot;]</value>
+         <value>//span[text()='Submit']</value>
       </entry>
       <entry>
          <key>BASIC</key>

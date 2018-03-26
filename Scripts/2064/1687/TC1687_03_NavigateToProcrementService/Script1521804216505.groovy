@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.comment('Check for Back Navigation to Home page')
+WebUI.comment('Verify Navigation to Procurement Service ')
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -32,9 +32,9 @@ WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandlin
 'Temp workaround to close API error popup'
 WebUI.delay(4)
 
-WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow'))
+WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
 
-WebUI.click(findTestObject('Page_Create Request/icon_BackNavigation'))
+WebUI.click(findTestObject('Page_Create Request/txt_BreadCrumb_Part2'))
 
 String CurrentPageUrl = WebUI.getUrl()
 

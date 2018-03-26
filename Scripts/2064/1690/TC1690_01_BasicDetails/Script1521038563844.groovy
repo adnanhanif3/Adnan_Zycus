@@ -24,6 +24,15 @@ WebUI.comment('Verify Basic details section')
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
+'Temp workaround to close API error popup'
+WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandling.CONTINUE_ON_FAILURE)
+
+'Temp workaround to close API error popup'
+WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandling.CONTINUE_ON_FAILURE)
+
+'Temp workaround to close API error popup'
+WebUI.delay(4)
+
 WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow'))
 
 String a = WebUI.getText(findTestObject('Page_Create Request/txt_BasicDetails'))
@@ -32,39 +41,41 @@ String[] r = a.split('\n')
 
 println(r)
 
-String[] ip = new String[10]
+String[] ip = new String[]
 
-	ip[0]="Request Name *"
-	ip[1]="Request Type"
-	ip[2]="Sourcing"
-	ip[3]="Urgent Requirement"
-	ip[4]="Yes"
-	ip[5]="No"
-	ip[6]="Request Description"
-	ip[7]="100 Char left"
-	ip[8]="Add Attachments"
-	ip[9]="Browse"
-	
-for(int i=0;i<2;i++)
-{
-	if(ip[i].equals(r[i]))
-	{
-		println "Basic details matched : "+ip[i]+" "+" is Present";
-	}
-	else
-	{
-		println ip[i]+"error at "+i+" "+r[i]+" "+" Missing";
-	}	
+(ip[0]) = 'Request Name *'
+
+(ip[1]) = 'Request Type'
+
+(ip[2]) = 'Sourcing'
+
+(ip[3]) = 'Urgent Requirement'
+
+(ip[4]) = 'Yes'
+
+(ip[5]) = 'No'
+
+(ip[6]) = 'Request Description'
+
+(ip[7]) = '100 Char left'
+
+(ip[8]) = 'Add Attachments'
+
+(ip[9]) = 'Browse'
+
+for (int i = 0; i < 2; i++) {
+    if (ip[i].equals(r[i])) {
+        println((('Basic details matched : ' + (ip[i])) + ' ') + ' is Present')
+    } else {
+        println(((((((ip[i]) + 'error at ') + i) + ' ') + (r[i])) + ' ') + ' Missing')
+    }
 }
 
-for(int i=3;i<10;i++)
-{
-	if(ip[i].equals(r[i]))
-	{
-		println "Basic details matched : "+ip[i]+" "+"is Present";
-	}
-	else
-	{
-		println ip[i]+"error at "+i+" "+r[i]+" "+" Missing";
-	}
+for (int i = 3; i < 10; i++) {
+    if (ip[i].equals(r[i])) {
+        println((('Basic details matched : ' + (ip[i])) + ' ') + 'is Present')
+    } else {
+        println(((((((ip[i]) + 'error at ') + i) + ' ') + (r[i])) + ' ') + ' Missing')
+    }
 }
+

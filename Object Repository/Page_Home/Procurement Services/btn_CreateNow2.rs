@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>icon_BackNavigation</name>
+   <name>btn_CreateNow2</name>
    <tag></tag>
-   <elementGuidId>98f1a1bd-f4cb-4552-ab79-17b67f3f3fa8</elementGuidId>
+   <elementGuidId>8807b800-9554-4d35-9e2e-56ddbe6ef7ef</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-icon[@icon=&quot;chevron-left&quot;]</value>
+         <value>//dew-block/dew-block/dew-row/dew-col[2]/dew-card/dew-card-body/dew-btn/button</value>
       </entry>
       <entry>
          <key>BASIC</key>

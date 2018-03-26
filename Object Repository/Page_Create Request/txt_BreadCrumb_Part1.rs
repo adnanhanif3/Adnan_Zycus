@@ -3,11 +3,11 @@
    <description></description>
    <name>txt_BreadCrumb_Part1</name>
    <tag></tag>
-   <elementGuidId>2ea8c812-b7ff-4b79-95de-ec73ee0d92d3</elementGuidId>
+   <elementGuidId>a5370d8a-a170-4821-80e6-65ed025239da</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-block/dew-create-request/dew-sub-header/div/ireq-breadcrumb/ol/li[1]/a</value>
+         <value>//a[text()=&quot;Home&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1694_01_SubmitRequestWithBasicDetails(Smoke-CreateRequest)</name>
+   <tag></tag>
+   <comment>Verify Create new request Submit</comment>
+   <testCaseGuid>a490300e-baf6-4884-a991-d54fd22bc559</testCaseGuid>
+</TestCaseEntity>

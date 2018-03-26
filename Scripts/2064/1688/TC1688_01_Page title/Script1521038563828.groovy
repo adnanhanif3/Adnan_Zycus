@@ -26,6 +26,15 @@ WebUI.comment('Page tilte Should be ReqDef_Name')
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
+'Temp workaround to close API error popup'
+WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandling.CONTINUE_ON_FAILURE)
+
+'Temp workaround to close API error popup'
+WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandling.CONTINUE_ON_FAILURE)
+
+'Temp workaround to close API error popup'
+WebUI.delay(4)
+
 String RequestDefName = WebUI.getText(findTestObject('Page_Home/Overview/txt_ReqDefTitle'))
 
 WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow'))
