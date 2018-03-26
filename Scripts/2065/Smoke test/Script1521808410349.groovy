@@ -19,15 +19,61 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('https://smtlogin.zycus.net/sso/login?serviceName=http://test.irequest.zycus.net/# ')
+WebUI.openBrowser('http://test.irequest.zycus.net/#/irequest/home')
+
+WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('Page_Login/GhostUserID'))
 
-WebUI.setText(findTestObject('Page_Login/UserId'), findTestData('null').getValue(1, 1))
+WebUI.setText(findTestObject('Page_Login/UserId'), 'bobby.charlton@mariners.com')
 
 WebUI.click(findTestObject('Page_Login/GhoshPassword'))
 
-WebUI.setText(findTestObject('Page_Login/Password'), findTestData('null').getValue(2, 1))
+WebUI.setText(findTestObject('Page_Login/Password'), 'iRequest@1234')
 
 WebUI.click(findTestObject('Page_Login/LoginBtn'))
+
+WebUI.click(findTestObject('Home page error handling repo/Error2'))
+
+WebUI.click(findTestObject('Home page error handling repo/Error1'))
+
+WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Page_Service request/Inprogress deselect'))
+
+WebUI.click(findTestObject('Page_Service request/Returned deselect '))
+
+WebUI.click(findTestObject('Page_Service request/With RM deselect '))
+
+WebUI.click(findTestObject('Page_Service request/Awatting approval deselect '))
+
+WebUI.click(findTestObject('Page_Service request/Rejected deselect '))
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
+
+WebUI.click(findTestObject('Page_Edit request/Requestdescp_field'))
+
+WebUI.sendKeys(findTestObject('Page_Edit request/Requestdescp_field'), 'Need the requirement as early as possible.')
+
+WebUI.delay(1)
+
+text = WebUI.getText(findTestObject('Page_Edit request/Requestdescp_field'))
+
+WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
+
+WebUI.acceptAlert()
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Page_Service request/View Request'))
+
+WebUI.delay(1)
+
+WebUI.verifyElementPresent(findTestObject('Page_View request/requestdect data'), text)
+
+WebUI.closeBrowser()
 

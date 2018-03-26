@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Rejected deselect </name>
+   <name>Attachment_edit</name>
    <tag></tag>
-   <elementGuidId>a42e0cc8-d40f-44a8-aa99-837c20c8d531</elementGuidId>
+   <elementGuidId>262fc92b-f567-4c95-a249-3f4d213c7866</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>html/body/dew-app-root/dew-irequest-layout/dew-block/dew-my-requests/dew-tabset/div/dew-tab/dew-block/dew-row[2]/dew-col/span[2]/label</value>
+         <value>//div[@class=&quot;ng-untouched ng-pristine ng-valid&quot;]/dew-row[3]/dew-col/div/dew-file-upload/div[2]/button</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

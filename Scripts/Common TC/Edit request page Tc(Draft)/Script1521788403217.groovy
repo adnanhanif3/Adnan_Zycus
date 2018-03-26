@@ -21,6 +21,10 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
+WebUI.click(findTestObject('Home page error handling repo/Error2'))
+
+WebUI.click(findTestObject('Home page error handling repo/Error1'))
+
 WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
 
 WebUI.click(findTestObject('Page_Service request/Inprogress deselect'))

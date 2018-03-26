@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Rejected deselect </name>
+   <name>requestdect data</name>
    <tag></tag>
-   <elementGuidId>a42e0cc8-d40f-44a8-aa99-837c20c8d531</elementGuidId>
+   <elementGuidId>b2121e71-d468-46fc-87f5-8b8b8d2908cb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>html/body/dew-app-root/dew-irequest-layout/dew-block/dew-my-requests/dew-tabset/div/dew-tab/dew-block/dew-row[2]/dew-col/span[2]/label</value>
+         <value>//div[@class=&quot;rq-box&quot;]/dew-row[2]/dew-col/dew-text[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>

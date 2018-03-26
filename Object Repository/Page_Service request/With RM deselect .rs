@@ -6,11 +6,11 @@
    <elementGuidId>42dc36db-d2ca-4e07-9f22-20d0c19e34c7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>html/body/dew-app-root/dew-irequest-layout/dew-block/dew-my-requests/dew-tabset/div/dew-tab/dew-block/dew-row[2]/dew-col/span[4]/label</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//dew-col[@class=&quot;d-flex justify-content-start align-items-center ng-tns-c22-0 col&quot;]/span[4]/label</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
