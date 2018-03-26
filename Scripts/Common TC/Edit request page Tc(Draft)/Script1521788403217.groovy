@@ -19,17 +19,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Edit request page Tc(Draft)'), [:])
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Request_number'), 5)
+WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Request_type'), 0)
+WebUI.click(findTestObject('Page_Service request/Inprogress deselect'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Urgent_requirement'), 0)
+WebUI.click(findTestObject('Page_Service request/Returned deselect '))
 
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Request_description'), 0)
+WebUI.click(findTestObject('Page_Service request/With RM deselect '))
 
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Add_attachments'), 0)
+WebUI.click(findTestObject('Page_Service request/Awatting approval deselect '))
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Page_Service request/Rejected deselect '))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 

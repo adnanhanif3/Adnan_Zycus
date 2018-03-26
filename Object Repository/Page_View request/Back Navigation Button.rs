@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Edit request button</name>
+   <name>Back Navigation Button</name>
    <tag></tag>
-   <elementGuidId>d8327d48-aa48-44a1-bad8-dfa6dd674ac6</elementGuidId>
+   <elementGuidId>7088b91a-6d0d-4360-976f-591714c757cf</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//dew-flex-item[@class=&quot;d-block&quot;]/h3/dew-icon</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class=&quot;rq-box&quot;]/div[2]/dew-row/dew-col[4]/div/a[1]</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

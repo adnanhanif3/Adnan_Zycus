@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>PageTitle</name>
+   <name>Print Button</name>
    <tag></tag>
-   <elementGuidId>e149c0e8-66e8-4092-8ef2-dd1774e16c75</elementGuidId>
+   <elementGuidId>cca5bf7b-3b9d-4d19-b80c-447ac51001f5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-flex[@class=&quot;d-flex align-items-center&quot;]/dew-flex-item[1]/h3</value>
+         <value>//dew-flex-item[@class='d-block']/a[text()='Print']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

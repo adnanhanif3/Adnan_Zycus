@@ -19,17 +19,23 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Edit request page Tc(Draft)'), [:])
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Request_number'), 5)
+WebUI.click(findTestObject('Home page error handling repo/Error1'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Request_type'), 0)
+WebUI.click(findTestObject('Home page error handling repo/Error2'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Urgent_requirement'), 0)
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Request_description'), 0)
+WebUI.click(findTestObject('Page_Home/Menu Nav/Submenu Service Request'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Add_attachments'), 0)
+WebUI.click(findTestObject('Page_Service request/View Request'))
+
+WebUI.click(findTestObject('Page_View request/Print Button'))
+
+WebUI.switchToWindowIndex(1)
+
+WebUI.maximizeWindow()
 
 WebUI.closeBrowser()
 

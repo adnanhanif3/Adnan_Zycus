@@ -19,9 +19,10 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Edit request page Tc'), [:])
+WebUI.callTestCase(findTestCase('Common TC/Edit request page Tc(Draft)'), [:])
 
-WebUI.delay(2)
+WebUI.delay(5)
 
-WebUI.verifyElementHasAttribute(text, null, 0)
+WebUI.verifyElementNotClickable(findTestObject('Page_Edit request/Requestnumber_field'), FailureHandling.STOP_ON_FAILURE)
+
 

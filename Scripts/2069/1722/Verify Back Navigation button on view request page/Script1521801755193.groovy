@@ -19,21 +19,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
+WebUI.click(findTestObject('Home page error handling repo/Error1'))
 
-WebUI.click(findTestObject('Page_Service request/Inprogress deselect'))
+WebUI.click(findTestObject('Home page error handling repo/Error2'))
 
-WebUI.click(findTestObject('Page_Service request/Returned deselect '))
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'))
 
-WebUI.click(findTestObject('Page_Service request/With RM deselect '))
+WebUI.click(findTestObject('Page_Home/Menu Nav/Submenu Service Request'))
 
-WebUI.click(findTestObject('Page_Service request/Awatting approval deselect '))
+WebUI.click(findTestObject('Page_Service request/View Request'))
 
-WebUI.click(findTestObject('Page_Service request/Rejected deselect '))
+WebUI.delay(3)
 
-WebUI.delay(5)
+WebUI.click(findTestObject('Page_View request/Back Navigation Button'))
 
-WebUI.click(findTestObject('Page_Service request/Edit request button'))
+String Url = WebUI.getUrl()
+
+WebUI.verifyMatch(Url, 'http://test.irequest.zycus.net/#/irequest/my-requests', false)
+
+WebUI.closeBrowser()
 

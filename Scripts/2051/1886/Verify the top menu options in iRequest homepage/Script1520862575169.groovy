@@ -27,7 +27,7 @@ WebUI.verifyElementText(findTestObject('Page_Home/Menu Nav/HOME'), 'HOME')
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/TO DOs'), 0)
 
-WebUI.verifyElementText(findTestObject('Page_Home/Menu Nav/TO DOs'), 'TO DOS')
+WebUI.verifyElementText(findTestObject('Page_Home/Menu Nav/TO DOs'), 'TO DO\'S')
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/MY REQUESTS'), 0)
 

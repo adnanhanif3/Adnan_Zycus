@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Edit request page Tc'), [:])
+WebUI.callTestCase(findTestCase('Common TC/Edit request page Tc(Draft)'), [:])
 
 WebUI.verifyElementClickable(findTestObject('Page_Edit request/Home_breadcmb'))
 

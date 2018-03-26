@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>PageTitle</name>
+   <name>Error2</name>
    <tag></tag>
-   <elementGuidId>e149c0e8-66e8-4092-8ef2-dd1774e16c75</elementGuidId>
+   <elementGuidId>539d3416-404e-4d4e-a310-ea34b0b6209f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-flex[@class=&quot;d-flex align-items-center&quot;]/dew-flex-item[1]/h3</value>
+         <value>html/body/dew-app-root/div/div/button</value>
       </entry>
       <entry>
          <key>BASIC</key>
