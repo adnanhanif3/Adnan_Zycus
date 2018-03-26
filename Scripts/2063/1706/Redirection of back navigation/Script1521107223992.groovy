@@ -29,3 +29,5 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Home/Menu Nav/Icon-My requests'))
 
+WebUI.closeBrowser()
+

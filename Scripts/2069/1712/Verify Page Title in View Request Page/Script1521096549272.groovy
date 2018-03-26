@@ -19,19 +19,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common Test Case/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Home Page/My_Request'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Home Page/Service_Request'))
+WebUI.click(findTestObject('Page_Home/Menu Nav/Submenu Service Request'))
 
-requestName = WebUI.getText(findTestObject('Service Request Page/Request_Name'))
+requestName = WebUI.getText(findTestObject('Page_Service request/Request Name'))
 
-WebUI.click(findTestObject('Service Request Page/View_Request'))
+WebUI.click(findTestObject('Page_Service request/View Request'))
 
-WebUI.verifyElementText(findTestObject('View Request Page/PageTitle'), requestName, FailureHandling.CONTINUE_ON_FAILURE)
-
-path = WebUI.takeScreenshot()
+WebUI.verifyElementText(findTestObject('Page_View request/PageTitle'), requestName, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.closeBrowser()
 

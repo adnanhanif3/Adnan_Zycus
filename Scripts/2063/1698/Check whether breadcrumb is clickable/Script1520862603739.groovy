@@ -27,7 +27,7 @@ WebUI.click(findTestObject('Page_Service request/Service request xpath'))
 
 WebUI.delay(10)
 
-WebUI.click(findTestObject('Page_Home/My Request front click'))
+WebUI.click(findTestObject('Page_Home/Menu Nav/HOME'))
 
 WebUI.closeBrowser()
 

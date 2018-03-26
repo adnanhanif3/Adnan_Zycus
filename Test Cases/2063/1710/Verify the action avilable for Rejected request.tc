@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the action avilable for Rejected request</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ef637759-12b3-4f1a-8821-7406e0f87d86</testCaseGuid>
+</TestCaseEntity>

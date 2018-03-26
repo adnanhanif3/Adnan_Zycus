@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='rq-box-header py-3 px-3']/dew-row/dew-col[2]/p/span</value>
+         <value>html/body/dew-app-root/dew-irequest-layout/dew-block/dew-my-requests/dew-tabset/div/dew-tab/dew-block/div[2]/div[1]/dew-service-request-card/dew-paper/div/div[1]/dew-row/dew-col[2]/p/span</value>
       </entry>
       <entry>
          <key>BASIC</key>
