@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify UI of the Breadcrumb</name>
+   <name>Redirection of back navigation</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>778b7202-9f54-43ea-83a4-384a0ef0e065</testCaseGuid>
+   <testCaseGuid>db45abc3-7ec2-4bcf-9920-b297181ca2f8</testCaseGuid>
 </TestCaseEntity>
