@@ -19,15 +19,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('https://smtlogin.zycus.net/sso/login?serviceName=http://test.irequest.zycus.net/# ')
+WebUI.delay(1)
 
-WebUI.click(findTestObject('Page_Login/GhostUserID'))
+text = WebUI.getText(findTestObject('Page_Edit request/Page title xpath'))
 
-WebUI.setText(findTestObject('Page_Login/UserId'), findTestData('null').getValue(1, 1))
+WebUI.click(findTestObject('Page_Edit request/Requestdescp_field'))
 
-WebUI.click(findTestObject('Page_Login/GhoshPassword'))
+WebUI.sendKeys(findTestObject('Page_Edit request/Requestdescp_field'), 'Need the requirement as early as possible.')
 
-WebUI.setText(findTestObject('Page_Login/Password'), findTestData('null').getValue(2, 1))
+WebUI.delay(1)
 
-WebUI.click(findTestObject('Page_Login/LoginBtn'))
+WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
+
+WebUI.acceptAlert(FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('Page_Edit request/Get text(req name) for page title verfy'), text)
+
+WebUI.closeBrowser()
 
