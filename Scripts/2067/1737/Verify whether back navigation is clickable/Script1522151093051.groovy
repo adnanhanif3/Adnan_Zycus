@@ -31,13 +31,7 @@ WebUI.mouseOver(findTestObject('Page_Approval Listing/TODO_tab'))
 
 WebUI.click(findTestObject('Page_Approval Listing/Approval_dropdwn'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Page_Approval Listing/TODO_Navigation icon'))
-
-WebUI.delay(2)
-
-WebUI.verifyElementText(findTestObject('Page_Home/Menu Nav/HELP DESK'), 'HELP DESK')
+WebUI.acceptAlert()
 
 WebUI.closeBrowser()
 
