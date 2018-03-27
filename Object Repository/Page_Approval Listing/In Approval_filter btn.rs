@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Filter button</name>
+   <name>In Approval_filter btn</name>
    <tag></tag>
-   <elementGuidId>35d8ab31-d8de-4ee2-957f-24eafdf551cf</elementGuidId>
+   <elementGuidId>71155d91-fe24-4ec5-9d9d-5c907cedefe6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-col[@class=&quot;d-flex justify-content-start align-items-center col&quot;]/button</value>
+         <value>//div[@id='filterModal']/div/div/div[2]/dew-row[2]/dew-col/div/span[1]/label</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
