@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>drpDown_AssignTo</name>
+   <name>txt_AssignToName</name>
    <tag></tag>
-   <elementGuidId>e559268f-d3f0-4346-bbc5-975f4f920a90</elementGuidId>
+   <elementGuidId>5b5bd2df-807d-4bf0-b186-fd856ab6063f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;type-ahead-container&quot;]</value>
+         <value>//ireq-assign-request-view/div/dew-row/dew-col/dew-col[2]/dew-text</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
