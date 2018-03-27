@@ -45,5 +45,9 @@ WebUI.verifyElementText(findTestObject('Page_View request/Basic Details Request 
 
 WebUI.verifyElementText(findTestObject('Page_View request/Basic Details Attachments'), 'Attachments', FailureHandling.CONTINUE_ON_FAILURE)
 
+WebUI.verifyElementText(findTestObject('Page_View request/WorkFlow_Field'), 'Workflow')
+
+WebUI.verifyElementText(findTestObject('Page_View request/Activity Tab'), 'Activity')
+
 WebUI.closeBrowser()
 
