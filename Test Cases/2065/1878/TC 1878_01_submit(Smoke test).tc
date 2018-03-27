@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Smoke test</name>
+   <name>TC 1878_01_submit(Smoke test)</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>a18db9ed-39a7-4238-b635-c2fbfed69ab7</testCaseGuid>

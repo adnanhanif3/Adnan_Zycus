@@ -19,21 +19,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.delay(1)
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
-text = WebUI.getText(findTestObject('Page_Edit request/Page title xpath'))
+WebUI.click(findTestObject('Home page error handling repo/Error2'))
 
-WebUI.click(findTestObject('Page_Edit request/Requestdescp_field'))
-
-WebUI.sendKeys(findTestObject('Page_Edit request/Requestdescp_field'), 'Need the requirement as early as possible.')
+WebUI.click(findTestObject('Home page error handling repo/Error1'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
+WebUI.mouseOver(findTestObject('Page_Approval Listing/TODO_tab'))
 
-WebUI.acceptAlert(FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Approval Listing/Approval_dropdwn'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Page_Edit request/Get text(req name) for page title verfy'), text)
+WebUI.acceptAlert()
 
 WebUI.closeBrowser()
 

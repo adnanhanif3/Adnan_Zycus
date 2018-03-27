@@ -19,25 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('http://test.irequest.zycus.net/#/irequest/home')
-
-WebUI.maximizeWindow()
-
-WebUI.click(findTestObject('Page_Login/GhostUserID'))
-
-WebUI.setText(findTestObject('Page_Login/UserId'), 'bobby.charlton@mariners.com')
-
-WebUI.click(findTestObject('Page_Login/GhoshPassword'))
-
-WebUI.setText(findTestObject('Page_Login/Password'), 'iRequest@1234')
-
-WebUI.click(findTestObject('Page_Login/LoginBtn'))
-
-WebUI.click(findTestObject('Home page error handling repo/Error2'))
-
-WebUI.click(findTestObject('Home page error handling repo/Error1'))
-
-WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
+WebUI.callTestCase(findTestCase('2064/1695/TC1695_01_Save as Draft'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
 
@@ -61,8 +43,6 @@ WebUI.sendKeys(findTestObject('Page_Edit request/Requestdescp_field'), 'Need the
 
 WebUI.delay(1)
 
-text = WebUI.getText(findTestObject('Page_Edit request/Requestdescp_field'))
-
 WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
 
 WebUI.acceptAlert()
@@ -73,7 +53,9 @@ WebUI.click(findTestObject('Page_Service request/View Request'))
 
 WebUI.delay(1)
 
-WebUI.verifyElementPresent(findTestObject('Page_View request/requestdect data'), text)
+WebUI.verifyElementText(findTestObject('Page_View request/requestdect data'), 'Loreum IpsumNeed the requirement as early as possible.')
+
+WebUI.delay(5)
 
 WebUI.closeBrowser()
 
