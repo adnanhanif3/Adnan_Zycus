@@ -21,15 +21,29 @@ import internal.GlobalVariable as GlobalVariable
 import org.junit.After as After
 import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Common Test Case/Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Home Page/My_Request'))
+WebUI.click(findTestObject('Home page error handling repo/Error1'))
 
-WebUI.click(findTestObject('Home Page/Service_Request'))
+WebUI.click(findTestObject('Home page error handling repo/Error2'))
 
-WebUI.click(findTestObject('Service Request Page/View_Request'))
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'))
 
-WebUI.getText(findTestObject('View Request Page/basicDetails'))
+WebUI.click(findTestObject('Page_Home/Menu Nav/Submenu Service Request'))
 
-WebUI.verifyElementText(findTestObject(null), '')
+WebUI.click(findTestObject('Page_Service request/View Request'))
+
+WebUI.verifyElementText(findTestObject('Page_View request/Basic Details Request Number'), 'Request Number')
+
+WebUI.verifyElementText(findTestObject('Page_View request/Basic Details Request Definition'), 'Request Definition', FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('Page_View request/Basic Details Request Type'), 'Request Type', FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('Page_View request/Basic Details Urgent Requirement'), 'Urgent Requirement', FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('Page_View request/Basic Details Request Description'), 'Request Description', FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('Page_View request/Basic Details Attachments'), 'Attachments', FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.closeBrowser()
 
