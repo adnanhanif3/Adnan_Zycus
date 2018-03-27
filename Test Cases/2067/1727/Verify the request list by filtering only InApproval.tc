@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the request list by filtering only InApproval</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>abd9e12b-009c-406e-8f6b-f5a35453bc5f</testCaseGuid>
+</TestCaseEntity>
