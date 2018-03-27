@@ -42,3 +42,7 @@ WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum
 
 WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
+WebUI.delay(10)
+
+WebUI.acceptAlert()
+
