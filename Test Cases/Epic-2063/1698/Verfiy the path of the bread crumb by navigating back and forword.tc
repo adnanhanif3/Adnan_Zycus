@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verfiy the path of the bread crumb by navigating back and forword</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>5111febe-5933-4510-a760-fedb8a054d3d</testCaseGuid>
-</TestCaseEntity>
