@@ -18,11 +18,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
-WebUI.comment('Verify Basic details section')
-
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:])
 
 'Temp workaround to close API error popup'
 WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandling.CONTINUE_ON_FAILURE)
@@ -33,49 +30,17 @@ WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandlin
 'Temp workaround to close API error popup'
 WebUI.delay(4)
 
-WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow'))
+WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
 
-String a = WebUI.getText(findTestObject('Page_Create Request/txt_BasicDetails'))
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/Basic Details/txt_RequestName'), 2)
 
-String[] r = a.split('\n')
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/Basic Details/txt_Request Type'), 2)
 
-println(r)
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/Basic Details/txt_ReqDesc'), 2)
 
-String[] ip = new String[]
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/Basic Details/txt_UrgentReq'), 2)
 
-(ip[0]) = 'Request Name *'
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/Basic Details/txt_AddAttachment'), 2)
 
-(ip[1]) = 'Request Type'
-
-(ip[2]) = 'Sourcing'
-
-(ip[3]) = 'Urgent Requirement'
-
-(ip[4]) = 'Yes'
-
-(ip[5]) = 'No'
-
-(ip[6]) = 'Request Description'
-
-(ip[7]) = '100 Char left'
-
-(ip[8]) = 'Add Attachments'
-
-(ip[9]) = 'Browse'
-
-for (int i = 0; i < 2; i++) {
-    if (ip[i].equals(r[i])) {
-        println((('Basic details matched : ' + (ip[i])) + ' ') + ' is Present')
-    } else {
-        println(((((((ip[i]) + 'error at ') + i) + ' ') + (r[i])) + ' ') + ' Missing')
-    }
-}
-
-for (int i = 3; i < 10; i++) {
-    if (ip[i].equals(r[i])) {
-        println((('Basic details matched : ' + (ip[i])) + ' ') + 'is Present')
-    } else {
-        println(((((((ip[i]) + 'error at ') + i) + ' ') + (r[i])) + ' ') + ' Missing')
-    }
-}
+WebUI.closeBrowser()
 

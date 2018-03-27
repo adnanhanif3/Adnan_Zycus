@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>TC1690_01_BasicDetails</name>
-   <tag></tag>
-   <comment>Verify Basic details section</comment>
-   <testCaseGuid>89ff9f42-14f1-4eda-877e-f51c4578685b</testCaseGuid>
-</TestCaseEntity>

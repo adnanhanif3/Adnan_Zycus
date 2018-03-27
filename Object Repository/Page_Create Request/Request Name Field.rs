@@ -6,7 +6,12 @@
    <elementGuidId>fc26373f-1fd6-4cc4-82ec-8ebcadffab96</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
+      <entry>
          <key>BASIC</key>
+         <value>//dew-section[@class='clearfix']/dew-block/dew-request-basic-details/dew-row/dew-col/div/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
