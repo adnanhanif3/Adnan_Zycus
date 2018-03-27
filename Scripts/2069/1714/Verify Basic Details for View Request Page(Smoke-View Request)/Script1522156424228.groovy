@@ -18,31 +18,30 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.junit.After as After
+import org.openqa.selenium.Keys as Keys
 
-WebUI.comment('Verify Create new request Submit')
-
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
-
-'Temp workaround to close API error popup'
-WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandling.CONTINUE_ON_FAILURE)
-
-'Temp workaround to close API error popup'
-WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandling.CONTINUE_ON_FAILURE)
-
-'Temp workaround to close API error popup'
-WebUI.delay(4)
-
-WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
-
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'New request by Katalon')
-
-WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
-
-WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum')
-
-WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+WebUI.callTestCase(findTestCase('Common TC/Create Request With Basic Details'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(5)
 
-WebUI.acceptAlert()
+WebUI.click(findTestObject('Page_Service request/View Request'))
+
+WebUI.verifyElementText(findTestObject('Page_View request/Basic Details Request Number'), 'Request Number')
+
+WebUI.verifyElementText(findTestObject('Page_View request/Basic Details Request Definition'), 'Request Definition', FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('Page_View request/Basic Details Request Type'), 'Request Type', FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('Page_View request/Basic Details Urgent Requirement'), 'Urgent Requirement', FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('Page_View request/Basic Details Request Description'), 'Request Description', FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('Page_View request/Basic Details Attachments'), 'Attachments', FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('Page_View request/WorkFlow_Field'), 'Workflow')
+
+WebUI.verifyElementText(findTestObject('Page_View request/Activity Tab'), 'Activity')
+
+WebUI.closeBrowser()
 
