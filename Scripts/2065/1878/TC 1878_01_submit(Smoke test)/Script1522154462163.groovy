@@ -41,9 +41,9 @@ WebUI.click(findTestObject('Page_Edit request/Requestdescp_field'))
 
 WebUI.sendKeys(findTestObject('Page_Edit request/Requestdescp_field'), 'Need the requirement as early as possible.')
 
-WebUI.delay(1)
-
 WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
+
+WebUI.delay(5)
 
 WebUI.acceptAlert()
 
