@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC1691_01_Check Assign To User</name>
+   <name>TC1691_01_Check Assign To Single User</name>
    <tag></tag>
    <comment>Verify assign to single user</comment>
    <testCaseGuid>94d3d7f1-f6b9-41e7-9d7b-1dbd3f699c23</testCaseGuid>
