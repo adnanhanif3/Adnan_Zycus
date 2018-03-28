@@ -23,19 +23,13 @@ WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
 WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
 
-WebUI.click(findTestObject('Home page error handling repo/Error2'))
-
-WebUI.click(findTestObject('Home page error handling repo/Error1'))
-
-WebUI.delay(1)
-
 WebUI.click(findTestObject('Page_Approval Listing/Btn_review'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Approval Listing/Home_breadcrumb'), 0)
+WebUI.verifyElementText(findTestObject('Page_Approval Listing/Home_breadcrumb'), 'Home')
 
-WebUI.verifyElementPresent(findTestObject('Page_Approval Listing/TO DO_breadcrumb'), 0)
+WebUI.verifyElementText(findTestObject('Page_Approval Listing/TO DO_breadcrumb'), 'To Do\'s')
 
-WebUI.verifyElementPresent(findTestObject('Page_Approval Listing/Servicereq_breadcrumb'), 0)
+WebUI.verifyElementText(findTestObject('Page_Approval Listing/Servicereq_breadcrumb'), 'Service Request')
 
 WebUI.delay(1)
 
