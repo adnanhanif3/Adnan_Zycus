@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Smoke-Verify the request listing page</name>
+   <name>Verify the request listing page-Smoke Test</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>3895e3e0-fa18-47db-8114-e59881ad8e0b</testCaseGuid>
+   <testCaseGuid>c49bbc70-8945-44b1-9dbd-e8ffb335375a</testCaseGuid>
 </TestCaseEntity>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>html/body/dew-app-root/dew-irequest-layout/dew-block/dew-irequest/dew-section[1]/dew-block/dew-block/dew-row/dew-col[2]/dew-card/dew-flex/dew-flex-item[2]/p</value>
+         <value>html/body/dew-app-root/dew-irequest-layout/dew-block/dew-my-requests/dew-tabset/div/dew-tab/dew-block/dew-row[1]/dew-col[1]/p/span</value>
       </entry>
       <entry>
          <key>BASIC</key>

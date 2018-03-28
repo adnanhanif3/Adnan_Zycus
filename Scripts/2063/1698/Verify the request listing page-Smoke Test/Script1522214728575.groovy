@@ -29,15 +29,23 @@ WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
 
 WebUI.click(findTestObject('Page_Service request/Service request xpath'))
 
-WebUI.click(findTestObject('Page_View request/Remove Draft'))
+WebUI.verifyElementPresent(findTestObject('Page_Service request/Number of service requetst'), 0)
 
-WebUI.click(findTestObject('Page_View request/Remove Rejected'))
+WebUI.verifyElementPresent(findTestObject('Page_Service request/Search allrequests'), 0)
 
-WebUI.click(findTestObject('Page_View request/Remove Awaiting Approval'))
+WebUI.verifyElementPresent(findTestObject('Page_View request/Verifyu Request Number'), 0)
 
-WebUI.click(findTestObject('Page_View request/Rmove Returned'))
+WebUI.verifyElementPresent(findTestObject('Page_View request/Verify Request NAme'), 0)
 
-WebUI.click(findTestObject('Page_View request/Remove InProgress'))
+WebUI.verifyElementPresent(findTestObject('Page_View request/Verify Request Definition'), 0)
 
-WebUI.click(findTestObject('Page_View request/Click View'))
+WebUI.verifyElementPresent(findTestObject('Page_View request/Verify Request Type'), 0)
+
+WebUI.delay(2)
+
+WebUI.verifyElementPresent(findTestObject('Page_View request/Verify Submitted On'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Page_View request/Verify View'), 0)
+
+WebUI.closeBrowser()
 
