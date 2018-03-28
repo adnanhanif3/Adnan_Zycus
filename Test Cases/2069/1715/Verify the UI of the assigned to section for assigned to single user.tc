@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the UI of the assigned to section for assigned to single user</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dda902fe-bfaa-4d14-af9c-f7c2a557ac60</testCaseGuid>
+</TestCaseEntity>
