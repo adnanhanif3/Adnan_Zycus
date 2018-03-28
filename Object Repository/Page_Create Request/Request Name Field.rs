@@ -6,15 +6,19 @@
    <elementGuidId>fc26373f-1fd6-4cc4-82ec-8ebcadffab96</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
+         <key>CSS</key>
          <value></value>
       </entry>
       <entry>
          <key>BASIC</key>
          <value>//dew-section[@class='clearfix']/dew-block/dew-request-basic-details/dew-row/dew-col/div/input</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>html/body/dew-app-root/dew-irequest-layout/dew-block/dew-irequest/dew-section[2]/dew-block/dew-block/dew-row/dew-col[1]/dew-card/dew-card-body/dew-btn/button</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

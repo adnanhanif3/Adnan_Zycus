@@ -7,9 +7,14 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value>//dew-col[@class='col-8']/dew-flex/dew-flex-item[2]/div/a</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>html/body/dew-app-root/dew-irequest-layout/irequest-header/dew-row[2]/dew-col[2]/dew-flex/dew-flex-item[2]/div/a</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

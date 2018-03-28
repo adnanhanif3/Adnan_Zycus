@@ -27,7 +27,7 @@ WebUI.click(findTestObject('Home page error handling repo/Error2'))
 
 WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/TO DOs'))
 
-WebUI.check(findTestObject('Page_Home/Menu Nav/Approvals xpath'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Home/Menu Nav/Approvals xpath'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(5)
 

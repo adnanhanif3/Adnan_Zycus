@@ -21,11 +21,11 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
+WebUI.click(findTestObject('Home page error handling repo/Error1'))
 
-WebUI.click(findTestObject('Page_Service request/Service request xpath'))
+WebUI.click(findTestObject('Home page error handling repo/Error2'))
 
-WebUI.delay(5)
+WebUI.delay(2)
 
 WebUI.check(findTestObject('Page_Create Request/Request Name Field'), FailureHandling.STOP_ON_FAILURE)
 
