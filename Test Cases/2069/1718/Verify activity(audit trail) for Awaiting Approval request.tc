@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify activity(audit trail) for Awaiting Approval request</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3859653d-c492-4320-a8a0-b93f6b192b5e</testCaseGuid>
+</TestCaseEntity>
