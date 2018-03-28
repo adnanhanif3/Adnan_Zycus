@@ -23,18 +23,6 @@ WebUI.callTestCase(findTestCase('2064/1695/TC1695_01_Save as Draft'), [:], Failu
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Service request/Inprogress deselect'))
-
-WebUI.click(findTestObject('Page_Service request/Returned deselect '))
-
-WebUI.click(findTestObject('Page_Service request/With RM deselect '))
-
-WebUI.click(findTestObject('Page_Service request/Awatting approval deselect '))
-
-WebUI.click(findTestObject('Page_Service request/Rejected deselect '))
-
-WebUI.delay(1)
-
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
 WebUI.click(findTestObject('Page_Edit request/Requestdescp_field'))
