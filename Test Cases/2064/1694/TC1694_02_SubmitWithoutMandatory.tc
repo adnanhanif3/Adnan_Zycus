@@ -3,6 +3,7 @@
    <description></description>
    <name>TC1694_02_SubmitWithoutMandatory</name>
    <tag></tag>
-   <comment>Verify Create new request Submit</comment>
+   <comment>Verify Create new request Submit
+Popup is not implemented to proceed</comment>
    <testCaseGuid>bb0fd249-7326-46dd-8213-7a68a3a8475a</testCaseGuid>
 </TestCaseEntity>

@@ -23,15 +23,6 @@ WebUI.comment('Verify Create new request Submit')
 
 WebUI.callTestCase(findTestCase('Common Test Cases/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-'Temp workaround to close API error popup'
-WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandling.CONTINUE_ON_FAILURE)
-
-'Temp workaround to close API error popup'
-WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandling.CONTINUE_ON_FAILURE)
-
-'Temp workaround to close API error popup'
-WebUI.delay(4)
-
 WebUI.click(findTestObject('Page_Home/btn_CreateNow2'))
 
 WebUI.click(findTestObject('Page_CreateRequest/21032018/btn_Submit'))

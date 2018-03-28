@@ -23,15 +23,6 @@ WebUI.comment('Verify Create new request Submit')
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-'Temp workaround to close API error popup'
-WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandling.CONTINUE_ON_FAILURE)
-
-'Temp workaround to close API error popup'
-WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandling.CONTINUE_ON_FAILURE)
-
-'Temp workaround to close API error popup'
-WebUI.delay(4)
-
 WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow2'))
 
 WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'New request by Katalon')
@@ -47,4 +38,6 @@ WebUI.delay(10)
 WebUI.acceptAlert(FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Page_Service request/txt_RequestNameTile1'), 'New request by Katalon')
+
+WebUI.closeBrowser()
 
