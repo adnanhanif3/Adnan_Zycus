@@ -21,11 +21,11 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Edit request page Tc(Draft)'), [:])
 
-WebUI.verifyElementClickable(findTestObject('Page_Edit request/Home_breadcmb'))
-
 WebUI.delay(2)
 
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Home Overview element prst'), 2)
+WebUI.click(findTestObject('Page_Create Request/icon_BackNavigation'))
+
+WebUI.verifyElementText(findTestObject('Page_Edit request/Navigationpage_servicerequest'), 'My Requests')
 
 WebUI.closeBrowser()
 

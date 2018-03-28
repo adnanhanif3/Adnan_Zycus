@@ -21,11 +21,11 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Edit request page Tc(Draft)'), [:])
 
-WebUI.verifyElementClickable(findTestObject('Page_Edit request/My Service Requests_breadcmb'))
+WebUI.verifyElementClickable(findTestObject('Page_Edit request/Breadcrumb_home'))
 
 WebUI.delay(2)
 
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/My Service Requests_breadcmb'), 0)
+WebUI.verifyElementText(findTestObject('Page_Home/Menu Nav/HELP DESK'), 'HELP DESK')
 
 WebUI.closeBrowser()
 
