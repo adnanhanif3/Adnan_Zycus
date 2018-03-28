@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;rq-box&quot;]/div[2]/dew-row/dew-col[4]/div/a[1]
+         <value>//a[text()=&quot;Edit Request&quot;]
 </value>
       </entry>
       <entry>
