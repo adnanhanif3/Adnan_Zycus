@@ -19,25 +19,23 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Edit request page Tc(Draft)'), [:])
+WebUI.callTestCase(findTestCase('2064/1695/TC1695_01_Save as Draft'), [:])
 
-WebUI.click(findTestObject('Page_Edit request/Requestdescp_field'))
+WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
-WebUI.sendKeys(findTestObject('Page_Edit request/Requestdescp_field'), 'Need the requirement as early as possible.')
-
-text = WebUI.getText(findTestObject('Page_Edit request/Requestdescp_field'))
+WebUI.uploadFile(findTestObject('Page_Edit request/Attachment_edit'), 'C:\\Users\\pooja.wali\\Pictures\\Screenshots\\Actual design.png')
 
 WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
 
-WebUI.acceptAlert()
+WebUI.delay(2)
 
-WebUI.delay(1)
+WebUI.acceptAlert()
 
 WebUI.click(findTestObject('Page_Service request/View Request'))
 
 WebUI.delay(1)
 
-WebUI.verifyElementPresent(findTestObject('Page_View request/requestdect data'), text)
+WebUI.verifyElementText(findTestObject('Page_View request/requestdect data'), text)
 
 WebUI.closeBrowser()
 

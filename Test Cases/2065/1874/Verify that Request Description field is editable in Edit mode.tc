@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify that Request Description field is editable in Edit mode</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>f604f020-3d5a-47a0-ae38-f7766c638d2a</testCaseGuid>
-</TestCaseEntity>

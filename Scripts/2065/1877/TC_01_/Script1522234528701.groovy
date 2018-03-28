@@ -19,21 +19,3 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Edit request page Tc(Draft)'), [:])
-
-WebUI.uploadFile(findTestObject('Page_Edit request/Attachment_edit'), 'C:\\Users\\pooja.wali\\Pictures\\Screenshots\\Actual design.png')
-
-WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
-
-WebUI.acceptAlert()
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('Page_Service request/View Request'))
-
-WebUI.delay(1)
-
-WebUI.verifyElementPresent(findTestObject('Page_View request/requestdect data'), text)
-
-WebUI.closeBrowser()
-

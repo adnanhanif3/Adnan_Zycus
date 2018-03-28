@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify the fields under Basic Details while editing a request</name>
+   <name>TC_01_BasicDetails</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>0ac01436-913f-406d-9f69-5776da75ae8f</testCaseGuid>
