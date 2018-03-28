@@ -29,13 +29,13 @@ WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
 
 WebUI.click(findTestObject('Page_Service request/Service request xpath'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Service request/Number of service requetst'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Service request/Number of service requests'), 0)
 
 WebUI.verifyElementPresent(findTestObject('Page_Service request/Search allrequests'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Page_View request/Verifyu Request Number'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_View request/Verify Request Number'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Page_View request/Verify Request NAme'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_View request/Verify Request- Name'), 0)
 
 WebUI.verifyElementPresent(findTestObject('Page_View request/Verify Request Definition'), 0)
 

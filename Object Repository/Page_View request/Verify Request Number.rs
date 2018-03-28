@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Verifyu Request Number</name>
+   <name>Verify Request Number</name>
    <tag></tag>
    <elementGuidId>df1a162b-f17e-43ee-ab84-5b1cf4675b62</elementGuidId>
    <selectorCollection>

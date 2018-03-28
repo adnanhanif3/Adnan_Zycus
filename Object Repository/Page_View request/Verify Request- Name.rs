@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Verify Request NAme</name>
+   <name>Verify Request- Name</name>
    <tag></tag>
    <elementGuidId>40e607ef-8422-4c7e-8266-b5bcc00c7fdf</elementGuidId>
    <selectorCollection>

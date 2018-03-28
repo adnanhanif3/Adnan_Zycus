@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Number of service requetst</name>
+   <name>Number of service requests</name>
    <tag></tag>
    <elementGuidId>81e14aaf-f79a-43e3-9ae3-c4661b41328e</elementGuidId>
    <selectorCollection>
