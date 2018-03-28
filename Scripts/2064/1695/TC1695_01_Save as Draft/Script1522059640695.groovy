@@ -23,15 +23,6 @@ WebUI.comment('Verify Save as Draft')
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-'Temp workaround to close API error popup'
-WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandling.CONTINUE_ON_FAILURE)
-
-'Temp workaround to close API error popup'
-WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandling.CONTINUE_ON_FAILURE)
-
-'Temp workaround to close API error popup'
-WebUI.delay(4)
-
 WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
 
 WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'New request saved as draft')
@@ -42,7 +33,7 @@ WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum
 
 WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
-WebUI.delay(10)
+WebUI.delay(7)
 
 WebUI.acceptAlert(FailureHandling.STOP_ON_FAILURE)
 
