@@ -19,11 +19,31 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Create Request With Basic Details'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Service request/View Request'))
+WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow2'))
 
-WebUI.verifyElementText(findTestObject('Page_View request/First Actor Designation'), 'Requester')
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test_AssignToUser in workflow')
+
+WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
+
+WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Checking Assign to user functionality and its effect on workflow')
+
+WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Lio')
+
+WebUI.click(findTestObject('Page_Create Request/drpdown_LioMessi'))
+
+WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+
+WebUI.waitForAlert(10)
+
+WebUI.acceptAlert()
+
+WebUI.click(findTestObject('Page_Service request/btn_ViewRequest1'))
+
+String RM = WebUI.getText(findTestObject('Page_View request/txt_AssignToName'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('Page_View request/RM Name'), RM)
 
 WebUI.closeBrowser()
 
