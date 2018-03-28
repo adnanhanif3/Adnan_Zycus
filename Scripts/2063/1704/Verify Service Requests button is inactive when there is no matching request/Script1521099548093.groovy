@@ -14,10 +14,6 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Home page error handling repo/Error1'))
-
-WebUI.click(findTestObject('Home page error handling repo/Error2'))
-
 WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Service request/Service request xpath'))
@@ -27,4 +23,6 @@ WebUI.delay(5)
 WebUI.click(findTestObject('Page_Home/Menu Nav/Add Filter click'))
 
 WebUI.click(findTestObject('Page_Home/Menu Nav/Inprogress'))
+
+WebUI.closeBrowser()
 
