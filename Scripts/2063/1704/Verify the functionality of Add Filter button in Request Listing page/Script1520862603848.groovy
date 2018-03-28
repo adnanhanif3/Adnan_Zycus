@@ -14,6 +14,10 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.click(findTestObject('Home page error handling repo/Error1'))
+
+WebUI.click(findTestObject('Home page error handling repo/Error2'))
+
 WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
 
 WebUI.click(findTestObject('Page_Service request/Service request xpath'))
