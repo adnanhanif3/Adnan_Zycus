@@ -19,29 +19,35 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
+WebUI.comment('Verify the action Approval')
 
-WebUI.click(findTestObject('Home page error handling repo/Error2'))
+WebUI.callTestCase(findTestCase('Common TC/George Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Home page error handling repo/Error1'))
+WebUI.delay(10)
 
-WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
+WebUI.click(findTestObject('Page_Approval Listing/tab_Approvals'))
 
-WebUI.delay(1)
+String RequestNumber = WebUI.getText(findTestObject('Page_Approval Listing/txt_RequestNumber1'))
 
-WebUI.click(findTestObject('Page_Approval Listing/Defaultfilter_approval'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Approval Listing/link_ApproveCard1'))
 
-WebUI.click(findTestObject('Page_Service request/Filter button'))
+WebUI.sendKeys(findTestObject('Page_Approval Listing/txtarea_ApprovalComment'), 'Approved by Katalon')
 
-WebUI.delay(1)
+WebUI.click(findTestObject('Page_Approval Listing/btn_Approve In Comment Window'))
 
-WebUI.click(findTestObject('Page_Approval Listing/btn_Rejected_Filter'))
+WebUI.delay(10)
 
-WebUI.click(findTestObject('Page_Service request/Service request button'))
+WebUI.acceptAlert()
 
-WebUI.delay(5)
+WebUI.delay(4)
 
-WebUI.verifyElementText(findTestObject('Page_Approval Listing/Status_inapproval(Approved,Rejected)'), 'Rejected')
+WebUI.click(findTestObject('Page_Approval Listing/btn_AddFilter'))
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Page_Approval Listing/btn_InApproval_Filter'))
+
+WebUI.click(findTestObject('Page_Approval Listing/btn_Approved_Filter'))
+
+WebUI.click(findTestObject('Page_Approval Listing/btn_ViewApprovals'))
+
+WebUI.verifyElementText(findTestObject('Page_Approval Listing/txt_RequestNumber1'), RequestNumber)
 

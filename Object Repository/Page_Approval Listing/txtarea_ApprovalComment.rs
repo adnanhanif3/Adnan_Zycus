@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_Submit</name>
+   <name>txtarea_ApprovalComment</name>
    <tag></tag>
-   <elementGuidId>738f5028-3ddd-4442-9814-0e96d72c483c</elementGuidId>
+   <elementGuidId>8138fc1d-b821-4089-80ca-ef17275c83b5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-flex//..[contains(text(),'Submit')]</value>
+         <value>//dew-block/dew-approvals-card[1]/dew-paper/div/div[2]/dew-modal[2]/div/div/div[2]/dew-modal-body/div/textarea</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -23,11 +23,11 @@ WebUI.openBrowser('https://smtlogin.zycus.net/sso/login?serviceName=http://test.
 
 WebUI.click(findTestObject('Page_Login/GhostUserID'))
 
-WebUI.setText(findTestObject('Page_Login/UserId'), findTestData('null').getValue(1, 2))
+WebUI.setText(findTestObject('Page_Login/UserId'), findTestData('Auth Test Data/Application Login').getValue(1, 2))
 
 WebUI.click(findTestObject('Page_Login/GhoshPassword'))
 
-WebUI.setText(findTestObject('Page_Login/Password'), findTestData('null').getValue(2, 2))
+WebUI.setText(findTestObject('Page_Login/Password'), findTestData('Auth Test Data/Application Login').getValue(2, 2))
 
 WebUI.click(findTestObject('Page_Login/LoginBtn'))
 

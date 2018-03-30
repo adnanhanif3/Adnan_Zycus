@@ -31,11 +31,11 @@ WebUI.click(findTestObject('Page_Service request/Filter button'))
 
 WebUI.delay(1)
 
-WebUI.verifyElementText(findTestObject('Page_Approval Listing/In Approval_filter btn'), 'In Approval')
+WebUI.verifyElementText(findTestObject('Page_Approval Listing/btn_InApproval_Filter'), 'In Approval')
 
-WebUI.verifyElementText(findTestObject('Page_Approval Listing/Approved_filterbtn'), 'Approved')
+WebUI.verifyElementText(findTestObject('Page_Approval Listing/btn_Approved_Filter'), 'Approved')
 
-WebUI.verifyElementText(findTestObject('Page_Approval Listing/Rejected_filterbtn'), 'Rejected')
+WebUI.verifyElementText(findTestObject('Page_Approval Listing/btn_Rejected_Filter'), 'Rejected')
 
 WebUI.closeBrowser()
 

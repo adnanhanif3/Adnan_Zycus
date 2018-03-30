@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_Submit</name>
+   <name>btn_ViewApprovals</name>
    <tag></tag>
-   <elementGuidId>738f5028-3ddd-4442-9814-0e96d72c483c</elementGuidId>
+   <elementGuidId>91255314-4cf7-44ce-96dd-7dc96366f609</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-flex//..[contains(text(),'Submit')]</value>
+         <value>//button[contains(text( ),'Approvals')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

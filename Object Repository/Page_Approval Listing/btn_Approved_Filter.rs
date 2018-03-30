@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_Submit</name>
+   <name>btn_Approved_Filter</name>
    <tag></tag>
-   <elementGuidId>738f5028-3ddd-4442-9814-0e96d72c483c</elementGuidId>
+   <elementGuidId>5367e424-fc6a-43ee-993f-de88d5d9822b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-flex//..[contains(text(),'Submit')]</value>
+         <value>//label[contains(text( ),'Approved')]</value>
       </entry>
       <entry>
          <key>BASIC</key>

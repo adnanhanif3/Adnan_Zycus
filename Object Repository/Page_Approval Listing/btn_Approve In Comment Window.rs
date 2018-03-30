@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_Submit</name>
+   <name>btn_Approve In Comment Window</name>
    <tag></tag>
-   <elementGuidId>738f5028-3ddd-4442-9814-0e96d72c483c</elementGuidId>
+   <elementGuidId>60647bfe-1291-4fbd-b60d-8b3b2192ba7a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-flex//..[contains(text(),'Submit')]</value>
+         <value>//dew-block/dew-approvals-card[1]/dew-paper/div/div[2]/dew-modal[2]/div/div/div[3]/dew-modal-footer/dew-btn/button</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
