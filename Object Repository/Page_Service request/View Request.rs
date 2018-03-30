@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>html/body/dew-app-root/dew-irequest-layout/dew-block/dew-my-requests/dew-tabset/div/dew-tab/dew-block/div[2]/div[1]/dew-service-request-card/dew-paper/div/div[2]/dew-row/dew-col[4]/div/a</value>
+         <value>html/body/dew-app-root/dew-irequest-layout/dew-block/dew-my-requests/dew-tabset/div/dew-tab/dew-block/div[2]/div[1]/dew-service-request-card/dew-paper/div/div[2]/dew-row/dew-col[4]/div/a[text()='View Request']</value>
       </entry>
       <entry>
          <key>BASIC</key>

@@ -19,15 +19,3 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
-
-WebUI.click(findTestObject('Page_Service request/Service request xpath'))
-
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Page_Home/Menu Nav/HOME'))
-
-WebUI.closeBrowser()
-

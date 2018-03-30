@@ -21,13 +21,33 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
+'Temp workaround to close API error popup'
+WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Service request/Service request xpath'))
+'Temp workaround to close API error popup'
+WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.delay(5)
+WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow2'))
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/HOME'))
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test_AssignToUser')
+
+WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
+
+WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Checking Assign to user functionality')
+
+WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Lio')
+
+WebUI.click(findTestObject('Page_Create Request/drpdown_LioMessi'))
+
+WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+
+WebUI.waitForAlert(10)
+
+WebUI.acceptAlert()
+
+WebUI.click(findTestObject('Page_Service request/btn_ViewRequest1'))
+
+WebUI.verifyElementText(findTestObject('Page_View request/txt_AssignToName'), 'Lio Messi')
 
 WebUI.closeBrowser()
 

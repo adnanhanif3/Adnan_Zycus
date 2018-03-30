@@ -19,21 +19,29 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Edit request page Tc(Draft)'), [:])
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
-WebUI.uploadFile(findTestObject('Page_Edit request/Attachment_edit'), 'C:\\Users\\pooja.wali\\Pictures\\Screenshots\\Actual design.png')
+WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
 
-WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
+WebUI.click(findTestObject('Page_Service request/Inprogress deselect'))
 
-WebUI.acceptAlert()
+WebUI.click(findTestObject('Page_Service request/Returned deselect '))
 
-WebUI.delay(1)
+WebUI.click(findTestObject('Page_Service request/With RM deselect '))
+
+WebUI.click(findTestObject('Page_Service request/Awatting approval deselect '))
+
+WebUI.click(findTestObject('Page_Service request/Draft deselect'))
+
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Page_Service request/View Request'))
 
-WebUI.delay(1)
+WebUI.verifyElementPresent(findTestObject('Page_View request/Activity Tab'), 5)
 
-WebUI.verifyElementPresent(findTestObject('Page_View request/requestdect data'), text)
+WebUI.click(findTestObject('Page_View request/Activity Tab'))
+
+WebUI.delay(2)
 
 WebUI.closeBrowser()
 

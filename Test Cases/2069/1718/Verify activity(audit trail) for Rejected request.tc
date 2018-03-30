@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify activity(audit trail) for Rejected request</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e40443a9-6366-496f-bc3f-a5e3341389e9</testCaseGuid>
+</TestCaseEntity>
