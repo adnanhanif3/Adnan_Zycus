@@ -39,3 +39,5 @@ WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
 WebUI.verifyElementNotPresent(findTestObject('Page_View request/Activity Tab'), 10)
 
+WebUI.closeBrowser()
+
