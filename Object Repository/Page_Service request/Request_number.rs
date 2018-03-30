@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Draft deselect</name>
+   <name>Request_number</name>
    <tag></tag>
-   <elementGuidId>058f7934-2cb8-4979-a137-3a264d6165cc</elementGuidId>
+   <elementGuidId>326f27b3-f283-45f0-8817-4fcf2bfd750b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>html/body/dew-app-root/dew-irequest-layout/dew-block/dew-my-requests/dew-tabset/div/dew-tab/dew-block/dew-row[2]/dew-col/span[1]/label
-</value>
+         <value>//dew-block/div[2]/div[1]/dew-service-request-card/dew-paper/div/div[1]/dew-row/dew-col[1]/p/span</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

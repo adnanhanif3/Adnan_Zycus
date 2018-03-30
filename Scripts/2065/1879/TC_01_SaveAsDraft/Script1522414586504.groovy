@@ -19,21 +19,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
+WebUI.callTestCase(findTestCase('2064/1695/TC1695_01_Save as Draft'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
+WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
-WebUI.click(findTestObject('Page_Service request/Inprogress deselect'))
+WebUI.click(findTestObject('Page_Create Request/btn_UrgentNo'))
 
-WebUI.click(findTestObject('Page_Service request/With RM deselect '))
+WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
-WebUI.click(findTestObject('Page_Service request/Awatting approval deselect '))
+WebUI.delay(7)
 
-WebUI.click(findTestObject('Page_Service request/Rejected deselect '))
+WebUI.acceptAlert(FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Service request/Draft deselect'))
+WebUI.verifyElementText(findTestObject('Page_Service request/txt_RequestNameTile1'), 'New request saved as draft')
 
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Page_Service request/Edit request button(Rejected, Returned)'))
+WebUI.closeBrowser()
 
