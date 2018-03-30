@@ -35,8 +35,6 @@ WebUI.delay(5)
 
 WebUI.acceptAlert()
 
-WebUI.delay(1)
-
 WebUI.click(findTestObject('Page_Service request/View Request'))
 
 WebUI.delay(1)

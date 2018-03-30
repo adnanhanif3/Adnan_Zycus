@@ -37,5 +37,7 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
-WebUI.verifyElementNotPresent(findTestObject('Page_View request/Activity Tab'), 0)
+WebUI.verifyElementNotPresent(findTestObject('Page_View request/Activity Tab'), 10)
+
+WebUI.closeBrowser()
 
