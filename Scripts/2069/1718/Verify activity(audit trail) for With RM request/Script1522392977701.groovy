@@ -27,15 +27,19 @@ WebUI.click(findTestObject('Page_Service request/Inprogress deselect'))
 
 WebUI.click(findTestObject('Page_Service request/Returned deselect '))
 
-WebUI.click(findTestObject('Page_Service request/With RM deselect '))
-
 WebUI.click(findTestObject('Page_Service request/Awatting approval deselect '))
 
 WebUI.click(findTestObject('Page_Service request/Rejected deselect '))
 
+WebUI.click(findTestObject('Page_Service request/Draft deselect'))
+
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
+WebUI.click(findTestObject('Page_Service request/View Request'))
 
-WebUI.verifyElementNotPresent(findTestObject('Page_View request/Activity Tab'), 10)
+WebUI.verifyElementNotPresent(findTestObject('Page_View request/Activity Tab'), 0)
+
+WebUI.click(findTestObject('Page_View request/Activity Tab'))
+
+WebUI.delay(2)
 
