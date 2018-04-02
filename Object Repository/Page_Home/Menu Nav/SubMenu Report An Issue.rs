@@ -7,6 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value>//dew-col[@class='col-8']/dew-flex/dew-flex-item[4]/div/div/a[4]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -16,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//dew-col[@class='col-8']/dew-flex/dew-flex-item[4]/div/div/a[2]</value>
+      <value>//dew-col[@class='col-8']/dew-flex/dew-flex-item[4]/div/div/a[4]</value>
    </webElementProperties>
 </WebElementEntity>
