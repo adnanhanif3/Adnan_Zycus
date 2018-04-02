@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>View action Awaiting Approval  </name>
+   <name>Completed-View action</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>157eecb9-e886-4dbd-a2ff-4057ff11ce93</testCaseGuid>
+   <testCaseGuid>4b46ca48-621d-4aba-84fc-83a835926966</testCaseGuid>
 </TestCaseEntity>

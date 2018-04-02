@@ -27,9 +27,15 @@ WebUI.click(findTestObject('Page_Service request/Service request xpath'))
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Service request/View Request'))
+WebUI.click(findTestObject('Page_Home/Menu Nav/Add Filter click'))
+
+WebUI.click(findTestObject('Page_Home/Menu Nav/Completed'))
 
 WebUI.delay(2)
+
+WebUI.click(findTestObject('Page_Home/Menu Nav/View x Requests'))
+
+WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/View request'), 0)
 
 WebUI.closeBrowser()
 
