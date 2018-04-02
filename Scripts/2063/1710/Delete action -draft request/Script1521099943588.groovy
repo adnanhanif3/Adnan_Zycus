@@ -37,5 +37,5 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_Home/Menu Nav/View x Requests'))
 
-WebUI.verifyElementPresent(findTestObject(null), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Service request/Draft status'), 0)
 
