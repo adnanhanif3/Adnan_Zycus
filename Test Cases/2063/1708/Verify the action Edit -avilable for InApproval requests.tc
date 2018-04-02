@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify the action avilable for With RM requests</name>
+   <name>Verify the action Edit -avilable for InApproval requests</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>e3c3db77-55d7-4b6e-b1f5-c41c06059f7b</testCaseGuid>
+   <testCaseGuid>45322fc0-4fb1-4e39-ae4b-00885adf29d0</testCaseGuid>
 </TestCaseEntity>
