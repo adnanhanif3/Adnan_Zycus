@@ -19,5 +19,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.comment('NOt implemented')
+WebUI.callTestCase(findTestCase('2064/1695/TC1695_01_Save as Draft'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Page_Edit request/Backnavg_icon'))
+
+WebUI.delay(1)
+
+WebUI.verifyElementText(findTestObject('Page_Edit request/Navigationpage_servicerequest'), 'My Requests')
+
+WebUI.closeBrowser()
 

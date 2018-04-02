@@ -19,3 +19,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('2064/1695/TC1695_01_Save as Draft'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Page_Create Request/btn_UrgentNo'))
+
+WebUI.click(findTestObject('Page_Edit request/Cancelbtn'))
+
