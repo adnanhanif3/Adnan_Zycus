@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Top Nav/UserProfile'), 0)
 
-WebUI.mouseOver(findTestObject('Page_Home/Top Nav/UserProfile'))
+WebUI.click(findTestObject('Page_Home/Top Nav/UserProfile'))
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Logout'), FailureHandling.STOP_ON_FAILURE)
 
