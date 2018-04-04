@@ -29,5 +29,5 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('Page_Create Request/btn_UrgentNo'))
 
-WebUI.click(findTestObject('Page_Edit request/Cancelbtn'))
+WebUI.click(findTestObject('Page_Edit request/Btn_Cancel'))
 
