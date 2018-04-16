@@ -19,14 +19,23 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.comment('Verify Create new request Submit')
+WebUI.comment('Verify mandatory check for action save as draft')
 
-WebUI.callTestCase(findTestCase('Common Test Cases/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Home/btn_CreateNow2'))
+WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Page_CreateRequest/21032018/btn_Submit'))
+WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
 
-'Popup is not implemented to proceed'
-WebUI.comment('Popup is not implemented to proceed')
+WebUI.delay(3)
+
+WebUI.sendKeys(findTestObject('Page_Create Request/Basic Details/txt_RequestName'), 'Test cancel alert')
+
+WebUI.click(findTestObject('Page_Create Request/btn_Cancel'))
+
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/alert_UnsavedData'), 0)
+
+WebUI.click(findTestObject('Page_Create Request/alert_Yes'))
+
+WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/irequest/home')
 

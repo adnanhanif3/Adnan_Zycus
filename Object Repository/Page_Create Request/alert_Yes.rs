@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>drpdwn_GrpDewdrop</name>
+   <name>alert_Yes</name>
    <tag></tag>
-   <elementGuidId>d3df3287-ae4c-4016-9d19-0a710ec8444b</elementGuidId>
+   <elementGuidId>21bdb94a-87ce-47c6-89bc-38890a2adaa8</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(text(),'Dew')]</value>
+         <value>//button[text()=&quot;Yes&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1696_03_Verify alert NO for unsaved data</name>
+   <tag></tag>
+   <comment>Verify alert for cancel</comment>
+   <testCaseGuid>21db3882-ed64-4061-8e8b-ca58f6f25bd4</testCaseGuid>
+</TestCaseEntity>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;dropdown pointer&quot;]</value>
+         <value>//dew-block/dew-request-assign/dew-row/dew-col/div/dew-btn-group/div/dew-icon</value>
       </entry>
       <entry>
          <key>BASIC</key>

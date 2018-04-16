@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC1694_02_SubmitWithoutMandatory</name>
+   <name>TC1694_02_Verify mandatory check for action submit</name>
    <tag></tag>
-   <comment>Verify Create new request Submit
-Popup is not implemented to proceed</comment>
+   <comment>Verify Create new request Submit</comment>
    <testCaseGuid>bb0fd249-7326-46dd-8213-7a68a3a8475a</testCaseGuid>
 </TestCaseEntity>

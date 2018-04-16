@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-icon[@icon=&quot;chevron-left&quot;]</value>
+         <value>//dew-block/dew-create-request/div/dew-flex/dew-flex-item/h3/img</value>
       </entry>
       <entry>
          <key>BASIC</key>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC1696_02_CancelUnsavedData</name>
+   <name>TC1696_02_Verify alert yes for unsaved data</name>
    <tag></tag>
-   <comment></comment>
+   <comment>Not implemented Popups to automate</comment>
    <testCaseGuid>e9522796-bc85-4e53-9cf3-9d4d19153c76</testCaseGuid>
 </TestCaseEntity>

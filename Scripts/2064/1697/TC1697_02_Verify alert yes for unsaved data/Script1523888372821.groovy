@@ -19,6 +19,27 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-'Not implemented Popups to automate'
-WebUI.comment('Not implemented Popups to automate')
+WebUI.comment('Verify alert for cancel')
+
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
+
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'New request by Katalon')
+
+WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
+
+WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum')
+
+WebUI.click(findTestObject('Page_Create Request/icon_BackNavigation'))
+
+WebUI.delay(2)
+
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/alert_UnsavedData'), 0)
+
+WebUI.click(findTestObject('Page_Create Request/alert_Yes'))
+
+WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/irequest/home')
+
+WebUI.closeBrowser()
 

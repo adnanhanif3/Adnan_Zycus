@@ -19,6 +19,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-'Not implemeted Popups by dev Team to automate'
-WebUI.comment('Not Implemented to Automate')
+WebUI.comment('Verify mandatory check for action submit')
+
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
+
+WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+
+WebUI.verifyElementText(findTestObject('Page_Create Request/popup_Mandatory Check'), 'Please fill the mandatory fields')
+
+WebUI.closeBrowser()
 

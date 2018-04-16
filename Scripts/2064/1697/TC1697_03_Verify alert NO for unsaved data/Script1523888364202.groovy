@@ -19,24 +19,27 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.comment('Verify Mandatory check')
+WebUI.comment('Verify alert for cancel')
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-'Temp workaround to close API error popup'
-WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandling.CONTINUE_ON_FAILURE)
-
-'Temp workaround to close API error popup'
-WebUI.click(findTestObject('Page_Home/Overview/btn_Alert Close'), FailureHandling.CONTINUE_ON_FAILURE)
-
-'Temp workaround to close API error popup'
-WebUI.delay(4)
-
 WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
 
-WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'New request by Katalon')
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
 
-WebUI.acceptAlert(FailureHandling.STOP_ON_FAILURE)
+WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum')
+
+WebUI.click(findTestObject('Page_Create Request/icon_BackNavigation'))
+
+WebUI.delay(5)
+
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/alert_UnsavedData'), 0)
+
+WebUI.click(findTestObject('Page_Create Request/alert_No'))
+
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/Basic Details/txt_RequestName'), 0)
+
+WebUI.closeBrowser()
 

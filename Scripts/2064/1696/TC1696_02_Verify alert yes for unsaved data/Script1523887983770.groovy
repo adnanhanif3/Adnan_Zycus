@@ -19,39 +19,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.comment('Verify assign to single user')
+WebUI.comment('Verify alert for cancel')
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.maximizeWindow()
-
 WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test AssignTO by Katalon')
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'New request by Katalon')
 
 WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
 
 WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum')
 
-WebUI.scrollToElement(findTestObject('Page_Create Request/icon_AssignTo'), 0)
+WebUI.click(findTestObject('Page_Create Request/btn_Cancel'))
 
-WebUI.click(findTestObject('Page_Create Request/icon_AssignTo'))
+WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Create Request/drpdwn_AssignToGrp'))
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/alert_UnsavedData'), 0)
 
-WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Dew')
+WebUI.click(findTestObject('Page_Create Request/alert_Yes'))
 
-WebUI.click(findTestObject('Page_Create Request/drpdwn_GrpDewdrop'))
-
-WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
-
-WebUI.delay(10)
-
-WebUI.click(findTestObject('Page_Create Request/icon_Close'))
-
-WebUI.click(findTestObject('Page_Service request/btn_ViewRequest1'))
-
-WebUI.verifyElementText(findTestObject('Page_View request/txt_AssignToName'), 'Dewdrops')
-
-WebUI.closeBrowser()
+WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/irequest/home')
 
