@@ -27,13 +27,9 @@ WebUI.click(findTestObject('Page_Home/Menu Nav/Submenu Service Request'))
 
 WebUI.click(findTestObject('Page_Service request/View Request'))
 
-WebUI.verifyElementText(findTestObject('Page_View request/Breadcrumb Home'), 'Home', FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.click(findTestObject('Page_View request/Breadcrumb MyServiceRequests'))
 
-WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
+String ServiceListingUrl = WebUI.getUrl()
 
-WebUI.verifyElementText(findTestObject('Page_View request/Breadcrumb MyServiceRequests'), 'My Service Requests', FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.verifyElementText(findTestObject('Page_View request/Breadcrumb Service Request'), 'Service Request', FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.closeBrowser()
+WebUI.verifyMatch(ServiceListingUrl, 'http://test.irequest.zycus.net/#/irequest/my-requests', false)
 
