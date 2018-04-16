@@ -27,7 +27,7 @@ WebUI.click(findTestObject('Page_Service request/Service request xpath'))
 
 WebUI.delay(10)
 
-WebUI.check(findTestObject('Page_Home/Menu Nav/Service Requests -number of X requests'))
+WebUI.check(findTestObject('Page_Service request/Service Requests - X requests'))
 
 WebUI.delay(2)
 
@@ -46,8 +46,6 @@ WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Status'), 0)
 WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Request definition'), 0)
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Requets type'), 0)
-
-WebUI.verifyElementPresent(findTestObject('null'), 0)
 
 WebUI.closeBrowser()
 
