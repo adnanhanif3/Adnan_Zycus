@@ -35,5 +35,5 @@ WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
 WebUI.delay(5)
 
-WebUI.acceptAlert()
+WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 
