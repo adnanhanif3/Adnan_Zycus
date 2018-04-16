@@ -19,33 +19,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
-WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
+WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
 
-WebUI.click(findTestObject('Page_Service request/Service request xpath'))
+WebUI.delay(1)
 
-WebUI.delay(10)
-
-WebUI.check(findTestObject('Page_Service request/Service Requests - X requests'))
-
-WebUI.delay(2)
-
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Search all requests -search box'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Add Filter click'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Request Number'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Request name'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Submitted on'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Status'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Request definition'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Requets type'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Approval Listing/Status_inapproval(Approved,Rejected)'), 0)
 
 WebUI.closeBrowser()
 

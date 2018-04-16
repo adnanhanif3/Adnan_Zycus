@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Service request xpath</name>
+   <name>Btn_viewdetails</name>
    <tag></tag>
-   <elementGuidId>de689a81-6d26-411e-b54a-d712e00c532e</elementGuidId>
+   <elementGuidId>4460e174-8c16-4f35-9e93-00e6aeb191ee</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>html/body/dew-app-root/dew-irequest-layout/irequest-header/dew-row[2]/dew-row/dew-col/dew-flex/dew-flex-item[3]/div/div/a</value>
+         <value>//a[text()='View Details']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

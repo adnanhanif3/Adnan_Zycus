@@ -21,31 +21,19 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'))
 
-WebUI.click(findTestObject('Page_Service request/Service request xpath'))
+WebUI.click(findTestObject('Page_Home/Menu Nav/Submenu Service Request'))
 
-WebUI.delay(10)
+WebUI.click(findTestObject('Page_Service request/View Request'))
 
-WebUI.check(findTestObject('Page_Service request/Service Requests - X requests'))
+WebUI.delay(3)
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Page_View request/Breadcrumb MyServiceRequests'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Search all requests -search box'), 0)
+String ServiceListingUrl = WebUI.getUrl()
 
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Add Filter click'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Request Number'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Request name'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Submitted on'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Status'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Request definition'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Requets type'), 0)
+WebUI.verifyMatch(ServiceListingUrl, 'http://test.irequest.zycus.net/#/irequest/my-requests', false)
 
 WebUI.closeBrowser()
 

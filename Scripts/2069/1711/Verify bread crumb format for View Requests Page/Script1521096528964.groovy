@@ -25,8 +25,6 @@ WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'))
 
 WebUI.click(findTestObject('Page_Home/Menu Nav/Submenu Service Request'))
 
-requestName = WebUI.getText(findTestObject('Page_Service request/Request Name'))
-
 WebUI.click(findTestObject('Page_Service request/View Request'))
 
 WebUI.verifyElementText(findTestObject('Page_View request/Breadcrumb Home'), 'Home', FailureHandling.CONTINUE_ON_FAILURE)

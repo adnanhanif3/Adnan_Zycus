@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the default filter in indigo release</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bc46110c-91f5-4d21-90fb-883194950648</testCaseGuid>
+</TestCaseEntity>

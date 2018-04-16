@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='heading']/ol/li[1]/a</value>
+         <value>//a[contains(text(),'Home')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
