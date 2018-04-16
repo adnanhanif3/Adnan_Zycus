@@ -23,7 +23,7 @@ WebUI.comment('Verify Create new request Submit')
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow2'))
+WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
 
 WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'New request by Katalon')
 
@@ -35,7 +35,7 @@ WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
 WebUI.delay(10)
 
-WebUI.acceptAlert(FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 
 WebUI.verifyElementText(findTestObject('Page_Service request/txt_RequestNameTile1'), 'New request by Katalon')
 

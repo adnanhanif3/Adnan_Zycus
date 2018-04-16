@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-create-request/form/dew-flex/div[2]/dew-btn[2]/button</value>
+         <value>//span[text()=&quot;Submit&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>

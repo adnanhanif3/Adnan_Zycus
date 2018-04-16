@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txt_ReqDefTitle</name>
+   <name>icon_Close</name>
    <tag></tag>
-   <elementGuidId>768e49f2-8edf-4065-9ef7-192cc8b0747a</elementGuidId>
+   <elementGuidId>12d1593a-0279-4716-ab93-fd89dafb97d4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-block/dew-block/dew-row/dew-col[1]/dew-card/dew-card-body/p[1]</value>
+         <value>//dew-icon[@icon=&quot;close&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
