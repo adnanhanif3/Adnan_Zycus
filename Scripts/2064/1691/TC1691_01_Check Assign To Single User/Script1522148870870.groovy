@@ -23,7 +23,7 @@ WebUI.comment('Verify assign to single user')
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow2'))
+WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
 
 WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test AssignTO by Katalon')
 
@@ -39,7 +39,7 @@ WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
 WebUI.delay(10)
 
-WebUI.acceptAlert()
+WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 
 WebUI.click(findTestObject('Page_Service request/btn_ViewRequest1'))
 
