@@ -3,11 +3,10 @@
    <description></description>
    <name>View request x Path</name>
    <tag></tag>
-   <elementGuidId>a209c5b6-6fef-469a-8508-6f9725c19745</elementGuidId>
+   <elementGuidId>22fca056-d603-42a8-841f-a7e32eb8b413</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>

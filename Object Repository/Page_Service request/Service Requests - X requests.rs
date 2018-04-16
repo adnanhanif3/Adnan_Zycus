@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Service Requests -number of X requests</name>
+   <name>Service Requests - X requests</name>
    <tag></tag>
-   <elementGuidId>d591beb6-642c-4551-8838-8b25fbf2dd96</elementGuidId>
+   <elementGuidId>af51d880-2f54-4604-83a4-96c0395bce42</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>

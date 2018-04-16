@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>With RM</name>
+   <name>WIth RM click</name>
    <tag></tag>
-   <elementGuidId>c5c9f48c-2830-4c32-a009-02444058a68b</elementGuidId>
+   <elementGuidId>2b743da7-7031-47b0-94cd-0ff5343338f4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>

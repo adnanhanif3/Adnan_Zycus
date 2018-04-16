@@ -33,9 +33,9 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Home/Menu Nav/Inprogress click'))
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/View x Requests'))
+WebUI.click(findTestObject('null'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/View request'), 0)
+WebUI.verifyElementPresent(findTestObject('null'), 0)
 
 WebUI.closeBrowser()
 

@@ -47,7 +47,7 @@ WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Request definition
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Requets type'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/View request'), 0)
+WebUI.verifyElementPresent(findTestObject('null'), 0)
 
 WebUI.closeBrowser()
 
