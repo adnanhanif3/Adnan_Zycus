@@ -27,7 +27,7 @@ WebUI.click(findTestObject('Page_Service request/Service request xpath'), Failur
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/View request'))
+WebUI.click(findTestObject('null'))
 
 WebUI.delay(5)
 

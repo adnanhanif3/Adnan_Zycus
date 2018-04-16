@@ -31,11 +31,11 @@ WebUI.click(findTestObject('Page_Home/Menu Nav/Add Filter click'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/WIth RM click'))
+WebUI.click(findTestObject('null'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/View x Requests'))
+WebUI.click(findTestObject('null'))
 
 WebUI.closeBrowser()
 

@@ -31,13 +31,13 @@ WebUI.click(findTestObject('Page_Home/Menu Nav/Add Filter click'))
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/With RM'))
+WebUI.click(findTestObject('null'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/View x Requests'), 0)
+WebUI.verifyElementPresent(findTestObject('null'), 0)
 
 WebUI.click(findTestObject('Page_Home/Menu Nav/Draft'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/View x Requests'), 0)
+WebUI.verifyElementPresent(findTestObject('null'), 0)
 
 WebUI.delay(3)
 
