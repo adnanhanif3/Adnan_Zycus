@@ -25,3 +25,5 @@ WebUI.delay(2)
 
 WebUI.check(findTestObject('Page_Create Request/Request Name Field'), FailureHandling.STOP_ON_FAILURE)
 
+WebUI.closeBrowser()
+

@@ -23,5 +23,5 @@ WebUI.callTestCase(findTestCase('Common TC/Edit request page Tc(Draft)'), [:])
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Edit request/Cancelbtn'))
+WebUI.click(findTestObject('Page_Edit request/Btn_Cancel'))
 

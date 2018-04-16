@@ -25,15 +25,15 @@ WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/HELP DESK'))
 
 WebUI.click(findTestObject('Page_Home/Menu Nav/ReportAnIssue'))
 
-WebUI.verifyElementText(findTestObject('Page_ReportAnIssuePopUp/ModuleLbl'), 'Module')
+WebUI.verifyElementText(findTestObject('Page_ReportAnIssuePopUp/ModuleLbl'), 'Module *')
 
 WebUI.verifyElementPresent(findTestObject('Page_ReportAnIssuePopUp/Module'), 0)
 
-WebUI.verifyElementText(findTestObject('Page_ReportAnIssuePopUp/MessageTypeLbl'), 'Message Type')
+WebUI.verifyElementText(findTestObject('Page_ReportAnIssuePopUp/MessageTypeLbl'), 'Message Type *')
 
 WebUI.verifyElementPresent(findTestObject('Page_ReportAnIssuePopUp/MessageType'), 0)
 
-WebUI.verifyElementText(findTestObject('Page_ReportAnIssuePopUp/PriorityLbl'), 'Priority')
+WebUI.verifyElementText(findTestObject('Page_ReportAnIssuePopUp/PriorityLbl'), 'Priority *')
 
 WebUI.verifyElementPresent(findTestObject('Page_ReportAnIssuePopUp/Priority'), 0)
 

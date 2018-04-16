@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('Common TC/George Login'), [:], FailureHandling.
 
 WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/TO DOs'))
 
-WebUI.verifyElementText(findTestObject('Page_Home/Menu Nav/SubMenu Approval'), 'Approvals')
+WebUI.verifyElementText(findTestObject('Page_Home/Menu Nav/SubMenu Approval'), 'My Approvals')
 
 WebUI.closeBrowser()
 
