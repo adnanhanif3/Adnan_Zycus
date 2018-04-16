@@ -21,23 +21,17 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
-WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/TO DOs arrow'))
+
+WebUI.click(findTestObject('Page_Approval Listing/Approval_dropdwn'))
+
+text = WebUI.getText(findTestObject('Page_Approval Listing/Get text(req name)_pg title'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Page_Approval Listing/Defaultfilter_approval'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Approval Listing/Btn_review'))
 
-WebUI.click(findTestObject('Page_Service request/Filter button'))
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('Page_Approval Listing/btn_Rejected_Filter'))
-
-WebUI.click(findTestObject('Page_Service request/Service request button'))
-
-WebUI.delay(5)
-
-WebUI.verifyElementText(findTestObject('Page_Approval Listing/Status_inapproval(Approved,Rejected)'), 'Rejected')
+WebUI.verifyElementText(findTestObject('Page_Approval Listing/Page_title'), text)
 
 WebUI.closeBrowser()
 

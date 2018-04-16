@@ -21,15 +21,9 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
-WebUI.click(findTestObject('Home page error handling repo/Error2'))
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/TO DOs arrow'))
 
-WebUI.click(findTestObject('Home page error handling repo/Error1'))
-
-WebUI.delay(1)
-
-WebUI.mouseOver(findTestObject('Page_Approval Listing/TODO_tab'))
-
-WebUI.verifyElementText(findTestObject('Page_Approval Listing/Approval_dropdwn'), 'Approvals')
+WebUI.verifyElementText(findTestObject('Page_Approval Listing/Approval_dropdwn'), 'My Approvals')
 
 WebUI.closeBrowser()
 

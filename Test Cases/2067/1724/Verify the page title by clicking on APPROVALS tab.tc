@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the page title by clicking on APPROVALS tab</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>072f8166-ce97-46d8-812f-d415e805ac9b</testCaseGuid>
+</TestCaseEntity>
