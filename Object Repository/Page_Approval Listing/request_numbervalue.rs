@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Service request xpath</name>
+   <name>request_numbervalue</name>
    <tag></tag>
-   <elementGuidId>de689a81-6d26-411e-b54a-d712e00c532e</elementGuidId>
+   <elementGuidId>497913bb-7a35-4c0d-ab7c-50eb5592919c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>html/body/dew-app-root/dew-irequest-layout/irequest-header/dew-row[2]/dew-row/dew-col/dew-flex/dew-flex-item[3]/div/div/a</value>
+         <value>//dew-block[@class=&quot;p-4 d-block position-relative clearfix&quot;]/dew-approvals-card[1]/dew-paper/div/div[1]/dew-row/dew-col[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

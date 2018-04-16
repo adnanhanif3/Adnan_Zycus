@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Service request xpath</name>
+   <name>Alert_close</name>
    <tag></tag>
-   <elementGuidId>de689a81-6d26-411e-b54a-d712e00c532e</elementGuidId>
+   <elementGuidId>5357e665-80f5-46a1-9435-be7a4c08ac26</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>html/body/dew-app-root/dew-irequest-layout/irequest-header/dew-row[2]/dew-row/dew-col/dew-flex/dew-flex-item[3]/div/div/a</value>
+         <value>html/body/dew-app-root/dew-irequest-layout/ireq-alert-dialog/div/div/dew-icon</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
