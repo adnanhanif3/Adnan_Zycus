@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>btn_Approved</name>
+   <tag></tag>
+   <elementGuidId>f6896731-a4bb-4124-9916-433d9dfe25b3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>html/body/dew-app-root/dew-irequest-layout/dew-block/dew-todo/dew-tabset/div/dew-tab/dew-block/dew-row[2]/dew-col/span[2]/label</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>
