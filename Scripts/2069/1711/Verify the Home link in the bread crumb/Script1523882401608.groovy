@@ -27,13 +27,13 @@ WebUI.click(findTestObject('Page_Home/Menu Nav/Submenu Service Request'))
 
 WebUI.click(findTestObject('Page_Service request/View Request'))
 
-WebUI.delay(3)
+WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_View request/Breadcrumb MyServiceRequests'))
+WebUI.click(findTestObject('Page_View request/Breadcrumb Home'))
 
-String ServiceListingUrl = WebUI.getUrl()
+String HomeUrl = WebUI.getUrl()
 
-WebUI.verifyMatch(ServiceListingUrl, 'http://test.irequest.zycus.net/#/irequest/my-requests', false)
+WebUI.verifyMatch(HomeUrl, 'http://test.irequest.zycus.net/#/irequest/home', false)
 
 WebUI.closeBrowser()
 
