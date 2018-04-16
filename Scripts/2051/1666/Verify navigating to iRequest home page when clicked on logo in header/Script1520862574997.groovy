@@ -21,7 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Home/Overview/Pending Request Count tile'))
+WebUI.click(findTestObject('Page_Home/Overview/PendinRequestCountTile_NonApprover'))
 
 WebUI.verifyElementPresent(findTestObject('Page_Service request/Request Header'), 0)
 
