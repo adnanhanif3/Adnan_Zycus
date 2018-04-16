@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify the filter request list by changing the Status the page is getting refreshed or not</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>a529a209-3ec2-4840-9860-742f597ab287</testCaseGuid>
-</TestCaseEntity>
