@@ -31,5 +31,9 @@ WebUI.click(findTestObject('Page_Home/Menu Nav/HOME'))
 
 WebUI.delay(3)
 
+WebUI.click(findTestObject('Page_Home/Menu Nav/TO DOs'))
+
+WebUI.delay(2)
+
 WebUI.closeBrowser()
 

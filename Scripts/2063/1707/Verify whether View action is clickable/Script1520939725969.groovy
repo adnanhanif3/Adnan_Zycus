@@ -19,27 +19,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.maximizeWindow()
+WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
 
-WebUI.navigateToUrl('https://smtlogin.zycus.net/sso/login?serviceName=http://test.irequest.zycus.net/#  ')
+WebUI.click(findTestObject('Page_Service request/Service request xpath'))
 
-WebUI.sendKeys(findTestObject('Test case - 1_My Request Listing Page/Username'), 'ge-all@zycus.com')
+WebUI.delay(5)
 
-WebUI.sendKeys(findTestObject('Test case - 1_My Request Listing Page/Password'), 'eProc@123')
+WebUI.click(findTestObject('Page_Service request/View Request'))
 
-WebUI.click(findTestObject('Test case - 1_My Request Listing Page/Login'))
-
-WebUI.mouseOver(findTestObject('DDE-1701-Service Request List/My Request'))
-
-WebUI.click(findTestObject('DDE-1701-Service Request List/Service Request'))
-
-WebUI.delay(10)
-
-WebUI.click(findTestObject('DDS-1707-Actions-View/View the requests'))
-
-WebUI.delay(10)
+WebUI.delay(2)
 
 WebUI.closeBrowser()
 
