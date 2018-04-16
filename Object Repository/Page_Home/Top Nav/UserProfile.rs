@@ -7,6 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value>//dew-row[@class='header-outlay1 row no-gutters']/dew-row/dew-col[3]/dew-flex/dew-flex-item/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -16,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//dew-row[@class='header-outlay1 row no-gutters']/dew-col[3]/dew-flex/dew-flex-item/div</value>
+      <value>//dew-row[@class='header-outlay1 row no-gutters']/dew-row/dew-col[3]/dew-flex/dew-flex-item/div</value>
    </webElementProperties>
 </WebElementEntity>
