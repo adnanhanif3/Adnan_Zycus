@@ -27,7 +27,7 @@ WebUI.click(findTestObject('Page_Service request/Service request xpath'))
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/Icon-My requests'))
+WebUI.click(findTestObject('Page_Home/Menu Nav/MY REQUESTS arrow'))
 
 WebUI.closeBrowser()
 
