@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_AddFilter</name>
+   <name>icon_BackNavigation</name>
    <tag></tag>
-   <elementGuidId>d9853e64-6950-4e90-b98e-0977b4ff593f</elementGuidId>
+   <elementGuidId>ddc5d68b-bae3-4f0c-982d-02b6816a0e2f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[contains(text(),&quot;Add Filter&quot;)]</value>
+         <value>//dew-irequest-layout/dew-block/dew-todo/div/dew-flex/dew-flex-item/h3/img</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

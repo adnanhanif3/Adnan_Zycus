@@ -19,37 +19,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.comment('Verify the action Approval')
+WebUI.comment('Verify back navigation form Todos page')
 
-WebUI.callTestCase(findTestCase('Common TC/Diego Login'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(5)
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Approval Listing/tab_Approvals'))
 
-String RequestNumber = WebUI.getText(findTestObject('Page_Approval Listing/txt_RequestNumber1'))
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Approval Listing/link_Rejectcard1'))
+WebUI.click(findTestObject('Page_Approval Listing/icon_BackNavigation'))
 
-WebUI.sendKeys(findTestObject('Page_Approval Listing/txtarea_RejectComment'), 'Rejected by Katalon')
+String CurrentPageUrl = WebUI.getUrl()
 
-WebUI.click(findTestObject('Page_Approval Listing/btn_Reject in Comment Window'))
-
-WebUI.delay(10)
-
-WebUI.click(findTestObject('Page_Create Request/icon_Close'))
-
-WebUI.delay(4)
-
-WebUI.click(findTestObject('Page_Approval Listing/btn_AddFilter'))
-
-WebUI.click(findTestObject('Page_Approval Listing/btn_InApproval_Filter'))
-
-WebUI.click(findTestObject('Page_Approval Listing/btn_Rejected_Filter'))
-
-WebUI.click(findTestObject('Page_Approval Listing/btn_ViewApprovals'))
-
-WebUI.verifyElementText(findTestObject('Page_Approval Listing/txt_RequestNumber1'), RequestNumber)
+WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/irequest/home')
 
 WebUI.closeBrowser()
 
