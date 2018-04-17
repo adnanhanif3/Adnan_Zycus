@@ -35,7 +35,7 @@ WebUI.click(findTestObject('Page_Home/Menu Nav/Draft'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('null'))
+WebUI.verifyElementPresent(findTestObject('Page_View request/Edit request x path'), 0)
 
 WebUI.delay(2)
 

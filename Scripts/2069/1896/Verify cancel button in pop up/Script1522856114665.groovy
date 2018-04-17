@@ -19,25 +19,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
+WebUI.delay(6)
 
-WebUI.click(findTestObject('Page_Service request/Service request xpath'))
+WebUI.click(findTestObject('Page_Approval Listing/tab_Approvals'))
 
-WebUI.delay(5)
+WebUI.click(findTestObject('Page_Approval Listing/Btn_review'))
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/Add Filter click'))
+WebUI.click(findTestObject('Page_Approval Listing/Workflow Approve'))
 
-WebUI.delay(2)
+WebUI.waitForElementVisible(findTestObject('Page_View request/Cancel button'), 5)
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/Inprogress click'))
-
-WebUI.delay(2)
-
-WebUI.verifyElementNotPresent(findTestObject('Page_View request/Edit request x path'), 0)
-
-WebUI.delay(2)
-
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Page_View request/Cancel button'))
 

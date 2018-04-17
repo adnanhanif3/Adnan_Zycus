@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txt_RequestNumber1</name>
+   <name>Pop up Reject comments</name>
    <tag></tag>
-   <elementGuidId>05a8b218-cbbd-444f-8fe2-710963740309</elementGuidId>
+   <elementGuidId>72dbcdf1-57a7-4ac3-b8be-158729ed6482</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-block/dew-approvals-card[1]/dew-paper/div/div[1]/dew-row/dew-col[1]/span[2]</value>
+         <value>//dew-modal[@ng-reflect-title=&quot;Comment for rejection?&quot;]/descendant::textarea</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -19,25 +19,27 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.comment('Verify view deatils for approved request')
 
-WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
+WebUI.callTestCase(findTestCase('Common TC/Diego Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Service request/Service request xpath'))
+WebUI.click(findTestObject('Page_Approval Listing/tab_Approvals'))
 
-WebUI.delay(5)
+WebUI.click(findTestObject('Page_Approval Listing/btn_AddFilter'))
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/Add Filter click'))
+WebUI.click(findTestObject('Page_Approval Listing/btn_InApproval_Filter'))
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Page_Approval Listing/btn_Approved_Filter'))
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/Inprogress click'))
-
-WebUI.delay(2)
-
-WebUI.verifyElementNotPresent(findTestObject('Page_View request/Edit request x path'), 0)
+WebUI.click(findTestObject('Page_Approval Listing/btn_ViewApprovals'))
 
 WebUI.delay(2)
+
+String ReqNum = WebUI.getText(findTestObject('Page_Approval Listing/txt_RequestNumbercard1'))
+
+WebUI.click(findTestObject('Page_Approval Listing/btn_ViewDeatilsCard1'))
+
+WebUI.verifyElementText(findTestObject('Page_Approval Listing/txt_RequestNumber View Page'), ReqNum)
 
 WebUI.closeBrowser()
 

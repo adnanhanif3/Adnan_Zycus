@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>My request xpath</name>
+   <name>btn_ViewDeatilsCard1</name>
    <tag></tag>
-   <elementGuidId>f2a8d289-3380-4100-aa1a-550963a0eeb5</elementGuidId>
+   <elementGuidId>1d9ff4a5-501c-4591-b71d-d8d93971ac6a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//dew-approvals-card[1]/dew-paper/div/div[2]/dew-row/dew-col[4]//a[text()=&quot;View Details&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/dew-app-root/dew-irequest-layout/irequest-header/dew-row[2]/dew-row/dew-col/dew-flex/dew-flex-item[3]/div/a</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>My request xpath</name>
+   <name>WF Reject confirmation</name>
    <tag></tag>
-   <elementGuidId>f2a8d289-3380-4100-aa1a-550963a0eeb5</elementGuidId>
+   <elementGuidId>b39bd7ba-cea6-453b-b78d-ecb6846c3fa2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[contains(text(),'Request has been Rejected')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/dew-app-root/dew-irequest-layout/irequest-header/dew-row[2]/dew-row/dew-col/dew-flex/dew-flex-item[3]/div/a</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

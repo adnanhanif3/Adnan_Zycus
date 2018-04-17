@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>My request xpath</name>
+   <name>Pop up Approval comments</name>
    <tag></tag>
-   <elementGuidId>f2a8d289-3380-4100-aa1a-550963a0eeb5</elementGuidId>
+   <elementGuidId>bf820972-a6c9-4ddb-b551-76473386a7dc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//dew-modal[@ng-reflect-title=&quot;Comment for approval?&quot;]/descendant::textarea</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/dew-app-root/dew-irequest-layout/irequest-header/dew-row[2]/dew-row/dew-col/dew-flex/dew-flex-item[3]/div/a</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
