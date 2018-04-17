@@ -49,7 +49,9 @@ WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Submit'))
 
 WebUI.delay(5)
 
-AlertText = WebUI.getAlertText()
+Text = WebUI.getText(findTestObject('Page_ReportAnIssuePopUp/ConfirmationPanel'))
 
-WebUI.verifyMatch(AlertText, 'Submitting the issue', false)
+WebUI.verifyMatch(Text, 'Issue Submitted', false)
+
+WebUI.closeBrowser()
 
