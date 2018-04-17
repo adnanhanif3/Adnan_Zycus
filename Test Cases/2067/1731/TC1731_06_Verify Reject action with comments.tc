@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1731_06_Verify Reject action with comments</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>49f5ebe5-7b01-46ff-8aad-7ceb6f09de6c</testCaseGuid>
+</TestCaseEntity>

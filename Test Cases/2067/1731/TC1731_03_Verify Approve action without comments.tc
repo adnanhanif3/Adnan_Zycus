@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1731_03_Verify Approve action without comments</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e155135e-24e2-418d-94fa-9a8812bccfdf</testCaseGuid>
+</TestCaseEntity>
