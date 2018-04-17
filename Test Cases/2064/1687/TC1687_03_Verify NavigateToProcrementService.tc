@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC1687_03_NavigateToProcrementService</name>
+   <name>TC1687_03_Verify NavigateToProcrementService</name>
    <tag></tag>
    <comment>Verify Navigation to Procurement Service </comment>
    <testCaseGuid>ea63f510-a241-4d88-9851-00e54f41a0c5</testCaseGuid>

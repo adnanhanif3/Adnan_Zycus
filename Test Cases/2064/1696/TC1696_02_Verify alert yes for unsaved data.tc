@@ -3,6 +3,6 @@
    <description></description>
    <name>TC1696_02_Verify alert yes for unsaved data</name>
    <tag></tag>
-   <comment>Not implemented Popups to automate</comment>
+   <comment>Verify alert for cancel</comment>
    <testCaseGuid>e9522796-bc85-4e53-9cf3-9d4d19153c76</testCaseGuid>
 </TestCaseEntity>

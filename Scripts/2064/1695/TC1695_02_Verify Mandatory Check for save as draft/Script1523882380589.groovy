@@ -29,13 +29,15 @@ WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
 
 WebUI.delay(3)
 
-WebUI.sendKeys(findTestObject('Page_Create Request/Basic Details/txt_RequestName'), 'Test cancel alert')
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test cancel alert')
 
 WebUI.click(findTestObject('Page_Create Request/btn_Cancel'))
 
 WebUI.verifyElementPresent(findTestObject('Page_Create Request/alert_UnsavedData'), 0)
 
 WebUI.click(findTestObject('Page_Create Request/alert_Yes'))
+
+String CurrentPageUrl = WebUI.getUrl()
 
 WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/irequest/home')
 

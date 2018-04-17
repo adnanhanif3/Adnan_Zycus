@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC1688_01_Page title</name>
+   <name>TC1688_01_Verify Page title</name>
    <tag></tag>
    <comment>Page tilte Should be ReqDef_Name</comment>
    <testCaseGuid>2b520c25-d69e-4844-a375-ed7995a86a78</testCaseGuid>

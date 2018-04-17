@@ -35,7 +35,7 @@ WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
 WebUI.delay(7)
 
-WebUI.acceptAlert(FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 
 WebUI.verifyElementText(findTestObject('Page_Service request/txt_RequestNameTile1'), 'New request saved as draft')
 
