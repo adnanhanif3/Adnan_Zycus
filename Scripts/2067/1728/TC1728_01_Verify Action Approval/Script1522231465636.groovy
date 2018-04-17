@@ -27,7 +27,7 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Approval Listing/tab_Approvals'))
 
-String RequestNumber = WebUI.getText(findTestObject('Page_Approval Listing/txt_RequestNumber1'))
+String RequestNumber = WebUI.getText(findTestObject('Page_Approval Listing/txt_RequestNumbercard1'))
 
 WebUI.click(findTestObject('Page_Approval Listing/link_Rejectcard1'))
 
@@ -49,7 +49,7 @@ WebUI.click(findTestObject('Page_Approval Listing/btn_Rejected_Filter'))
 
 WebUI.click(findTestObject('Page_Approval Listing/btn_ViewApprovals'))
 
-WebUI.verifyElementText(findTestObject('Page_Approval Listing/txt_RequestNumber1'), RequestNumber)
+WebUI.verifyElementText(findTestObject('Page_Approval Listing/txt_RequestNumbercard1'), RequestNumber)
 
 WebUI.closeBrowser()
 
