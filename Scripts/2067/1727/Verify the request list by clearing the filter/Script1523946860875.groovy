@@ -19,39 +19,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/HELP DESK'))
+CustomKeywords.'customKeywords.database.connectDB'()
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/ReportAnIssue'))
-
-WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Module'))
-
-WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Module-Approvals'))
-
-WebUI.click(findTestObject('Page_ReportAnIssuePopUp/MessageType'))
-
-WebUI.click(findTestObject('Page_ReportAnIssuePopUp/MessageType_FunctionalityIssue'))
-
-WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Priority'))
-
-WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Priority_High'))
-
-WebUI.setText(findTestObject('Page_ReportAnIssuePopUp/Summary'), 'Test')
-
-WebUI.setText(findTestObject('Page_ReportAnIssuePopUp/Description'), 'Test')
-
-WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), 'C:\\\\Users\\\\Prabodh.Ghosh\\\\git\\\\iRequestAutomation\\\\Data Files\\\\App Test Data\\\\FilesToUpload\\\\Airtel.txt')
-
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Submit'))
-
-WebUI.delay(5)
-
-Text = WebUI.getText(findTestObject('Page_ReportAnIssuePopUp/ConfirmationPanel'))
-
-WebUI.verifyMatch(Text, 'Issue Submitted', false)
-
-WebUI.closeBrowser()
+WebUI.acceptAlert()
 

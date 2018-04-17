@@ -27,7 +27,7 @@ WebUI.setText(findTestObject('Page_Login/UserId'), 'poojaqatest@zycat.com')
 
 WebUI.click(findTestObject('Page_Login/GhoshPassword'))
 
-WebUI.setText(findTestObject('Page_Login/Password'), 'Test@123')
+WebUI.setText(findTestObject('Page_Login/Password'), 'Test@1234')
 
 WebUI.click(findTestObject('Page_Login/LoginBtn'))
 

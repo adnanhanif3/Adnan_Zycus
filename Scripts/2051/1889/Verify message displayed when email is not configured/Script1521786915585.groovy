@@ -45,9 +45,9 @@ WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Submit'))
 
 WebUI.delay(5)
 
-AlertText = WebUI.getAlertText()
+Confirmation = WebUI.getText(findTestObject('Page_ReportAnIssuePopUp/ConfirmationPanel'))
 
-WebUI.verifyMatch(AlertText, 'Email ID not configured. Please contact administrator to report an issue', false)
+WebUI.verifyMatch(Confirmation, 'Email ID not configured. Please contact administrator to report an issue.', false)
 
 WebUI.closeBrowser()
 
