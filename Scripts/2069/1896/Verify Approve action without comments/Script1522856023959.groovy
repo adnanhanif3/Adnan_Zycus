@@ -19,13 +19,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Page_Home/Overview/Pending Approval Tile'), 0)
+WebUI.delay(6)
 
-WebUI.click(findTestObject('Page_Home/Overview/Pending Approval Tile'))
+WebUI.click(findTestObject('Page_Approval Listing/tab_Approvals'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Approval Listing/Approval Header'), 0)
+WebUI.click(findTestObject('Page_Approval Listing/Btn_review'))
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Page_Approval Listing/Workflow Approve'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Page_View request/Pop up Approval Button'))
 
