@@ -19,15 +19,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
 CustomKeywords.'customKeywords.database.connectDB'()
 
-Count = CustomKeywords.'customKeywords.database.executeQuery'('select count(request_number) from request where tenant_id=\'d801a7b0-b816-4c71-a52c-71f694cb3da8\' and created_by_id = \'0ec0adf6-2dcf-42d3-bf7d-da69c970f48e\' and status !=6')
+Count = CustomKeywords.'customKeywords.database.executeQuery'('select count(*) from request where tenant_id=\'d801a7b0-b816-4c71-a52c-71f694cb3da8\' and created_by_id=\'15c874b1-cbb2-467b-a1aa-8ec4dcc3f6a8\' and status not in (6,3,9,10,11,12,13) and deleted=0')
 
-Expected = Count+' Requests'
+Expected = (Count + ' Requests')
 
 WebUI.verifyElementText(findTestObject('Page_Home/Overview/Pending Request Count Number'), Expected)
 
 CustomKeywords.'customKeywords.database.closeDatabaseConnection'()
+
+WebUI.closeBrowser()
 
