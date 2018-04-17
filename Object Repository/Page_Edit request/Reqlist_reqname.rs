@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Reqlist_reqname</name>
+   <tag></tag>
+   <elementGuidId>ab1378ad-56a8-4052-8e77-1292538c75bf</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//div[1]/dew-service-request-card/dew-paper/div/div[1]/dew-row/dew-col[2]/p/span</value>
+   </webElementProperties>
+</WebElementEntity>
