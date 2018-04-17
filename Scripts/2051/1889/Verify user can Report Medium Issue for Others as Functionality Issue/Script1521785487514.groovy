@@ -27,6 +27,8 @@ WebUI.click(findTestObject('Page_Home/Menu Nav/ReportAnIssue'))
 
 WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Module'))
 
+WebUI.scrollToElement(findTestObject('Page_ReportAnIssuePopUp/Module-Others'), 0)
+
 WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Module-Others'))
 
 WebUI.click(findTestObject('Page_ReportAnIssuePopUp/MessageType'))
@@ -45,9 +47,9 @@ WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Submit'))
 
 WebUI.delay(5)
 
-AlertText = WebUI.getAlertText()
+AlertText = WebUI.getText(findTestObject('Page_ReportAnIssuePopUp/ConfirmationPanel'))
 
-WebUI.verifyMatch(AlertText, 'Submitting the issue', false)
+WebUI.verifyMatch(AlertText, 'Issue Submitted', false)
 
 WebUI.closeBrowser()
 
