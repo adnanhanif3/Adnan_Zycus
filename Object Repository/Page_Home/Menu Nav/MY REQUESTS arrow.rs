@@ -6,21 +6,21 @@
    <elementGuidId>ac004618-638e-43c5-9e75-53d29c1bbbb1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//dew-col[@class='col-8']/dew-flex/dew-flex-item[3]/div/a/dew-icon</value>
+         <key>XPATH</key>
+         <value></value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>html/body/dew-app-root/dew-irequest-layout/dew-block/dew-my-requests/div/dew-flex/dew-flex-item/h3/img</value>
+         <key>BASIC</key>
+         <value>//dew-col[@class='col-12']/dew-flex/dew-flex-item[3]/div/a/dew-icon</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//dew-col[@class='col-8']/dew-flex/dew-flex-item[3]/div/a/dew-icon</value>
+      <value>//dew-col[@class='col-12']/dew-flex/dew-flex-item[3]/div/a/dew-icon</value>
    </webElementProperties>
 </WebElementEntity>
