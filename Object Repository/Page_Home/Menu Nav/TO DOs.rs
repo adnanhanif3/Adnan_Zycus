@@ -6,12 +6,12 @@
    <elementGuidId>428705e2-4ea9-4c44-8fc1-43d225b693ed</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//dew-col[@class='col-8']/dew-flex/dew-flex-item[2]/div/a</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>html/body/dew-app-root/dew-irequest-layout/irequest-header/dew-row[2]/dew-row/dew-col/dew-flex/dew-flex-item[2]/div/a</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//dew-col[@class='col-8']/dew-flex/dew-flex-item[2]/div/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
