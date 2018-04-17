@@ -19,15 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.click(findTestObject('Home page error handling repo/Error1'))
-
-WebUI.click(findTestObject('Home page error handling repo/Error2'))
-
-WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'))
-
-WebUI.click(findTestObject('Page_Home/Menu Nav/Submenu Service Request'))
+WebUI.callTestCase(findTestCase('Common TC/Create Request With Basic Details'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Service request/View Request'))
 
