@@ -19,21 +19,37 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
+WebUI.comment('Verify the action Approval')
 
-WebUI.click(findTestObject('Home page error handling repo/Error2'))
+WebUI.callTestCase(findTestCase('Common TC/Diego Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Home page error handling repo/Error1'))
+WebUI.delay(10)
 
-WebUI.delay(1)
+WebUI.click(findTestObject('Page_Approval Listing/tab_Approvals'))
 
-WebUI.mouseOver(findTestObject('Page_Approval Listing/TODO_tab'))
+String RequestNumber = WebUI.getText(findTestObject('Page_Approval Listing/txt_RequestNumber1'))
 
-WebUI.click(findTestObject('Page_Approval Listing/Approval_dropdwn'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Approval Listing/link_ApproveCard1'))
 
-WebUI.delay(2)
+WebUI.sendKeys(findTestObject('Page_Approval Listing/txtarea_ApprovalComment'), 'Approved by Katalon')
 
-WebUI.verifyElementText(findTestObject('Page_Home/Menu Nav/HELP DESK'), 'HELP DESK')
+WebUI.click(findTestObject('Page_Approval Listing/btn_Approve In Comment Window'))
+
+WebUI.delay(10)
+
+WebUI.click(findTestObject('Page_Create Request/icon_Close'))
+
+WebUI.delay(4)
+
+WebUI.click(findTestObject('Page_Approval Listing/btn_AddFilter'))
+
+WebUI.click(findTestObject('Page_Approval Listing/btn_InApproval_Filter'))
+
+WebUI.click(findTestObject('Page_Approval Listing/btn_Approved_Filter'))
+
+WebUI.click(findTestObject('Page_Approval Listing/btn_ViewApprovals'))
+
+WebUI.verifyElementText(findTestObject('Page_Approval Listing/txt_RequestNumber1'), RequestNumber)
 
 WebUI.closeBrowser()
 

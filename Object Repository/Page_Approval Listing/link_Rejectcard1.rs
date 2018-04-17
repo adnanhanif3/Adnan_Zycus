@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_AddFilter</name>
+   <name>link_Rejectcard1</name>
    <tag></tag>
-   <elementGuidId>d9853e64-6950-4e90-b98e-0977b4ff593f</elementGuidId>
+   <elementGuidId>196afa7a-4a38-4d5f-94a1-5a67763d3c4e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[contains(text(),&quot;Add Filter&quot;)]</value>
+         <value>//dew-block/dew-approvals-card[1]/dew-paper/div/div[2]/dew-row/dew-col[4]/div/a[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

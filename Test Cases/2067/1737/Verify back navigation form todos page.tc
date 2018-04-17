@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify whether back navigation is clickable</name>
+   <name>Verify back navigation form todos page</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>ce9bbbdd-2c7d-4ca4-b3c6-95b6a6d30b67</testCaseGuid>

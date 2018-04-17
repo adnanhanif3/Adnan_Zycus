@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>btn_AddFilter</name>
+   <name>txtarea_RejectComment</name>
    <tag></tag>
-   <elementGuidId>d9853e64-6950-4e90-b98e-0977b4ff593f</elementGuidId>
+   <elementGuidId>f714c686-10c9-43ba-bb11-88fe0567f1c9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[contains(text(),&quot;Add Filter&quot;)]</value>
+         <value>//dew-block/dew-approvals-card[1]/dew-paper/div/div[2]/dew-modal[1]/div/div/div[2]/dew-modal-body/div/textarea</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
