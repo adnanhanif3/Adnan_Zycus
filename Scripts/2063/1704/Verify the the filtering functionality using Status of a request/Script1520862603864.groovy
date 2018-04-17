@@ -24,11 +24,13 @@ WebUI.click(findTestObject('Page_Home/Menu Nav/Add Filter click'))
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Page_Service request/With RM deselect '))
 
-WebUI.verifyElementPresent(findTestObject('null'), 0)
+WebUI.click(findTestObject('Page_Service request/Draft deselect'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Page_Service request/Inprogress deselect'))
+
+WebUI.click(findTestObject('Page_Service request/Rejected deselect '))
 
 WebUI.closeBrowser()
 

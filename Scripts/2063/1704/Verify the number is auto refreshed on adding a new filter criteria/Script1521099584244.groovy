@@ -25,21 +25,19 @@ WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
 
 WebUI.click(findTestObject('Page_Service request/Service request xpath'))
 
-WebUI.delay(5)
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_Home/Menu Nav/Add Filter click'))
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Page_View request/Remove Awaiting Approval'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('null'), 0)
+WebUI.click(findTestObject('Page_View request/Rmove Returned'))
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/Draft'))
-
-WebUI.verifyElementPresent(findTestObject('null'), 0)
+WebUI.click(findTestObject('Page_View request/Remove InProgress'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(3)
 
-WebUI.closeBrowser()
+WebUI.verifyElementPresent(findTestObject('Page_Service request/Service Requests - X requests'), 0)
 
