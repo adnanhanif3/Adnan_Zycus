@@ -19,37 +19,27 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.comment('Verify the action Approval')
+WebUI.comment('Verify view deatils for approved request')
 
 WebUI.callTestCase(findTestCase('Common TC/Diego Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(10)
-
 WebUI.click(findTestObject('Page_Approval Listing/tab_Approvals'))
-
-String RequestNumber = WebUI.getText(findTestObject('Page_Approval Listing/txt_RequestNumbercard1'))
-
-WebUI.click(findTestObject('Page_Approval Listing/link_ApproveCard1'))
-
-WebUI.sendKeys(findTestObject('Page_Approval Listing/txtarea_ApprovalComment'), 'Approved by Katalon')
-
-WebUI.click(findTestObject('Page_Approval Listing/btn_Approve In Comment Window'))
-
-WebUI.delay(10)
-
-WebUI.click(findTestObject('Page_Create Request/icon_Close'))
-
-WebUI.delay(4)
 
 WebUI.click(findTestObject('Page_Approval Listing/btn_AddFilter'))
 
 WebUI.click(findTestObject('Page_Approval Listing/btn_InApproval_Filter'))
 
-WebUI.click(findTestObject('Page_Approval Listing/btn_Approved_Filter'))
+WebUI.click(findTestObject('Page_Approval Listing/btn_Rejected_Filter'))
 
 WebUI.click(findTestObject('Page_Approval Listing/btn_ViewApprovals'))
 
-WebUI.verifyElementText(findTestObject('Page_Approval Listing/txt_RequestNumbercard1'), RequestNumber)
+WebUI.delay(2)
+
+String ReqNum = WebUI.getText(findTestObject('Page_Approval Listing/txt_RequestNumbercard1'))
+
+WebUI.click(findTestObject('Page_Approval Listing/btn_ViewDeatilsCard1'))
+
+WebUI.verifyElementText(findTestObject('Page_Approval Listing/txt_RequestNumber View Page'), ReqNum)
 
 WebUI.closeBrowser()
 

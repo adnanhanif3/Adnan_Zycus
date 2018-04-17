@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txt_RequestNumber1</name>
+   <name>txt_RequestNumber View Page</name>
    <tag></tag>
-   <elementGuidId>05a8b218-cbbd-444f-8fe2-710963740309</elementGuidId>
+   <elementGuidId>4b59af67-734d-419c-9634-86e685b62624</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-block/dew-approvals-card[1]/dew-paper/div/div[1]/dew-row/dew-col[1]/span[2]</value>
+         <value>//dew-approvals-card[1]/dew-paper/div/div[1]/dew-row/dew-col[1]/span[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
