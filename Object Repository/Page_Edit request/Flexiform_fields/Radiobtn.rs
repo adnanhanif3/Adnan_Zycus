@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Radiobtn</name>
+   <tag></tag>
+   <elementGuidId>b304e4a8-0b04-45cd-b6c0-a5aa46d56d55</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='df_dfSection_DFSECTION_13_3_2018_17_48_26_726_pg27kl8sb']/div[2]/ul/li[4]/div/label[2]/input</value>
+   </webElementProperties>
+</WebElementEntity>

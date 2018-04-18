@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Checkbox2</name>
+   <tag></tag>
+   <elementGuidId>715becaf-efc7-4bdc-bae6-1e7cde5ff2c8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id='df_dfSection_DFSECTION_13_3_2018_17_48_26_726_pg27kl8sb']/div[2]/ul/li[5]/div/label[2]/input</value>
+   </webElementProperties>
+</WebElementEntity>
