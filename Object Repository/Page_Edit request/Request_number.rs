@@ -6,12 +6,11 @@
    <elementGuidId>3896f4be-beec-4cee-8c88-0baaf15e8b3c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//span[1][text()='Request Number']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//dew-row[1][@class='row']/dew-col[1]/div/span[1]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

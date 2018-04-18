@@ -23,15 +23,17 @@ WebUI.callTestCase(findTestCase('2064/1695/TC1695_01_Save as Draft'), [:])
 
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Request_number'), 5)
+WebUI.verifyElementText(findTestObject('Page_Edit request/Request_number'), 'Request Number')
 
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Request_type'), 0)
+WebUI.verifyElementText(findTestObject('Page_Edit request/Requestdefinition_name'), 'Request Definition Name')
 
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Urgent_requirement'), 0)
+WebUI.verifyElementText(findTestObject('Page_Edit request/Request_type'), 'Request Type')
 
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Request_description'), 0)
+WebUI.verifyElementText(findTestObject('Page_Edit request/Urgent_requirement'), 'Urgent Requirement')
 
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Add_attachments'), 0)
+WebUI.verifyElementText(findTestObject('Page_Edit request/Request_description'), 'Request Description')
+
+WebUI.verifyElementText(findTestObject('Page_Edit request/Add_attachments'), 'Add Attachments')
 
 WebUI.closeBrowser()
 

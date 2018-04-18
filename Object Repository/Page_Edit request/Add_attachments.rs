@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//label[contains(text(),'Add Attachments')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class=&quot;ng-untouched ng-pristine ng-valid&quot;]/dew-row[3]/dew-col/div/label</value>
+      <value>//label[contains(text(),'Add Attachments')]</value>
    </webElementProperties>
 </WebElementEntity>

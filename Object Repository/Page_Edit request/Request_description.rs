@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//span[1][text()='Request Description']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@ class=&quot;ng-untouched ng-pristine ng-valid&quot;]/dew-row[2]/dew-col/div/label/span[1]</value>
+      <value>//span[1][text()='Request Description']</value>
    </webElementProperties>
 </WebElementEntity>
