@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify attaching a file with more than 5MB</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bd1d1094-3af5-469c-a79f-cf17a9622472</testCaseGuid>
+</TestCaseEntity>

@@ -19,23 +19,39 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.comment('Verify Create new request Submit')
-
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Test email Notification')
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/HELP DESK'))
 
-WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
+WebUI.click(findTestObject('Page_Home/Menu Nav/ReportAnIssue'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'New request by Katalon')
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Module'))
 
-WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Module-Approvals'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum')
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/MessageType'))
 
-WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/MessageType_FunctionalityIssue'))
+
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Priority'))
+
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Priority_High'))
+
+WebUI.setText(findTestObject('Page_ReportAnIssuePopUp/Summary'), 'Test')
+
+WebUI.setText(findTestObject('Page_ReportAnIssuePopUp/Description'), 'Test')
+
+String userDir = System.getProperty('user.dir')
+
+String filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\jmeter.bat'
+
+WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), filePath)
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Create Request/icon_Close'))
+Text = WebUI.getText(findTestObject('Page_ReportAnIssuePopUp/ConfirmationPanel'))
+
+WebUI.verifyMatch(Text, 'File type not supported', false)
+
+WebUI.closeBrowser()
 
