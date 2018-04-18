@@ -41,7 +41,11 @@ WebUI.setText(findTestObject('Page_ReportAnIssuePopUp/Summary'), 'Test')
 
 WebUI.setText(findTestObject('Page_ReportAnIssuePopUp/Description'), 'Test')
 
-WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), 'C:\\\\Users\\\\Prabodh.Ghosh\\\\git\\\\iRequestAutomation\\\\Data Files\\\\App Test Data\\\\FilesToUpload\\\\Airtel.txt')
+String userDir = System.getProperty('user.dir')
+
+String filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\Airtel.txt'
+
+WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), filePath)
 
 WebUI.delay(5)
 
