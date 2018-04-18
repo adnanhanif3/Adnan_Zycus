@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Validating Description text box in Report as Issue form by entering 5000 characters</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5cbaa02f-fd0f-4ed5-a82c-059f68a9a166</testCaseGuid>
+</TestCaseEntity>
