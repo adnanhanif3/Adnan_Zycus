@@ -21,7 +21,9 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow2'))
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Test email Notification')
+
+WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
 WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test Assign To User group')
 
@@ -33,17 +35,17 @@ WebUI.click(findTestObject('Page_Create Request/icon_AssignTo'))
 
 WebUI.click(findTestObject('Page_Create Request/drpdwn_AssignToGrp'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'D')
+WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Dew')
 
 WebUI.click(findTestObject('Page_Create Request/drpdwn_GrpDewdrop'))
 
 WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
-WebUI.waitForAlert(10)
+WebUI.waitForElementPresent(findTestObject('Page_Create Request/icon_Close'), 30)
 
-WebUI.acceptAlert()
+WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 
-WebUI.click(findTestObject('Page_Service request/btn_ViewRequest1'))
+WebUI.click(findTestObject('Page_Service request/View Request'))
 
 WebUI.verifyElementText(findTestObject('Page_View request/txt_AssignToName'), 'Dewdrops')
 
