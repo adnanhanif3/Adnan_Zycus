@@ -23,7 +23,9 @@ WebUI.comment('Verify Create new request Submit')
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Test email Notification')
+
+WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
 WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'New request by Katalon')
 
