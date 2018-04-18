@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>html/body/dew-app-root/dew-irequest-layout/dew-block/dew-my-requests/dew-tabset/div/dew-tab/dew-block/div[2]/div[1]/dew-service-request-card/dew-paper/div/div[2]/dew-row/dew-col[4]/div/a[2]</value>
+         <value>/html/body/dew-app-root/dew-irequest-layout/dew-block/dew-my-requests/dew-tabset/div/dew-tab/dew-block/div[2]/div[1]/dew-service-request-card/dew-paper/div/div[1]/dew-row/dew-col[5]/dew-badge-status</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC1688_01_Verify Page title</name>
+   <name>TC1688_05_Verify the page title when the Request Definition name is alphanumeric</name>
    <tag></tag>
    <comment>Page tilte Should be ReqDef_Name</comment>
-   <testCaseGuid>2b520c25-d69e-4844-a375-ed7995a86a78</testCaseGuid>
+   <testCaseGuid>9e711ff9-7fac-43f1-b710-a47ab201ac6f</testCaseGuid>
 </TestCaseEntity>
