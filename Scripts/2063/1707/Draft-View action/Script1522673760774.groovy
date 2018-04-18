@@ -33,9 +33,7 @@ WebUI.click(findTestObject('Page_Home/Menu Nav/Draft'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('null'))
-
-WebUI.verifyElementPresent(findTestObject('null'), 0)
+WebUI.verifyElementNotPresent(findTestObject('Page_View request/Verify View'), 0)
 
 WebUI.closeBrowser()
 

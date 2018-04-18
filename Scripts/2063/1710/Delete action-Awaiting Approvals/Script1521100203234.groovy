@@ -35,7 +35,7 @@ WebUI.click(findTestObject('Page_Home/Menu Nav/Awaiting Approval'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('null'))
+WebUI.verifyElementPresent(findTestObject('Page_View request/Delete xpath'), 0)
 
 WebUI.closeBrowser()
 

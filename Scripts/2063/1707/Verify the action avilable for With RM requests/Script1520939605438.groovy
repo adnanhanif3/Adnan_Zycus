@@ -23,13 +23,17 @@ WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling
 
 WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
 
-WebUI.click(findTestObject('Page_Service request/Service request xpath'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Service request/Service request xpath'))
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Page_Home/Menu Nav/Add Filter click'))
 
-WebUI.delay(5)
+WebUI.click(findTestObject('Page_Service request/WIth RM click'))
+
+WebUI.delay(2)
+
+WebUI.verifyElementPresent(findTestObject('Page_View request/Verify View'), 0)
 
 WebUI.closeBrowser()
 
