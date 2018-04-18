@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-flex[@class=&quot;d-flex align-items-center&quot;]/dew-flex-item[1]/h3</value>
+         <value>//h3[@class=&quot;p-4 d-flex align-items-center irequest-header&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>

@@ -21,13 +21,27 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Test email Notification')
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/Submenu Service Request'))
+WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
+
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test_PageTitle')
+
+WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Testing Page Title')
+
+WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+
+WebUI.waitForElementPresent(findTestObject('Page_Create Request/icon_Close'), 30)
+
+WebUI.click(findTestObject('Page_Create Request/icon_Close'))
+
+WebUI.delay(5)
 
 requestName = WebUI.getText(findTestObject('Page_Service request/Request Name'))
 
 WebUI.click(findTestObject('Page_Service request/View Request'))
+
+WebUI.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Page_View request/PageTitle'), requestName, FailureHandling.CONTINUE_ON_FAILURE)
 
