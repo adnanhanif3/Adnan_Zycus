@@ -7,6 +7,11 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value>//dew-col[@class='col-8']/dew-flex/dew-flex-item[3]/div/a</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
