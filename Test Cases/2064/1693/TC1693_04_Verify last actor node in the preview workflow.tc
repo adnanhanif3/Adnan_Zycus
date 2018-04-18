@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1693_04_Verify last actor node in the preview workflow</name>
+   <tag></tag>
+   <comment>Verify first actor in preview workflow</comment>
+   <testCaseGuid>591c0845-bbfa-40dc-ab3f-d7c4214f6ca0</testCaseGuid>
+</TestCaseEntity>
