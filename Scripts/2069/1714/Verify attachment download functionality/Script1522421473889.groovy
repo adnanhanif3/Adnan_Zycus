@@ -49,3 +49,5 @@ WebUI.click(findTestObject('Page_Service request/View Request'))
 
 WebUI.click(findTestObject('Page_View request/Download Attachment'))
 
+WebUI.closeBrowser()
+
