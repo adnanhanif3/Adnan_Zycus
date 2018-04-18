@@ -33,7 +33,7 @@ WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
 
 WebUI.delay(5)
 
-WebUI.acceptAlert()
+WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.click(findTestObject('Page_Service request/View Request'))
 

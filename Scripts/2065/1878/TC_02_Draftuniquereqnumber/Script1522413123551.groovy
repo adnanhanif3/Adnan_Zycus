@@ -31,3 +31,5 @@ WebUI.delay(2)
 
 WebUI.verifyElementText(findTestObject('Page_Edit request/Requestnumber_field'), text)
 
+WebUI.closeBrowser()
+

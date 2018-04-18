@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('Common TC/Edit request page Tc(Draft)'), [:])
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Create Request/icon_BackNavigation'))
+WebUI.click(findTestObject('Page_Edit request/Backnavg_icon'))
 
 WebUI.verifyElementText(findTestObject('Page_Edit request/Navigationpage_servicerequest'), 'My Requests')
 

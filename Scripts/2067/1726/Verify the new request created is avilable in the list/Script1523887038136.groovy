@@ -29,19 +29,21 @@ WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
 WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdrops')
 
-text = WebUI.getText(findTestObject('Page_Create Request/txt_RequestName'))
-
 WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
-WebUI.delay(2)
+WebUI.delay(30)
 
 WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
+
+WebUI.delay(5)
 
 WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/TO DOs arrow'))
 
 WebUI.click(findTestObject('Page_Approval Listing/Approval_dropdwn'))
 
-WebUI.verifyElementText(findTestObject('Page_Edit request/Get text(req name) for page title verfy'), a)
+WebUI.delay(1)
+
+WebUI.verifyElementText(findTestObject('Page_Edit request/Requestname_listpg'), 'Testdewdrops')
 
 WebUI.closeBrowser()
 

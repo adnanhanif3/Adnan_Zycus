@@ -3,6 +3,6 @@
    <description></description>
    <name>TC_02_Draftuniquereqnumber</name>
    <tag></tag>
-   <comment></comment>
+   <comment>Verify the request number shuld remain same,while editing the  request.</comment>
    <testCaseGuid>244a059a-d6fb-4d7a-b6cb-8ac434a0f6ca</testCaseGuid>
 </TestCaseEntity>

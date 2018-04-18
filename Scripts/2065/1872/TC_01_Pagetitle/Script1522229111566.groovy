@@ -19,43 +19,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('http://test.irequest.zycus.net/#/irequest/home')
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.maximizeWindow()
+WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
 
-WebUI.click(findTestObject('Page_Login/GhostUserID'))
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'New request saved as draft')
 
-WebUI.setText(findTestObject('Page_Login/UserId'), 'bobby.charlton@mariners.com')
+WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
 
-WebUI.click(findTestObject('Page_Login/GhoshPassword'))
+WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum')
 
-WebUI.setText(findTestObject('Page_Login/Password'), 'iRequest@1234')
+WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
-WebUI.click(findTestObject('Page_Login/LoginBtn'))
+WebUI.delay(7)
 
-WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
+WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Page_Service request/Inprogress deselect'))
-
-WebUI.click(findTestObject('Page_Service request/Returned deselect '))
-
-WebUI.click(findTestObject('Page_Service request/With RM deselect '))
-
-WebUI.click(findTestObject('Page_Service request/Awatting approval deselect '))
-
-WebUI.click(findTestObject('Page_Service request/Rejected deselect '))
-
-WebUI.delay(2)
-
-text = WebUI.getText(findTestObject('Page_Edit request/Get text(req name) for page title verfy'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
-
-WebUI.verifyElementText(findTestObject('Page_Edit request/Page title xpath'), text)
-
-WebUI.closeBrowser()
+WebUI.verifyElementText(findTestObject('Page_Service request/txt_RequestNameTile1'), 'New request saved as draft')
 
