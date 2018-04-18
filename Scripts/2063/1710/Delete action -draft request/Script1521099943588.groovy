@@ -31,11 +31,11 @@ WebUI.click(findTestObject('Page_Home/Menu Nav/Add Filter click'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/Draft'))
+WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Draft'), 0)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('null'))
+WebUI.verifyElementPresent(findTestObject('Page_View request/Delete xpath'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Page_Service request/Draft status'), 0)
+WebUI.closeBrowser()
 
