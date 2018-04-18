@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Service request xpath</name>
+   <name>txt_FirstNodeStatus</name>
    <tag></tag>
-   <elementGuidId>de689a81-6d26-411e-b54a-d712e00c532e</elementGuidId>
+   <elementGuidId>73820c06-94e7-4384-9c43-98691f8be661</elementGuidId>
    <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//dew-badge-status[text()=&quot;Awaiting Action&quot;]</value>
+      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>/html/body/dew-app-root/dew-irequest-layout/irequest-header/dew-row[2]/dew-row/dew-col/dew-flex/dew-flex-item[3]/div/div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -19,3 +19,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.comment('Verify first actor in preview workflow')
+
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Test email Notification')
+
+WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
+
+WebUI.verifyElementText(findTestObject('Page_Create Request/txt_LastActorNode'), 'Request Manager')
+
+WebUI.closeBrowser()
+
