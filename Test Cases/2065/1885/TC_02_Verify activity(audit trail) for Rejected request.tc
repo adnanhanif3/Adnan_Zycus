@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_01_Verify the audit trial</name>
+   <name>TC_02_Verify activity(audit trail) for Rejected request</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>f2a711be-6b99-4534-a236-c8a67655a44e</testCaseGuid>
+   <testCaseGuid>002c1c00-040c-464f-916a-9cd79ada2152</testCaseGuid>
 </TestCaseEntity>
