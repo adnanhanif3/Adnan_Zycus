@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Validating Summary text box in Report as Issue form by entering 100 characters</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e86bc578-67b7-4ad7-884e-3ea1ffa98bdc</testCaseGuid>
+</TestCaseEntity>
