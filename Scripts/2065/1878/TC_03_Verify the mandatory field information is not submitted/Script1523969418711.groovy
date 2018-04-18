@@ -41,3 +41,5 @@ WebUI.clearText(findTestObject('Page_Create Request/drpdown_AssignTo'))
 
 WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
+WebUI.closeBrowser()
+
