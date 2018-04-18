@@ -21,31 +21,37 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Test email Notification')
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/HELP DESK'))
 
-WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
+WebUI.click(findTestObject('Page_Home/Menu Nav/ReportAnIssue'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test Attachment')
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Module'))
 
-WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Module-Approvals'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Testing Attachment Functionality')
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/MessageType'))
+
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/MessageType_FunctionalityIssue'))
+
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Priority'))
+
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Priority_High'))
+
+WebUI.setText(findTestObject('Page_ReportAnIssuePopUp/Summary'), 'Test')
+
+WebUI.setText(findTestObject('Page_ReportAnIssuePopUp/Description'), 'Test')
 
 String userDir = System.getProperty('user.dir')
 
-String filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\eCatalogue_User_Guides.pdf'
+String filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\jmeter.bat'
 
-WebUI.uploadFile(findTestObject('Page_Create Request/Attachment'), filePath, FailureHandling.STOP_ON_FAILURE)
+WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), filePath)
 
-WebUI.delay(6)
+WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+Text = WebUI.getText(findTestObject('Page_ReportAnIssuePopUp/ConfirmationPanel'))
 
-WebUI.waitForElementPresent(findTestObject('Page_Create Request/icon_Close'), 30)
+WebUI.verifyMatch(Text, 'File type not supported', false)
 
-WebUI.click(findTestObject('Page_Create Request/icon_Close'))
-
-WebUI.click(findTestObject('Page_Service request/View Request'))
-
-WebUI.click(findTestObject('Page_View request/Download Attachment'))
+WebUI.closeBrowser()
 
