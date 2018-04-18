@@ -21,18 +21,23 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Test email Notification')
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Attachment')
+WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
+
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test Attachment')
 
 WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum')
+WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Testing Attachment Functionality')
 
-WebUI.uploadFile(findTestObject('Page_Create Request/Attachment'), 'C:\\\\Users\\\\adnan.hanif\\\\Desktop\\\\eCatalogue_User_Guides.pdf', 
-    FailureHandling.STOP_ON_FAILURE)
+String userDir = System.getProperty('user.dir')
 
-WebUI.delay(4)
+String filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\eCatalogue_User_Guides.pdf'
+
+WebUI.uploadFile(findTestObject('Page_Create Request/Attachment'), filePath, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(6)
 
 WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
