@@ -21,9 +21,19 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'))
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Test email Notification')
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/Submenu Service Request'))
+WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
+
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test_HomeNaviagtion')
+
+WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Testing Home in Breadcrumb')
+
+WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+
+WebUI.waitForElementPresent(findTestObject('Page_Create Request/icon_Close'), 30)
+
+WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 
 WebUI.click(findTestObject('Page_Service request/View Request'))
 

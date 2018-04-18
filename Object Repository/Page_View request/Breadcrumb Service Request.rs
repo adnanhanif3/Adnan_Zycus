@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='heading']/ol/li[3]/a</value>
+         <value>//a[text()='Service Request']</value>
       </entry>
       <entry>
          <key>BASIC</key>
