@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1688_02_Verify the page title when the Request Definition name is 100 character long</name>
+   <tag></tag>
+   <comment>Page tilte Should be ReqDef_Name</comment>
+   <testCaseGuid>ca1a089b-0d66-48c7-96c8-4c94c1f980f4</testCaseGuid>
+</TestCaseEntity>
