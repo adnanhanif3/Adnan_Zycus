@@ -29,15 +29,11 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Home/Menu Nav/Add Filter click'))
 
-WebUI.delay(2)
-
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Page_Service request/WIth RM click'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('null'))
-
-WebUI.delay(2)
+WebUI.verifyElementPresent(findTestObject('Page_View request/Edit request x path'), 0)
 
 WebUI.closeBrowser()
 

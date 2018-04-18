@@ -21,21 +21,33 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/HELP DESK'))
 
-WebUI.click(findTestObject('Page_Service request/Service request xpath'))
+WebUI.click(findTestObject('Page_Home/Menu Nav/ReportAnIssue'))
+
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Module'))
+
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Module-Approvals'))
+
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/MessageType'))
+
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/MessageType_FunctionalityIssue'))
+
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Priority'))
+
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Priority_High'))
+
+WebUI.setText(findTestObject('Page_ReportAnIssuePopUp/Summary'), 'Test')
+
+WebUI.setText(findTestObject('Page_ReportAnIssuePopUp/Description'), 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.')
+
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Submit'))
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/Add Filter click'))
+Text = WebUI.getText(findTestObject('Page_ReportAnIssuePopUp/ConfirmationPanel'))
 
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Page_Home/Menu Nav/Rejected Click'))
-
-WebUI.delay(2)
-
-WebUI.verifyElementPresent(findTestObject('Page_View request/Delete xpath'), 0)
+WebUI.verifyMatch(Text, 'Issue Submitted', false)
 
 WebUI.closeBrowser()
 

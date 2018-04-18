@@ -21,23 +21,15 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/HELP DESK'))
 
-WebUI.click(findTestObject('Page_Service request/Service request xpath'))
+WebUI.click(findTestObject('Page_Home/Menu Nav/ReportAnIssue'))
 
-WebUI.delay(5)
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Submit'))
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/Add Filter click'))
+Text = WebUI.getText(findTestObject('Page_ReportAnIssuePopUp/ConfirmationPanel'))
 
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Page_Home/Menu Nav/Awaiting Approval'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('null'))
-
-WebUI.delay(2)
+WebUI.verifyMatch(Text, 'Please select mandatory fields', false)
 
 WebUI.closeBrowser()
 

@@ -27,21 +27,11 @@ WebUI.click(findTestObject('Page_Service request/Service request xpath'))
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_View request/Remove Draft'))
+WebUI.click(findTestObject('Page_Home/Menu Nav/Add Filter click'))
 
-WebUI.click(findTestObject('Page_View request/Remove Rejected'))
+WebUI.click(findTestObject('Page_Home/Menu Nav/Awaiting Approval'))
 
-WebUI.click(findTestObject('Page_Service request/With RM deselect '))
-
-WebUI.click(findTestObject('Page_View request/Rmove Returned'))
-
-WebUI.click(findTestObject('Page_View request/Remove InProgress'))
-
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Page_Service request/Service Requests - X requests'))
-
-WebUI.verifyElementPresent(findTestObject('Page_View request/Verify-Awaiting Approval'), 0)
+WebUI.delay(2)
 
 WebUI.verifyElementPresent(findTestObject('Page_View request/Verify View'), 0)
 

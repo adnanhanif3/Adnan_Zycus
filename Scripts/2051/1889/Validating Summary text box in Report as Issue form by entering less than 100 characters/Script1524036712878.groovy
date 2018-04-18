@@ -21,21 +21,33 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/HELP DESK'))
 
-WebUI.click(findTestObject('Page_Service request/Service request xpath'))
+WebUI.click(findTestObject('Page_Home/Menu Nav/ReportAnIssue'))
+
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Module'))
+
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Module-Approvals'))
+
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/MessageType'))
+
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/MessageType_FunctionalityIssue'))
+
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Priority'))
+
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Priority_High'))
+
+WebUI.setText(findTestObject('Page_ReportAnIssuePopUp/Summary'), 'this is less than 100 char string')
+
+WebUI.setText(findTestObject('Page_ReportAnIssuePopUp/Description'), 'Test')
+
+WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Submit'))
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/Add Filter click'))
+Text = WebUI.getText(findTestObject('Page_ReportAnIssuePopUp/ConfirmationPanel'))
 
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Page_Home/Menu Nav/Rejected Click'))
-
-WebUI.delay(2)
-
-WebUI.verifyElementPresent(findTestObject('Page_View request/Delete xpath'), 0)
+WebUI.verifyMatch(Text, 'Issue Submitted', false)
 
 WebUI.closeBrowser()
 
