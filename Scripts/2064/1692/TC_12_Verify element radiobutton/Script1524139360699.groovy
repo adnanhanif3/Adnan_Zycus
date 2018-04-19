@@ -19,11 +19,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('2064/1695/TC1695_01_Save as Draft'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:])
 
-WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
+WebUI.click(findTestObject('Page_Home/Top Nav/Globalsearch_box'))
 
-WebUI.verifyElementText(findTestObject('Page_View request/First Actor Designation'), 'Requester')
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'ADN_Test_FF')
+
+WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
+
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdrops')
+
+WebUI.delay(5)
+
+WebUI.verifyElementPresent(findTestObject('Page_Edit request/Flexiform_fields/Element_radiobutton'), 0)
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+
+WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.closeBrowser()
 
