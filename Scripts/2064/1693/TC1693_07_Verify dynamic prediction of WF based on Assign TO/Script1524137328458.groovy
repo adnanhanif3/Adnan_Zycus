@@ -19,17 +19,41 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.comment('Verify mandatory check for action submit')
+WebUI.comment('Verify assign to single user')
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Preview Workflow based on Assigned to type condition')
 
-WebUI.verifyElementPresent(findTestObject('Page_Create Request/btn_Submit'), 0)
+WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
-WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test AssignTO by Katalon')
 
-WebUI.verifyElementText(findTestObject('Page_Create Request/popup_Mandatory Check'), 'Please fill the mandatory fields')
+WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum')
+
+WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Lio')
+
+WebUI.click(findTestObject('Page_Create Request/drpdown_LioMessi'))
+
+WebUI.click(findTestObject('Page_Create Request/btn_Refresh'))
+
+WebUI.delay(4)
+
+WebUI.verifyElementText(findTestObject('Page_Create Request/txt_Approver Name in Preview WF'), 'Bobby C')
+
+WebUI.click(findTestObject('Page_Create Request/icon_AssignTo'))
+
+WebUI.click(findTestObject('Page_Create Request/drpdwn_AssignToGrp'))
+
+WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Dew')
+
+WebUI.click(findTestObject('Page_Create Request/drpdwn_GrpDewdrop'))
+
+WebUI.click(findTestObject('Page_Create Request/btn_Refresh'))
+
+WebUI.delay(4)
+
+WebUI.verifyElementText(findTestObject('Page_Create Request/txt_Approver Name in Preview WF'), 'Prabodh Ghosh')
 
 WebUI.closeBrowser()
 

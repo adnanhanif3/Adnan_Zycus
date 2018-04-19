@@ -19,17 +19,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.comment('Verify mandatory check for action submit')
+WebUI.comment('Verify Create new request Submit')
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Create Request/btn_Submit'), 0)
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'New request by Katalon')
+
+WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
+
+WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum')
 
 WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
-WebUI.verifyElementText(findTestObject('Page_Create Request/popup_Mandatory Check'), 'Please fill the mandatory fields')
+WebUI.delay(10)
+
+WebUI.click(findTestObject('Page_Create Request/icon_Close'))
+
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/txt_RequestNumberCard1'), 0)
 
 WebUI.closeBrowser()
 

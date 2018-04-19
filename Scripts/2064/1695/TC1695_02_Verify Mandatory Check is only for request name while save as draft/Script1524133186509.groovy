@@ -19,17 +19,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.comment('Verify mandatory check for action submit')
+WebUI.comment('Verify mandatory check is not performed apart from Request Name when Save As Draft is clicked. ')
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'ADN_Test_FF')
 
-WebUI.verifyElementPresent(findTestObject('Page_Create Request/btn_Submit'), 0)
+WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
-WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'New request saved as draft')
 
-WebUI.verifyElementText(findTestObject('Page_Create Request/popup_Mandatory Check'), 'Please fill the mandatory fields')
+WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
-WebUI.closeBrowser()
+WebUI.delay(30)
+
+WebUI.click(findTestObject('Page_Create Request/icon_Close'))
+
+WebUI.verifyElementText(findTestObject('Page_Service request/txt_RequestNameTile1'), 'New request saved as draft')
 

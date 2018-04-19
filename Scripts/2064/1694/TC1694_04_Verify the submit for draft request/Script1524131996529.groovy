@@ -19,17 +19,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.comment('Verify mandatory check for action submit')
+WebUI.callTestCase(findTestCase('2064/1695/TC1695_01_Save as Draft'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
+WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Create Request/btn_Submit'), 0)
+WebUI.click(findTestObject('Page_Edit request/Requestdescp_field'))
 
-WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+WebUI.sendKeys(findTestObject('Page_Edit request/Requestdescp_field'), 'Need the requirement as early as possible.')
 
-WebUI.verifyElementText(findTestObject('Page_Create Request/popup_Mandatory Check'), 'Please fill the mandatory fields')
+WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
+
+WebUI.click(findTestObject('Page_Service request/View Request'))
+
+WebUI.verifyElementText(findTestObject('Page_View request/requestdect data'), 'Loreum IpsumNeed the requirement as early as possible.')
 
 WebUI.closeBrowser()
 

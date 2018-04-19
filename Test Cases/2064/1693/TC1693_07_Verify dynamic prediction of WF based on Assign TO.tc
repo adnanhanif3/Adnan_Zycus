@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1693_07_Verify dynamic prediction of WF based on Assign TO</name>
+   <tag></tag>
+   <comment>Verify assign to single user</comment>
+   <testCaseGuid>2d0e94fd-852a-4380-ab21-3edc105cfbf5</testCaseGuid>
+</TestCaseEntity>

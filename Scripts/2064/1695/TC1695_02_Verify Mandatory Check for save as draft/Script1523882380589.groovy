@@ -23,21 +23,13 @@ WebUI.comment('Verify mandatory check for action save as draft')
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.maximizeWindow()
-
 WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
 
-WebUI.delay(3)
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/btn_SaveasDraft'), 0)
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test cancel alert')
+WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
-WebUI.click(findTestObject('Page_Create Request/btn_Cancel'))
+WebUI.verifyElementText(findTestObject('Page_Create Request/popup_Mandatory Check'), 'Please fill the mandatory fields')
 
-WebUI.verifyElementPresent(findTestObject('Page_Create Request/alert_UnsavedData'), 0)
-
-WebUI.click(findTestObject('Page_Create Request/alert_Yes'))
-
-String CurrentPageUrl = WebUI.getUrl()
-
-WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/irequest/home')
+WebUI.closeBrowser()
 

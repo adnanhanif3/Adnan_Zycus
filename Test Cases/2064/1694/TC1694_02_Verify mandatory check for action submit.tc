@@ -3,6 +3,6 @@
    <description></description>
    <name>TC1694_02_Verify mandatory check for action submit</name>
    <tag></tag>
-   <comment>Verify Create new request Submit</comment>
+   <comment>Verify mandatory check for action submit</comment>
    <testCaseGuid>bb0fd249-7326-46dd-8213-7a68a3a8475a</testCaseGuid>
 </TestCaseEntity>

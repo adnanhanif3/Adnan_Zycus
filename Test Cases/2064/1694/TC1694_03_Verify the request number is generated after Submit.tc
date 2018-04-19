@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1694_03_Verify the request number is generated after Submit</name>
+   <tag></tag>
+   <comment>Verify Create new request Submit</comment>
+   <testCaseGuid>a2c8facf-fab4-46f4-bc4b-12855d21ba9f</testCaseGuid>
+</TestCaseEntity>

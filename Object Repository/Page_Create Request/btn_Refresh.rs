@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>First Actor Designation</name>
+   <name>btn_Refresh</name>
    <tag></tag>
-   <elementGuidId>b5c43b35-79a8-406d-ae71-e789e875cc8e</elementGuidId>
+   <elementGuidId>db840bae-63b0-47e1-bb54-c0360277a29b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-text[text()='Requester']</value>
+         <value>//span[contains(text(),'Refresh')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
