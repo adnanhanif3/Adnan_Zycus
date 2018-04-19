@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify that Pending approval count is equal to count of In Approval items</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9076e2ad-12b9-45a4-bc23-885b682a9ae7</testCaseGuid>
+</TestCaseEntity>
