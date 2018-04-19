@@ -19,3 +19,33 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
+
+WebUI.click(findTestObject('Page_Home/Top Nav/Globalsearch_box'))
+
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'ADN_Test_FF')
+
+WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
+
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdrops')
+
+WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
+
+WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
+
+WebUI.delay(5)
+
+WebUI.verifyElementPresent(findTestObject('Page_Edit request/Flexiform_fields/Element_Dropdown'), 0)
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+
+WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
+
+WebUI.closeBrowser()
+

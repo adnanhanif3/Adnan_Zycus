@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Globalsearch_box'))
 
-WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Mandatory Assigned to')
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'ADN_Test_FF')
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
@@ -31,23 +31,37 @@ WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdr
 
 WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
-WebUI.delay(5)
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
-WebUI.verifyElementText(findTestObject('Page_Edit request/Request_number'), 'Request Number')
+WebUI.delay(30)
 
-WebUI.verifyElementText(findTestObject('Page_Edit request/Requestdefinition_name'), 'Request Definition Name')
+WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Eventcurrency_table'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Page_Edit request/Request_type'), 'Request Type')
+WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Eventcurrencyvalue1'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Page_Edit request/Urgent_requirement'), 'Urgent Requirement')
+WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Pricetype_table'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Page_Edit request/Request_description'), 'Request Description')
+WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Pricetype1'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Page_Edit request/Add_attachments'), 'Add Attachments')
+WebUI.sendKeys(findTestObject('Page_Edit request/Flexiform_fields/Unitmeasure'), 'KG', FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.sendKeys(findTestObject('Page_Edit request/Flexiform_fields/Itemnumber'), '123', FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.sendKeys(findTestObject('Page_Edit request/Flexiform_fields/Quantity'), '100', FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.sendKeys(findTestObject('Page_Edit request/Flexiform_fields/Itemname'), 'Notebook', FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Flexisave_table'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.closeBrowser()
 
