@@ -25,9 +25,21 @@ WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Test email
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test_FirstActor_Designation')
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test Assign To User group and Work Flow')
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Testing Designation of first actor')
+WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
+
+WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Checking Assign to user group functionality and its impact on Work Flow')
+
+WebUI.click(findTestObject('Page_Create Request/icon_AssignTo'))
+
+WebUI.click(findTestObject('Page_Create Request/drpdwn_AssignToGrp'))
+
+WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Dew')
+
+WebUI.click(findTestObject('Page_Create Request/drpdwn_GrpDewdrop'))
+
+WebUI.delay(4)
 
 WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
@@ -35,11 +47,11 @@ WebUI.waitForElementPresent(findTestObject('Page_Create Request/icon_Close'), 30
 
 WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 
-WebUI.delay(3)
-
 WebUI.click(findTestObject('Page_Service request/View Request'))
 
-WebUI.verifyElementText(findTestObject('Page_View request/First Actor Designation'), 'Requester')
+String RM = WebUI.getText(findTestObject('Page_View request/txt_AssignToName'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('Page_View request/RM Name'), RM)
 
 WebUI.closeBrowser()
 

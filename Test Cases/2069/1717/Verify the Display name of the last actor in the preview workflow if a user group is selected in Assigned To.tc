@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the Display name of the last actor in the preview workflow if a user group is selected in Assigned To</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f8af8f75-bb25-4f27-8a71-938abf605b82</testCaseGuid>
+</TestCaseEntity>

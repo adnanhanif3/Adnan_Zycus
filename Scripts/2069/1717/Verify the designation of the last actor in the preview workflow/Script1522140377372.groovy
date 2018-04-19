@@ -19,7 +19,23 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Create Request With Basic Details'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Test email Notification')
+
+WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
+
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test_LastActor_Designation')
+
+WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Testing Designation of last actor')
+
+WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+
+WebUI.waitForElementPresent(findTestObject('Page_Create Request/icon_Close'), 30)
+
+WebUI.click(findTestObject('Page_Create Request/icon_Close'))
+
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Page_Service request/View Request'))
 
