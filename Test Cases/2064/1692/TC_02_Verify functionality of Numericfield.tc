@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_02_Verify functionality of Numericfield</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>42d8be3a-bc6a-4135-b4d2-9ce1f3789147</testCaseGuid>
+</TestCaseEntity>

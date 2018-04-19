@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_21_Verify the future dates should not be clickable</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bb770b29-c3a1-43d0-9398-56e8c0cd8ec4</testCaseGuid>
+</TestCaseEntity>

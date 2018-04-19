@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC1692_01_FlexiForm</name>
+   <name>TC_08_Verify functionality of Flexitable</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>9e8dc28d-01d7-4dca-8791-2ea86aae76e4</testCaseGuid>
+   <testCaseGuid>c6502daf-8781-44a7-8a0c-1f5c924c7702</testCaseGuid>
 </TestCaseEntity>

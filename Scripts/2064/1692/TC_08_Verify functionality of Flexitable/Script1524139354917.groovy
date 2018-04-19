@@ -29,43 +29,15 @@ WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
 WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdrops')
 
-WebUI.delay(15)
+WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
-WebUI.sendKeys(findTestObject('Page_Edit request/Flexiform_fields/Textarea_field'), 'Test')
+WebUI.delay(3)
 
-WebUI.sendKeys(findTestObject('Page_Edit request/Flexiform_fields/Numeric_field'), '24')
+WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
-WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Radiobtn'))
+WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
-WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Checkbox1'))
-
-WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Checkbox2'))
-
-WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Dropdown1'))
-
-WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Dropdown1_value'))
-
-WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Dropdown2'))
-
-WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Dropdown2_value'))
-
-WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Date-time_field'))
-
-WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Month_field'))
-
-WebUI.selectOptionByValue(findTestObject('Page_Edit request/Flexiform_fields/Month_field'), '5', false)
-
-WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Year_field'))
-
-WebUI.selectOptionByValue(findTestObject('Page_Edit request/Flexiform_fields/Year_field'), '2015', false)
-
-WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Day_selecter'))
-
-String userDir = System.getProperty('user.dir')
-
-String filePath = (userDir + '\\') + 'git\\iRequestAutomation\\Data Files\\App Test Data\\FilesToUpload\\iRequest_User_Manual'
-
-WebUI.uploadFile(findTestObject('Page_Edit request/Flexiform_fields/Flexi_Attachment'), filePath)
+WebUI.delay(30)
 
 WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Eventcurrency_table'), FailureHandling.STOP_ON_FAILURE)
 
