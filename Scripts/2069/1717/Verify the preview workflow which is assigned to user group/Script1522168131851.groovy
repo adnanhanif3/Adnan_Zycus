@@ -25,15 +25,19 @@ WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Test email
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test_AssignToUser')
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test Assign To User group and Work Flow')
 
 WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Checking Assign to user functionality and its effect on workflow')
+WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Checking Assign to user group functionality and its impact on Work Flow')
 
-WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Lio')
+WebUI.click(findTestObject('Page_Create Request/icon_AssignTo'))
 
-WebUI.click(findTestObject('Page_Create Request/drpdown_LioMessi'))
+WebUI.click(findTestObject('Page_Create Request/drpdwn_AssignToGrp'))
+
+WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Dew')
+
+WebUI.click(findTestObject('Page_Create Request/drpdwn_GrpDewdrop'))
 
 WebUI.delay(4)
 
