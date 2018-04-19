@@ -35,15 +35,17 @@ WebUI.click(findTestObject('Page_Service request/Rejected deselect '))
 
 WebUI.click(findTestObject('Page_Service request/Draft deselect'))
 
+WebUI.delay(5)
+
 WebUI.click(findTestObject('Page_Service request/Filter button'))
 
 WebUI.click(findTestObject('Page_Service request/Filter Completed'))
 
-WebUI.waitForElementClickable(findTestObject('Page_Service request/Filter View Service Request'), 5)
+WebUI.delay(2, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Service request/Filter View Service Request'))
 
-WebUI.delay(5)
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_Service request/View Request'))
 
