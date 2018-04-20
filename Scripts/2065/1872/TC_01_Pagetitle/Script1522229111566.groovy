@@ -37,3 +37,5 @@ WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 
 WebUI.verifyElementText(findTestObject('Page_Service request/txt_RequestNameTile1'), 'New request saved as draft')
 
+WebUI.closeBrowser()
+
