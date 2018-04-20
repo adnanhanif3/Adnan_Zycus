@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Internal User must able to see the new request defnition created by admin in Procurement service list</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>20335f3b-14eb-4f96-bb5c-57dd5515788e</testCaseGuid>
+</TestCaseEntity>
