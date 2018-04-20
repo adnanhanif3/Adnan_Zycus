@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Procurement Services List Next Button</name>
+   <name>DefNameInPage</name>
    <tag></tag>
-   <elementGuidId>0d90cb98-376d-4511-ba46-d17261a62f56</elementGuidId>
+   <elementGuidId>87e8246e-ffb8-4131-aeda-3cf6b23ea2ba</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//dew-flex-item[@class='d-block']/span[@class='next']/button/dew-icon</value>
+         <value>//p[text()='Mandatory Assigned to']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//dew-flex-item[@class='d-block']/span[@class='next']/button/dew-icon</value>
+      <value>//p[text()='Mandatory Assigned to']</value>
    </webElementProperties>
 </WebElementEntity>
