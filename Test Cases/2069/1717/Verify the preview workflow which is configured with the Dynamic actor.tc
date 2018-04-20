@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the preview workflow which is configured with the Dynamic actor</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ccc83559-46d1-45ca-a3f1-2ea41958bfb7</testCaseGuid>
+</TestCaseEntity>
