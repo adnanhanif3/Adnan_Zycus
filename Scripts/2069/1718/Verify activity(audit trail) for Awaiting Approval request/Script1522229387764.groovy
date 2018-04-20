@@ -37,7 +37,7 @@ WebUI.click(findTestObject('Page_Service request/Draft deselect'))
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Service request/btn_ViewRequest1'))
+WebUI.click(findTestObject('Page_Service request/View Request'))
 
 WebUI.verifyElementPresent(findTestObject('Page_View request/Activity Tab'), 5)
 
