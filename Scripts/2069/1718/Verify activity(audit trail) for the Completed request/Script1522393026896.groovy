@@ -23,6 +23,8 @@ WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
 WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
 
+WebUI.delay(3)
+
 WebUI.click(findTestObject('Page_Service request/Inprogress deselect'))
 
 WebUI.click(findTestObject('Page_Service request/Returned deselect '))
@@ -41,7 +43,7 @@ WebUI.click(findTestObject('Page_Service request/Filter button'))
 
 WebUI.click(findTestObject('Page_Service request/Filter Completed'))
 
-WebUI.delay(2, FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Service request/Filter View Service Request'))
 
