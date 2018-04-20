@@ -19,9 +19,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('null'), [:])
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
 WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
+
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Page_Service request/Inprogress deselect'))
 
@@ -35,7 +37,7 @@ WebUI.click(findTestObject('Page_Service request/Draft deselect'))
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Service request/View Request'))
+WebUI.click(findTestObject('Page_Service request/btn_ViewRequest1'))
 
 WebUI.verifyElementPresent(findTestObject('Page_View request/Activity Tab'), 5)
 
