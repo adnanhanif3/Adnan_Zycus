@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Procurement Services Tile 1 Create New Button</name>
+   <name>GobalSearch_RequestTypeName</name>
    <tag></tag>
-   <elementGuidId>15e50e50-b62f-4fb0-beeb-471cc8cfd63e</elementGuidId>
+   <elementGuidId>4d84cf3f-d285-477e-8b2e-6e910525b9b4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//dew-block[@class='d-block position-relative clearfix']/dew-irequest/dew-section[2]/dew-block/dew-block/dew-row/dew-col[1]/dew-card/dew-card-body/dew-btn</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//dew-block[@class='d-block position-relative clearfix']/dew-irequest/dew-section[2]/dew-block/dew-block/dew-row/dew-col[1]/dew-card/dew-card-body/dew-btn</value>
+      <value>//li[@class='text-muted']</value>
    </webElementProperties>
 </WebElementEntity>
