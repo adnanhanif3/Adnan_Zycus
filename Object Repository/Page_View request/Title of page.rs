@@ -6,11 +6,11 @@
    <elementGuidId>6d9a5dcb-62d2-45c3-bc0b-fab7f1595274</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>html/body/dew-app-root/dew-irequest-layout/dew-block/dew-my-requests/div/dew-flex/dew-flex-item/h3</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//dew-block/div/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

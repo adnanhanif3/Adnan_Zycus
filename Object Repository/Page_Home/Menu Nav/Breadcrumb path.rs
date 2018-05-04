@@ -6,11 +6,11 @@
    <elementGuidId>5e62fb7b-e301-4cd1-b3fc-fa524e3adbb9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>html/body/dew-app-root/dew-irequest-layout/dew-block/dew-my-requests/div/ol</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//dew-block/ol</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

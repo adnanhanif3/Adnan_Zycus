@@ -31,7 +31,7 @@ WebUI.click(findTestObject('Page_Home/Menu Nav/HOME'))
 
 WebUI.delay(3)
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/TO DOs'))
+WebUI.click(findTestObject('Page_Home/Menu Nav/TO DOs arrow'))
 
 WebUI.delay(2)
 

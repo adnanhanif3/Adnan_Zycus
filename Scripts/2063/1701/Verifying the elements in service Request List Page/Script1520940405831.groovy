@@ -21,13 +21,13 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'))
 
 WebUI.click(findTestObject('Page_Service request/Service request xpath'))
 
 WebUI.delay(10)
 
-WebUI.check(findTestObject('Page_Service request/Service Requests - X requests'))
+WebUI.check(findTestObject('Page_Service request/Number of service requests'))
 
 WebUI.delay(2)
 
@@ -35,17 +35,17 @@ WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Search all request
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Add Filter click'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Request Number'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_View request/Verify Request Number'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Request name'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_View request/Verify Request- Name'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Submitted on'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_View request/Verify Submitted On'), 0)
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Status'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Request definition'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_View request/Verify Request Definition'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Requets type'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_View request/Verify Request Type'), 0)
 
 WebUI.closeBrowser()
 

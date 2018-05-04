@@ -6,15 +6,19 @@
    <elementGuidId>ac004618-638e-43c5-9e75-53d29c1bbbb1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
+         <key>CSS</key>
          <value></value>
       </entry>
       <entry>
          <key>BASIC</key>
          <value>//dew-col[@class='col-12']/dew-flex/dew-flex-item[3]/div/a/dew-icon</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//dew-block/div/i</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

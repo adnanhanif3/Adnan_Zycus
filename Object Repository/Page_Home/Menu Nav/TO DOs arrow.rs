@@ -9,8 +9,12 @@
          <key>BASIC</key>
          <value>//dew-col[@class=&quot;col-12&quot;]/dew-flex/dew-flex-item[2]/div/a/dew-icon</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//dew-col[2]/div/span</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>html/body/dew-app-root/dew-irequest-layout/dew-block/dew-my-requests/dew-tabset/div/dew-tab/dew-block/dew-row[1]/dew-col[1]/p/span</value>
+         <value></value>
       </entry>
       <entry>
          <key>BASIC</key>
@@ -15,16 +15,16 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>//dew-tab/dew-row[1]/dew-col[1]/p/span</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//dew-block[@class='d-block position-relative clearfix']/dew-my-requests/dew-tabset/div/dew-tab/dew-block/dew-row[1]/dew-col[1]</value>
+      <value>//dew-tabset/div/dew-tab/dew-block/dew-row[1]/dew-col[1]/p/span</value>
    </webElementProperties>
 </WebElementEntity>
