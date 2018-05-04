@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-block/dew-request-assign/dew-row/dew-col/div/dew-btn-group/div/dew-icon</value>
+         <value>.//*[@id='details']/form/dew-block[2]/irequest-new-assign/dew-row/dew-col/div/div/div</value>
       </entry>
       <entry>
          <key>BASIC</key>

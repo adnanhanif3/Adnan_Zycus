@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//dew-block/dew-sourcing-edit/div/dew-flex/dew-flex-item/h3/img</value>
+         <value>//div/dew-block/div/i</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//dew-block/dew-sourcing-edit/div/dew-flex/dew-flex-item/h3/img</value>
+      <value>//div/dew-block/div/i</value>
    </webElementProperties>
 </WebElementEntity>
