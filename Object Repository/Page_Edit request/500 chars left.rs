@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TODO_tab</name>
+   <name>500 chars left</name>
    <tag></tag>
-   <elementGuidId>8496f2b6-120e-49aa-b0a7-47b28b189a69</elementGuidId>
+   <elementGuidId>b161a0ff-a2af-4c59-a92d-02d6c085163b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-irequest-layout/irequest-header/dew-row[2]/dew-col[2]/dew-flex/dew-flex-item[2]/div/a</value>
+         <value>//span[2][text()='500 Char left']</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

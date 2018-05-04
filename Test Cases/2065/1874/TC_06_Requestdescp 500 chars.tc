@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_06_Requestdescp 500 chars</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dfffacc8-d504-4d49-b466-503576a886ac</testCaseGuid>
+</TestCaseEntity>

@@ -29,6 +29,8 @@ WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
 WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdrops')
 
+WebUI.sendKeys(findTestObject('Page_Edit request/Requestdescp_field'), 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam metus lectus, vehicula ut metus pharetra, pretium vestibulum odio. Suspendisse justo enim, sodales ac mi vel, commodo tempor risus. Aenean sed suscipit neque. Proin sagittis ex id risus egestas, eget aliquam leo mattis. Fusce mollis pulvinar mi, quis viverra tortor suscipit auctor. Integer condimentum purus eros, fermentum commodo turpis mattis id. In congue lectus nec turpis euismod, eget vehicula nibh aliquet. Morbi mollis nullam.')
+
 WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
 WebUI.delay(5)
@@ -37,17 +39,17 @@ WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
-String userDir = System.getProperty('user.dir')
+WebUI.sendKeys(findTestObject('Page_Edit request/Requestdescp_field'), 'Integer condimentum purus eros')
 
-String filePath = (userDir + '\\') + 'git\\iRequestAutomation\\Data Files\\App Test Data\\FilesToUpload\\iRequest_User_Manual'
-
-WebUI.uploadFile(findTestObject('Page_Edit request/Add_attachments'), filePath)
+WebUI.verifyElementPresent(findTestObject('Page_Edit request/0Charsleft_text'), 0)
 
 WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
+
+WebUI.delay(5)
 
 WebUI.closeBrowser()
 

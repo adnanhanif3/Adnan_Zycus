@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>.//*[@id='1']/dew-container/dew-paper/dew-section/dew-block/dew-request-basic-details/div/dew-row[1]/dew-col[1]/div/span[2]</value>
+         <value>//div[@class=&quot;ng-untouched ng-pristine ng-valid&quot;]/dew-row[1]/dew-col[1]/div/span[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

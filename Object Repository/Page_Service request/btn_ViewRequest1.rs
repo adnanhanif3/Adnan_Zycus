@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-block/div[2]/div[1]/dew-service-request-card/dew-paper/div/div[2]/dew-row/dew-col[4]/div/a[1]</value>
+         <value>//div[@class=&quot;float-right&quot;]/a</value>
       </entry>
       <entry>
          <key>BASIC</key>

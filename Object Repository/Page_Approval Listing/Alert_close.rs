@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>html/body/dew-app-root/dew-irequest-layout/ireq-alert-dialog/div/div/dew-icon</value>
+         <value>//div/ireq-alert-dialog/div/div/dew-icon</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

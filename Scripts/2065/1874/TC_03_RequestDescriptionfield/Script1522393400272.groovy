@@ -12,9 +12,21 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('2064/1695/TC1695_01_Save as Draft'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
-WebUI.delay(1)
+WebUI.click(findTestObject('Page_Home/Top Nav/Globalsearch_box'))
+
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Mandatory Assigned to')
+
+WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
+
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdrops')
+
+WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
@@ -26,15 +38,7 @@ WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
 
 WebUI.delay(5)
 
-WebUI.acceptAlert()
-
-WebUI.click(findTestObject('Page_Service request/View Request'))
-
-WebUI.delay(1)
-
-WebUI.verifyElementText(findTestObject('Page_View request/requestdect data'), 'Loreum Ipsum Testing the edit option')
-
-WebUI.delay(5)
+WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.closeBrowser()
 

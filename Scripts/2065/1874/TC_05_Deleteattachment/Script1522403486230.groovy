@@ -19,24 +19,37 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('2064/1695/TC1695_01_Save as Draft'), [:])
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
+
+WebUI.click(findTestObject('Page_Home/Top Nav/Globalsearch_box'))
+
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Mandatory Assigned to')
+
+WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
+
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdrops')
+
+String userDir = System.getProperty('user.dir')
+
+String filePath = (userDir + '\\') + 'git\\iRequestAutomation\\Data Files\\App Test Data\\FilesToUpload\\iRequest_User_Manual'
+
+WebUI.uploadFile(findTestObject('Page_Edit request/Add_attachments'), filePath)
+
+WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
-WebUI.uploadFile(findTestObject('Page_Edit request/Attachment_edit'), 'C:\\Users\\pooja.wali\\Pictures\\Screenshots\\Actual design.png')
+WebUI.click(findTestObject('Page_Edit request/Btn_delete'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
 
 WebUI.delay(2)
 
-WebUI.acceptAlert()
-
-'User is not able  to see the attchment on view request page.'
-WebUI.click(findTestObject('Page_Service request/View Request'))
-
-WebUI.delay(1)
-
-WebUI.verifyElementText(findTestObject('Page_View request/requestdect data'), text)
+WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.closeBrowser()
 

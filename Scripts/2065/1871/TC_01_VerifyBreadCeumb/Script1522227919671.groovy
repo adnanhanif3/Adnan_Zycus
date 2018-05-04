@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Edit request page Tc(Draft)'), [:])
+WebUI.callTestCase(findTestCase('2064/1695/TC1695_01_Save as Draft'), [:])
 
 WebUI.verifyElementText(findTestObject('Page_Edit request/Breadcrumb_home'), 'Home')
 

@@ -19,29 +19,37 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('2064/1695/TC1695_01_Save as Draft'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
+
+WebUI.click(findTestObject('Page_Home/Top Nav/Globalsearch_box'))
+
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Mandatory Assigned to')
+
+WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
+
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdrops')
+
+String userDir = System.getProperty('user.dir')
+
+String filePath = (userDir + '\\') + 'git\\iRequestAutomation\\Data Files\\App Test Data\\FilesToUpload\\iRequest_User_Manual'
+
+WebUI.uploadFile(findTestObject('Page_Edit request/Add_attachments'), filePath)
+
+WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
-WebUI.scrollToElement(findTestObject('Page_Create Request/icon_AssignTo'), 0)
+WebUI.click(findTestObject('Page_Edit request/Btn_download'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Create Request/icon_AssignTo'))
+WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
 
-WebUI.click(findTestObject('Page_Create Request/drpdwn_AssignToGrp'))
+WebUI.delay(2)
 
-WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Dew')
-
-WebUI.click(findTestObject('Page_Create Request/drpdwn_GrpDewdrop'))
-
-WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
-
-WebUI.delay(10)
-
-WebUI.click(findTestObject('Page_Create Request/icon_Close'))
-
-WebUI.click(findTestObject('Page_Service request/btn_ViewRequest1'))
-
-WebUI.verifyElementText(findTestObject('Page_View request/txt_AssignToName'), 'Dewdrops')
+WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.closeBrowser()
 

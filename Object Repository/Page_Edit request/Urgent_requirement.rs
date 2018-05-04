@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//span[text()='Urgent Requirement']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class=&quot;ng-untouched ng-pristine ng-valid&quot;]/dew-row[1]/dew-col[3]/span</value>
+      <value>//span[text()='Urgent Requirement']</value>
    </webElementProperties>
 </WebElementEntity>

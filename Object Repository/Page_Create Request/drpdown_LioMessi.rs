@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(text(),'Lio')]</value>
+         <value>.//*[@id='details']/form/dew-block[2]/irequest-new-assign/dew-row/dew-col/div/div/dew-typeahead/div/div/div[1]/span</value>
       </entry>
       <entry>
          <key>BASIC</key>
