@@ -25,7 +25,7 @@ WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
 
 WebUI.click(findTestObject('Page_Service request/Inprogress deselect'))
 
-WebUI.click(findTestObject('Page_Service request/With RM deselect '))
+WebUI.click(findTestObject('null'))
 
 WebUI.click(findTestObject('Page_Service request/Awatting approval deselect '))
 

@@ -6,11 +6,15 @@
    <elementGuidId>352f7538-d1af-4b4b-b88c-32edf62b6dbd</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//div[@class=&quot;dew-container&quot;]/dew-block/div/i</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
          <value>//div/dew-block/div/i</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

@@ -37,9 +37,9 @@ WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
-WebUI.click(findTestObject('Page_Edit request/Backnavg_icon'))
+WebUI.delay(2)
 
-WebUI.verifyElementText(findTestObject('Page_Edit request/Navigationpage_servicerequest'), 'My Requests')
+WebUI.click(findTestObject('Page_Edit request/Backnavg_icon'))
 
 WebUI.closeBrowser()
 
