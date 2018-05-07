@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;rq-box&quot;]/dew-row[2]/dew-col/dew-text[2]</value>
+         <value>.//*[@id='detailsTab']/div/dew-block[1]/irequest-view-basic-details/div/dew-row[2]/dew-col/p[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>

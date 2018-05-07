@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Request_number</name>
+   <name>No FAQs to display</name>
    <tag></tag>
-   <elementGuidId>326f27b3-f283-45f0-8817-4fcf2bfd750b</elementGuidId>
+   <elementGuidId>8cca1a3a-17e5-4708-bfb5-b15594192b68</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//dew-tab/div[2]/div[1]/dew-service-request-card/div/div[1]/dew-row/dew-col[1]/p/span</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//dew-col[2]/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

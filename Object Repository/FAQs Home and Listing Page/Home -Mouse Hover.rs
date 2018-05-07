@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Request_number</name>
+   <name>Home -Mouse Hover</name>
    <tag></tag>
-   <elementGuidId>326f27b3-f283-45f0-8817-4fcf2bfd750b</elementGuidId>
+   <elementGuidId>9fa38d9d-915b-4382-9a78-14453d70f900</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//dew-tab/div[2]/div[1]/dew-service-request-card/div/div[1]/dew-row/dew-col[1]/p/span</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//dew-col[4]/div/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
