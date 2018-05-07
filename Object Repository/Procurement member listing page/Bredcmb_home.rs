@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Page title xpath</name>
+   <name>Bredcmb_home</name>
    <tag></tag>
-   <elementGuidId>1de19fb6-c728-45ce-9126-27a5aa2abfa8</elementGuidId>
+   <elementGuidId>bd62b97b-8c6a-4f6b-89f4-6d7552190feb</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;dew-container&quot;]/dew-block/div/span</value>
+         <value>//div[@class=&quot;dew-container&quot;]/dew-block/ol/li[1]/a</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

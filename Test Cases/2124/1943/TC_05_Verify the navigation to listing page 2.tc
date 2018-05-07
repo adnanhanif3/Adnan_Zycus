@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_05_Verify the navigation to listing page 2</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d650ab30-a2c4-42a9-a9ef-6ff02393f58a</testCaseGuid>
+</TestCaseEntity>

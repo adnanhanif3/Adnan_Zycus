@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Page title xpath</name>
+   <name>Backnavg_icon</name>
    <tag></tag>
-   <elementGuidId>1de19fb6-c728-45ce-9126-27a5aa2abfa8</elementGuidId>
+   <elementGuidId>878436a4-36e6-49d0-94bc-8ee46de464b6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;dew-container&quot;]/dew-block/div/span</value>
+         <value>//div[@class=&quot;dew-container&quot;]/dew-block/div/i</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Page title xpath</name>
+   <name>Help_desk</name>
    <tag></tag>
-   <elementGuidId>1de19fb6-c728-45ce-9126-27a5aa2abfa8</elementGuidId>
+   <elementGuidId>a5e06900-9dd9-4e49-a753-b535ee708382</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;dew-container&quot;]/dew-block/div/span</value>
+         <value>//div[@class=&quot;dew-container&quot;]/dew-row/dew-col[4]/div/span</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

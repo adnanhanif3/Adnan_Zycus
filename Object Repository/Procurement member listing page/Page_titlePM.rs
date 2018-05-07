@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Page title xpath</name>
+   <name>Page_titlePM</name>
    <tag></tag>
-   <elementGuidId>1de19fb6-c728-45ce-9126-27a5aa2abfa8</elementGuidId>
+   <elementGuidId>66911bfe-a0cf-49bd-8867-c4d251d3dd56</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
@@ -11,6 +11,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

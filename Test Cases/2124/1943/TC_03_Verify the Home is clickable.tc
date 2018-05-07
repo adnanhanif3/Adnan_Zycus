@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_03_Verify the Home is clickable</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0d9f7c43-1f1b-4749-bf03-be156763d78f</testCaseGuid>
+</TestCaseEntity>
