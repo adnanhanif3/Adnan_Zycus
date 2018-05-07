@@ -27,9 +27,9 @@ WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Test email
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test_PageTitle')
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), '3423426345237642378641')
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Testing Page Title')
+WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Testing Page Title with numeric characters')
 
 WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
@@ -39,7 +39,7 @@ WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 
 WebUI.delay(3)
 
-String requestName = WebUI.getText(findTestObject('Page_Service request/Request Name'))
+requestName = WebUI.getText(findTestObject('Page_Service request/Request Name'))
 
 WebUI.click(findTestObject('Page_Service request/View Request'))
 

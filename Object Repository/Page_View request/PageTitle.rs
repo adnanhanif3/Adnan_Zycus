@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//h3[@class=&quot;p-4 d-flex align-items-center irequest-header&quot;]</value>
+         <value>//ol[@class='breadcrumb ppb-4']/following-sibling::div/span</value>
       </entry>
       <entry>
          <key>BASIC</key>

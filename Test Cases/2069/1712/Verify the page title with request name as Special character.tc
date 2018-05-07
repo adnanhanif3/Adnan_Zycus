@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the page title with request name as Special character</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f27d6342-7a7f-43c1-845c-19ea8cb49295</testCaseGuid>
+</TestCaseEntity>
