@@ -27,6 +27,16 @@ WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Test email
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdrops')
+
+WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
+
+WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
+
 String userName = WebUI.getText(findTestObject('Page_View request/User Name'))
 
 WebUI.verifyElementText(findTestObject('Page_View request/Requester Name'), userName)
