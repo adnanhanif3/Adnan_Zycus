@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>html/body/dew-app-root/dew-irequest-layout/dew-block/dew-my-requests/dew-tabset/div/dew-tab/dew-block/dew-row[2]/dew-col/span[3]/label</value>
+         <value>//div[@class=&quot;clearfix dew-container&quot;]/dew-tab/dew-row[2]/dew-col/span[3]/label</value>
       </entry>
       <entry>
          <key>BASIC</key>

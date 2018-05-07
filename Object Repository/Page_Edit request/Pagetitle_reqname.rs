@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Navigationpage_servicerequest</name>
+   <name>Pagetitle_reqname</name>
    <tag></tag>
-   <elementGuidId>02bc0456-f7c1-4584-a779-de6eb1225d77</elementGuidId>
+   <elementGuidId>c4142e37-3947-4ff5-811c-9cce10396c34</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[text()=&quot;My Requests&quot;]</value>
+         <value>//div[@class=&quot;dew-container&quot;]/dew-block/div/span</value>
       </entry>
       <entry>
          <key>BASIC</key>

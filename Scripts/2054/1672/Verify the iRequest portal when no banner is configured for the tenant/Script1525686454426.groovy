@@ -19,31 +19,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
+WebUI.callTestCase(findTestCase('Common TC/NoLogo'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Home/Top Nav/Globalsearch_box'))
+WebUI.maximizeWindow()
 
-WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Mandatory Assigned to')
-
-WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
-
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdrops')
-
-WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
-
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
-
-WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
-
-WebUI.delay(2)
-
-WebUI.verifyElementClickable(findTestObject('Page_Edit request/Breadcrumb_home'))
-
-WebUI.delay(2)
-
-WebUI.verifyElementText(findTestObject('Procurement member listing page/Help_desk'), 'HELP DESK')
+WebUI.verifyElementNotPresent(findTestObject('Page_Home/Banner/BannerSection'), 0)
 
 WebUI.closeBrowser()
 
