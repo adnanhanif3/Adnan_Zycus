@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the functionality of CREATE NEW in the search result</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1ff0d4b7-37fe-4dc0-9a5d-7664c544cf59</testCaseGuid>
+</TestCaseEntity>
