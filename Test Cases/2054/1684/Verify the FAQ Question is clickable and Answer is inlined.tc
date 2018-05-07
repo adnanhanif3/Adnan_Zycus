@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the FAQ Question is clickable and Answer is inlined</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>215c3fe3-f6c4-4333-ac44-c824d483a372</testCaseGuid>
+</TestCaseEntity>
