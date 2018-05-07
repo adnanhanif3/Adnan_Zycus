@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify user is able to search request definition names using global search</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>81e092b0-cae2-42fd-a0aa-5ac4af3c5df8</testCaseGuid>
+</TestCaseEntity>
