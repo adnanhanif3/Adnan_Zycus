@@ -21,6 +21,8 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.maximizeWindow()
+
 WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Test email Notification')
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
@@ -38,8 +40,6 @@ WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 WebUI.click(findTestObject('Page_Service request/View Request'))
 
 WebUI.verifyElementText(findTestObject('Page_View request/Breadcrumb Home'), 'Home', FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Page_View request/Breadcrumb MyServiceRequests'), 'My Service Requests', FailureHandling.CONTINUE_ON_FAILURE)
 
