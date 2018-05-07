@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[contains(text(),'group')]</value>
+         <value>//a[contains(text(),'User group')]</value>
       </entry>
       <entry>
          <key>BASIC</key>

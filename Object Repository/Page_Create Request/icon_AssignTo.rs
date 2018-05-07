@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>.//*[@id='details']/form/dew-block[2]/irequest-new-assign/dew-row/dew-col/div/div/div</value>
+         <value>//div[@class=&quot;dropdown pointer&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
