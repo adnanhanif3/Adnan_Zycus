@@ -14,7 +14,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>html/body/dew-app-root/dew-irequest-layout/dew-block/dew-my-requests/dew-tabset/div/dew-tab/dew-block/dew-row[2]/dew-col/span[1]/label/button</value>
+         <value>//dew-row[1]/dew-col[1]/span[1]/label/button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

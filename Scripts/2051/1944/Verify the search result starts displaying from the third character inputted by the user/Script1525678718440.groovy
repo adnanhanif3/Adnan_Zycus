@@ -21,21 +21,19 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'))
+WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Page_Service request/Service request xpath'))
+WebUI.sendKeys(findTestObject('Page_Global Search/Global Search Field'), 'd')
 
-WebUI.delay(5)
+WebUI.verifyElementNotPresent(findTestObject('Page_Global Search/FirstResult'), 0)
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/Add Filter click'))
+WebUI.sendKeys(findTestObject('Page_Global Search/Global Search Field'), 'e')
 
-WebUI.delay(2)
+WebUI.verifyElementNotPresent(findTestObject('Page_Global Search/FirstResult'), 0)
 
-WebUI.click(findTestObject('Page_Service request/WIth RM click'))
+WebUI.sendKeys(findTestObject('Page_Global Search/Global Search Field'), 'f')
 
-WebUI.delay(2)
-
-WebUI.verifyElementPresent(findTestObject('Page_View request/Delete xpath'), 0)
+WebUI.verifyElementNotPresent(findTestObject('Page_Global Search/FirstResult'), 0)
 
 WebUI.closeBrowser()
 

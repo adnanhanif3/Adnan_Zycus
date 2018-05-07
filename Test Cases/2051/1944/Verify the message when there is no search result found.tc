@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the message when there is no search result found</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ea6c8e8b-f8c1-40bf-8827-a1daf7f61dd1</testCaseGuid>
+</TestCaseEntity>

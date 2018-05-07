@@ -13,7 +13,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//dew-tab/div[2]/div[4]/dew-service-request-card/div/div[2]/dew-row/dew-col[4]/div/a</value>
+         <value>//dew-tab/div[2]/div[1]/dew-service-request-card/div/div[2]/dew-row/dew-col[4]/div/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
