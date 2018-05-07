@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id='1']/dew-container/dew-paper/dew-section/dew-block/ireq-basic-details-view/div/dew-row[3]/dew-col/div/label</value>
+         <value>//label[text()='Attachments']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

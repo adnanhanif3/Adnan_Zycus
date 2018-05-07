@@ -21,6 +21,8 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.maximizeWindow()
+
 WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Test email Notification')
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
@@ -37,7 +39,7 @@ String filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\
 
 WebUI.uploadFile(findTestObject('Page_Create Request/Attachment'), filePath, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(6)
+WebUI.delay(7)
 
 WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
@@ -48,6 +50,8 @@ WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 WebUI.click(findTestObject('Page_Service request/View Request'))
 
 WebUI.click(findTestObject('Page_View request/Download Attachment'))
+
+WebUI.delay(2)
 
 WebUI.closeBrowser()
 

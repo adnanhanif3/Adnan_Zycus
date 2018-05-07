@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-scroll-section[@id='4']/dew-container/dew-paper/dew-section/dew-flex/dew-flex-item[1]/h5</value>
+         <value>//h3[text()='Workflow']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

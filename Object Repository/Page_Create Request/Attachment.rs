@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='file-upload pointer']/input
+         <value>//div[@class=&quot;file-upload&quot;]/input
 </value>
       </entry>
       <entry>
