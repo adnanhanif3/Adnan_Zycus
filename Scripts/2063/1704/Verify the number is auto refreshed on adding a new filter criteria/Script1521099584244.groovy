@@ -21,7 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Service request/My request xpath'))
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'))
 
 WebUI.click(findTestObject('Page_Service request/Service request xpath'))
 
@@ -35,9 +35,9 @@ WebUI.click(findTestObject('Page_View request/Remove Awaiting Approval'), Failur
 
 WebUI.click(findTestObject('Page_View request/Rmove Returned'))
 
-WebUI.click(findTestObject('Page_View request/Remove InProgress'), FailureHandling.STOP_ON_FAILURE)
-
 WebUI.delay(3)
 
 WebUI.verifyElementPresent(findTestObject('Page_Service request/Service Requests - X requests'), 0)
+
+WebUI.closeBrowser()
 
