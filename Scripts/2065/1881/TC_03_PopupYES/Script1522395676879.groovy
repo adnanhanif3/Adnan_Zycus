@@ -47,7 +47,7 @@ WebUI.verifyElementPresent(findTestObject('Page_Create Request/alert_UnsavedData
 
 WebUI.click(findTestObject('Page_Create Request/alert_Yes'))
 
-WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/irequest/my-requests')
+WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/my-requests/service-requests')
 
 WebUI.closeBrowser()
 

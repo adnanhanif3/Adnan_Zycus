@@ -43,7 +43,7 @@ WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
 
 WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
-WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/irequest/my-requests')
+WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/my-requests/service-requests')
 
 WebUI.closeBrowser()
 

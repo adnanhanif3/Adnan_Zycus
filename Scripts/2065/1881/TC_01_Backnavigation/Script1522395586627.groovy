@@ -37,11 +37,15 @@ WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 String CurrentPageUrl = WebUI.getUrl()
 
+WebUI.delay(2)
+
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_Edit request/Backnavg_icon'))
 
-WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/irequest/my-requests')
+WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/my-requests/service-requests')
 
 WebUI.closeBrowser()
 

@@ -35,8 +35,6 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
-CurrentPageUrl = WebUI.getUrl()
-
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
 WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
@@ -47,7 +45,7 @@ WebUI.verifyElementPresent(findTestObject('Page_Create Request/alert_UnsavedData
 
 WebUI.click(findTestObject('Page_Create Request/alert_No'))
 
-WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/irequest/my-requests')
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/btn_UrgentYes'), 0)
 
 WebUI.closeBrowser()
 
