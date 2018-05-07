@@ -13,7 +13,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//dew-row[2]/dew-col/span[6]/label/button</value>
+         <value>//dew-row[1]/dew-col[1]/span[5]/label/button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
