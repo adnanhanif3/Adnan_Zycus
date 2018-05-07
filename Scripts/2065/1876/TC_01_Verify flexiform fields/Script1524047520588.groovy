@@ -27,6 +27,8 @@ WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'ADN_Test_F
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
+WebUI.delay(5)
+
 WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdrops')
 
 WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
