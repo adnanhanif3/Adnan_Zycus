@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_01_Verify procurement policies banner on homepage</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ab1afbef-f677-4b75-bdbf-ca9d283c211c</testCaseGuid>
+</TestCaseEntity>
