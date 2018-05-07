@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify only active request definition name is shown in search result</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>49fe0851-2593-418a-937a-af4e44907f03</testCaseGuid>
+</TestCaseEntity>
