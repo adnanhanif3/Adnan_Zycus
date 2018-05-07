@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[text()='Request Manager']/following-sibling::div//dew-text[text()='Request Manager']</value>
+         <value>//div[@class='text-caption' and text()='Request Manager']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-text[text()='Requester']</value>
+         <value>//div[@class='text-caption' and text()='Requester']</value>
       </entry>
       <entry>
          <key>BASIC</key>
