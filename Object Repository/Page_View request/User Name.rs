@@ -6,12 +6,11 @@
    <elementGuidId>d88881eb-81ad-4310-92a3-a26832c41254</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@class=&quot;btn-link nav-menu&quot;]/span</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@class='dropdown']/descendant::span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

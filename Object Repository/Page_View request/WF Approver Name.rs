@@ -6,12 +6,11 @@
    <elementGuidId>a2230116-bbc8-4437-be57-6a63d6b08db3</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//dew-text[text()='Approver']/following-sibling::dew-text</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//div[@class='text-caption' and text()='Approver']/following-sibling::div</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
