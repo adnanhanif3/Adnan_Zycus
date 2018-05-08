@@ -23,8 +23,6 @@ WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling
 
 WebUI.maximizeWindow()
 
-WebUI.acceptAlert()
-
 WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Test email Notification')
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
@@ -34,6 +32,8 @@ WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test Assi
 WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
 
 WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Checking Assign to user group functionality')
+
+WebUI.scrollToElement(findTestObject('Page_Create Request/icon_AssignTo'), 0)
 
 WebUI.click(findTestObject('Page_Create Request/icon_AssignTo'))
 

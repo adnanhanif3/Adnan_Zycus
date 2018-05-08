@@ -31,6 +31,8 @@ WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test_Assi
 
 WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Checking Assign to single user functionality')
 
+WebUI.scrollToElement(findTestObject('Page_Create Request/icon_AssignTo'), 0)
+
 WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Lio')
 
 WebUI.click(findTestObject('Page_Create Request/drpdown_LioMessi'))

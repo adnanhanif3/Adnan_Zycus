@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;dropdown pointer&quot;]</value>
+         <value>//div[@class=&quot;dropdown pointer&quot;]/a</value>
       </entry>
       <entry>
          <key>BASIC</key>
