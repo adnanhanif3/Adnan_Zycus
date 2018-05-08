@@ -21,13 +21,15 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
+WebUI.maximizeWindow()
+
 WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
 
 WebUI.delay(4)
 
 WebUI.click(findTestObject('Page_Service request/Returned deselect '))
 
-WebUI.click(findTestObject('null'))
+WebUI.click(findTestObject('Page_Service request/With RM deselect '))
 
 WebUI.click(findTestObject('Page_Service request/Awatting approval deselect '))
 
@@ -39,9 +41,11 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Service request/View Request'))
 
-WebUI.verifyElementNotPresent(findTestObject('Page_View request/Activity Tab'), 10)
+WebUI.verifyElementPresent(findTestObject('Page_View request/Activity Tab'), 10)
 
 WebUI.click(findTestObject('Page_View request/Activity Tab'))
 
 WebUI.delay(2)
+
+WebUI.closeBrowser()
 

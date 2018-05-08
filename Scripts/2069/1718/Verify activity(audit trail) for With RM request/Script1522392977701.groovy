@@ -21,6 +21,8 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
+WebUI.maximizeWindow()
+
 WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
 
 WebUI.delay(3)
