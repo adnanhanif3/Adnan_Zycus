@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the status if the past node is Approval Actor and Reject Action has been taken</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2030ccd6-6adf-4b44-82ba-3ce923dbc6b5</testCaseGuid>
+</TestCaseEntity>

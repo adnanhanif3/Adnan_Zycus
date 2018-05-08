@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the status if the current node is Request manager and Action Mark Completed has been taken</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>38a61831-204d-4a51-af56-43ca96c2944f</testCaseGuid>
+</TestCaseEntity>

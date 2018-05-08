@@ -19,29 +19,29 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
 WebUI.maximizeWindow()
 
-WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'ADN_WFDynamic')
+WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
 
-WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
+WebUI.delay(4)
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test_DynamicActor')
+WebUI.click(findTestObject('Page_Service request/Inprogress deselect'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Testing with Dynamic actor')
+WebUI.click(findTestObject('Page_Service request/With RM deselect '))
 
-WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+WebUI.click(findTestObject('Page_Service request/Awatting approval deselect '))
 
-WebUI.waitForElementPresent(findTestObject('Page_Create Request/icon_Close'), 30)
+WebUI.click(findTestObject('Page_Service request/Rejected deselect '))
 
-WebUI.click(findTestObject('Page_Create Request/icon_Close'))
+WebUI.click(findTestObject('Page_Service request/Draft deselect'))
 
-WebUI.delay(3)
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Service request/View Request'))
+WebUI.click(findTestObject('Page_Service request/btn_ViewRequest1'))
 
-WebUI.verifyElementText(findTestObject('Page_View request/WF Approver Name'), 'Super Users')
+WebUI.verifyElementText(findTestObject('Page_View request/WF Status RM'), 'Returned')
 
 WebUI.closeBrowser()
 
