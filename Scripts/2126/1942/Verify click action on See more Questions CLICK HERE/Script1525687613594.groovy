@@ -25,11 +25,9 @@ WebUI.mouseOver(findTestObject('FAQs Home and Listing Page/Home -Mouse Hover'))
 
 WebUI.click(findTestObject('FAQs Home and Listing Page/FAQ-Click'))
 
-WebUI.verifyElementPresent(findTestObject('FAQs Home and Listing Page/See More FAQs-FAQ Questions'), 0)
+WebUI.scrollToElement(findTestObject('FAQs Home and Listing Page/See More FAQs-FAQ Questions'), 0)
 
 WebUI.click(findTestObject('FAQs Home and Listing Page/See More FAQs-FAQ Questions'))
-
-WebUI.verifyElementPresent(findTestObject(null), 0)
 
 WebUI.closeBrowser()
 

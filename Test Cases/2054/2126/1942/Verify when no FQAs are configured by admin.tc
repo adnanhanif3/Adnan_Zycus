@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify when no FQAs are configured by admin</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>c890b79a-0fc0-4310-bb19-c8573e0fad0b</testCaseGuid>
-</TestCaseEntity>
