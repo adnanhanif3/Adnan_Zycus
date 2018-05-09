@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//img[@src='/assets/images/irequest/i-request@2x.png']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//img[@src='/assets/images/i-request@2x.png']</value>
+      <value>//img[@src='/assets/images/irequest/i-request@2x.png']</value>
    </webElementProperties>
 </WebElementEntity>
