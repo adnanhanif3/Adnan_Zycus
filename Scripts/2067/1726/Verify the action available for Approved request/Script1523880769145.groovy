@@ -27,7 +27,7 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('Page_Approval Listing/Defaultfilter_approval'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Service request/Filter button'))
+WebUI.click(findTestObject('Page_Approval Listing/btn_AddFilter'))
 
 WebUI.delay(1)
 

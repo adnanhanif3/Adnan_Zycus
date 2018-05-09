@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;tabset&quot;]/dew-tab/dew-block/dew-approvals-card[1]/dew-paper/div/div[2]/dew-modal[2]/div/div/div[3]/dew-modal-footer/dew-btn/button</value>
+         <value>//button[@class=&quot;btn primary&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

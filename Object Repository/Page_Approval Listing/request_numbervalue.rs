@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-block[@class=&quot;p-4 d-block position-relative clearfix&quot;]/dew-approvals-card[1]/dew-paper/div/div[1]/dew-row/dew-col[1]</value>
+         <value>//dew-approvals-card[1]/dew-card/dew-card-header/dew-row/dew-col[1]/span[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

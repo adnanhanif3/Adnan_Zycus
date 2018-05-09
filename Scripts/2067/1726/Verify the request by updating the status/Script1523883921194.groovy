@@ -29,7 +29,7 @@ text = WebUI.getText(findTestObject('Page_Approval Listing/request_numbervalue')
 
 WebUI.click(findTestObject('Page_Approval Listing/Approve_BTN'))
 
-WebUI.click(findTestObject('Page_Approval Listing/txtarea_ApprovalComment'))
+WebUI.delay(5)
 
 WebUI.sendKeys(findTestObject('Page_Approval Listing/txtarea_ApprovalComment'), 'Approved')
 
@@ -41,7 +41,7 @@ WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.click(findTestObject('Page_Approval Listing/Defaultfilter_approval'))
 
-WebUI.click(findTestObject('Page_Service request/Filter button'))
+WebUI.click(findTestObject('Page_Approval Listing/btn_AddFilter'))
 
 WebUI.click(findTestObject('Page_Approval Listing/btn_Approved_Filter'))
 
