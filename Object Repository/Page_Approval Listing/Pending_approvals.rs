@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>.//*[@id='approvals-card']/dew-flex/dew-flex-item[2]/p</value>
+         <value>//div[@class=&quot;clearfix&quot;]/dew-section-body/dew-row/dew-col[1]/dew-flex/dew-flex-item[1]/i</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
