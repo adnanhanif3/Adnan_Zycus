@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('http://test.irequest.zycus.net/#/irequest/home')
+WebUI.openBrowser('http://test.irequest.zycus.net/# ')
 
 WebUI.maximizeWindow()
 
