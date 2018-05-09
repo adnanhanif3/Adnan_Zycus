@@ -21,7 +21,9 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/George Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/TO DOs'))
+WebUI.maximizeWindow()
+
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/To Dos'))
 
 WebUI.verifyElementText(findTestObject('Page_Home/Menu Nav/SubMenu Approval'), 'My Approvals')
 
