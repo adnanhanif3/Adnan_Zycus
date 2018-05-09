@@ -6,25 +6,24 @@
    <elementGuidId>ac004618-638e-43c5-9e75-53d29c1bbbb1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
          <value></value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//dew-col[@class='col-12']/dew-flex/dew-flex-item[3]/div/a/dew-icon</value>
+         <value>//dew-block[@class='p-0 dropdown-navs-header for-large-screens dew-block']/div[@class='dew-container']/dew-row[@class='justify-content-center row']/dew-col[3]/div/span/i</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//dew-block/div/i</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//dew-col[@class='col-12']/dew-flex/dew-flex-item[3]/div/a/dew-icon</value>
+      <value>//dew-block[@class='p-0 dropdown-navs-header for-large-screens dew-block']/div[@class='dew-container']/dew-row[@class='justify-content-center row']/dew-col[3]/div/span/i</value>
    </webElementProperties>
 </WebElementEntity>
