@@ -21,6 +21,8 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.maximizeWindow()
+
 WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/HELP DESK'))
 
 WebUI.verifyElementText(findTestObject('Page_Home/Menu Nav/SubMenu Report An Issue'), 'Report an issue')
