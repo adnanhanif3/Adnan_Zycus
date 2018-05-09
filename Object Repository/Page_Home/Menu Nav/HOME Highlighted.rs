@@ -7,6 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value>//dew-row[@class='justify-content-center row']/dew-col/span[@class='bup-subheader-link active']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -16,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[@class='btn-link nav-menu highlighted']</value>
+      <value>//dew-row[@class='justify-content-center row']/dew-col/span[@class='bup-subheader-link active']</value>
    </webElementProperties>
 </WebElementEntity>
