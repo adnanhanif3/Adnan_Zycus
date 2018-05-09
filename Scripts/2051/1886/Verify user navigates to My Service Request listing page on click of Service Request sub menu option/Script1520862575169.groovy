@@ -21,11 +21,13 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.maximizeWindow()
+
 WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'))
 
 WebUI.click(findTestObject('Page_Home/Menu Nav/Submenu Service Request'))
 
-WebUI.verifyElementText(findTestObject('Page_Service request/Request Header'), 'Service Request')
+WebUI.verifyElementPresent(findTestObject('Page_Service request/Request_number'), 0)
 
 WebUI.closeBrowser()
 
