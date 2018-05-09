@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Explorepolicies_btton</name>
+   <name>Breadcrumb Procurement Policies</name>
    <tag></tag>
-   <elementGuidId>f652a722-0ad1-4dfb-93c3-8324ee9efbdb</elementGuidId>
+   <elementGuidId>ef99312e-ab96-492a-8468-5f8c39977f0e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[text()='Explore procurement policies']/ancestor::button</value>
+         <value>//a[text()='Procurement Policies']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify navigation on clicking Home in bread crumb</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c03a4b18-36fb-47bd-bee5-12207754b083</testCaseGuid>
+</TestCaseEntity>
