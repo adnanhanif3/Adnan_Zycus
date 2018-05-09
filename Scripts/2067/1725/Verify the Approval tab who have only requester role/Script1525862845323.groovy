@@ -19,11 +19,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
+WebUI.openBrowser('http://test.irequest.zycus.net/# ')
 
-WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
+WebUI.maximizeWindow()
 
-WebUI.verifyElementText(findTestObject('Page_Approval Listing/Page_title'), 'To Do\'s')
+WebUI.click(findTestObject('Page_Login/GhostUserID'))
+
+WebUI.setText(findTestObject('Page_Login/UserId'), 'lex.luthor@dc.com')
+
+WebUI.click(findTestObject('Page_Login/GhoshPassword'))
+
+WebUI.setText(findTestObject('Page_Login/Password'), 'iRequest@12')
+
+WebUI.click(findTestObject('Page_Login/LoginBtn'))
+
+WebUI.verifyElementNotPresent(findTestObject('Page_Approval Listing/Pending_approvals'), 0, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.closeBrowser()
 

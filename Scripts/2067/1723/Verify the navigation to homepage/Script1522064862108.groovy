@@ -23,13 +23,9 @@ WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
 WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
 
-WebUI.click(findTestObject('Page_Approval Listing/Btn_review'))
+WebUI.click(findTestObject('Page_Approval Listing/Home_breadcrumb'), FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Page_Approval Listing/Home_breadcrumb'), 0)
-
-WebUI.click(findTestObject('Page_Approval Listing/Home_breadcrumb'))
-
-WebUI.verifyElementPresent(findTestObject('Page_Approval Listing/Overviewelmt_prst'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Approval Listing/Pending_approvals'), 0)
 
 WebUI.closeBrowser()
 

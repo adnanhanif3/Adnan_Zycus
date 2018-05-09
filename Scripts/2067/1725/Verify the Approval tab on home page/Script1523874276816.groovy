@@ -21,7 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
-WebUI.verifyElementPresent(findTestObject('Page_Approval Listing/tab_Approvals'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Approval Listing/Pending_approvals'), 0)
 
 WebUI.closeBrowser()
 

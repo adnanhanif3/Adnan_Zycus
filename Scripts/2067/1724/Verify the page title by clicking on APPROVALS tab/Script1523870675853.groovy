@@ -25,13 +25,7 @@ WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/TO DOs arrow'))
 
 WebUI.click(findTestObject('Page_Approval Listing/Approval_dropdwn'))
 
-text = WebUI.getText(findTestObject('Page_Approval Listing/Get text(req name)_pg title'))
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('Page_Approval Listing/Btn_review'))
-
-WebUI.verifyElementText(findTestObject('Page_Approval Listing/Page_title'), text)
+WebUI.verifyElementText(findTestObject('Page_Approval Listing/Page_title'), 'To Do\'s')
 
 WebUI.closeBrowser()
 
