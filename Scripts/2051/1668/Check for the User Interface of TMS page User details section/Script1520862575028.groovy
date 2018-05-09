@@ -21,6 +21,8 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('2051/1668/Check for the redirection of Edit Profile to TMS page'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.maximizeWindow()
+
 WebUI.verifyElementPresent(findTestObject('Page_Edit Profile/ProfileImage'), 0)
 
 WebUI.verifyElementPresent(findTestObject('Page_Edit Profile/CompanyName'), 0)

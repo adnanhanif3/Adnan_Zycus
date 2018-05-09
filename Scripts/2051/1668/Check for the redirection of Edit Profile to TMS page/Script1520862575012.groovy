@@ -21,6 +21,8 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.maximizeWindow()
+
 WebUI.click(findTestObject('Page_Home/Top Nav/UserDisplayName'))
 
 WebUI.click(findTestObject('Page_Home/Top Nav/EditProfileLink'))
