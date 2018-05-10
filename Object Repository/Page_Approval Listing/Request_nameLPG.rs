@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txtarea_ApprovalComment</name>
+   <name>Request_nameLPG</name>
    <tag></tag>
-   <elementGuidId>8138fc1d-b821-4089-80ca-ef17275c83b5</elementGuidId>
+   <elementGuidId>fadd6eb7-8d80-4afc-b1f3-e56920927d99</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-modal[@class='modal fade show']/div[@class='modal-dialog']/div/div[@class='modal-body']/dew-modal-body/div/textarea</value>
+         <value>//dew-approvals-card[1]/dew-card/dew-card-header/dew-row/dew-col[2]/span[2]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
 WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
 
-WebUI.click(findTestObject('Page_Service request/Filter button'))
+WebUI.click(findTestObject('Page_Approval Listing/btn_AddFilter'))
 
 WebUI.delay(1)
 

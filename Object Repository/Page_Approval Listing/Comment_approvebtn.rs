@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@class=&quot;btn primary&quot;]</value>
+         <value>//div[@class=&quot;clearfix dew-container&quot;]/dew-tab/div/dew-block/dew-approvals-card[1]/dew-card/dew-card-body/dew-modal[2]/div/div/div[3]/dew-modal-footer/dew-btn/button</value>
       </entry>
       <entry>
          <key>BASIC</key>

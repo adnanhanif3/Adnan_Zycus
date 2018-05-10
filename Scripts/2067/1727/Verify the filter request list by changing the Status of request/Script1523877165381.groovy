@@ -41,7 +41,7 @@ WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.click(findTestObject('Page_Approval Listing/Defaultfilter_approval'))
 
-WebUI.click(findTestObject('Page_Service request/Filter button'))
+WebUI.click(findTestObject('Page_Approval Listing/btn_AddFilter'))
 
 WebUI.click(findTestObject('Page_Approval Listing/btn_Approved_Filter'))
 

@@ -43,7 +43,7 @@ WebUI.click(findTestObject('Page_Approval Listing/Approval_dropdwn'))
 
 WebUI.delay(1)
 
-WebUI.verifyElementText(findTestObject('Page_Edit request/Requestname_listpg'), 'Testdewdrops')
+WebUI.verifyElementText(findTestObject('Page_Approval Listing/Request_nameLPG'), 'Testdewdrops')
 
 WebUI.closeBrowser()
 
