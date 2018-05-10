@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Explorepolicies_btton</name>
+   <name>See More Policy Types</name>
    <tag></tag>
-   <elementGuidId>f652a722-0ad1-4dfb-93c3-8324ee9efbdb</elementGuidId>
+   <elementGuidId>b52c7bb5-5995-4a9d-8283-70cfbd64dd1e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//span[text()='Explore procurement policies']/ancestor::button</value>
+         <value>//p[text()='See more policy types?']/following-sibling::p</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

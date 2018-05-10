@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Navigation to Policy Listing Page via Help Desk</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c1a443be-8caf-4aa5-9b9a-36708e96eb94</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>78383315-7f66-4608-b7e9-58714f2cf277</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+</TestCaseEntity>

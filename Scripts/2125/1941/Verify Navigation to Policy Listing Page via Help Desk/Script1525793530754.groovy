@@ -19,33 +19,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Page_Home/Top Nav/UserDisplayName'))
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/HelpDesk'))
 
-WebUI.click(findTestObject('Page_Home/Top Nav/EditProfileLink'))
+WebUI.delay(1)
 
-WebUI.switchToWindowIndex(1)
+WebUI.click(findTestObject('Page_Home/Menu Nav/SubMenu Procurement Policies'))
 
-WebUI.setText(findTestObject('Page_Edit Profile/DisplayNameField'), 'Christiano Ronaldo')
+String Url = WebUI.getUrl()
 
-WebUI.click(findTestObject('Page_Edit Profile/SavenClose'))
+WebUI.verifyMatch(Url, 'http://test.irequest.zycus.net/#/help-desk/procurement-policies', false)
 
 WebUI.closeBrowser()
-
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyElementText(findTestObject('Page_Home/Top Nav/UserDisplayName'), 'Christiano R...')
-
-WebUI.click(findTestObject('Page_Home/Top Nav/UserDisplayName'))
-
-WebUI.click(findTestObject('Page_Home/Top Nav/EditProfileLink'))
-
-WebUI.switchToWindowIndex(1)
-
-WebUI.setText(findTestObject('Page_Edit Profile/DisplayNameField'), 'Ronaldo C')
-
-WebUI.click(findTestObject('Page_Edit Profile/SavenClose'))
 
