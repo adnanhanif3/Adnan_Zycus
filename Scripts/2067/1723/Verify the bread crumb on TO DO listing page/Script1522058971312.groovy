@@ -23,13 +23,11 @@ WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
 WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
 
-WebUI.click(findTestObject('Page_Approval Listing/Btn_review'))
-
 WebUI.verifyElementText(findTestObject('Page_Approval Listing/Home_breadcrumb'), 'Home')
 
 WebUI.verifyElementText(findTestObject('Page_Approval Listing/TO DO_breadcrumb'), 'To Do\'s')
 
-WebUI.verifyElementText(findTestObject('Page_Approval Listing/Servicereq_breadcrumb'), 'Service Request')
+WebUI.verifyElementText(findTestObject('Page_Approval Listing/Approval_breadcrumb'), 'Approvals')
 
 WebUI.delay(1)
 
