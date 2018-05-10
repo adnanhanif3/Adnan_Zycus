@@ -21,5 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Diego Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Page_Home/Overview/Pending Request Count tile'), 0)
+WebUI.maximizeWindow()
+
+WebUI.verifyElementText(findTestObject('Page_Home/Overview/Pending Request Count Number'), '0 Requests')
 

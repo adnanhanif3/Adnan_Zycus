@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//dew-block[@class='d-block position-relative clearfix']/dew-irequest/dew-section[1]/dew-block/dew-block/dew-row/dew-col[2]/dew-card/dew-flex/dew-flex-item[2]/p[@class='font-weight-bold title mb-0']</value>
+         <value>//dew-section-body[@class='dew-section-body']/dew-row/dew-col[2]/dew-flex/dew-flex-item/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//dew-block[@class='d-block position-relative clearfix']/dew-irequest/dew-section[1]/dew-block/dew-block/dew-row/dew-col[2]/dew-card/dew-flex/dew-flex-item[2]/p[@class='font-weight-bold title mb-0']</value>
+      <value>//dew-section-body[@class='dew-section-body']/dew-row/dew-col[2]/dew-flex/dew-flex-item/span</value>
    </webElementProperties>
 </WebElementEntity>
