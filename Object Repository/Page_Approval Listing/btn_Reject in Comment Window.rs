@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-block/dew-approvals-card[1]/dew-paper/div/div[2]/dew-modal[1]/div/div/div[3]/dew-modal-footer/dew-btn/button</value>
+         <value>//div[@class=&quot;clearfix dew-container&quot;]/dew-tab/div/dew-block/dew-approvals-card[1]/dew-card/dew-card-body/dew-modal[1]/div/div/div[3]/dew-modal-footer/dew-btn/button</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

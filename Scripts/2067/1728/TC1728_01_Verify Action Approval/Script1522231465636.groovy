@@ -25,7 +25,7 @@ WebUI.callTestCase(findTestCase('Common TC/Diego Login'), [:], FailureHandling.S
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Approval Listing/tab_Approvals'))
+WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
 
 String RequestNumber = WebUI.getText(findTestObject('Page_Approval Listing/txt_RequestNumbercard1'))
 
@@ -33,11 +33,13 @@ WebUI.click(findTestObject('Page_Approval Listing/link_Rejectcard1'))
 
 WebUI.sendKeys(findTestObject('Page_Approval Listing/txtarea_RejectComment'), 'Rejected by Katalon')
 
+WebUI.delay(2)
+
 WebUI.click(findTestObject('Page_Approval Listing/btn_Reject in Comment Window'))
 
-WebUI.delay(10)
+WebUI.waitForElementPresent(findTestObject('Page_Approval Listing/Alert_close'), 30)
 
-WebUI.click(findTestObject('Page_Create Request/icon_Close'))
+WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.delay(4)
 

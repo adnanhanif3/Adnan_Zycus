@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-block/dew-approvals-card[1]/dew-paper/div/div[2]/dew-modal[1]/div/div/div[2]/dew-modal-body/div/textarea</value>
+         <value>//dew-modal[@class='modal fade show']/div[@class='modal-dialog']/div/div[@class='modal-body']/dew-modal-body/div/textarea</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
