@@ -21,6 +21,8 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/George Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.maximizeWindow()
+
 WebUI.verifyElementPresent(findTestObject('Page_Home/Overview/Approval Count'), 0)
 
 WebUI.closeBrowser()

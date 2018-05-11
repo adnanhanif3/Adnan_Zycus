@@ -21,6 +21,8 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/TenantLogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.maximizeWindow()
+
 String str = 'Approvals'
 
 WebUI.verifyElementText(findTestObject('Page_Home/Overview/Approval Count'), str)

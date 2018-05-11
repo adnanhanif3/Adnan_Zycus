@@ -21,7 +21,9 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementNotPresent(findTestObject('Page_Home/Overview/Pending Approval Tile'), 30)
+WebUI.maximizeWindow()
+
+WebUI.verifyElementNotPresent(findTestObject('Page_Home/Overview/Pending Request Count tile'), 30)
 
 WebUI.closeBrowser()
 
