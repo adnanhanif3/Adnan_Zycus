@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Requests list on homepage</name>
+   <name>RequestNumber Value</name>
    <tag></tag>
-   <elementGuidId>bdba4f14-d579-4ba3-b785-2a7f36aa2e9d</elementGuidId>
+   <elementGuidId>deafeed2-e52d-4a21-83d4-95bacf8451ba</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(text(),'Requests')]/ancestor::dew-flex</value>
+         <value>//p[text()='Request Number']/following-sibling::p</value>
       </entry>
       <entry>
          <key>BASIC</key>

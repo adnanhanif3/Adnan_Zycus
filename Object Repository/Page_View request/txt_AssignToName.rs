@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>.//*[@id='detailsTab']/div/dew-block[2]/irequest-view-assign-request/div/dew-row/dew-col/dew-col[2]/span</value>
+         <value>.//irequest-view-assign-request/descendant::span</value>
       </entry>
       <entry>
          <key>BASIC</key>
