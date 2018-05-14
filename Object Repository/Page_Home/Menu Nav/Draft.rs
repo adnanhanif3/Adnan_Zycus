@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>.//*[@id='filterModal']/div/div/div[2]/dew-row[2]/dew-col/div/span[1]/label</value>
+         <value>//dew-row[2]/dew-col/span/label</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
