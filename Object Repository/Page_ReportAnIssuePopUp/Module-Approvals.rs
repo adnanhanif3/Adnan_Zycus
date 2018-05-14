@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//a[contains(text(),'Approvals')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

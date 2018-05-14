@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//div[@class='modal-body']/dew-modal-body/dew-row[1]/dew-col[1]/div/irequest-dropdown/div/div/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class='modal-body']/dew-modal-body/dew-row[1]/dew-col[1]/div/dew-dropdown</value>
+      <value>//div[@class='modal-body']/dew-modal-body/dew-row[1]/dew-col[1]/div/irequest-dropdown/div/div/input</value>
    </webElementProperties>
 </WebElementEntity>
