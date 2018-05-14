@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//dew-block[2]/div/dew-row/dew-col[4]/div/div/a[1]</value>
+         <value>//dew-block[2]/div/dew-row/dew-col[4]/div/span/div/a[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

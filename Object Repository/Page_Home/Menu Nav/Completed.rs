@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//dew-row[1]/dew-col[1]/span[7]/label</value>
+         <value>//dew-col/div/span[5]/label</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
