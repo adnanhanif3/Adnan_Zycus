@@ -25,11 +25,9 @@ WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'))
 
 WebUI.click(findTestObject('Page_Service request/Service request xpath'))
 
-WebUI.delay(5)
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/Add Filter click'))
-
-WebUI.click(findTestObject('Page_Home/Menu Nav/Awaiting Approval'))
+WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Awaiting Approval'), 0)
 
 WebUI.delay(2)
 

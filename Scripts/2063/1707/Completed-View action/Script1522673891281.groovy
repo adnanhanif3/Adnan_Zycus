@@ -33,6 +33,8 @@ WebUI.click(findTestObject('Page_Home/Menu Nav/Completed'))
 
 WebUI.delay(2)
 
+WebUI.click(findTestObject('Page_Service request/View x Requests'))
+
 WebUI.verifyElementPresent(findTestObject('Page_View request/Verify View'), 0)
 
 WebUI.closeBrowser()

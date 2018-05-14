@@ -27,9 +27,7 @@ WebUI.click(findTestObject('Page_Service request/Service request xpath'))
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/Add Filter click'))
-
-WebUI.click(findTestObject('Page_Service request/WIth RM click'))
+WebUI.verifyElementPresent(findTestObject('Page_Service request/WIth RM click'), 0)
 
 WebUI.delay(2)
 

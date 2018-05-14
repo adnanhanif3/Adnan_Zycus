@@ -35,7 +35,7 @@ WebUI.click(findTestObject('Page_Service request/WIth RM click'))
 
 WebUI.delay(2)
 
-WebUI.verifyElementPresent(findTestObject('Page_View request/Delete xpath'), 0)
+WebUI.verifyElementNotPresent(findTestObject('Page_View request/Delete xpath'), 0)
 
 WebUI.closeBrowser()
 
