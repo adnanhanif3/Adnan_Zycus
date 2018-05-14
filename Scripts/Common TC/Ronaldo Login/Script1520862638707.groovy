@@ -31,3 +31,5 @@ WebUI.setText(findTestObject('Page_Login/Password'), findTestData('Auth Test Dat
 
 WebUI.click(findTestObject('Page_Login/LoginBtn'))
 
+WebUI.maximizeWindow()
+
