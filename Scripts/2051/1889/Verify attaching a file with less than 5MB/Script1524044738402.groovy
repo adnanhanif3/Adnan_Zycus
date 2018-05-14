@@ -47,7 +47,7 @@ String filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\
 
 WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), filePath)
 
-WebUI.delay(5)
+WebUI.delay(15)
 
 WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Submit'))
 
