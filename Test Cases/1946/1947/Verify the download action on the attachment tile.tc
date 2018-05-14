@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the download action on the attachment tile</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>447e2864-86d0-48bb-bfe7-6462b5cc5861</testCaseGuid>
+</TestCaseEntity>
