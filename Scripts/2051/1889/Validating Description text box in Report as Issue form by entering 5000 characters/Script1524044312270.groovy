@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling
 
 WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/HELP DESK'))
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/ReportAnIssue'))
+WebUI.click(findTestObject('Page_Home/Menu Nav/SubMenu Report An Issue'))
 
 WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Module'))
 
