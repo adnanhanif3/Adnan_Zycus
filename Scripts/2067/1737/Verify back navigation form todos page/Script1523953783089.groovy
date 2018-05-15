@@ -21,9 +21,9 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.comment('Verify back navigation form Todos page')
 
-WebUI.callTestCase(findTestCase('null'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Approval Listing/tab_Approvals'))
+WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
 
 WebUI.delay(2)
 
@@ -31,7 +31,7 @@ WebUI.click(findTestObject('Page_Approval Listing/icon_BackNavigation'))
 
 String CurrentPageUrl = WebUI.getUrl()
 
-WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/irequest/home')
+WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/home')
 
 WebUI.closeBrowser()
 

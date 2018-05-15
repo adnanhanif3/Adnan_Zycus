@@ -21,9 +21,9 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.comment('Verify view deatils for approved request')
 
-WebUI.callTestCase(findTestCase('Common TC/Diego Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Approval Listing/tab_Approvals'))
+WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
 
 WebUI.click(findTestObject('Page_Approval Listing/btn_AddFilter'))
 
@@ -36,6 +36,8 @@ WebUI.click(findTestObject('Page_Approval Listing/btn_ViewApprovals'))
 WebUI.delay(2)
 
 String ReqNum = WebUI.getText(findTestObject('Page_Approval Listing/txt_RequestNumbercard1'))
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_Approval Listing/btn_ViewDeatilsCard1'))
 

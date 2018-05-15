@@ -6,12 +6,11 @@
    <elementGuidId>1d9ff4a5-501c-4591-b71d-d8d93971ac6a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//dew-approvals-card[1]/dew-paper/div/div[2]/dew-row/dew-col[4]//a[text()=&quot;View Details&quot;]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//dew-tab/div/dew-block/dew-approvals-card[1]/dew-card/dew-card-body/dew-row/dew-col[4]/div/a[text()='View Details']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
