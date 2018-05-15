@@ -21,17 +21,19 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.comment('Verify the action Approval')
 
-WebUI.callTestCase(findTestCase('Common TC/Diego Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(10)
 
-WebUI.click(findTestObject('Page_Approval Listing/tab_Approvals'))
+WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
 
 String RequestNumber = WebUI.getText(findTestObject('Page_Approval Listing/txt_RequestNumbercard1'))
 
 WebUI.click(findTestObject('Page_Approval Listing/link_ApproveCard1'))
 
 WebUI.sendKeys(findTestObject('Page_Approval Listing/txtarea_ApprovalComment'), 'Approved by Katalon')
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_Approval Listing/btn_Approve In Comment Window'))
 

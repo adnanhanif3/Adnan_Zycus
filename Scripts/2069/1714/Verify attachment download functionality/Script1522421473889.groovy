@@ -19,7 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.maximizeWindow()
 
@@ -47,7 +47,7 @@ WebUI.waitForElementPresent(findTestObject('Page_Create Request/icon_Close'), 30
 
 WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 
-WebUI.click(findTestObject('Page_Service request/View Request'))
+WebUI.click(findTestObject('Page_Service request/btn_ViewRequest1'))
 
 WebUI.click(findTestObject('Page_View request/Download Attachment'))
 

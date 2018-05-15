@@ -39,9 +39,11 @@ WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
 String userDir = System.getProperty('user.dir')
 
-String filePath = (userDir + '\\') + 'git\\iRequestAutomation\\Data Files\\App Test Data\\FilesToUpload\\iRequest_User_Manual'
+String filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\eCatalogue_User_Guides.pdf'
 
-WebUI.uploadFile(findTestObject('Page_Edit request/Add_attachments'), filePath)
+WebUI.uploadFile(findTestObject('Page_Create Request/Attachment'), filePath)
+
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
 
