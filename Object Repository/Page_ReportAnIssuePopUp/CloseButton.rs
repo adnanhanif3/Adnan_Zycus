@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//button[@class='close close-sm']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//dew-icon[@class='undefined icon icon-close']</value>
+      <value>//button[@class='close close-sm']</value>
    </webElementProperties>
 </WebElementEntity>
