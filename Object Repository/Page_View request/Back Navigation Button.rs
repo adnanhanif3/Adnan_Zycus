@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='heading']/descendant::img</value>
+         <value>//div[@class='heading']/descendant::i</value>
       </entry>
       <entry>
          <key>BASIC</key>
