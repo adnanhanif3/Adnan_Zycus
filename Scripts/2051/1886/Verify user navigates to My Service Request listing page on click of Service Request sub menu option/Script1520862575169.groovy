@@ -25,7 +25,7 @@ WebUI.maximizeWindow()
 
 WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'))
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/Submenu Service Request'))
+WebUI.click(findTestObject('Page_Service request/Service request xpath'))
 
 WebUI.verifyElementPresent(findTestObject('Page_Service request/Request_number'), 0)
 
