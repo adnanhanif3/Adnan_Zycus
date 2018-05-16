@@ -33,7 +33,9 @@ WebUI.verifyElementText(findTestObject('Page_Home/Overview/Pending Request Count
 
 CustomKeywords.'customKeywords.database.closeDatabaseConnection'()
 
-WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
+WebUI.setText(findTestObject('Page_Global Search/Global Search Field'), 'Asimple')
+
+WebUI.click(findTestObject('Page_Global Search/CreateNew'))
 
 WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'New request by Katalon')
 
