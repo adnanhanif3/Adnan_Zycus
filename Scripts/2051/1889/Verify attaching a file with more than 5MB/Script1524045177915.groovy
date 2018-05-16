@@ -47,7 +47,7 @@ String filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\
 
 WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), filePath)
 
-WebUI.verifyTextPresent('File can\'t be uploaded since file size is greater than 5MB', false)
+WebUI.verifyTextPresent('eProc_Buyer_Manual.pdf file can\'t be uploaded since file size is greater than 5MB', false)
 
 WebUI.closeBrowser()
 
