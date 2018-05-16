@@ -25,7 +25,7 @@ WebUI.maximizeWindow()
 
 WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'))
 
-WebUI.verifyElementText(findTestObject('Page_Home/Menu Nav/Submenu Service Request'), 'Service Requests')
+WebUI.verifyElementText(findTestObject('Page_Service request/Service request xpath'), 'Service Requests')
 
 WebUI.closeBrowser()
 
