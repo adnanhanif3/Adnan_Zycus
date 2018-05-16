@@ -43,6 +43,8 @@ WebUI.click(findTestObject('Page_Service request/View Request'))
 
 String userName = WebUI.getText(findTestObject('Page_View request/User Name'))
 
+WebUI.waitForElementPresent(findTestObject('Page_View request/Requester Name'), 5)
+
 WebUI.verifyElementText(findTestObject('Page_View request/Requester Name'), userName)
 
 WebUI.closeBrowser()
