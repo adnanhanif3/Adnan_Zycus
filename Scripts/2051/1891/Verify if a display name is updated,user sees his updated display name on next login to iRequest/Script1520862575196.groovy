@@ -49,3 +49,5 @@ WebUI.setText(findTestObject('Page_Edit Profile/DisplayNameField'), 'Ronaldo C')
 
 WebUI.click(findTestObject('Page_Edit Profile/SavenClose'))
 
+WebUI.closeBrowser()
+

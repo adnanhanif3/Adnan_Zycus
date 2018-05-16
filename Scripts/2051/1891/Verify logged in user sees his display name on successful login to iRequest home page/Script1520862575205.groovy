@@ -23,3 +23,5 @@ WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling
 
 WebUI.verifyElementText(findTestObject('Page_Home/Top Nav/UserDisplayName'), 'Ronaldo C')
 
+WebUI.closeBrowser()
+
