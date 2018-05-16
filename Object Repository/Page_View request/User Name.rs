@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class='dropdown']/descendant::span</value>
+         <value>//div[@class=&quot;horizontalOverflow&quot;]/div/div[1]/div[3]/div[2]/dew-caption-body/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

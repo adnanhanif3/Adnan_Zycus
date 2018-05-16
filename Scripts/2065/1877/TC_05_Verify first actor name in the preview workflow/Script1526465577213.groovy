@@ -23,21 +23,29 @@ WebUI.comment('Verify first actor in preview workflow')
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.maximizeWindow()
+
 WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Test email Notification')
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdrops')
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test_FirstActor_Name')
 
-WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
+WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Testing Name of first actor')
 
-WebUI.delay(3)
-
-WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
-
-WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
+WebUI.delay(2)
 
 String userName = WebUI.getText(findTestObject('Page_View request/User Name'))
+
+WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+
+WebUI.waitForElementPresent(findTestObject('Page_Create Request/icon_Close'), 30)
+
+WebUI.click(findTestObject('Page_Create Request/icon_Close'))
+
+WebUI.delay(4)
+
+WebUI.click(findTestObject('Page_Service request/View Request'))
 
 WebUI.verifyElementText(findTestObject('Page_View request/Requester Name'), userName)
 
