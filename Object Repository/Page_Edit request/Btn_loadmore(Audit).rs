@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//*[@id='activity']/dew-block/irequest-audit/div[2]/dew-btn/button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//dew-block/ireq-audit/div[2]/dew-btn/button</value>
+      <value>//*[@id='activity']/dew-block/irequest-audit/div[2]/dew-btn/button</value>
    </webElementProperties>
 </WebElementEntity>

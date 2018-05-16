@@ -45,6 +45,8 @@ WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
 WebUI.click(findTestObject('Page_Edit request/Btn_delete'), FailureHandling.CONTINUE_ON_FAILURE)
 
+WebUI.click(findTestObject('Page_Edit request/Delete_popup_yes'))
+
 WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
 
 WebUI.delay(2)

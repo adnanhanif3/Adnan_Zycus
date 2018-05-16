@@ -33,7 +33,7 @@ String userDir = System.getProperty('user.dir')
 
 String filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\eCatalogue_User_Guides.pdf'
 
-WebUI.uploadFile(findTestObject('Page_Edit request/Add_attachments'), filePath)
+WebUI.uploadFile(findTestObject('Page_Create Request/Attachment'), filePath)
 
 WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
@@ -44,6 +44,8 @@ WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
 WebUI.click(findTestObject('Page_Edit request/Btn_download'), FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
 

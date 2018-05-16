@@ -6,12 +6,11 @@
    <elementGuidId>8ea67be5-cd18-4e5b-878d-2db647a37787</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[text()='Download']</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[@id='details']/form/dew-block[1]/irequest-new-basic-details/div/dew-row[4]/dew-col/div/div[2]/a</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], Fail
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Globalsearch_box'))
 
-WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Mandatory Assigned to')
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'AsimpleWF2')
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
