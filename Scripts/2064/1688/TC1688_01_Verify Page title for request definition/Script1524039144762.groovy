@@ -26,11 +26,11 @@ WebUI.comment('Page tilte Should be ReqDef_Name')
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-String RequestDefName = WebUI.getText(findTestObject('Page_Home/Overview/txt_ReqDefTitle'))
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Definition to test')
 
-WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow'))
+WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
-WebUI.verifyElementText(findTestObject('Page_Create Request/txt_PageTitle'), RequestDefName)
+WebUI.verifyElementText(findTestObject('Page_Create Request/txt_PageTitle'), 'Definition to test')
 
 WebUI.closeBrowser()
 
