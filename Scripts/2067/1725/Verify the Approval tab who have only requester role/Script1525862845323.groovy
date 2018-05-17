@@ -33,7 +33,7 @@ WebUI.setText(findTestObject('Page_Login/Password'), 'iRequest@12')
 
 WebUI.click(findTestObject('Page_Login/LoginBtn'))
 
-WebUI.verifyElementNotPresent(findTestObject('Page_Approval Listing/Pending_approvals'), 0, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Page_Approval Listing/Pending_approvals'), 10, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 

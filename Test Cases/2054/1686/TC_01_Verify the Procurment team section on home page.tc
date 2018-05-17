@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_01_Verify the Procurment team section on home page</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>38f0b7c7-df84-4aae-b81c-1870e9f1b5f2</testCaseGuid>
+</TestCaseEntity>

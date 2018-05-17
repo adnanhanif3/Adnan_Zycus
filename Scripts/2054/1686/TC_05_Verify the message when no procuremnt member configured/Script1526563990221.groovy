@@ -19,37 +19,23 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/TenantLogin'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.openBrowser('http://test.irequest.zycus.net/# ')
 
 WebUI.maximizeWindow()
 
-WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/HELP DESK'))
+WebUI.click(findTestObject('Page_Login/GhostUserID'))
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/ReportAnIssue'))
+WebUI.setText(findTestObject('Page_Login/UserId'), 'vinay2@zycus.com')
 
-WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Module'))
+WebUI.click(findTestObject('Page_Login/GhoshPassword'))
 
-WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Module-Others'))
+WebUI.setText(findTestObject('Page_Login/Password'), 'Zycus@123')
 
-WebUI.click(findTestObject('Page_ReportAnIssuePopUp/MessageType'))
+WebUI.click(findTestObject('Page_Login/LoginBtn'))
 
-WebUI.click(findTestObject('Page_ReportAnIssuePopUp/MessageType_PerformanceIssue'))
+WebUI.scrollToElement(findTestObject('Procurement member listing page/Home_procurement team'), 10, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Priority'))
-
-WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Priority_Low'))
-
-WebUI.sendKeys(findTestObject('Page_ReportAnIssuePopUp/Summary'), 'Issue')
-
-WebUI.sendKeys(findTestObject('Page_ReportAnIssuePopUp/Description'), 'Issue')
-
-WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Submit'))
-
-WebUI.delay(5)
-
-Confirmation = WebUI.getText(findTestObject('Page_ReportAnIssuePopUp/ConfirmationPanel'))
-
-WebUI.verifyMatch(Confirmation, 'Email ID not configured. Please contact administrator to report an issue', false)
+WebUI.verifyElementPresent(findTestObject('Procurement member listing page/Message_no team'), 0)
 
 WebUI.closeBrowser()
 
