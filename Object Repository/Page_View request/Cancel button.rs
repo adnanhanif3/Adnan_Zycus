@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-modal[@class=&quot;modal fade show&quot;]/descendant::dew-icon</value>
+         <value>//irequest-approver-workflow/div/div/dew-modal[3]/div/div/button</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

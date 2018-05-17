@@ -21,7 +21,9 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(6)
+WebUI.maximizeWindow()
+
+WebUI.waitForPageLoad(5)
 
 WebUI.click(findTestObject('Page_Approval Listing/tab_Approvals'))
 
@@ -32,4 +34,10 @@ WebUI.click(findTestObject('Page_Approval Listing/Workflow Reject'))
 WebUI.waitForElementPresent(findTestObject('Page_View request/Pop up Reject Button'), 5)
 
 WebUI.click(findTestObject('Page_View request/Pop up Reject Button'))
+
+WebUI.waitForElementPresent(findTestObject('Page_View request/Mandatory Comment Alert'), 2)
+
+WebUI.verifyElementText(findTestObject('Page_View request/Mandatory Comment Alert'), 'Comments are mandatory')
+
+WebUI.closeBrowser()
 
