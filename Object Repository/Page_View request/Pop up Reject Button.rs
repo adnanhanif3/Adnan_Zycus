@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//button[@class='btn btn-success']/span/span[text()='Reject']</value>
+         <value>//span[text()='Reject']/ancestor::button</value>
       </entry>
       <entry>
          <key>BASIC</key>

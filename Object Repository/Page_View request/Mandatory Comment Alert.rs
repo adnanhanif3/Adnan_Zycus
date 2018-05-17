@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Btn_review</name>
+   <name>Mandatory Comment Alert</name>
    <tag></tag>
-   <elementGuidId>5de6de82-dee9-4cc0-86f2-daf51eaa6aef</elementGuidId>
+   <elementGuidId>92ee50d7-59a6-4e03-849a-871cd228c32d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-approvals-card[1]/dew-card/dew-card-body/dew-row/dew-col[4]/div/a[1]</value>
+         <value>//div[contains(text(),'Comments are mandatory')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
