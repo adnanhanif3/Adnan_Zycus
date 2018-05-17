@@ -29,6 +29,8 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('Page_Home/Menu Nav/SubMenu Procurement Policies'))
 
+WebUI.delay(1)
+
 String Url = WebUI.getUrl()
 
 WebUI.verifyMatch(Url, 'http://test.irequest.zycus.net/#/help-desk/procurement-policies', false)
