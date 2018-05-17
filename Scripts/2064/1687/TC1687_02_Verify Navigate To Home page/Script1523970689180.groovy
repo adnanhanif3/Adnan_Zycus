@@ -23,13 +23,15 @@ WebUI.comment('Verify Navigation to Home page')
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Definition to test')
+
+WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
 WebUI.click(findTestObject('Page_Create Request/txt_BreadCrumb_Part1'))
 
 String CurrentPageUrl = WebUI.getUrl()
 
-WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/irequest/home')
+WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/home')
 
 WebUI.closeBrowser()
 

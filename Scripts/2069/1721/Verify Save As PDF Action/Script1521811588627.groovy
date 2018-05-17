@@ -23,13 +23,15 @@ WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling
 
 WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'), FailureHandling.CONTINUE_ON_FAILURE)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Page_Home/Menu Nav/Submenu Service Request'))
 
 WebUI.click(findTestObject('Page_Service request/View Request'))
 
 WebUI.click(findTestObject('Page_View request/Save As PDF button'))
 
-WebUI.delay(3)
+WebUI.delay(5)
 
 WebUI.closeBrowser()
 

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>tab_Approvals</name>
+   <name>Mandatory Comment Alert</name>
    <tag></tag>
-   <elementGuidId>5f128c93-7228-40c5-bf1f-ae97770d2a88</elementGuidId>
+   <elementGuidId>92ee50d7-59a6-4e03-849a-871cd228c32d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(text(),'Approvals')]/ancestor::dew-flex/dew-flex-item/i</value>
+         <value>//div[contains(text(),'Comments are mandatory')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -32,9 +32,10 @@ WebUI.click(findTestObject('Page_Home/Menu Nav/SubMenu Procurement Policies'))
 WebUI.delay(4)
 
 WebUI.click(findTestObject('Page_Policy Listing/Policy Type'))
-
+		
 WebUI.click(findTestObject('Page_Policy Listing/Policy Title'))
-
+		
+	
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_View Policy Page/Back Navigation Button'), FailureHandling.STOP_ON_FAILURE)

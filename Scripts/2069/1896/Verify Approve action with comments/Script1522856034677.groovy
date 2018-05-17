@@ -21,7 +21,9 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(6)
+WebUI.maximizeWindow()
+
+WebUI.waitForPageLoad(10)
 
 WebUI.click(findTestObject('Page_Approval Listing/tab_Approvals'))
 
@@ -31,11 +33,13 @@ WebUI.click(findTestObject('Page_Approval Listing/Workflow Approve'))
 
 WebUI.waitForElementVisible(findTestObject('Page_View request/Pop up Approval comments'), 5)
 
-WebUI.setText(findTestObject('Page_View request/Pop up Approval comments'), 'Please Approve')
+WebUI.setText(findTestObject('Page_View request/Pop up Approval comments'), 'Approving for testing')
 
 WebUI.click(findTestObject('Page_View request/Pop up Approval Button'))
 
 WebUI.waitForElementPresent(findTestObject('Page_View request/WF ApprovalConfirmation'), 20)
 
 WebUI.verifyElementText(findTestObject('Page_View request/WF ApprovalConfirmation'), 'Request has been Approved')
+
+WebUI.closeBrowser()
 

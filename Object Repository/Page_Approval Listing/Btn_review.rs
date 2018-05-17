@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-card-body[@class=&quot;card-body&quot;]/dew-row/dew-col[4]/div/a[1]</value>
+         <value>//dew-approvals-card[1]/dew-card/dew-card-body/dew-row/dew-col[4]/div/a[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>

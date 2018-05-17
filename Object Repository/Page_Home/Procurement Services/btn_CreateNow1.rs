@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//irequest-global-search/div[2]/ul/li[1]/span[contains(text(),'Create New')]</value>
+         <value>//dew-section-body/dew-row/dew-col[1]/dew-card/dew-card-body/dew-btn/button</value>
       </entry>
       <entry>
          <key>BASIC</key>

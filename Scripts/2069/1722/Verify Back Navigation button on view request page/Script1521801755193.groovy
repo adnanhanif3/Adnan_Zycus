@@ -19,9 +19,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.maximizeWindow()
+
+WebUI.waitForPageLoad(10)
 
 WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
 
@@ -30,6 +32,8 @@ WebUI.click(findTestObject('Page_Service request/View Request'))
 WebUI.delay(3)
 
 WebUI.click(findTestObject('Page_View request/Back Navigation Button'))
+
+WebUI.delay(2)
 
 String Url = WebUI.getUrl()
 

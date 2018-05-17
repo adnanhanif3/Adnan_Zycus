@@ -21,6 +21,8 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/TenantLogin'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.maximizeWindow()
+
 WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/HELP DESK'))
 
 WebUI.click(findTestObject('Page_Home/Menu Nav/ReportAnIssue'))

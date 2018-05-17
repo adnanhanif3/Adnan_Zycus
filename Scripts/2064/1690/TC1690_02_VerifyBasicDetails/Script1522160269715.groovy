@@ -21,17 +21,19 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:])
 
-WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Definition to test')
 
-WebUI.verifyElementPresent(findTestObject('Page_Create Request/Basic Details/txt_RequestName'), 2)
+WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Create Request/Basic Details/txt_Request Type'), 2)
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/Basic Details/txt_RequestName'), 5)
 
-WebUI.verifyElementPresent(findTestObject('Page_Create Request/Basic Details/txt_ReqDesc'), 2)
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/Basic Details/txt_Request Type'), 5)
 
-WebUI.verifyElementPresent(findTestObject('Page_Create Request/Basic Details/txt_UrgentReq'), 2)
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/Basic Details/txt_ReqDesc'), 5)
 
-WebUI.verifyElementPresent(findTestObject('Page_Create Request/Basic Details/txt_AddAttachment'), 2)
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/Basic Details/txt_UrgentReq'), 5)
+
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/Basic Details/txt_AddAttachment'), 5)
 
 WebUI.closeBrowser()
 
