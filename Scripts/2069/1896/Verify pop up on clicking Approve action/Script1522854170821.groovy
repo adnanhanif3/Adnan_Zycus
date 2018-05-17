@@ -21,7 +21,9 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(6)
+WebUI.maximizeWindow()
+
+WebUI.waitForPageLoad(10)
 
 WebUI.click(findTestObject('Page_Approval Listing/tab_Approvals'))
 
@@ -29,7 +31,7 @@ WebUI.click(findTestObject('Page_Approval Listing/Btn_review'))
 
 WebUI.click(findTestObject('Page_Approval Listing/Workflow Approve'))
 
-WebUI.delay(3)
+WebUI.waitForElementPresent(findTestObject('Page_Approval Listing/Approval Rejection Box'), 3)
 
 WebUI.verifyElementPresent(findTestObject('Page_Approval Listing/Approval Rejection Box'), 3)
 
