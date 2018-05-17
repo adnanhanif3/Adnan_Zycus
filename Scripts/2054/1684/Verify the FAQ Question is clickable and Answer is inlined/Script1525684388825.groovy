@@ -21,13 +21,15 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.scrollToElement(findTestObject('FAQs Home and Listing Page/FAQ-Home scroll'), 0)
+WebUI.maximizeWindow()
 
-WebUI.verifyElementPresent(findTestObject('FAQs Home and Listing Page/Have more questions-READ FAQs'), 0)
+WebUI.scrollToElement(findTestObject('FAQs Home and Listing Page/FAQ-Home scroll'), 3)
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('FAQs Home and Listing Page/Answer view-click'))
 
-WebUI.verifyElementPresent(findTestObject('FAQs Home and Listing Page/Answer view-click'), 0)
+WebUI.delay(3)
 
 WebUI.closeBrowser()
 

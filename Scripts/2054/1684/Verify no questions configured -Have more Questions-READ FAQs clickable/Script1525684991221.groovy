@@ -21,6 +21,8 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.maximizeWindow()
+
 WebUI.scrollToElement(findTestObject('FAQs Home and Listing Page/FAQ-Home scroll'), 0)
 
 WebUI.verifyElementPresent(findTestObject('FAQs Home and Listing Page/Have more questions-READ FAQs'), 0)

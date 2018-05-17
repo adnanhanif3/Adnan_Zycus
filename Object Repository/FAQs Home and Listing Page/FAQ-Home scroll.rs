@@ -6,11 +6,11 @@
    <elementGuidId>eeff36e9-e8a5-4dfb-84af-699c490d5b29</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[text()='Frequently Asked Questions']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>html/body/app-root/div/irequest-home/div[4]/div/dew-section/dew-flex/dew-flex-item[1]/div</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
