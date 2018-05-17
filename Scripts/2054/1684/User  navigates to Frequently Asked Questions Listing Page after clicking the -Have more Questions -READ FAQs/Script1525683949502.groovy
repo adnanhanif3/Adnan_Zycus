@@ -23,9 +23,13 @@ WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], Fail
 
 WebUI.scrollToElement(findTestObject('FAQs Home and Listing Page/FAQ-Home scroll'), 0)
 
-WebUI.verifyElementPresent(findTestObject('FAQs Home and Listing Page/Have more questions-READ FAQs'), 0)
-
 WebUI.click(findTestObject('FAQs Home and Listing Page/Have more questions-READ FAQs'))
+
+WebUI.delay(3)
+
+String url = WebUI.getUrl()
+
+WebUI.verifyMatch(url, 'http://test.irequest.zycus.net/#/help-desk/frequently-asked-questions', false)
 
 WebUI.closeBrowser()
 
