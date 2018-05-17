@@ -39,7 +39,7 @@ WebUI.click(findTestObject('Page_Create Request/btn_Refresh'))
 
 WebUI.delay(4)
 
-WebUI.verifyElementText(findTestObject('Page_Create Request/txt_Approver Name in Preview WF'), 'Bobby C')
+WebUI.verifyElementText(findTestObject('Page_Create Request/txt_Approver Name in Preview WF'), 'Bobby Chartlon')
 
 WebUI.click(findTestObject('Page_Create Request/icon_AssignTo'))
 
@@ -51,7 +51,7 @@ WebUI.click(findTestObject('Page_Create Request/drpdwn_GrpDewdrop'))
 
 WebUI.click(findTestObject('Page_Create Request/btn_Refresh'))
 
-WebUI.delay(4)
+WebUI.delay(5)
 
 WebUI.verifyElementText(findTestObject('Page_Create Request/txt_Approver Name in Preview WF'), 'Prabodh Ghosh')
 
