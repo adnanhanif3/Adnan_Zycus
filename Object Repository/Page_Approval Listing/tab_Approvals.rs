@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//p[contains(text(),'Approvals')]</value>
+         <value>//span[contains(text(),'Approvals')]/ancestor::dew-flex/dew-flex-item/i</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

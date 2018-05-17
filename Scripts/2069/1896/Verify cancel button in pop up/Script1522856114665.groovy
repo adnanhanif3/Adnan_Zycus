@@ -21,7 +21,9 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(6)
+WebUI.maximizeWindow()
+
+WebUI.waitForPageLoad(10)
 
 WebUI.click(findTestObject('Page_Approval Listing/tab_Approvals'))
 
@@ -32,4 +34,6 @@ WebUI.click(findTestObject('Page_Approval Listing/Workflow Approve'))
 WebUI.waitForElementVisible(findTestObject('Page_View request/Cancel button'), 5)
 
 WebUI.click(findTestObject('Page_View request/Cancel button'))
+
+WebUI.closeBrowser()
 

@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id='4']/dew-container/dew-paper/dew-section/dew-block/dew-approver-workflow/div/div/div[2]/div[3]/div[2]/p/span[3]</value>
+         <value>//p/span[text()='Reject']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
