@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//irequest-proc-policies/div[2]/div/dew-row/dew-col[1]/p[7]</value>
+         <value>//p[text()='All']/following-sibling::p[text()='Just to check the maximum number fo permissible characters for Policy Type entering such big name of']</value>
       </entry>
       <entry>
          <key>BASIC</key>
