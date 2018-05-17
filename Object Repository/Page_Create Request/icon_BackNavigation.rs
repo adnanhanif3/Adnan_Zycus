@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-block/dew-create-request/div/dew-flex/dew-flex-item/h3/img</value>
+         <value>//div/irequest-new-request/div[1]/div/dew-block/div/i</value>
       </entry>
       <entry>
          <key>BASIC</key>
