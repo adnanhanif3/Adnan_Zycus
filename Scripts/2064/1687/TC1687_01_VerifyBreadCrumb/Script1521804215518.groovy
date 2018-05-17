@@ -23,7 +23,9 @@ WebUI.comment('Home>My Requests>ReqDef_Name')
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Home/Procurement Services/btn_CreateNow1'))
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Definition to test')
+
+WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
 WebUI.verifyElementText(findTestObject('Page_Create Request/txt_BreadCrumb_Part1'), 'Home', FailureHandling.CONTINUE_ON_FAILURE)
 
