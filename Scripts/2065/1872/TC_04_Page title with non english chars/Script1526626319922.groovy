@@ -27,7 +27,7 @@ WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Mandatory 
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'New request saved as draft')
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Esco`Esc')
 
 WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
 
@@ -43,7 +43,7 @@ WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
 WebUI.delay(2)
 
-WebUI.verifyElementText(findTestObject('Page_Edit request/Pagetitle_reqname'), 'New request saved as draft')
+WebUI.verifyElementText(findTestObject('Page_Edit request/Pagetitle_reqname'), 'Esco`Esc')
 
 WebUI.closeBrowser()
 

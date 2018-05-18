@@ -27,23 +27,25 @@ WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Mandatory 
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'New request saved as draft')
-
-WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
-
-WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum')
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdrops')
 
 WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
-WebUI.delay(7)
+WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Create Request/icon_Close'))
+WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('Page_Edit request/Pagetitle_reqname'), 'New request saved as draft')
+WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
+
+WebUI.delay(5)
 
 WebUI.closeBrowser()
 
