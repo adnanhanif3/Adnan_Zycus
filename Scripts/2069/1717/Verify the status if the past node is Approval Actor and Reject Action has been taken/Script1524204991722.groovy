@@ -23,6 +23,8 @@ WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
 WebUI.maximizeWindow()
 
+WebUI.waitForPageLoad(10)
+
 WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
 
 WebUI.delay(4)
@@ -40,6 +42,10 @@ WebUI.click(findTestObject('Page_Service request/Draft deselect'))
 WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Service request/btn_ViewRequest1'))
+
+WebUI.delay(2)
+
+WebUI.scrollToElement(findTestObject('Page_View request/WF Status Approver'), 4)
 
 WebUI.verifyElementText(findTestObject('Page_View request/WF Status Approver'), 'Rejected')
 
