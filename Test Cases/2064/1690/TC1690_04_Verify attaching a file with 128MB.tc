@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1690_04_Verify attaching a file with 128MB</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2aef7492-9218-4e87-9da9-3b8c775aeca0</testCaseGuid>
+</TestCaseEntity>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC1690_02_VerifyBasicDetails</name>
+   <name>TC1690_01_VerifyBasicDetails</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>f952847c-652c-4f25-bd39-503f8308550a</testCaseGuid>

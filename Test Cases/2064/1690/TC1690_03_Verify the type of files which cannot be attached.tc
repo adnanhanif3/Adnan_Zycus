@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1690_03_Verify the type of files which cannot be attached</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a4fe0948-7e75-4277-9b33-293a175e1552</testCaseGuid>
+</TestCaseEntity>
