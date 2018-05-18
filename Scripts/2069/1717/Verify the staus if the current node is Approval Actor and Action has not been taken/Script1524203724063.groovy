@@ -23,6 +23,8 @@ WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
 WebUI.maximizeWindow()
 
+WebUI.waitForPageLoad(10)
+
 WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
 
 WebUI.delay(4)
@@ -41,7 +43,9 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Service request/View Request'))
 
-WebUI.verifyElementPresent(findTestObject('Page_View request/WF Status Approver'), 5)
+WebUI.delay(3)
+
+WebUI.scrollToElement(findTestObject('Page_View request/WF Status Approver'), 5)
 
 WebUI.verifyElementText(findTestObject('Page_View request/WF Status Approver'), 'Awaiting Action')
 
