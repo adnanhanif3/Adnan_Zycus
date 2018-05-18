@@ -7,10 +7,13 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>//div[@class=&quot;main&quot;]/irequest-proc-team/div[2]/dew-flex/dew-btn/button</value>
       </entry>
       <entry>
          <key>BASIC</key>
+      </entry>
+      <entry>
+         <key>CSS</key>
          <value></value>
       </entry>
    </selectorCollection>
