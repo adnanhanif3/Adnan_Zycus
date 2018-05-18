@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Verify user is presented with Create New Request option when there is no request available</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>fd46c43e-1e99-4f86-9c46-b6e6978ef8f7</testCaseGuid>
-</TestCaseEntity>

@@ -19,11 +19,19 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'))
+
+WebUI.click(findTestObject('Page_Service request/Service request xpath'))
 
 WebUI.delay(2)
 
-WebUI.check(findTestObject('Page_Create Request/Request Name Field'), FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Draft'), 0)
+
+WebUI.click(findTestObject('Page_Service request/Delete'))
+
+WebUI.click(findTestObject('Page_Service request/Proceed to delete-continue'))
 
 WebUI.closeBrowser()
 
