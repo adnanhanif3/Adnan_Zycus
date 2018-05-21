@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1690_07_Validating RequestName text box in Create request form by entering maximum 100 characters</name>
+   <tag></tag>
+   <comment>Verify Create new request Submit</comment>
+   <testCaseGuid>d5c9afe9-0738-48e9-9e6a-e1078ac9dc00</testCaseGuid>
+</TestCaseEntity>
