@@ -35,6 +35,8 @@ WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Lio')
 
 WebUI.click(findTestObject('Page_Create Request/drpdown_LioMessi'))
 
+WebUI.scrollToElement(findTestObject('Page_Create Request/btn_Refresh'), 0)
+
 WebUI.click(findTestObject('Page_Create Request/btn_Refresh'))
 
 WebUI.delay(4)
