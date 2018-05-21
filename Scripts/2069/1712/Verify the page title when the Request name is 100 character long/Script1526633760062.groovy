@@ -43,7 +43,7 @@ WebUI.click(findTestObject('Page_Service request/View Request'))
 
 WebUI.delay(2, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Page_View request/PageTitle'), 3)
+WebUI.verifyElementText(findTestObject('Page_View request/PageTitle'), 'It is a long established fact that a reader will b...')
 
 WebUI.closeBrowser()
 
