@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_04_Verify that No unique ID should be assigned to requester when Cancel is opted</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e560a6ff-77b7-4734-a228-592c41a63c09</testCaseGuid>
+</TestCaseEntity>

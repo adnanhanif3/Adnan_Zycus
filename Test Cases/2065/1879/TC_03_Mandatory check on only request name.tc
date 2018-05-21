@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_04_PopupNO</name>
+   <name>TC_03_Mandatory check on only request name</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>2f4451a4-60c4-4757-8d8b-3bf25f621f28</testCaseGuid>
+   <testCaseGuid>ea9f1b9c-e268-497a-87b3-800820673ebd</testCaseGuid>
 </TestCaseEntity>

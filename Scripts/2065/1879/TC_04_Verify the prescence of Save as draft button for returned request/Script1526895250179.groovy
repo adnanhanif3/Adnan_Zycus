@@ -19,33 +19,29 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
-WebUI.click(findTestObject('Page_Home/Top Nav/Globalsearch_box'))
+WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
 
-WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Mandatory Assigned to')
+WebUI.delay(3)
 
-WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
+WebUI.click(findTestObject('Page_Service request/Inprogress deselect'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdrops')
+WebUI.click(findTestObject('Page_Service request/With RM deselect '))
 
-WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
+WebUI.click(findTestObject('Page_Service request/Awatting approval deselect '))
+
+WebUI.click(findTestObject('Page_Service request/Rejected deselect '))
+
+WebUI.click(findTestObject('Page_Service request/Draft deselect'))
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
+WebUI.click(findTestObject('Page_Service request/Edit request button(Rejected, Returned)'))
 
-WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/btn_SaveasDraft'), 5)
 
-WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
-
-WebUI.click(findTestObject('Page_Edit request/Backnavg_icon'))
-
-WebUI.verifyElementPresent(findTestObject('Page_Create Request/alert_UnsavedData'), 0)
-
-WebUI.click(findTestObject('Page_Create Request/alert_No'))
-
-WebUI.verifyElementPresent(findTestObject('Page_Create Request/btn_UrgentYes'), 0)
+WebUI.delay(2)
 
 WebUI.closeBrowser()
 

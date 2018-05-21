@@ -21,8 +21,6 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Home/Top Nav/Globalsearch_box'))
-
 WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Mandatory Assigned to')
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
@@ -41,7 +39,7 @@ WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
 
 WebUI.click(findTestObject('Page_Edit request/Backnavg_icon'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Create Request/alert_UnsavedData'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/alert_UnsavedData'), 2)
 
 WebUI.closeBrowser()
 
