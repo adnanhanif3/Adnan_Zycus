@@ -35,6 +35,8 @@ String filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\
 
 WebUI.uploadFile(findTestObject('Page_Create Request/Attachment'), filePath)
 
+WebUI.delay(5)
+
 WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
 WebUI.delay(5)
@@ -49,7 +51,7 @@ WebUI.click(findTestObject('Page_Edit request/Delete_popup_yes'))
 
 WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 

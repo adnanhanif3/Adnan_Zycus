@@ -19,21 +19,29 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('http://test.irequest.zycus.net/# ')
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Page_Login/GhostUserID'))
+WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
 
-WebUI.setText(findTestObject('Page_Login/UserId'), 'christiano.ronaldo@mariners.com')
+WebUI.click(findTestObject('Page_Approval Listing/Defaultfilter_approval'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Login/GhoshPassword'))
+WebUI.click(findTestObject('Page_Service request/Filter button'))
 
-WebUI.setText(findTestObject('Page_Login/Password'), 'iRequest@12')
+WebUI.delay(3)
 
-WebUI.click(findTestObject('Page_Login/LoginBtn'))
+WebUI.click(findTestObject('Page_Approval Listing/btn_Approved_Filter'))
 
-WebUI.verifyElementNotPresent(findTestObject('Page_Approval Listing/Pending_approvals'), 10, FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Service request/Service request button'))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Page_Approval Listing/Btn_viewdetails'))
+
+WebUI.delay(3)
+
+WebUI.verifyElementText(findTestObject('Page_View request/WF Status Approver'), 'Approved')
 
 WebUI.closeBrowser()
 

@@ -19,21 +19,31 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('http://test.irequest.zycus.net/# ')
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
-WebUI.maximizeWindow()
+WebUI.click(findTestObject('Page_Home/Top Nav/Globalsearch_box'))
 
-WebUI.click(findTestObject('Page_Login/GhostUserID'))
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Mandatory Assigned to')
 
-WebUI.setText(findTestObject('Page_Login/UserId'), 'christiano.ronaldo@mariners.com')
+WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
-WebUI.click(findTestObject('Page_Login/GhoshPassword'))
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), '!@#$%^&*()')
 
-WebUI.setText(findTestObject('Page_Login/Password'), 'iRequest@12')
+WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
 
-WebUI.click(findTestObject('Page_Login/LoginBtn'))
+WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum')
 
-WebUI.verifyElementNotPresent(findTestObject('Page_Approval Listing/Pending_approvals'), 10, FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
+
+WebUI.delay(7)
+
+WebUI.click(findTestObject('Page_Create Request/icon_Close'))
+
+WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
+
+WebUI.delay(2)
+
+WebUI.verifyElementText(findTestObject('Page_Edit request/Pagetitle_reqname'), '!@#$%^&*()')
 
 WebUI.closeBrowser()
 

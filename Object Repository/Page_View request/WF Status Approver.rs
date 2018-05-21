@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Pending_approvals</name>
+   <name>WF Status Approver</name>
    <tag></tag>
-   <elementGuidId>529e1ee6-ba39-469b-8c96-3a2626e92982</elementGuidId>
+   <elementGuidId>9698f298-993d-4d26-87b8-46c4c81a50e4</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(text(),'Approvals')]/ancestor::dew-flex</value>
+         <value>//dew-caption-body[@ng-reflect-caption=&quot;Approver&quot;]/following-sibling::dew-badge-status</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

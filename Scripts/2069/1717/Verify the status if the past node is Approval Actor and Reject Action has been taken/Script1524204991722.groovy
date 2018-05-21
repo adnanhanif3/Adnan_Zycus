@@ -43,7 +43,7 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Service request/btn_ViewRequest1'))
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 WebUI.scrollToElement(findTestObject('Page_View request/WF Status Approver'), 4)
 
