@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_04_Verify the prescence of Save as draft button for returned request</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b8d5e5d2-1d7a-4b87-a23f-eea5e63a74c4</testCaseGuid>
+</TestCaseEntity>

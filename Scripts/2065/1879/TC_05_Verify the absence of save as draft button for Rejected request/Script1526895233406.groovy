@@ -19,39 +19,29 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
-WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Mandatory Assigned to')
+WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
 
-WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
+WebUI.delay(3)
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdrops')
+WebUI.click(findTestObject('Page_Service request/Inprogress deselect'))
 
-WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
+WebUI.click(findTestObject('Page_Service request/Returned deselect '))
 
-WebUI.delay(5)
+WebUI.click(findTestObject('Page_Service request/With RM deselect '))
 
-WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
+WebUI.click(findTestObject('Page_Service request/Awatting approval deselect '))
 
-WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
+WebUI.click(findTestObject('Page_Service request/Draft deselect'))
 
-WebUI.click(findTestObject('Page_Edit request/Requestdescp_field'))
+WebUI.delay(3)
 
-WebUI.sendKeys(findTestObject('Page_Edit request/Requestdescp_field'), 'Need the requirement as early as possible.')
+WebUI.click(findTestObject('Page_Service request/Edit request button(Rejected, Returned)'))
 
-WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
+WebUI.verifyElementNotPresent(findTestObject('Page_Create Request/btn_SaveasDraft'), 5)
 
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
-
-WebUI.click(findTestObject('Page_Service request/btn_ViewRequest1'))
-
-WebUI.delay(1)
-
-WebUI.verifyElementText(findTestObject('Page_View request/requestdect data'), 'Need the requirement as early as possible.')
-
-WebUI.delay(5)
+WebUI.delay(2)
 
 WebUI.closeBrowser()
 

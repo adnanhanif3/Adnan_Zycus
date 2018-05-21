@@ -19,39 +19,27 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.openBrowser('http://test.irequest.zycus.net/# ')
 
-WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Mandatory Assigned to')
+WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
+WebUI.click(findTestObject('Page_Login/GhostUserID'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdrops')
+WebUI.setText(findTestObject('Page_Login/UserId'), 'vinay2@zycus.com')
 
-WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
+WebUI.click(findTestObject('Page_Login/GhoshPassword'))
 
-WebUI.delay(5)
+WebUI.setText(findTestObject('Page_Login/Password'), 'Zycus@123')
 
-WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
+WebUI.click(findTestObject('Page_Login/LoginBtn'))
 
-WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
+WebUI.scrollToElement(findTestObject('Procurement member listing page/Home_procurement team'), 10, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Edit request/Requestdescp_field'))
+WebUI.click(findTestObject('Procurement member listing page/Btn_viewall'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('Page_Edit request/Requestdescp_field'), 'Need the requirement as early as possible.')
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
-
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
-
-WebUI.click(findTestObject('Page_Service request/btn_ViewRequest1'))
-
-WebUI.delay(1)
-
-WebUI.verifyElementText(findTestObject('Page_View request/requestdect data'), 'Need the requirement as early as possible.')
-
-WebUI.delay(5)
+WebUI.verifyElementPresent(findTestObject('Procurement member listing page/Message display on listing page'), 0)
 
 WebUI.closeBrowser()
 

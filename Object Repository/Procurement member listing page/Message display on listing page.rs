@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Pending_approvals</name>
+   <name>Message display on listing page</name>
    <tag></tag>
-   <elementGuidId>529e1ee6-ba39-469b-8c96-3a2626e92982</elementGuidId>
+   <elementGuidId>5293fa23-db8c-4bb1-ad6b-7a160b4fd937</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[contains(text(),'Approvals')]/ancestor::dew-flex</value>
+         <value>//p[contains(text(),'No Procurement Team Members to display')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

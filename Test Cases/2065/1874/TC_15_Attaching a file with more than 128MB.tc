@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_02_Draftuniquereqnumber</name>
+   <name>TC_15_Attaching a file with more than 128MB</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>244a059a-d6fb-4d7a-b6cb-8ac434a0f6ca</testCaseGuid>
+   <testCaseGuid>f1ec6e44-d9a1-484b-929a-8c9f95894e45</testCaseGuid>
 </TestCaseEntity>

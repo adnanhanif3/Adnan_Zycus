@@ -21,11 +21,17 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Mandatory Assigned to')
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Definition to test')
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdrops')
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'New request by Katalon')
+
+WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
+
+WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum')
+
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
@@ -35,23 +41,21 @@ WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
-WebUI.click(findTestObject('Page_Edit request/Requestdescp_field'))
+String userDir = System.getProperty('user.dir')
 
-WebUI.sendKeys(findTestObject('Page_Edit request/Requestdescp_field'), 'Need the requirement as early as possible.')
+String filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\chapter2- 2+.pdf'
 
-WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
+WebUI.uploadFile(findTestObject('Page_Create Request/Attachment'), filePath)
 
-WebUI.delay(5)
+WebUI.delay(15)
 
-WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
+WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
-WebUI.click(findTestObject('Page_Service request/btn_ViewRequest1'))
+WebUI.delay(15)
 
-WebUI.delay(1)
+Text = WebUI.getText(findTestObject('Page_ReportAnIssuePopUp/ConfirmationPanel'))
 
-WebUI.verifyElementText(findTestObject('Page_View request/requestdect data'), 'Need the requirement as early as possible.')
-
-WebUI.delay(5)
+WebUI.verifyMatch(Text, 'Successfully submitted request.', false)
 
 WebUI.closeBrowser()
 

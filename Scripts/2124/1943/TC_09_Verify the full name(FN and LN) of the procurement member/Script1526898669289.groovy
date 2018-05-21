@@ -21,37 +21,13 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Mandatory Assigned to')
+WebUI.mouseOver(findTestObject('Procurement member listing page/Help_desk'))
 
-WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
+WebUI.click(findTestObject('Procurement member listing page/Procurement_member'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdrops')
+WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
-
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
-
-WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
-
-WebUI.click(findTestObject('Page_Edit request/Requestdescp_field'))
-
-WebUI.sendKeys(findTestObject('Page_Edit request/Requestdescp_field'), 'Need the requirement as early as possible.')
-
-WebUI.click(findTestObject('Page_Edit request/Btn_Submit'))
-
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
-
-WebUI.click(findTestObject('Page_Service request/btn_ViewRequest1'))
-
-WebUI.delay(1)
-
-WebUI.verifyElementText(findTestObject('Page_View request/requestdect data'), 'Need the requirement as early as possible.')
-
-WebUI.delay(5)
+WebUI.verifyElementPresent(findTestObject('Procurement member listing page/First name_tile'), 0)
 
 WebUI.closeBrowser()
 

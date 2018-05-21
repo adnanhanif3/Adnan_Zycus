@@ -25,7 +25,7 @@ WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('Page_Login/GhostUserID'))
 
-WebUI.setText(findTestObject('Page_Login/UserId'), 'lex.luthor@dc.com')
+WebUI.setText(findTestObject('Page_Login/UserId'), 'christiano.ronaldo@mariners.com')
 
 WebUI.click(findTestObject('Page_Login/GhoshPassword'))
 
@@ -33,7 +33,7 @@ WebUI.setText(findTestObject('Page_Login/Password'), 'iRequest@12')
 
 WebUI.click(findTestObject('Page_Login/LoginBtn'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Approval Listing/Pending_approvals'), 10, FailureHandling.STOP_ON_FAILURE)
+WebUI.verifyElementNotPresent(findTestObject('Page_Approval Listing/Pending_approvals'), 10, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 
