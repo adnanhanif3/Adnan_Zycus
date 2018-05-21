@@ -39,7 +39,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
-WebUI.delay(2)
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Page_Edit request/Backnavg_icon'))
 

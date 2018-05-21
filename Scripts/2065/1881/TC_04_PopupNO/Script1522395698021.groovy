@@ -39,11 +39,11 @@ WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
 
 WebUI.click(findTestObject('Page_Edit request/Backnavg_icon'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Create Request/alert_UnsavedData'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/alert_UnsavedData'), 2)
 
 WebUI.click(findTestObject('Page_Create Request/alert_No'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Create Request/btn_UrgentYes'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/btn_UrgentYes'), 2)
 
 WebUI.closeBrowser()
 
