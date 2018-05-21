@@ -21,33 +21,29 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
+WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
+
 WebUI.maximizeWindow()
 
-WebUI.waitForPageLoad(10)
+WebUI.delay(1)
 
-WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
+WebUI.click(findTestObject('Page_Approval Listing/Defaultfilter_approval'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(4)
+WebUI.click(findTestObject('Page_Service request/Filter button'))
 
-WebUI.click(findTestObject('Page_Service request/Inprogress deselect'))
+WebUI.delay(1)
 
-WebUI.click(findTestObject('Page_Service request/Returned deselect '))
+WebUI.click(findTestObject('Page_Approval Listing/btn_Approved_Filter'))
 
-WebUI.click(findTestObject('Page_Service request/With RM deselect '))
-
-WebUI.click(findTestObject('Page_Service request/Awatting approval deselect '))
-
-WebUI.click(findTestObject('Page_Service request/Draft deselect'))
+WebUI.click(findTestObject('Page_Service request/Service request button'))
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Service request/btn_ViewRequest1'))
+WebUI.click(findTestObject('Page_Approval Listing/Btn_viewdetails'))
 
-WebUI.delay(5)
+WebUI.delay(3)
 
-WebUI.scrollToElement(findTestObject('Page_View request/WF Status Approver'), 4)
-
-WebUI.verifyElementText(findTestObject('Page_View request/WF Status Approver'), 'Rejected')
+WebUI.verifyElementText(findTestObject('Page_View request/WF Status Approver'), 'Approved')
 
 WebUI.closeBrowser()
 
