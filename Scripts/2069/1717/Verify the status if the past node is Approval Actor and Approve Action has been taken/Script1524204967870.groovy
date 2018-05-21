@@ -21,17 +21,15 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
-WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
-
 WebUI.maximizeWindow()
 
-WebUI.delay(1)
+WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
 
 WebUI.click(findTestObject('Page_Approval Listing/Defaultfilter_approval'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Page_Service request/Filter button'))
 
-WebUI.delay(1)
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Page_Approval Listing/btn_Approved_Filter'))
 
