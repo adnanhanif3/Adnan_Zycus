@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//dew-tab/div[2]/div[1]/dew-service-request-card/div/div[2]/dew-row/dew-col[4]/div/a[2]</value>
+         <value>html/body/app-root/div/irequest-service-requests/dew-tabset/div/div[2]/div/dew-tab/div[2]/div[2]/dew-service-request-card/div/div[2]/dew-row/dew-col[4]/div/a[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
