@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Save As PDF action from view request page for Completed status</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ce1501b5-3046-4d57-b6f2-a655f6007b74</testCaseGuid>
+</TestCaseEntity>
