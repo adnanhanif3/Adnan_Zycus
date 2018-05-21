@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify uploading a file which was canceled earlier</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fe1f1598-ba88-4444-9165-ab1b4d003b76</testCaseGuid>
+</TestCaseEntity>
