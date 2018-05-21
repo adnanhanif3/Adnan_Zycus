@@ -33,15 +33,23 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
-CurrentPageUrl = WebUI.getUrl()
+CurrentPageurl = WebUI.getUrl()
 
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
-WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
+WebUI.click(findTestObject('Page_Edit request/Requestdescp_field'))
+
+WebUI.sendKeys(findTestObject('Page_Edit request/Requestdescp_field'), 'Need the requirement as early as possible.')
 
 WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
-WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/my-requests/service-requests')
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
+
+WebUI.verifyElementText(findTestObject('Page_Service request/Request Name'), 'Testdewdrops')
+
+WebUI.delay(5)
 
 WebUI.closeBrowser()
 

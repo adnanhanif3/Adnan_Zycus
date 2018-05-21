@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_03_Mandatory check on only request name</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ea9f1b9c-e268-497a-87b3-800820673ebd</testCaseGuid>
+</TestCaseEntity>
