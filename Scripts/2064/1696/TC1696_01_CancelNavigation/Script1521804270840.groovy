@@ -31,7 +31,7 @@ WebUI.click(findTestObject('Page_Create Request/btn_Cancel'))
 
 String CurrentPageUrl = WebUI.getUrl()
 
-WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/irequest/home')
+WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/home')
 
 WebUI.closeBrowser()
 
