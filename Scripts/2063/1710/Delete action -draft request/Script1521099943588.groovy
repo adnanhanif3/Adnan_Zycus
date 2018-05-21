@@ -29,9 +29,7 @@ WebUI.delay(2)
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Draft'), 0)
 
-WebUI.delay(2)
-
-WebUI.verifyElementPresent(findTestObject('Page_View request/Delete xpath'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Service request/Delete'), 0)
 
 WebUI.closeBrowser()
 
