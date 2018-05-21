@@ -21,31 +21,37 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/George Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Page_Home/Procurement Services/Procurement Services List Grid'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Home/Procurement Services/ProcurementServicesList'), 0)
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Procurement Services/Procurement Services Tile1'), 0)
 
-WebUI.verifyElementText(findTestObject('Page_Home/Procurement Services/Procurement Services Tile 1 Create New Button'), 'Create New')
+WebUI.verifyElementText(findTestObject('Page_Home/Procurement Services/Procurement Services Tile 1 Create New Button'), 
+    'Create New')
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Procurement Services/Procurement Services Tile 2'), 0)
 
-WebUI.verifyElementText(findTestObject('Page_Home/Procurement Services/Procurement Services Tile 2 Create New Button'), 'Create New')
+WebUI.verifyElementText(findTestObject('Page_Home/Procurement Services/Procurement Services Tile 2 Create New Button'), 
+    'Create New')
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Procurement Services/Procurement Services Tile 3'), 0)
 
-WebUI.verifyElementText(findTestObject('Page_Home/Procurement Services/Procurement Services Tile 3 Create New Button'), 'Create New')
+WebUI.verifyElementText(findTestObject('Page_Home/Procurement Services/Procurement Services Tile 3 Create New Button'), 
+    'Create New')
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Procurement Services/Procurement Services Tile 4'), 0)
 
-WebUI.verifyElementText(findTestObject('Page_Home/Procurement Services/Procurement Services Tile 4 Create New Button'), 'Create New')
+WebUI.verifyElementText(findTestObject('Page_Home/Procurement Services/Procurement Services Tile 4 Create New Button'), 
+    'Create New')
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Procurement Services/Procurement Services Tile 5'), 0)
 
-WebUI.verifyElementText(findTestObject('Page_Home/Procurement Services/Procurement Services Tile 5 Create New Button'), 'Create New')
+WebUI.verifyElementText(findTestObject('Page_Home/Procurement Services/Procurement Services Tile 5 Create New Button'), 
+    'Create New')
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Procurement Services/Procurement Services Tile 6'), 0)
 
-WebUI.verifyElementText(findTestObject('Page_Home/Procurement Services/Procurement Services Tile 6 Create New Button'), 'Create New')
+WebUI.verifyElementText(findTestObject('Page_Home/Procurement Services/Procurement Services Tile 6 Create New Button'), 
+    'Create New')
 
 WebUI.click(findTestObject('Page_Home/Procurement Services/Procurement Services List Next Button'))
 
