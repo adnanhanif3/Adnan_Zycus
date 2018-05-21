@@ -35,5 +35,9 @@ WebUI.delay(30)
 
 WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 
+WebUI.delay(4)
+
 WebUI.verifyElementText(findTestObject('Page_Service request/txt_RequestNameTile1'), 'New request saved as draft')
+
+WebUI.closeBrowser()
 
