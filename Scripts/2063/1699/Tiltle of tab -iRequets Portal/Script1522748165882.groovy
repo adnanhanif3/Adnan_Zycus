@@ -29,7 +29,9 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Service request/View Request'))
 
-WebUI.verifyElementPresent(findTestObject('Page_View request/iRequets portal'), 0)
+Title = WebUI.getWindowTitle()
+
+WebUI.verifyMatch(Title, 'iRequest Portal', false)
 
 WebUI.closeBrowser()
 
