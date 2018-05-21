@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1690_10_verify the char limit of request description</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6f9348d4-9b25-404a-81eb-abe2882b6627</testCaseGuid>
+</TestCaseEntity>
