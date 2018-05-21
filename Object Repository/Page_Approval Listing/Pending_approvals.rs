@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;clearfix&quot;]/dew-section-body/dew-row/dew-col[1]/dew-flex/dew-flex-item[1]/i</value>
+         <value>//span[contains(text(),'Approvals')]/ancestor::dew-flex</value>
       </entry>
       <entry>
          <key>BASIC</key>
