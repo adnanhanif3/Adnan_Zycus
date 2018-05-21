@@ -39,3 +39,5 @@ WebUI.waitForElementPresent(findTestObject('Page_View request/WF ApprovalConfirm
 
 WebUI.verifyElementText(findTestObject('Page_View request/WF ApprovalConfirmation'), 'Request has been Approved')
 
+WebUI.closeBrowser()
+
