@@ -19,25 +19,27 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.comment('Verify assign to single user')
 
-WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Mandatory Assigned to')
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+
+WebUI.maximizeWindow()
+
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'AssignTo : only Request Manager')
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdrops')
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test AssignTO by Katalon')
 
-WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
+WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
 
-WebUI.delay(5)
+WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum')
 
-WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
+WebUI.scrollToElement(findTestObject('Page_Create Request/icon_AssignTo'), 30)
 
-WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
+WebUI.click(findTestObject('Page_Create Request/icon_AssignTo'))
 
-WebUI.clearText(findTestObject('Page_Create Request/input_AssignTo'))
-
-WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+WebUI.verifyElementNotPresent(findTestObject('Page_Create Request/drpdwn_AssignToUser'), 30)
 
 WebUI.closeBrowser()
 

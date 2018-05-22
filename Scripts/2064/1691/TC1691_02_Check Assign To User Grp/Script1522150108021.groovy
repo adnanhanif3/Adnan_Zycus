@@ -41,7 +41,7 @@ WebUI.click(findTestObject('Page_Create Request/icon_AssignTo'))
 
 WebUI.click(findTestObject('Page_Create Request/drpdwn_AssignToGrp'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Dew')
+WebUI.sendKeys(findTestObject('Page_Create Request/input_AssignTo'), 'Dew')
 
 WebUI.click(findTestObject('Page_Create Request/drpdwn_GrpDewdrop'))
 
