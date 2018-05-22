@@ -23,6 +23,8 @@ WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling
 
 WebUI.maximizeWindow()
 
+WebUI.waitForPageLoad(10)
+
 WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Test email Notification')
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
@@ -33,7 +35,7 @@ WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
 
 WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Checking Assign to user group functionality and its impact on Work Flow')
 
-WebUI.scrollToElement(findTestObject('Page_Create Request/icon_AssignTo'), 0)
+WebUI.scrollToElement(findTestObject('Page_Create Request/icon_AssignTo'), 3)
 
 WebUI.click(findTestObject('Page_Create Request/icon_AssignTo'))
 
@@ -43,15 +45,17 @@ WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Dew')
 
 WebUI.click(findTestObject('Page_Create Request/drpdwn_GrpDewdrop'))
 
-WebUI.delay(4)
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
-WebUI.waitForElementPresent(findTestObject('Page_Create Request/icon_Close'), 30)
+WebUI.waitForElementPresent(findTestObject('Page_Create Request/icon_Close'), 20)
 
 WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 
 WebUI.click(findTestObject('Page_Service request/View Request'))
+
+WebUI.delay(3)
 
 String RM = WebUI.getText(findTestObject('Page_View request/txt_AssignToName'), FailureHandling.STOP_ON_FAILURE)
 
