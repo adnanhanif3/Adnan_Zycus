@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_06_Verify whether dropdown User and UserGrp  is avilable when request def is configured with both User and User Grp</name>
+   <tag></tag>
+   <comment>Verify assign to single user</comment>
+   <testCaseGuid>8d7e1628-597d-42d8-bd48-67ad842d92f1</testCaseGuid>
+</TestCaseEntity>

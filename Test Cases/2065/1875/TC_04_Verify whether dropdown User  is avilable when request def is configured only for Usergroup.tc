@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_04_Verify whether dropdown User  is avilable when request def is configured only for Usergroup</name>
+   <tag></tag>
+   <comment>Verify assign to single user</comment>
+   <testCaseGuid>c461cb11-e822-4e02-a6ac-dd291c351cdd</testCaseGuid>
+</TestCaseEntity>

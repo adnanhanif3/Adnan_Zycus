@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_05_Verify whether UserGroup is avilable when request def is configured only for individual User</name>
+   <tag></tag>
+   <comment>Verify assign to single user</comment>
+   <testCaseGuid>7dc3db04-4c7f-46d4-b1a8-9972e2baa9d5</testCaseGuid>
+</TestCaseEntity>
