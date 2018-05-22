@@ -27,6 +27,8 @@ WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
 
 WebUI.click(findTestObject('Page_Approval Listing/Btn_review'))
 
+WebUI.scrollToElement(findTestObject('Page_Approval Listing/Workflow Approve'), 5)
+
 WebUI.verifyElementPresent(findTestObject('Page_Approval Listing/Workflow Approve'), 5)
 
 WebUI.verifyElementText(findTestObject('Page_Approval Listing/Workflow Approve'), 'Approve', FailureHandling.CONTINUE_ON_FAILURE)
