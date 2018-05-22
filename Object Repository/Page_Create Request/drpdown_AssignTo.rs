@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>drpdwn_AssignToUser</name>
+   <name>drpdown_AssignTo</name>
    <tag></tag>
-   <elementGuidId>7b79bcba-6cda-4c57-a1a8-142939e21018</elementGuidId>
+   <elementGuidId>7ff5c185-3e3a-419e-a89f-e70277202f9b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//input[@placeholder=&quot;Search &amp; select&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@class=&quot;dropdown-item&quot; and text()='User']</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

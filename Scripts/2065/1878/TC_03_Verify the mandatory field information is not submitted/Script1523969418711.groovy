@@ -35,7 +35,7 @@ WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
-WebUI.clearText(findTestObject('Page_Create Request/input_AssignTo'))
+WebUI.clearText(findTestObject('Page_Create Request/drpdown_AssignTo'))
 
 WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 

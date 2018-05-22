@@ -33,7 +33,7 @@ WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
 
 WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum')
 
-WebUI.sendKeys(findTestObject('Page_Create Request/input_AssignTo'), 'Lio')
+WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Lio')
 
 WebUI.click(findTestObject('Page_Create Request/drpdown_LioMessi'))
 

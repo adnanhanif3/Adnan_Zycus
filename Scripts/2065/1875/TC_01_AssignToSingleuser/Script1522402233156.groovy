@@ -37,9 +37,9 @@ WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
-WebUI.scrollToElement(findTestObject('Page_Create Request/input_AssignTo'), 1)
+WebUI.scrollToElement(findTestObject('Page_Create Request/drpdown_AssignTo'), 1)
 
-WebUI.sendKeys(findTestObject('Page_Create Request/input_AssignTo'), 'Lio')
+WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Lio')
 
 WebUI.delay(3)
 

@@ -35,7 +35,7 @@ WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Checking Ass
 
 WebUI.scrollToElement(findTestObject('Page_Create Request/icon_AssignTo'), 0)
 
-WebUI.sendKeys(findTestObject('Page_Create Request/input_AssignTo'), 'Lio')
+WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Lio')
 
 WebUI.click(findTestObject('Page_Create Request/drpdown_LioMessi'))
 

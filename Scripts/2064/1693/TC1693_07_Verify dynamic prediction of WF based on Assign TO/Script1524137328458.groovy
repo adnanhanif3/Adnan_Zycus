@@ -31,7 +31,7 @@ WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test Assi
 
 WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum')
 
-WebUI.sendKeys(findTestObject('Page_Create Request/input_AssignTo'), 'Lio')
+WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Lio')
 
 WebUI.click(findTestObject('Page_Create Request/drpdown_LioMessi'))
 
@@ -47,7 +47,7 @@ WebUI.click(findTestObject('Page_Create Request/icon_AssignTo'))
 
 WebUI.click(findTestObject('Page_Create Request/drpdwn_AssignToGrp'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/input_AssignTo'), 'Dew')
+WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Dew')
 
 WebUI.click(findTestObject('Page_Create Request/drpdwn_GrpDewdrop'))
 
