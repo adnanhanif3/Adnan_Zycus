@@ -49,7 +49,7 @@ WebUI.verifyElementPresent(findTestObject('Page_Create Request/drpdwn_AssignTo U
 
 WebUI.verifyElementPresent(findTestObject('Page_Create Request/drpdwn_AssignToGrp'), 30)
 
-WebUI.verifyElementPresent(findTestObject('Page_Create Request/AssognTo Mandatory mark'), 30)
+WebUI.verifyElementPresent(findTestObject('Page_Edit request/Mandtory_assigned to'), 30)
 
 WebUI.closeBrowser()
 
