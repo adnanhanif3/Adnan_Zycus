@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the UI of request type with maximum characters</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>37eb5413-6102-4e56-9be1-86dee08ebe27</testCaseGuid>
+</TestCaseEntity>
