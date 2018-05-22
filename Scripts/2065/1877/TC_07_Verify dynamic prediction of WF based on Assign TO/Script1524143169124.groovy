@@ -21,7 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.comment('Verify assign to single user')
 
-WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Preview Workflow based on Assigned to type condition')
 
@@ -31,19 +31,35 @@ WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test Assi
 
 WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum')
 
+WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
+
+WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
+
 WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Lio')
 
 WebUI.click(findTestObject('Page_Create Request/drpdown_LioMessi'))
+
+WebUI.scrollToElement(findTestObject('Page_Create Request/btn_Refresh'), 0)
 
 WebUI.click(findTestObject('Page_Create Request/btn_Refresh'))
 
 WebUI.delay(4)
 
-WebUI.verifyElementText(findTestObject('Page_Create Request/txt_Approver Name in Preview WF'), 'Bobby C')
+WebUI.verifyElementText(findTestObject('Page_Create Request/txt_Approver Name in Preview WF'), 'Bobby Chartlon')
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_Create Request/icon_AssignTo'))
 
 WebUI.click(findTestObject('Page_Create Request/drpdwn_AssignToGrp'))
+
+WebUI.delay(2)
+
+WebUI.clearText(findTestObject('Page_Create Request/drpdown_AssignTo'))
 
 WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Dew')
 
@@ -51,7 +67,7 @@ WebUI.click(findTestObject('Page_Create Request/drpdwn_GrpDewdrop'))
 
 WebUI.click(findTestObject('Page_Create Request/btn_Refresh'))
 
-WebUI.delay(4)
+WebUI.delay(5)
 
 WebUI.verifyElementText(findTestObject('Page_Create Request/txt_Approver Name in Preview WF'), 'Prabodh Ghosh')
 
