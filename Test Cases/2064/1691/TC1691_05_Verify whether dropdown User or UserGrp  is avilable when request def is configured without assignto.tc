@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1691_05_Verify whether dropdown User or UserGrp  is avilable when request def is configured without assignto</name>
+   <tag></tag>
+   <comment>Verify assign to single user</comment>
+   <testCaseGuid>fd3583f7-8227-4862-9892-deabd4b0407a</testCaseGuid>
+</TestCaseEntity>
