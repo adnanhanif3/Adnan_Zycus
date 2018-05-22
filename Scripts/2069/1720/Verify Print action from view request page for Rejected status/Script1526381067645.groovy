@@ -19,11 +19,23 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.maximizeWindow()
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
 WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Page_Service request/Inprogress deselect'))
+
+WebUI.click(findTestObject('Page_Service request/Returned deselect '))
+
+WebUI.click(findTestObject('Page_Service request/With RM deselect '))
+
+WebUI.click(findTestObject('Page_Service request/Awatting approval deselect '))
+
+WebUI.click(findTestObject('Page_Service request/Draft deselect'))
+
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Page_Service request/View Request'))
 
@@ -31,9 +43,7 @@ WebUI.click(findTestObject('Page_View request/Print Button'))
 
 WebUI.switchToWindowIndex(1)
 
-WebUI.maximizeWindow()
-
-WebUI.delay(2)
+WebUI.delay(5)
 
 WebUI.closeBrowser()
 

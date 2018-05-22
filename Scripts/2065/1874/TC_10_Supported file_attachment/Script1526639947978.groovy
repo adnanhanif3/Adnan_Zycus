@@ -21,8 +21,6 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
-WebUI.click(findTestObject('Page_Home/Top Nav/Globalsearch_box'))
-
 WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Mandatory Assigned to')
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
@@ -50,7 +48,6 @@ filePath = ((userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\cartoo
 /*WebUI.uploadFile(findTestObject('Page_Create Request/Attachment'), filePath)
 
 filePath = ((userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\Cushioneer-1in stroke.IGS')*/
-
 WebUI.uploadFile(findTestObject('Page_Create Request/Attachment'), filePath)
 
 filePath = ((userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\d5f13f190530f169114b9d432b1688e7.png')

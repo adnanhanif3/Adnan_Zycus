@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Verify Save As PDF Action</name>
+   <name>Verify Print action from view request page for With RM status</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>90db00f2-fd47-4f53-ac59-cc9bc7debeaa</testCaseGuid>
+   <testCaseGuid>af1c5210-aa78-428e-977d-76ab4080f5b7</testCaseGuid>
 </TestCaseEntity>

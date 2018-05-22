@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify Print action from view request page with status as Draft</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bccb48fe-b52b-48f9-8590-dc3d1fe72eae</testCaseGuid>
+</TestCaseEntity>

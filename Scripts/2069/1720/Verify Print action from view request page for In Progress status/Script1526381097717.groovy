@@ -21,27 +21,31 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
-WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Mandatory Assigned to')
+WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
+WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), '0987654321')
+WebUI.delay(4)
 
-WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
+WebUI.click(findTestObject('Page_Service request/Returned deselect '))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum')
+WebUI.click(findTestObject('Page_Service request/With RM deselect '))
 
-WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
+WebUI.click(findTestObject('Page_Service request/Awatting approval deselect '))
 
-WebUI.delay(7)
+WebUI.click(findTestObject('Page_Service request/Rejected deselect '))
 
-WebUI.click(findTestObject('Page_Create Request/icon_Close'))
+WebUI.click(findTestObject('Page_Service request/Draft deselect'))
 
-WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
+WebUI.delay(5)
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Page_Service request/View Request'))
 
-WebUI.verifyElementText(findTestObject('Page_Edit request/Pagetitle_reqname'), '0987654321')
+WebUI.click(findTestObject('Page_View request/Print Button'))
+
+WebUI.switchToWindowIndex(1)
+
+WebUI.delay(5)
 
 WebUI.closeBrowser()
 

@@ -19,17 +19,45 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
-WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'), FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.maximizeWindow()
 
-WebUI.delay(1)
+WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
 
-WebUI.click(findTestObject('Page_Home/Menu Nav/Submenu Service Request'))
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Page_Service request/Inprogress deselect'))
+
+WebUI.click(findTestObject('Page_Service request/Returned deselect '))
+
+WebUI.click(findTestObject('Page_Service request/With RM deselect '))
+
+WebUI.click(findTestObject('Page_Service request/Awatting approval deselect '))
+
+WebUI.click(findTestObject('Page_Service request/Rejected deselect '))
+
+WebUI.click(findTestObject('Page_Service request/Draft deselect'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Page_Service request/Filter button'))
+
+WebUI.click(findTestObject('Page_Service request/Filter Completed'))
+
+WebUI.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Page_Service request/Filter View Service Request'))
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_Service request/View Request'))
 
-WebUI.click(findTestObject('Page_View request/Save As PDF button'))
+WebUI.delay(3)
+
+WebUI.click(findTestObject('Page_View request/Print Button'))
+
+WebUI.switchToWindowIndex(1)
 
 WebUI.delay(5)
 
