@@ -31,3 +31,5 @@ WebUI.setText(findTestObject('Page_Login/Password'), 'Test@1234')
 
 WebUI.click(findTestObject('Page_Login/LoginBtn'))
 
+WebUI.acceptAlert()
+
