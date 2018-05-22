@@ -19,27 +19,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.maximizeWindow()
 
-WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'ADN_WFD')
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Max Character Request Type')
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test Attachment download')
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test Large request type')
 
-WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
-
-WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Testing Attachment download Functionality')
-
-String userDir = System.getProperty('user.dir')
-
-String filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\eCatalogue_User_Guides.pdf'
-
-WebUI.uploadFile(findTestObject('Page_Create Request/Attachment'), filePath, FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(10)
+WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Testing UI with maximum characters in request type')
 
 WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
@@ -47,13 +37,15 @@ WebUI.waitForElementPresent(findTestObject('Page_Create Request/icon_Close'), 20
 
 WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 
-WebUI.delay(5)
+WebUI.delay(3)
 
-WebUI.click(findTestObject('Page_Service request/btn_ViewRequest1'))
+String requestType = WebUI.getText(findTestObject('Page_Service request/Request Type'))
 
-WebUI.click(findTestObject('Page_View request/Download Attachment'))
+WebUI.click(findTestObject('Page_Service request/View Request'))
 
-WebUI.delay(4)
+WebUI.delay(2, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.verifyElementText(findTestObject('Page_View request/Request Type Text'), requestType, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.closeBrowser()
 

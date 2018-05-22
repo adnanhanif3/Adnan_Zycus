@@ -33,7 +33,7 @@ WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Testing Name
 
 WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
-WebUI.waitForElementPresent(findTestObject('Page_Create Request/icon_Close'), 30)
+WebUI.waitForElementPresent(findTestObject('Page_Create Request/icon_Close'), 20)
 
 WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 
