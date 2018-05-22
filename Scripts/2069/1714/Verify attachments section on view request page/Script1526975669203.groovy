@@ -27,11 +27,9 @@ WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'ADN_WFD')
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test Attachment download')
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test Attachment Section')
 
-WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
-
-WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Testing Attachment download Functionality')
+WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Testing Attachment section')
 
 String userDir = System.getProperty('user.dir')
 
@@ -39,7 +37,7 @@ String filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\
 
 WebUI.uploadFile(findTestObject('Page_Create Request/Attachment'), filePath, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(10)
+WebUI.delay(9)
 
 WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
@@ -47,11 +45,13 @@ WebUI.waitForElementPresent(findTestObject('Page_Create Request/icon_Close'), 20
 
 WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 
-WebUI.delay(5)
-
 WebUI.click(findTestObject('Page_Service request/btn_ViewRequest1'))
 
-WebUI.click(findTestObject('Page_View request/Download Attachment'))
+WebUI.verifyElementText(findTestObject('Page_View request/Attachment Name'), 'eCatalogue_User_Guid...')
+
+WebUI.verifyElementText(findTestObject('Page_View request/Attachment Size'), '288.63kb')
+
+WebUI.verifyElementText(findTestObject('Page_View request/Download Attachment'), 'Download')
 
 WebUI.delay(4)
 
