@@ -59,43 +59,9 @@ WebUI.click(findTestObject('Page_Service request/My request xpath'))
 
 WebUI.click(findTestObject('Page_Service request/Edit request button(Rejected, Returned)'))
 
+WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
+
 WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
 WebUI.delay(5)
-
-WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
-
-WebUI.delay(10)
-
-WebUI.click(findTestObject('Page_Home/Menu Nav/TO DOs arrow'))
-
-WebUI.click(findTestObject('Page_Approval Listing/Approval_dropdwn'))
-
-WebUI.click(findTestObject('Page_Approval Listing/link_Rejectcard1'))
-
-WebUI.click(findTestObject('Page_Approval Listing/txtarea_RejectComment'))
-
-WebUI.sendKeys(findTestObject('Page_Approval Listing/txtarea_RejectComment'), 'Rejected')
-
-WebUI.click(findTestObject('Page_Approval Listing/btn_Reject in Comment Window'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
-
-WebUI.delay(10)
-
-WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS arrow'))
-
-WebUI.click(findTestObject('Page_Service request/My request xpath'))
-
-WebUI.click(findTestObject('Page_Service request/Edit request button(Rejected, Returned)'))
-
-WebUI.click(findTestObject('Page_View request/Activity Tab'))
-
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Btn_loadmore(Audit)'), 0)
-
-WebUI.click(findTestObject('Page_Edit request/Btn_loadmore(Audit)'))
-
-WebUI.closeBrowser()
 

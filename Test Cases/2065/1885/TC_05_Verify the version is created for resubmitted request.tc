@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_05_Verify the version is created for resubmitted request</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b576be56-f8fc-4f6c-a172-604cb88f5819</testCaseGuid>
+</TestCaseEntity>
