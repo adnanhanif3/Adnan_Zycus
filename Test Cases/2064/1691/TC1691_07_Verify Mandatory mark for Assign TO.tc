@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1691_07_Verify Mandatory mark for Assign TO</name>
+   <tag></tag>
+   <comment>Verify assign to single user</comment>
+   <testCaseGuid>38d3200e-d694-4e08-8b5c-2a7b1ba0966b</testCaseGuid>
+</TestCaseEntity>
