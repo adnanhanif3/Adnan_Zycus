@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
 WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
 
-WebUI.delay(1)
+WebUI.delay(2)
 
 WebUI.verifyElementPresent(findTestObject('Page_Approval Listing/Btn_review'), 20)
 
