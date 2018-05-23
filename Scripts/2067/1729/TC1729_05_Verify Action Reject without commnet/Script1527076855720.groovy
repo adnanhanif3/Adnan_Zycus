@@ -27,13 +27,11 @@ WebUI.delay(10)
 
 WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
 
-String RequestNumber = WebUI.getText(findTestObject('Page_Approval Listing/txt_RequestNumbercard1'))
-
-WebUI.click(findTestObject('Page_Approval Listing/link_ApproveCard1'))
+WebUI.click(findTestObject('Page_Approval Listing/link_Rejectcard1'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Approval Listing/btn_Approve In Comment Window'))
+WebUI.click(findTestObject('Page_Approval Listing/btn_Reject in Comment Window'))
 
 WebUI.verifyElementText(findTestObject('Page_Service request/Mandatory Comment'), 'Comment is mandatory')
 

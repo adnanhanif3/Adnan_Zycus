@@ -19,23 +19,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.comment('Verify the action Approval')
-
-WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(10)
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
 WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
 
-String RequestNumber = WebUI.getText(findTestObject('Page_Approval Listing/txt_RequestNumbercard1'))
+WebUI.delay(1)
 
-WebUI.click(findTestObject('Page_Approval Listing/link_ApproveCard1'))
+WebUI.click(findTestObject('Page_Approval Listing/Defaultfilter_approval'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(2)
+WebUI.click(findTestObject('Page_Approval Listing/btn_AddFilter'))
 
-WebUI.click(findTestObject('Page_Approval Listing/btn_Approve In Comment Window'))
+WebUI.delay(1)
 
-WebUI.verifyElementText(findTestObject('Page_Service request/Mandatory Comment'), 'Comment is mandatory')
+WebUI.click(findTestObject('Page_Approval Listing/btn_Rejected_Filter'))
+
+WebUI.click(findTestObject('Page_Service request/Service request button'))
+
+WebUI.delay(5)
+
+WebUI.verifyElementNotPresent(findTestObject('Page_Approval Listing/link_Rejectcard1'), 10)
 
 WebUI.closeBrowser()
 

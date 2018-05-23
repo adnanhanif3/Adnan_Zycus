@@ -29,13 +29,13 @@ WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
 
 String RequestNumber = WebUI.getText(findTestObject('Page_Approval Listing/txt_RequestNumbercard1'))
 
-WebUI.click(findTestObject('Page_Approval Listing/link_ApproveCard1'))
+WebUI.click(findTestObject('Page_Approval Listing/link_Rejectcard1'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Approval Listing/btn_Approve In Comment Window'))
+WebUI.verifyElementPresent(findTestObject('Page_Service request/btn_Close popup Reject'), 20)
 
-WebUI.verifyElementText(findTestObject('Page_Service request/Mandatory Comment'), 'Comment is mandatory')
+WebUI.click(findTestObject('Page_Service request/btn_Close popup Reject'))
 
 WebUI.closeBrowser()
 
