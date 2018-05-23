@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_1731_09_Verify Review action is not available for Approved requests</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a756fb9e-1341-4e65-a4ac-7fc52f66633a</testCaseGuid>
+</TestCaseEntity>
