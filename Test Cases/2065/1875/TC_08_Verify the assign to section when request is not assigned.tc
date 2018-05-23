@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_08_Verify the assign to section when request is not assigned</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fd4cee55-89ee-4224-a8cc-59396e2a42de</testCaseGuid>
+</TestCaseEntity>
