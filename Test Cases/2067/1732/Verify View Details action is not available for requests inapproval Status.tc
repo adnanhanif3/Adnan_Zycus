@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify View Details action is not available for requests inapproval Status</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5f7ca87f-80e5-46d3-97e2-83bcb782d743</testCaseGuid>
+</TestCaseEntity>
