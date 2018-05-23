@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_1728_03_Verify Approve action is not available for Approved requests</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e437c0d9-c75d-4fda-9e7e-88912ebd2e96</testCaseGuid>
+</TestCaseEntity>
