@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the Version of rejected request on resubmission in audit trail</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>70270131-3b4d-4e27-92f2-b1d65b8e5448</testCaseGuid>
+</TestCaseEntity>
