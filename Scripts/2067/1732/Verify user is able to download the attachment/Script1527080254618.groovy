@@ -71,6 +71,8 @@ WebUI.click(findTestObject('Page_Approval Listing/btn_ViewApprovals'))
 
 WebUI.delay(2)
 
+WebUI.click(findTestObject('Page_Approval Listing/btn_ViewDeatilsCard1'))
+
 WebUI.click(findTestObject('Page_Create Request/btn_Downlaod Attachment'))
 
 WebUI.delay(2)
