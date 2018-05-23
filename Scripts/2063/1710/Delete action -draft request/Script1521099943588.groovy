@@ -27,9 +27,9 @@ WebUI.click(findTestObject('Page_Service request/Service request xpath'))
 
 WebUI.delay(2)
 
+WebUI.scrollToElement(findTestObject('Page_Service request/Delete'), 0)
+
 WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Draft'), 0)
 
 WebUI.verifyElementPresent(findTestObject('Page_Service request/Delete'), 0)
-
-WebUI.closeBrowser()
 
