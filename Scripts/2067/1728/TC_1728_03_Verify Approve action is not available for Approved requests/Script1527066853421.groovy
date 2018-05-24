@@ -19,35 +19,25 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
-WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Definition to test')
+WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
 
-WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
+WebUI.delay(1)
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'New request by Katalon')
+WebUI.click(findTestObject('Page_Approval Listing/Defaultfilter_approval'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
+WebUI.click(findTestObject('Page_Approval Listing/btn_AddFilter'))
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum')
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Page_Approval Listing/btn_Approved_Filter'))
+
+WebUI.click(findTestObject('Page_Service request/Service request button'))
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
-
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
-
-WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
-
-String userDir = System.getProperty('user.dir')
-
-String filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\eProc_Buyer_Manual.pdf'
-
-WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), filePath)
-
-WebUI.verifyTextPresent('eProc_Buyer_Manual.pdf file can\'t be uploaded since file size is greater than 5MB', false)
+WebUI.verifyElementNotPresent(findTestObject('Page_Approval Listing/link_ApproveCard1'), 20)
 
 WebUI.closeBrowser()
 

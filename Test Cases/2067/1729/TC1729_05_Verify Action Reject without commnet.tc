@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC1728_01_Verify Action Approve</name>
+   <name>TC1729_05_Verify Action Reject without commnet</name>
    <tag></tag>
    <comment>Verify the action Approval</comment>
-   <testCaseGuid>89a4f084-f4f5-488e-b943-b315c3678700</testCaseGuid>
+   <testCaseGuid>a7c6d303-d8ae-4e5b-a67d-98062b8f42dc</testCaseGuid>
 </TestCaseEntity>

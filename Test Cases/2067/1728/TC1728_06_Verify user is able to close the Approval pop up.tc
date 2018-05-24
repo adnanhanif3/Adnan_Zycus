@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC1728_06_Verify user is able to close the Approval pop up</name>
+   <tag></tag>
+   <comment>Verify the action Approval</comment>
+   <testCaseGuid>0886b0fa-40a3-4912-8682-d228b7634fe4</testCaseGuid>
+</TestCaseEntity>

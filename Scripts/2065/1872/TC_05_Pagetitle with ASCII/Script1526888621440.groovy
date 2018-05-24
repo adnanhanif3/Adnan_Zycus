@@ -33,9 +33,11 @@ WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum
 
 WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
-WebUI.delay(7)
+WebUI.delay(4)
 
 WebUI.click(findTestObject('Page_Create Request/icon_Close'))
+
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 

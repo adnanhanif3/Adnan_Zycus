@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_1731_08_Verify Review action is available for In Approval requests</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b56c4b93-5c84-45bf-ac8b-bb172b493ed7</testCaseGuid>
+</TestCaseEntity>

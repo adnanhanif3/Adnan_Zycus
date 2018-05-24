@@ -65,3 +65,35 @@ WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
 WebUI.delay(5)
 
+WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
+
+WebUI.click(findTestObject('Page_Home/Menu Nav/TO DOs arrow'))
+
+WebUI.click(findTestObject('Page_Approval Listing/Approval_dropdwn'))
+
+WebUI.click(findTestObject('Page_Approval Listing/link_Rejectcard1'))
+
+WebUI.click(findTestObject('Page_Approval Listing/txtarea_RejectComment'))
+
+WebUI.sendKeys(findTestObject('Page_Approval Listing/txtarea_RejectComment'), 'Rejected')
+
+WebUI.click(findTestObject('Page_Approval Listing/btn_Reject in Comment Window'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
+
+WebUI.delay(10)
+
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS arrow'))
+
+WebUI.click(findTestObject('Page_Service request/My request xpath'))
+
+WebUI.click(findTestObject('Page_Service request/Edit request button(Rejected, Returned)'))
+
+WebUI.click(findTestObject('Page_Edit request/Audit_version'))
+
+WebUI.selectOptionByValue(findTestObject('Page_Edit request/Audit_version'), '2', false)
+
+WebUI.closeBrowser()
+
