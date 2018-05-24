@@ -37,6 +37,8 @@ WebUI.delay(7)
 
 WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 
+WebUI.delay(3)
+
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
 WebUI.delay(2)
