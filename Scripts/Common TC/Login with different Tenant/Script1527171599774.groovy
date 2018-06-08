@@ -25,7 +25,7 @@ WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('Page_Login/GhostUserID'))
 
-WebUI.setText(findTestObject('Page_Login/UserId'), 'stark.tony@marvel.com')
+WebUI.setText(findTestObject('Page_Login/UserId'), 'banner.bruce@marvel.com')
 
 WebUI.click(findTestObject('Page_Login/GhoshPassword'))
 
