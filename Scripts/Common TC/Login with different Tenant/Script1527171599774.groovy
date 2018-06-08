@@ -25,11 +25,11 @@ WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('Page_Login/GhostUserID'))
 
-WebUI.setText(findTestObject('Page_Login/UserId'), 'poojaqatest@zycat.com')
+WebUI.setText(findTestObject('Page_Login/UserId'), 'stark.tony@marvel.com')
 
 WebUI.click(findTestObject('Page_Login/GhoshPassword'))
 
-WebUI.setText(findTestObject('Page_Login/Password'), 'Test@1234')
+WebUI.setText(findTestObject('Page_Login/Password'), 'iRequest@13')
 
 WebUI.click(findTestObject('Page_Login/LoginBtn'))
 
