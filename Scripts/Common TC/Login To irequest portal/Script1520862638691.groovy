@@ -29,7 +29,7 @@ WebUI.setText(findTestObject('Page_Login/UserId'), 'bobby.charlton@mariners.com'
 
 WebUI.click(findTestObject('Page_Login/GhoshPassword'))
 
-WebUI.setText(findTestObject('Page_Login/Password'), 'iRequest@12')
+WebUI.setText(findTestObject('Page_Login/Password'), 'iRequest@13')
 
 WebUI.click(findTestObject('Page_Login/LoginBtn'))
 
