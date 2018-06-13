@@ -5,4 +5,25 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>2bbcaa01-52ab-433f-9ab7-52340c1938b7</testCaseGuid>
+   <variable>
+      <defaultValue>'http://test.irequest.zycus.net/#/home'</defaultValue>
+      <description></description>
+      <id>3791f080-8540-4987-a669-5b5b44d095e0</id>
+      <masked>false</masked>
+      <name>QA</name>
+   </variable>
+   <variable>
+      <defaultValue>'http://dewdropsqc.zycus.net/irequest/ '</defaultValue>
+      <description></description>
+      <id>ede33937-68dc-4424-9324-4d277d30107e</id>
+      <masked>false</masked>
+      <name>QC</name>
+   </variable>
+   <variable>
+      <defaultValue>'dewdropspreprod.zycus.net'</defaultValue>
+      <description></description>
+      <id>46c5d717-1af8-47ce-a128-e88588a7db6a</id>
+      <masked>false</masked>
+      <name>Preprod</name>
+   </variable>
 </TestCaseEntity>

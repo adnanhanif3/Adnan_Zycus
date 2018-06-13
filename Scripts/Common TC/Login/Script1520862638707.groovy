@@ -19,11 +19,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
+WebUI.openBrowser(findTestData('Auth Test Data/URL data').getValue(1, 1))
 
 WebUI.maximizeWindow()
-
-WebUI.navigateToUrl('https://smtlogin.zycus.net/sso/login?serviceName=http://test.irequest.zycus.net/#  ')
 
 WebUI.sendKeys(findTestObject('Login and Logout/Username'), 'ge-all@zycus.com')
 
