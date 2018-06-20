@@ -6,12 +6,11 @@
    <elementGuidId>b9b03a62-36ce-4145-b73c-a25aabd6fbbb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//p[text()='Attachments']/parent::div</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//p[text()='Test9']/parent::div</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

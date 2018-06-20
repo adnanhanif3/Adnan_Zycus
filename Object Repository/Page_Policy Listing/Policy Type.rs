@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//p[text()='All']/following-sibling::p[text()='Just to check the maximum number fo permissible characters for Policy Type entering such big name of']</value>
+         <value>//p[text()='All']/following-sibling::p[text()='Attachment Policy']</value>
       </entry>
       <entry>
          <key>BASIC</key>

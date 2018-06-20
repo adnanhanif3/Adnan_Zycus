@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//span[text()='Back to Procurement Policies']/preceding-sibling::i</value>
+         <value>//span[text()='Back to Procurement Policies']/preceding-sibling::img</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
