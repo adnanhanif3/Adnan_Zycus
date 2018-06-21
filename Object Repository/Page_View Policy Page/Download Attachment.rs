@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//irequest-policy-view/div[2]/div/dew-row/dew-col[1]/div/div[2]/a</value>
+         <value>//a[text()='Download']</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

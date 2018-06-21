@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling
 
 WebUI.maximizeWindow()
 
-WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Test email Notification')
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'ADN_WFD')
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
@@ -33,7 +33,7 @@ WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Testing Brea
 
 WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
-WebUI.waitForElementPresent(findTestObject('Page_Create Request/icon_Close'), 30)
+WebUI.waitForElementPresent(findTestObject('Page_Create Request/icon_Close'), 20)
 
 WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 

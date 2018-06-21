@@ -6,11 +6,11 @@
    <elementGuidId>426ba80e-18a2-4413-bcfa-c08d319bcc12</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div[1]/dew-service-request-card/dew-card/dew-card-body/dew-row/dew-col[4]/div/a</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//dew-tab/div[2]/div[1]/dew-service-request-card/div/div[2]/dew-row/dew-col[4]/div/a</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

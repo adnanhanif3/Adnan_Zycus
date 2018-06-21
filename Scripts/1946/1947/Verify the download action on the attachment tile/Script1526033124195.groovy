@@ -33,7 +33,7 @@ WebUI.delay(4)
 
 WebUI.click(findTestObject('Page_Policy Listing/Policy Type'))
 
-WebUI.click(findTestObject('Page_Policy Listing/Policy Title with Attachment'))
+WebUI.click(findTestObject('Page_Policy Listing/Policy Title'))
 
 WebUI.click(findTestObject('Page_View Policy Page/Download Attachment'))
 
