@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling
 
 WebUI.maximizeWindow()
 
-WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Test email Notification')
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'ADN_WFD')
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
@@ -43,7 +43,7 @@ requestName = WebUI.getText(findTestObject('Page_Service request/Request Name'))
 
 WebUI.click(findTestObject('Page_Service request/View Request'))
 
-WebUI.delay(2, FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(4, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementText(findTestObject('Page_View request/PageTitle'), requestName, FailureHandling.CONTINUE_ON_FAILURE)
 

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-tabset/div/div[2]/div/dew-tab/div[2]/div[1]/dew-service-request-card/div/div[1]/dew-row/dew-col[2]/p/span</value>
+         <value>//div[1]/dew-service-request-card/dew-card/dew-card-header/dew-row/dew-col[2]/p/span</value>
       </entry>
       <entry>
          <key>BASIC</key>
