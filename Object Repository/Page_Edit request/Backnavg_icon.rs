@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;dew-container&quot;]/dew-block/div/i</value>
+         <value>//div[@class=&quot;dew-container&quot;]/dew-block/div/img</value>
       </entry>
       <entry>
          <key>BASIC</key>
