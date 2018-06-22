@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling
 
 WebUI.maximizeWindow()
 
-WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Test email Notification')
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'ADN_WFD')
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
@@ -31,7 +31,7 @@ WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test_Assi
 
 WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Checking Assign to single user functionality')
 
-WebUI.scrollToElement(findTestObject('Page_Create Request/icon_AssignTo'), 0)
+WebUI.scrollToElement(findTestObject('Page_Create Request/icon_AssignTo'), 3)
 
 WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Lio')
 
