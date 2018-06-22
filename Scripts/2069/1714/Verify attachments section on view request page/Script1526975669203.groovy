@@ -37,7 +37,7 @@ String filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\
 
 WebUI.uploadFile(findTestObject('Page_Create Request/Attachment'), filePath, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(9)
+WebUI.delay(7)
 
 WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
@@ -45,7 +45,7 @@ WebUI.waitForElementPresent(findTestObject('Page_Create Request/icon_Close'), 20
 
 WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 
-WebUI.click(findTestObject('Page_Service request/btn_ViewRequest1'))
+WebUI.click(findTestObject('Page_Service request/View Request'))
 
 WebUI.verifyElementText(findTestObject('Page_View request/Attachment Name'), 'eCatalogue_User_Guid...')
 
@@ -53,7 +53,7 @@ WebUI.verifyElementText(findTestObject('Page_View request/Attachment Size'), '28
 
 WebUI.verifyElementText(findTestObject('Page_View request/Download Attachment'), 'Download')
 
-WebUI.delay(4)
+WebUI.delay(2)
 
 WebUI.closeBrowser()
 

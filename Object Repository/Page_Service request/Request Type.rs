@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-tab/div[2]/div[1]/dew-service-request-card/div/div[2]/dew-row/dew-col[2]/p[2]</value>
+         <value>//div[1]/dew-service-request-card/dew-card/dew-card-body/dew-row/dew-col[2]/p[text()='Request Type']/following-sibling::p</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

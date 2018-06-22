@@ -49,7 +49,7 @@ WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Service request/btn_ViewRequest1'))
+WebUI.click(findTestObject('Page_Service request/View Request'))
 
 WebUI.click(findTestObject('Page_View request/Download Attachment'))
 
