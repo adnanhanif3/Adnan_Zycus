@@ -93,7 +93,7 @@ WebUI.click(findTestObject('Page_Service request/Edit request button(Rejected, R
 
 WebUI.click(findTestObject('Page_Edit request/Audit_version'))
 
-WebUI.selectOptionByValue(findTestObject('Page_Edit request/Audit_version'), '2', false)
+WebUI.selectOptionByValue(findTestObject('Page_Edit request/Audit_version'), '1', false)
 
 WebUI.closeBrowser()
 
