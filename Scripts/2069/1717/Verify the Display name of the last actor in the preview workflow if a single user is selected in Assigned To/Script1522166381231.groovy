@@ -33,7 +33,7 @@ WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
 
 WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Checking Assign to user functionality and its effect on workflow')
 
-WebUI.scrollToElement(findTestObject('Page_Create Request/icon_AssignTo'), 0)
+WebUI.scrollToElement(findTestObject('Page_Create Request/icon_AssignTo'), 3)
 
 WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Lio')
 

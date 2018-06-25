@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-col[@class=&quot;d-flex justify-content-start align-items-center col&quot;]/button</value>
+         <value>//button[contains(text(),'Add Filter')]</value>
       </entry>
       <entry>
          <key>BASIC</key>

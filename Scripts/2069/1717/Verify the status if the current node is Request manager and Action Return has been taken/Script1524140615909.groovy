@@ -39,7 +39,7 @@ WebUI.click(findTestObject('Page_Service request/Draft deselect'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Page_Service request/btn_ViewRequest1'))
+WebUI.click(findTestObject('Page_Service request/View Request'))
 
 WebUI.verifyElementText(findTestObject('Page_View request/WF Status RM'), 'Returned')
 

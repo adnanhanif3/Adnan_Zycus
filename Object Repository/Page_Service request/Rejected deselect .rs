@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;clearfix dew-container&quot;]/dew-tab/dew-row[2]/dew-col/span[2]/label</value>
+         <value>//dew-row[2]/dew-col/span[2]/label</value>
       </entry>
       <entry>
          <key>BASIC</key>
