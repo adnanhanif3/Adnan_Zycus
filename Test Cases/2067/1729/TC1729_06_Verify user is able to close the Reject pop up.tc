@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC1728_06_Verify user is able to close the Reject pop up</name>
+   <name>TC1729_06_Verify user is able to close the Reject pop up</name>
    <tag></tag>
    <comment>Verify the action Approval</comment>
    <testCaseGuid>2d4847e0-658c-4eb3-a5e7-9e72d3dd0c2a</testCaseGuid>
