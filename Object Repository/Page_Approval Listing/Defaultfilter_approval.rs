@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-badge-group[@class=&quot;dew-badge-group&quot;]/span/button</value>
+         <value>//dew-block/div/span/label</value>
       </entry>
       <entry>
          <key>BASIC</key>

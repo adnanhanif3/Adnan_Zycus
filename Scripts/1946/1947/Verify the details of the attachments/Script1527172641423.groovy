@@ -23,27 +23,25 @@ WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/HelpDesk'))
 
-WebUI.click(findTestObject('Page_Approval Listing/Defaultfilter_approval'), FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(1)
 
-WebUI.click(findTestObject('Page_Service request/Filter button'))
-
-WebUI.delay(3)
-
-WebUI.click(findTestObject('Page_Approval Listing/btn_Approved_Filter'))
-
-WebUI.delay(3)
-
-WebUI.click(findTestObject('Page_Service request/Filter View Service Request'))
+WebUI.click(findTestObject('Page_Home/Menu Nav/SubMenu Procurement Policies'))
 
 WebUI.delay(4)
 
-WebUI.click(findTestObject('Page_Approval Listing/Btn_viewdetails'))
+WebUI.click(findTestObject('Page_Policy Listing/Policy Type'))
 
-WebUI.delay(3)
+WebUI.click(findTestObject('Page_Policy Listing/Policy Title with Attachment'))
 
-WebUI.verifyElementText(findTestObject('Page_View request/WF Status Approver'), 'Approved')
+WebUI.delay(2)
+
+WebUI.verifyElementText(findTestObject('Page_View Policy Page/Attachment Name'), 'new_joinee_induction...')
+
+WebUI.verifyElementText(findTestObject('Page_View Policy Page/Attachment Size'), '1.21kb')
+
+WebUI.verifyElementText(findTestObject('Page_View Policy Page/Download Attachment'), 'Download')
 
 WebUI.closeBrowser()
 

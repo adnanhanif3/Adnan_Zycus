@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the nodes ahead of the current node in the the workflow</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>90f4f596-fdb1-4987-85d7-96c1340260d2</testCaseGuid>
+</TestCaseEntity>

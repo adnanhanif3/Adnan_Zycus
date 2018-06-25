@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txt_AssignToName</name>
+   <name>Attachment Name</name>
    <tag></tag>
-   <elementGuidId>5b5bd2df-807d-4bf0-b186-fd856ab6063f</elementGuidId>
+   <elementGuidId>df3074bd-c4a6-47ff-a73e-a081605d8118</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//irequest-view-assign-request/descendant::span</value>
+         <value>//dew-row/dew-col[1]/div/div[1]/div/p[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
