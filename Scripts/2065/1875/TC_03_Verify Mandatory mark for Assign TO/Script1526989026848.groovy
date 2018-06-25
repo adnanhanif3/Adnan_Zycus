@@ -45,7 +45,7 @@ WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
 WebUI.verifyElementPresent(findTestObject('Page_Create Request/icon_AssignTo'), 30)
 
-WebUI.verifyElementPresent(findTestObject('Page_Create Request/drpdwn_AssignTo User'), 30)
+WebUI.verifyElementPresent(findTestObject('Page_Create Request/drpdown_AssignTo'), 30)
 
 WebUI.verifyElementPresent(findTestObject('Page_Create Request/drpdwn_AssignToGrp'), 30)
 
