@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//dew-approvals-card[1]/dew-card/dew-card-body/dew-row/dew-col[4]/div/a[@class=&quot;btn clear&quot; and text()='Review']</value>
+         <value>//dew-approvals-card[1]/dew-card/dew-card-body/dew-row/dew-col[4]/div/a[text()='Review']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
