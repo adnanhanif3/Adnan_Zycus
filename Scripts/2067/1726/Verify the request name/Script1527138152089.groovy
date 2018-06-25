@@ -39,7 +39,7 @@ WebUI.click(findTestObject('Page_Home/Menu Nav/TO DOs arrow'))
 
 WebUI.click(findTestObject('Page_Approval Listing/Approval_dropdwn'))
 
-WebUI.verifyElementText(findTestObject('Page_Approval Listing/Card_requestname'), 'Testdewdrops')
+WebUI.verifyElementText(findTestObject('Page_Approval Listing/Request_nameLPG'), 'Testdewdrops')
 
 WebUI.closeBrowser()
 

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Request_nameLPG</name>
+   <name>Btn_Service request total</name>
    <tag></tag>
-   <elementGuidId>fadd6eb7-8d80-4afc-b1f3-e56920927d99</elementGuidId>
+   <elementGuidId>b6a93949-d46c-4709-b0e5-c4a4dc1a15a2</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@class=&quot;d-block&quot;]/dew-block/dew-approvals-card[1]/dew-card/dew-card-header/dew-row/dew-col[2]/p/span</value>
+         <value>//*[@id='filterModal']/div/div/div[2]/dew-row[1]/dew-col[2]/button</value>
       </entry>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

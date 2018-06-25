@@ -45,7 +45,7 @@ WebUI.click(findTestObject('Page_Approval Listing/btn_AddFilter'))
 
 WebUI.click(findTestObject('Page_Approval Listing/btn_Approved_Filter'))
 
-WebUI.click(findTestObject('Page_Service request/Service request button'))
+WebUI.click(findTestObject('Page_Approval Listing/Btn_Service request total'))
 
 WebUI.verifyElementText(findTestObject('Page_Approval Listing/request_numbervalue'), text)
 

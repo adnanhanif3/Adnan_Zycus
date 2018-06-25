@@ -39,7 +39,7 @@ WebUI.sendKeys(findTestObject('Page_Create Request/drpdown_AssignTo'), 'Lio')
 
 WebUI.click(findTestObject('Page_Create Request/drpdown_LioMessi'))
 
-String RM = WebUI.getText(findTestObject('Page_Edit request/Preview workflow/RM(last)_createpage'), FailureHandling.STOP_ON_FAILURE)
+RM = WebUI.getText(findTestObject('Page_Create Request/txt_LastActorNode'))
 
 WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
@@ -49,7 +49,7 @@ WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
-WebUI.verifyElementText(findTestObject('Page_Edit request/Preview workflow/RM(last)_createpage'), RM)
+WebUI.verifyElementText(findTestObject('Page_Create Request/txt_LastActorNode'), RM)
 
 WebUI.closeBrowser()
 
