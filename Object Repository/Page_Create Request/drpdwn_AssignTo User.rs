@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//a[@class=&quot;dropdown-item&quot; and text()='User']</value>
+         <value>//div[@class=&quot;dropdown-menu show&quot;]/a[text()='User']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
