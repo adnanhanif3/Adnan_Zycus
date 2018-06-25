@@ -35,9 +35,9 @@ WebUI.waitForElementPresent(findTestObject('Page_View request/Pop up Approval Bu
 
 WebUI.click(findTestObject('Page_View request/Pop up Approval Button'))
 
-WebUI.waitForElementPresent(findTestObject('Page_View request/Mandatory Comment Alert'), 2)
+WebUI.waitForElementPresent(findTestObject('Page_View request/Mandatory Comment Alert'), 5)
 
-WebUI.verifyElementText(findTestObject('Page_View request/Mandatory Comment Alert'), 'Comments are mandatory')
+WebUI.verifyElementText(findTestObject('Page_View request/Mandatory Comment Alert'), 'Comment is mandatory')
 
 WebUI.closeBrowser()
 

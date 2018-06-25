@@ -41,7 +41,7 @@ WebUI.click(findTestObject('Page_Service request/View Request'))
 
 WebUI.click(findTestObject('Page_View request/Save As PDF button'))
 
-WebUI.delay(4)
+WebUI.delay(5)
 
 WebUI.closeBrowser()
 

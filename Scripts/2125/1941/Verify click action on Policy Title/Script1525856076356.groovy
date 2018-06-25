@@ -31,6 +31,8 @@ WebUI.click(findTestObject('Page_Home/Menu Nav/SubMenu Procurement Policies'))
 
 WebUI.delay(2)
 
+WebUI.click(findTestObject('Page_Policy Listing/Policy Type'))
+
 WebUI.click(findTestObject('Page_Policy Listing/Policy Title'))
 
 WebUI.delay(1)
