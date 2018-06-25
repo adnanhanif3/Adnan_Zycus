@@ -49,7 +49,7 @@ WebUI.click(findTestObject('Page_Create Request/btn_Refresh'))
 
 WebUI.delay(4)
 
-WebUI.verifyElementText(findTestObject('Page_Create Request/txt_Approver Name in Preview WF'), 'Bobby Chartlon')
+WebUI.verifyElementText(findTestObject('Page_Create Request/txt_Approver Name in Preview WF'), 'Bobby C')
 
 WebUI.delay(2)
 

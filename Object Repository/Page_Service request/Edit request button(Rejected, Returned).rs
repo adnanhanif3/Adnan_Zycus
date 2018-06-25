@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class=&quot;rq-box&quot;]/div[2]/dew-row/dew-col[4]/div/a[2]</value>
+         <value>//dew-tab[@class=&quot;d-block&quot;]/dew-block/div/div/dew-service-request-card/dew-card/dew-card-body/dew-row/dew-col[4]/div/a[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class=&quot;rq-box&quot;]/div[2]/dew-row/dew-col[4]/div/a[2]</value>
+      <value>//dew-tab[@class=&quot;d-block&quot;]/dew-block/div/div/dew-service-request-card/dew-card/dew-card-body/dew-row/dew-col[4]/div/a[2]</value>
    </webElementProperties>
 </WebElementEntity>
