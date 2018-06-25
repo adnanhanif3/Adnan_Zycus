@@ -6,11 +6,11 @@
    <elementGuidId>98f1a1bd-f4cb-4552-ab79-17b67f3f3fa8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div/irequest-new-request/div[1]/div/dew-block/div/i</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//div/irequest-new-request/div[1]/div/dew-block/div/img</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
