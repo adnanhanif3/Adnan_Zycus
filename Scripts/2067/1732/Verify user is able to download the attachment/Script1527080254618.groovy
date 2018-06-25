@@ -47,13 +47,13 @@ WebUI.click(findTestObject('Page_Home/Menu Nav/TO DOs arrow'))
 
 WebUI.click(findTestObject('Page_Approval Listing/Approval_dropdwn'))
 
-WebUI.click(findTestObject('Page_Approval Listing/link_Rejectcard1'))
+WebUI.click(findTestObject('Page_Approval Listing/Approve_BTN'))
 
-WebUI.click(findTestObject('Page_Approval Listing/txtarea_RejectComment'))
+WebUI.click(findTestObject('Page_Approval Listing/txtarea_ApprovalComment'))
 
-WebUI.sendKeys(findTestObject('Page_Approval Listing/txtarea_RejectComment'), 'Rejected')
+WebUI.sendKeys(findTestObject('Page_Approval Listing/txtarea_ApprovalComment'), 'Rejected')
 
-WebUI.click(findTestObject('Page_Approval Listing/btn_Reject in Comment Window'))
+WebUI.click(findTestObject('Page_Approval Listing/btn_Approve In Comment Window'))
 
 WebUI.delay(2)
 
@@ -65,9 +65,9 @@ WebUI.click(findTestObject('Page_Approval Listing/btn_AddFilter'))
 
 WebUI.click(findTestObject('Page_Approval Listing/btn_InApproval_Filter'))
 
-WebUI.click(findTestObject('Page_Approval Listing/btn_Rejected_Filter'))
+WebUI.click(findTestObject('Page_Approval Listing/btn_Approved_Filter'))
 
-WebUI.click(findTestObject('Page_Approval Listing/btn_ViewApprovals'))
+WebUI.click(findTestObject('Page_Approval Listing/Btn_Service request total'))
 
 WebUI.delay(2)
 

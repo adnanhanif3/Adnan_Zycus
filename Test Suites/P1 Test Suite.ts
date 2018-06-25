@@ -919,7 +919,7 @@
    <testCaseLink>
       <guid>fea0a394-a8ff-462c-9a2c-4c0cbe5681bc</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/2065/1874/TC_02_Noneditablefields</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -1387,7 +1387,7 @@
    <testCaseLink>
       <guid>2a2e21df-3830-4a68-9dfb-cda611a050ce</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/2067/1727/Verify the request list by clearing the filter</testCaseId>
    </testCaseLink>
    <testCaseLink>

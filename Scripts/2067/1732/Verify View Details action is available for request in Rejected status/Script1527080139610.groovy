@@ -29,11 +29,11 @@ WebUI.click(findTestObject('Page_Approval Listing/btn_InApproval_Filter'))
 
 WebUI.click(findTestObject('Page_Approval Listing/btn_Rejected_Filter'))
 
-WebUI.click(findTestObject('Page_Approval Listing/btn_ViewApprovals'))
+WebUI.click(findTestObject('Page_Approval Listing/Btn_Service request total'))
 
 WebUI.delay(2)
 
-String ReqNum = WebUI.getText(findTestObject('Page_Approval Listing/txt_RequestNumbercard1'))
+String ReqNum = WebUI.getText(findTestObject('Page_Approval Listing/request_numbervalue'))
 
 WebUI.verifyElementPresent(findTestObject('Page_Approval Listing/btn_ViewDeatilsCard1'), 0)
 
