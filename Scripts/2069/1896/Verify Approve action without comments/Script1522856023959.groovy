@@ -23,8 +23,6 @@ WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], Fail
 
 WebUI.maximizeWindow()
 
-WebUI.waitForPageLoad(5)
-
 WebUI.click(findTestObject('Page_Approval Listing/tab_Approvals'))
 
 WebUI.click(findTestObject('Page_Approval Listing/Btn_review'))
