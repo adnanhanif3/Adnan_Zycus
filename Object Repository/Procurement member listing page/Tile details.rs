@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//dew-card[@class=&quot;team-cards has-shadow card&quot;]/dew-card-body/div/div/address</value>
+         <value>//div[@class=&quot;app-irequest&quot;]/div/div/irequest-proc-team/div[2]/dew-row/dew-col[1]/irequest-team-card/dew-card/dew-card-body</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
