@@ -35,7 +35,7 @@ WebUI.click(findTestObject('Page_Approval Listing/btn_Approved_Filter'))
 
 WebUI.delay(3)
 
-WebUI.click(findTestObject('Page_Service request/Service request button'))
+WebUI.click(findTestObject('Page_Service request/Filter View Service Request'))
 
 WebUI.delay(4)
 

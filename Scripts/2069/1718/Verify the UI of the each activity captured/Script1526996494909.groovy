@@ -59,7 +59,7 @@ WebUI.click(findTestObject('Page_View request/Activity Tab'))
 
 WebUI.delay(4)
 
-WebUI.verifyElementText(findTestObject('Page_View request/Audit Trail Approver Name'), 'Bobby Chartlon')
+WebUI.verifyElementText(findTestObject('Page_View request/Audit Trail Approver Name'), 'Bobby C')
 
 WebUI.verifyElementText(findTestObject('Page_View request/Audit Trail Action'), 'Request Approved (version: 1)')
 
