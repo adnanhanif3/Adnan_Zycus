@@ -37,6 +37,8 @@ WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum
 
 WebUI.verifyElementPresent(findTestObject('Page_Create Request/icon_AssignTo'), 30)
 
+WebUI.click(findTestObject('Page_Create Request/icon_AssignTo'))
+
 WebUI.verifyElementPresent(findTestObject('Page_Create Request/drpdwn_AssignTo User'), 30)
 
 WebUI.verifyElementPresent(findTestObject('Page_Create Request/drpdwn_AssignToGrp'), 30)

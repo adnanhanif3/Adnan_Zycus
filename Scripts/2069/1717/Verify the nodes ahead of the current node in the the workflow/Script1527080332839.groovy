@@ -19,31 +19,31 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Page_Approval Listing/Pending_approvals'))
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'ADN_WFDynamic')
 
-WebUI.click(findTestObject('Page_Approval Listing/Defaultfilter_approval'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
-WebUI.click(findTestObject('Page_Service request/Filter button'))
+WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Test Future Nodes')
 
-WebUI.delay(3)
+WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Testing status of future nodes')
 
-WebUI.click(findTestObject('Page_Approval Listing/btn_Approved_Filter'))
+WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
-WebUI.delay(3)
+WebUI.waitForElementPresent(findTestObject('Page_Create Request/icon_Close'), 30)
 
-WebUI.click(findTestObject('Page_Service request/Filter View Service Request'))
-
-WebUI.delay(4)
-
-WebUI.click(findTestObject('Page_Approval Listing/Btn_viewdetails'))
+WebUI.click(findTestObject('Page_Create Request/icon_Close'))
 
 WebUI.delay(3)
 
-WebUI.verifyElementText(findTestObject('Page_View request/WF Status Approver'), 'Approved')
+WebUI.click(findTestObject('Page_Service request/View Request'))
+
+WebUI.delay(3)
+
+WebUI.verifyElementNotPresent(findTestObject('Page_View request/WF Status RM'), 5)
 
 WebUI.closeBrowser()
 
