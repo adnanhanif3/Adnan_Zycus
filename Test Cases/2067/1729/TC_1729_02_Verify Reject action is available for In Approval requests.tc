@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_1728_02_Verify Reject action is available for In Approval requests</name>
+   <name>TC_1729_02_Verify Reject action is available for In Approval requests</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>f1c7ee28-502a-41a6-99c4-fc193b72488e</testCaseGuid>
