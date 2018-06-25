@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Globalsearch_box'))
 
-WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Ashish Definition')
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Apply for AMC')
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
