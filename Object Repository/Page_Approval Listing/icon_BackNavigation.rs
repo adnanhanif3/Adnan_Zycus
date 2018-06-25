@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div/irequest-approvals/div[1]/div/dew-block/div/i</value>
+         <value>//div/irequest-approvals/div[1]/div/dew-block/div/img</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

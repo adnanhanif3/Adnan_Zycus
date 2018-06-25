@@ -6,12 +6,11 @@
    <elementGuidId>91255314-4cf7-44ce-96dd-7dc96366f609</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//button[contains(text( ),'Approvals')]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//button[contains(text( ),'service')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -6,11 +6,11 @@
    <elementGuidId>05a8b218-cbbd-444f-8fe2-710963740309</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@class=&quot;clearfix dew-container&quot;]/dew-tab/div/dew-block/dew-approvals-card[1]/dew-card/dew-card-header/dew-row/dew-col[1]/span[2]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//dew-block/dew-approvals-card[1]/dew-card/dew-card-header/dew-row/dew-col[1]/p/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
