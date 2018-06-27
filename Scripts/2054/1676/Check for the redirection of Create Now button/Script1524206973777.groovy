@@ -25,6 +25,8 @@ WebUI.verifyElementPresent(findTestObject('Page_Home/Procurement Services/Reques
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Procurement Services/Request Definition Name'), 0)
 
+WebUI.scrollToElement(findTestObject('Page_Home/Procurement Services/Request Definition Name'), 0)
+
 WebUI.click(findTestObject('Page_Home/Procurement Services/Procurement Services Tile 1 Create New Button'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('Page_Create Request/btn_UrgentYes'), 0)
