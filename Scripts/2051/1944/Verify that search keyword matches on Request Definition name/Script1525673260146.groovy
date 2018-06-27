@@ -23,9 +23,9 @@ WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Page_Global Search/Global Search Field'), 'Def1')
+WebUI.setText(findTestObject('Page_Global Search/Global Search Field'), 'AsimpleWF2')
 
-WebUI.verifyElementText(findTestObject('Page_Global Search/FirstResultText'), 'Def1')
+WebUI.verifyElementText(findTestObject('Page_Global Search/FirstResultText'), 'AsimpleWF2')
 
 WebUI.verifyElementNotPresent(findTestObject('Page_Global Search/SecondResult'), 0)
 
