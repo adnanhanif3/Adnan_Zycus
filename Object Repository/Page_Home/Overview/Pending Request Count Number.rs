@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//dew-section-body[@class='dew-section-body']/dew-row/dew-col[2]/dew-flex/dew-flex-item/span</value>
+         <value>//span[@class=&quot;text-display&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//dew-section-body[@class='dew-section-body']/dew-row/dew-col[2]/dew-flex/dew-flex-item/span</value>
+      <value>//span[@class=&quot;text-display&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

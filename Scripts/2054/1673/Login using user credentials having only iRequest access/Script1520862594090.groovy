@@ -25,3 +25,5 @@ WebUI.maximizeWindow()
 
 WebUI.verifyElementText(findTestObject('Page_Home/Overview/Pending Request Count Number'), '0 Requests')
 
+WebUI.closeBrowser()
+
