@@ -61,7 +61,7 @@ filePath = ((userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\Test R
 
 WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), filePath)
 
-WebUI.delay(5)
+WebUI.delay(15)
 
 WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
 
