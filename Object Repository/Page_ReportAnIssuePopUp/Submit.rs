@@ -6,11 +6,15 @@
    <elementGuidId>ecf88cda-8db9-40b3-9b74-4d756526d1b8</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//span[text()='Submit']/ancestor::button</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//div[@class='modal-footer p-0 p-4']/dew-modal-footer/dew-btn</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
