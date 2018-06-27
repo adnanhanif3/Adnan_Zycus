@@ -29,8 +29,6 @@ WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
 WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdrops')
 
-WebUI.delay(5)
-
 WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
 WebUI.delay(3)
