@@ -11,7 +11,11 @@
       </entry>
       <entry>
          <key>BASIC</key>
+<<<<<<< HEAD
          <value>//div[@class='modal-footer p-0 p-4']/dew-modal-footer/dew-btn</value>
+=======
+         <value>//dew-modal-footer[@class=&quot;modal-footer p-0&quot;]/dew-btn/button</value>
+>>>>>>> branch 'master' of https://github.com/PrabodhGhosh/iRequestAutomation
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,6 +25,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class='modal-footer p-0 p-4']/dew-modal-footer/dew-btn</value>
+      <value>//dew-modal-footer[@class=&quot;modal-footer p-0&quot;]/dew-btn/button</value>
    </webElementProperties>
 </WebElementEntity>
