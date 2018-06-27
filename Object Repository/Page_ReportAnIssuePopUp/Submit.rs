@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//dew-modal-footer[@class=&quot;modal-footer p-0&quot;]/dew-btn/button</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//div[@class='modal-footer p-0 p-4']/dew-modal-footer/dew-btn</value>
+      <value>//dew-modal-footer[@class=&quot;modal-footer p-0&quot;]/dew-btn/button</value>
    </webElementProperties>
 </WebElementEntity>
