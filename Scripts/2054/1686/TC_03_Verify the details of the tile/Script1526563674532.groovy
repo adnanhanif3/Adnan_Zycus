@@ -21,7 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementPresent(findTestObject('Procurement member listing page/Tile details'), 0)
+WebUI.verifyElementPresent(findTestObject('Procurement member listing page/Procurement Tile in home page'), 30)
 
 WebUI.closeBrowser()
 

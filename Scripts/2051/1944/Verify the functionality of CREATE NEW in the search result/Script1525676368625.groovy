@@ -23,7 +23,7 @@ WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling
 
 WebUI.maximizeWindow()
 
-WebUI.sendKeys(findTestObject('Page_Global Search/Global Search Field'), 'def1')
+WebUI.sendKeys(findTestObject('Page_Global Search/Global Search Field'), 'AsimpleWF2')
 
 WebUI.click(findTestObject('Page_Global Search/CreateNew'))
 

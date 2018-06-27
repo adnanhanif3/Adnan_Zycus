@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Listing of 4 Questions</name>
+   <name>Procurement Tile in home page</name>
    <tag></tag>
-   <elementGuidId>d785758d-261e-48b2-b9cb-8b19efddb3bf</elementGuidId>
+   <elementGuidId>40e46ced-24f9-41e5-90f0-88999510a676</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//irequest-home/div[4]/div</value>
+         <value>//dew-section[@ng-reflect-heading=&quot;Procurement Team&quot;]/div/dew-section-body/dew-row/dew-col[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

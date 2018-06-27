@@ -21,7 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Def1')
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Apply for new corp card')
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'), 0)
 

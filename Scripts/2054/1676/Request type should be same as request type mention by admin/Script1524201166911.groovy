@@ -21,11 +21,11 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Def1')
+WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'AsimpleWF2')
 
 RequestType = WebUI.getText(findTestObject('Page_Home/Top Nav/GobalSearch_RequestTypeName'))
 
-WebUI.verifyMatch(RequestType, 'Def1 in Empty Create New', false)
+WebUI.verifyMatch(RequestType, 'AsimpleWF2 in Empty Create New', false)
 
 WebUI.closeBrowser()
 

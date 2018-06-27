@@ -49,35 +49,35 @@ WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), file
 
 WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), filePath)
 
- filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\cartoon_birds_blue_flying_animation_clipart.gif'
+filePath = ((userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\cartoon_birds_blue_flying_animation_clipart.gif')
 
 WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), filePath)
 
- filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\Cushioneer-1in stroke.IGS'
+filePath = ((userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\Cushioneer-1in stroke.IGS')
 
 WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), filePath)
 
- filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\d5f13f190530f169114b9d432b1688e7.png'
+filePath = ((userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\d5f13f190530f169114b9d432b1688e7.png')
 
 WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), filePath)
 
- filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\iRequest_Status_15March2018.ppt'
+filePath = ((userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\iRequest_Status_15March2018.ppt')
 
 WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), filePath)
 
- filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\QA Questionnaire 2+.rar'
+filePath = ((userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\QA Questionnaire 2+.rar')
 
 WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), filePath)
 
- filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\Test Document for attachment.docx'
+filePath = ((userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\Test Document for attachment.docx')
 
 WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), filePath)
 
- filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\Test Results (eProc) - Sprint1.zip'
+filePath = ((userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\Test Results (eProc) - Sprint1.zip')
 
 WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), filePath)
 
-WebUI.delay(5)
+WebUI.delay(15)
 
 WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Submit'))
 
