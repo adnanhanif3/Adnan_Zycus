@@ -25,11 +25,11 @@ WebUI.maximizeWindow()
 
 WebUI.click(findTestObject('Page_Home/Overview/PendinRequestCountTile_NonApprover'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Service request/Request_number'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Service request/Request_number'), 5)
 
 WebUI.click(findTestObject('Page_Home/Top Nav/Logo'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/HOME Highlighted'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/HOME Highlighted'), 5)
 
 WebUI.closeBrowser()
 
