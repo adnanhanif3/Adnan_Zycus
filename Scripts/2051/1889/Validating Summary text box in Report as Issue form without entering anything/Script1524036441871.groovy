@@ -29,7 +29,7 @@ WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Submit'))
 
 Text = WebUI.getText(findTestObject('Page_ReportAnIssuePopUp/ConfirmationPanel'))
 
-WebUI.verifyMatch(Text, 'Please complete the mandatory fields', false)
+WebUI.verifyMatch(Text, 'Please fill the mandatory fields', false)
 
 WebUI.closeBrowser()
 

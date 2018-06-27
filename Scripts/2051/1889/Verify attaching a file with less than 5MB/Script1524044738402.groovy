@@ -47,11 +47,11 @@ String filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\
 
 WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), filePath)
 
-WebUI.delay(15)
+WebUI.delay(10)
 
 WebUI.click(findTestObject('Page_ReportAnIssuePopUp/Submit'))
 
-WebUI.delay(15)
+WebUI.waitForElementPresent(findTestObject('Page_ReportAnIssuePopUp/ConfirmationPanel'), 10)
 
 Text = WebUI.getText(findTestObject('Page_ReportAnIssuePopUp/ConfirmationPanel'))
 
