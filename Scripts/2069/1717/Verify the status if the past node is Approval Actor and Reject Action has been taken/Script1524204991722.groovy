@@ -49,5 +49,7 @@ WebUI.scrollToElement(findTestObject('Page_View request/WF Status Approver'), 4)
 
 WebUI.verifyElementText(findTestObject('Page_View request/WF Status Approver'), 'Rejected')
 
+WebUI.verifyElementText(findTestObject('Page_View request/Comments'), 'Comments')
+
 WebUI.closeBrowser()
 

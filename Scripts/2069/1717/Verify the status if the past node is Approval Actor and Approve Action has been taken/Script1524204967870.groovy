@@ -45,5 +45,7 @@ WebUI.delay(3)
 
 WebUI.verifyElementText(findTestObject('Page_View request/WF Status Approver'), 'Approved')
 
+WebUI.verifyElementText(findTestObject('Page_View request/Comments'), 'Comments')
+
 WebUI.closeBrowser()
 

@@ -43,5 +43,7 @@ WebUI.click(findTestObject('Page_Service request/View Request'))
 
 WebUI.verifyElementText(findTestObject('Page_View request/WF Status RM'), 'Returned')
 
+WebUI.verifyElementText(findTestObject('Page_View request/Comments'), 'Comments')
+
 WebUI.closeBrowser()
 
