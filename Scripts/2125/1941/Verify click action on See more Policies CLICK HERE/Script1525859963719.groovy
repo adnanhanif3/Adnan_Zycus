@@ -29,7 +29,7 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('Page_Home/Menu Nav/SubMenu Procurement Policies'))
 
-WebUI.delay(2)
+WebUI.waitForElementPresent(findTestObject('Page_Policy Listing/See More Policies'), 5)
 
 WebUI.scrollToElement(findTestObject('Page_Policy Listing/See More Policies'), 2)
 
