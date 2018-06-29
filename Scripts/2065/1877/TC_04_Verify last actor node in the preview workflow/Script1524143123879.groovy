@@ -35,6 +35,8 @@ WebUI.delay(3)
 
 WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
+WebUI.delay(5)
+
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
 WebUI.verifyElementText(findTestObject('Page_Create Request/txt_LastActorNode'), 'Request Manager')

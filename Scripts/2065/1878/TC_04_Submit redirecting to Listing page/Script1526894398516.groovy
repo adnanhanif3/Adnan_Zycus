@@ -33,7 +33,7 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
-CurrentPageurl = WebUI.getUrl()
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
@@ -47,7 +47,7 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
-WebUI.verifyEqual(CurrentPageurl, 'http://test.irequest.zycus.net/#/my-requests/service-requests')
+WebUI.verifyElementPresent(findTestObject('Page_Service request/Filter button'), 2)
 
 WebUI.delay(5)
 

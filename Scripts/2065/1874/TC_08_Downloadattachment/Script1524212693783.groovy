@@ -41,6 +41,8 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
+WebUI.delay(2)
+
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
 WebUI.click(findTestObject('Page_Edit request/Btn_download'), FailureHandling.CONTINUE_ON_FAILURE)
