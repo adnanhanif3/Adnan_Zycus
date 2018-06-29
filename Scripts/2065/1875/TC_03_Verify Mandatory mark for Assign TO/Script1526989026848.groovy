@@ -43,6 +43,8 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
+WebUI.delay(5)
+
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
 WebUI.verifyElementPresent(findTestObject('Page_Create Request/icon_AssignTo'), 30)
