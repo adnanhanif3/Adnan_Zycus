@@ -35,9 +35,7 @@ WebUI.click(findTestObject('Page_View request/Back Navigation Button'))
 
 WebUI.delay(2)
 
-String Url = WebUI.getUrl()
-
-WebUI.verifyMatch(Url, 'http://test.irequest.zycus.net/#/my-requests/service-requests', false)
+WebUI.verifyElementText(findTestObject('Page_Service request/Page Title'), 'My Requests')
 
 WebUI.closeBrowser()
 
