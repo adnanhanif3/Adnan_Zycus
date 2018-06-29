@@ -43,7 +43,7 @@ String reqNumText = WebUI.getText(findTestObject('Page_Service request/Request_n
 
 WebUI.click(findTestObject('Page_Service request/View Request'))
 
-WebUI.delay(4)
+WebUI.delay(3)
 
 WebUI.verifyElementText(findTestObject('Page_View request/WF Status Requester'), 'Submitted')
 
