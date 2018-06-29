@@ -29,9 +29,7 @@ WebUI.click(findTestObject('Page_Home/Procurement policies banner/Explorepolicie
 
 WebUI.delay(1)
 
-String HomeUrl = WebUI.getUrl()
-
-WebUI.verifyMatch(HomeUrl, 'http://test.irequest.zycus.net/#/help-desk/procurement-policies', false)
+WebUI.verifyElementText(findTestObject('Page_Policy Listing/Page Title'), 'Procurement Policies', FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 

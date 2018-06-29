@@ -33,9 +33,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Page_Policy Listing/Breadcrumb Home'), FailureHandling.STOP_ON_FAILURE)
 
-String Url = WebUI.getUrl()
-
-WebUI.verifyMatch(Url, 'http://test.irequest.zycus.net/#/home', false)
+WebUI.verifyElementText(findTestObject('Page_Home/Procurement Services/Procurement Services Heading'), 'Procurement Services')
 
 WebUI.closeBrowser()
 
