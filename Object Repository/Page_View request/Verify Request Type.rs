@@ -6,14 +6,15 @@
    <elementGuidId>69271ecc-7a9a-4c0f-be1d-ee8c9e10eda8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-      </entry>
-      <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//dew-tab/div[2]/div[1]/dew-service-request-card/div/div[2]/dew-row/dew-col[2]/p[1]</value>
+         <value>//dew-block/div/div[1]/dew-service-request-card/dew-card/dew-card-body/dew-row/dew-col[2]/p[1]
+</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
