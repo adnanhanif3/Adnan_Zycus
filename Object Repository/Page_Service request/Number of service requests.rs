@@ -6,25 +6,24 @@
    <elementGuidId>81e14aaf-f79a-43e3-9ae3-c4661b41328e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
          <value></value>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value>//dew-block[@class='d-block position-relative clearfix']/dew-my-requests/dew-tabset/div/dew-tab/dew-block/dew-row[1]/dew-col[1]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//dew-tab/dew-row[1]/dew-col[1]/p/span</value>
+         <key>BASIC</key>
+         <value>//div[@class='clearfix']/div/dew-tab/dew-block/dew-row/dew-col/p/span</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//dew-tabset/div/dew-tab/dew-block/dew-row[1]/dew-col[1]/p/span</value>
+      <value>//div[@class='clearfix']/div/dew-tab/dew-block/dew-row/dew-col/p/span</value>
    </webElementProperties>
 </WebElementEntity>
