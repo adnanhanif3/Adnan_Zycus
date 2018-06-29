@@ -43,9 +43,7 @@ WebUI.delay(3)
 
 WebUI.click(findTestObject('Page_View request/Breadcrumb MyServiceRequests'))
 
-String ServiceListingUrl = WebUI.getUrl()
-
-WebUI.verifyMatch(ServiceListingUrl, 'http://test.irequest.zycus.net/#/my-requests/service-requests', false)
+WebUI.verifyElementText(findTestObject('Page_Service request/Page Title'), 'My Requests')
 
 WebUI.closeBrowser()
 
