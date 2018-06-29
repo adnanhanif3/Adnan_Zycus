@@ -29,9 +29,7 @@ WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
 WebUI.click(findTestObject('Page_Create Request/btn_Cancel'))
 
-String CurrentPageUrl = WebUI.getUrl()
-
-WebUI.verifyEqual(CurrentPageUrl, 'http://test.irequest.zycus.net/#/home')
+WebUI.verifyElementPresent(findTestObject('Page_Home/Banner/BannerSection'), 5)
 
 WebUI.closeBrowser()
 
