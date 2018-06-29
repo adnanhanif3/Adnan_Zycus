@@ -41,7 +41,7 @@ WebUI.verifyElementPresent(findTestObject('Page_View request/Verify Request- Nam
 
 WebUI.verifyElementPresent(findTestObject('Page_View request/Verify Submitted On'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Status'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_View request/Verify Status'), 0)
 
 WebUI.verifyElementPresent(findTestObject('Page_View request/Verify Request Definition'), 0)
 
