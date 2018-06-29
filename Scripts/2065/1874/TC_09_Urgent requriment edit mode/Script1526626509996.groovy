@@ -33,6 +33,8 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
+WebUI.delay(5)
+
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
 WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'), FailureHandling.STOP_ON_FAILURE)

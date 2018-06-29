@@ -33,6 +33,8 @@ String filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\
 
 WebUI.uploadFile(findTestObject('Page_Create Request/Attachment'), filePath)
 
+WebUI.delay(5)
+
 WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
 WebUI.delay(5)

@@ -33,6 +33,8 @@ WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Testing Name
 
 text = WebUI.getText(findTestObject('Page_View request/Requester Name'))
 
+WebUI.delay(3)
+
 WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
 WebUI.delay(3)
