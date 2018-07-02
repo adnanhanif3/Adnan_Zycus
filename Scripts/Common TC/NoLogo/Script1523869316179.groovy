@@ -23,11 +23,11 @@ WebUI.openBrowser(findTestData('Auth Test Data/URL data').getValue(1, 1))
 
 WebUI.click(findTestObject('Page_Login/GhostUserID'))
 
-WebUI.setText(findTestObject('Page_Login/UserId'), 'poojaqatest@zycat.com')
+WebUI.setText(findTestObject('Page_Login/UserId'), 'priya.test@zycus.com')
 
 WebUI.click(findTestObject('Page_Login/GhoshPassword'))
 
-WebUI.setText(findTestObject('Page_Login/Password'), 'Test@1235')
+WebUI.setText(findTestObject('Page_Login/Password'), 'Test@1234')
 
 WebUI.click(findTestObject('Page_Login/LoginBtn'))
 
