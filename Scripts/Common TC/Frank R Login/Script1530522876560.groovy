@@ -19,11 +19,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Diego Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.openBrowser(findTestData('Auth Test Data/URL data').getValue(1, 1))
 
-WebUI.maximizeWindow()
+WebUI.click(findTestObject('Page_Login/GhostUserID'))
 
-WebUI.verifyElementPresent(findTestObject('Page_Home/Top Nav/Logo'), 0)
+WebUI.setText(findTestObject('Page_Login/UserId'), findTestData('Auth Test Data/Application Login').getValue(1, 5))
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Page_Login/GhoshPassword'))
+
+WebUI.setText(findTestObject('Page_Login/Password'), findTestData('Auth Test Data/Application Login').getValue(2, 5))
+
+WebUI.click(findTestObject('Page_Login/LoginBtn'))
 
