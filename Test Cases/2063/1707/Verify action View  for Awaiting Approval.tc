@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Awaiting Approval-View action</name>
+   <name>Verify action View  for Awaiting Approval</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>746e9dce-0992-44a4-aefc-841674f5760b</testCaseGuid>
