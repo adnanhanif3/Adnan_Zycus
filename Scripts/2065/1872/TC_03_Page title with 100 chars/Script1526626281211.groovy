@@ -43,7 +43,7 @@ WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
 WebUI.delay(2)
 
-WebUI.verifyElementText(findTestObject('Page_Edit request/Pagetitle_reqname'), 'Lorem ipsum dolor sit amet, consectetur ...')
+WebUI.verifyElementText(findTestObject('Page_Edit request/Pagetitle_reqname'), 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget magna a mi tempor porta metus.')
 
 WebUI.closeBrowser()
 
