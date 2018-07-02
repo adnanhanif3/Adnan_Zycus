@@ -33,13 +33,13 @@ WebUI.delay(4)
 
 WebUI.click(findTestObject('Page_Policy Listing/Policy Type'))
 
-WebUI.click(findTestObject('Page_Policy Listing/Policy Title with Attachment'))
+WebUI.click(findTestObject('Page_Policy Listing/Policy Title'))
 
 WebUI.delay(2)
 
-WebUI.verifyElementText(findTestObject('Page_View Policy Page/Attachment Name'), 'new_joinee_induction...')
+WebUI.verifyElementText(findTestObject('Page_View Policy Page/Attachment Name'), 'sample-procurement-policy.docx')
 
-WebUI.verifyElementText(findTestObject('Page_View Policy Page/Attachment Size'), '1.21kb')
+WebUI.verifyElementText(findTestObject('Page_View Policy Page/Attachment Size'), '27.44kb')
 
 WebUI.verifyElementText(findTestObject('Page_View Policy Page/Download Attachment'), 'Download')
 
