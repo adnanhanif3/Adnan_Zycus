@@ -6,11 +6,12 @@
    <elementGuidId>de689a81-6d26-411e-b54a-d712e00c532e</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//dew-col[2]/div/span/div/a</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//dew-col[3]/div/span/div/a</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

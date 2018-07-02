@@ -27,10 +27,6 @@ WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/HOME'), 0)
 
 WebUI.verifyElementText(findTestObject('Page_Home/Menu Nav/HOME'), 'HOME')
 
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/To Dos'), 0)
-
-WebUI.verifyElementText(findTestObject('Page_Home/Menu Nav/To Dos'), 'TO DO\'S')
-
 WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/MY REQUESTS'), 0)
 
 WebUI.verifyElementText(findTestObject('Page_Home/Menu Nav/MY REQUESTS'), 'MY REQUEST')
@@ -40,8 +36,6 @@ WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/HELP DESK'), 0)
 WebUI.verifyElementText(findTestObject('Page_Home/Menu Nav/HELP DESK'), 'HELP DESK')
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/HOME Highlighted'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/TO DOs arrow'), 0)
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/MY REQUESTS arrow'), 0)
 
