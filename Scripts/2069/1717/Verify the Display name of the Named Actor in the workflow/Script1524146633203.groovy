@@ -41,7 +41,7 @@ WebUI.delay(4)
 
 WebUI.click(findTestObject('Page_Service request/View Request'))
 
-WebUI.verifyElementText(findTestObject('Page_View request/WF Approver Name'), 'Prabodh Ghosh')
+WebUI.verifyElementText(findTestObject('Page_View request/WF Approver Name'), 'Super Users')
 
 WebUI.closeBrowser()
 
