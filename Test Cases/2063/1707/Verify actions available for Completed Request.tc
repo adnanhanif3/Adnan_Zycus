@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Completed-View action</name>
+   <name>Verify actions available for Completed Request</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>4b46ca48-621d-4aba-84fc-83a835926966</testCaseGuid>
