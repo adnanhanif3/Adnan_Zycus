@@ -49,9 +49,9 @@ WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.delay(5)
 
-WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS arrow'))
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/My Request Hover'))
 
-WebUI.click(findTestObject('Page_Service request/My request xpath'))
+WebUI.click(findTestObject('Page_Home/Menu Nav/Service Request Dropdown'))
 
 WebUI.click(findTestObject('Page_Service request/View Request'))
 
@@ -59,7 +59,7 @@ WebUI.click(findTestObject('Page_View request/Activity Tab'))
 
 WebUI.delay(4)
 
-WebUI.verifyElementText(findTestObject('Page_View request/Audit Trail Approver Name'), 'Bobby C')
+WebUI.verifyElementText(findTestObject('Page_View request/Audit Trail Approver Name'), 'Diego M')
 
 WebUI.verifyElementText(findTestObject('Page_View request/Audit Trail Action'), 'Request Approved (version: 1)')
 

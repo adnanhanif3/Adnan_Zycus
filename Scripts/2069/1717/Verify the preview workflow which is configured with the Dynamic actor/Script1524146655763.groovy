@@ -43,7 +43,7 @@ WebUI.click(findTestObject('Page_Service request/View Request'))
 
 WebUI.verifyElementText(findTestObject('Page_View request/WF Approver Name'), 'Super Users')
 
-WebUI.verifyElementText(findTestObject('Page_View request/More Approver Button'), '2 approvers')
+WebUI.verifyElementText(findTestObject('Page_View request/More Approver Button'), '3 approvers')
 
 WebUI.closeBrowser()
 
