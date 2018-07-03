@@ -19,9 +19,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Extra role login Prabodh'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.openBrowser(findTestData('Auth Test Data/URL data').getValue(1, 1))
 
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Legacy Home page object'), 0)
+WebUI.maximizeWindow()
 
-WebUI.closeBrowser()
+WebUI.click(findTestObject('Page_Login/GhostUserID'))
+
+WebUI.setText(findTestObject('Page_Login/UserId'), 'prabodh.ghosh@zycus.com')
+
+WebUI.click(findTestObject('Page_Login/GhoshPassword'))
+
+WebUI.setText(findTestObject('Page_Login/Password'), 'iRequest@13')
+
+WebUI.click(findTestObject('Page_Login/LoginBtn'))
 
