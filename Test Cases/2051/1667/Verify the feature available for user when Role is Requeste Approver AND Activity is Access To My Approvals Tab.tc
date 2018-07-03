@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the feature available for user when Role is Requeste Approver AND Activity is Access To My Approvals Tab</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>040f76c7-8ade-471d-ab94-a5282ca11fd8</testCaseGuid>
+</TestCaseEntity>
