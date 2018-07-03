@@ -53,9 +53,9 @@ WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.delay(6)
 
-WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS arrow'))
+WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/My Request Hover'))
 
-WebUI.click(findTestObject('Page_Service request/My request xpath'))
+WebUI.click(findTestObject('Page_Home/Menu Nav/Service Request Dropdown'))
 
 WebUI.click(findTestObject('Page_Service request/Edit request button(Rejected, Returned)'))
 
