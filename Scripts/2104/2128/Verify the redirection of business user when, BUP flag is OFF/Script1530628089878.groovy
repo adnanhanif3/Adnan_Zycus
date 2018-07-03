@@ -19,13 +19,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser(findTestData('Auth Test Data/URL data').getValue(1, 1))
+WebUI.callTestCase(findTestCase('Common TC/Login BUP OFF'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.maximizeWindow()
+WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Legacy Home page object'), 0)
 
-WebUI.sendKeys(findTestObject('Login and Logout/Username'), 'ge-all@zycus.com')
-
-WebUI.sendKeys(findTestObject('Login and Logout/Password'), 'eProc@123')
-
-WebUI.mouseOver(findTestObject('Login and Logout/Login'))
+WebUI.closeBrowser()
 
