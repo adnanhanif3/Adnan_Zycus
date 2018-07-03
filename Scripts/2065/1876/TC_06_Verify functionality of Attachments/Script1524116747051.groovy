@@ -35,13 +35,17 @@ WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
-WebUI.delay(30)
+WebUI.delay(10)
+
+WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Flexi_Attachment'))
+
+WebUI.delay(1)
 
 String userDir = System.getProperty('user.dir')
 
 String filePath = (userDir + '\\') + 'git\\iRequestAutomation\\Data Files\\App Test Data\\FilesToUpload\\iRequest_User_Manual'
 
-WebUI.uploadFile(findTestObject('Page_Edit request/Flexiform_fields/Flexi_Attachment'), filePath)
+WebUI.uploadFile(findTestObject('Page_Edit request/Flexiform_fields/Browse_button'), filePath)
 
 WebUI.delay(9)
 

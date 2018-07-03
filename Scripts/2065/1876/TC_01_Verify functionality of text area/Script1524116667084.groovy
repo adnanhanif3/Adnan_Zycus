@@ -37,7 +37,7 @@ WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
 WebUI.delay(30)
 
-WebUI.sendKeys(findTestObject('Page_Edit request/Flexiform_fields/Text_area'), 'Test')
+WebUI.sendKeys(findTestObject('Page_Edit request/Flexiform_fields/Text_area'), 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.')
 
 WebUI.delay(9)
 

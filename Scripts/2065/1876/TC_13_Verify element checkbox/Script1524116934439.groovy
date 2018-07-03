@@ -41,7 +41,7 @@ WebUI.verifyElementPresent(findTestObject('Page_Edit request/Flexiform_fields/El
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
 WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 

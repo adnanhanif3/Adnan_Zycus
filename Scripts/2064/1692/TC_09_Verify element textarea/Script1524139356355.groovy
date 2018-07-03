@@ -37,7 +37,7 @@ WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
 WebUI.delay(5)
 
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Flexiform_fields/Element_textarea'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Edit request/Flexiform_fields/Element_textfield'), 0)
 
 WebUI.delay(5)
 
