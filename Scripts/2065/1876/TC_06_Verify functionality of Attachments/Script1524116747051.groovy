@@ -43,7 +43,9 @@ String filePath = (userDir + '\\') + 'git\\iRequestAutomation\\Data Files\\App T
 
 WebUI.uploadFile(findTestObject('Page_Edit request/Flexiform_fields/Flexi_Attachment'), filePath)
 
-WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+WebUI.delay(9)
+
+WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
 WebUI.delay(5)
 

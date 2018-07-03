@@ -39,7 +39,7 @@ WebUI.delay(30)
 
 WebUI.sendKeys(findTestObject('Page_Edit request/Flexiform_fields/Numeric_field'), '24')
 
-WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
 WebUI.delay(5)
 
