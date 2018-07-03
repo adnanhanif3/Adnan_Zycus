@@ -25,23 +25,11 @@ WebUI.maximizeWindow()
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/HOME'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/MY REQUESTS'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/To Dos - Both'), 0)
 
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/To Dos'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/HELP DESK'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Page_Home/Procurement Services/Procurement Services Heading'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Page_Home/Overview/Pending Approval Tile'), 0)
+WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/HELP DESK - Both'), 0)
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Banner/BannerSection'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Page_Home/Procurement policies banner/Policies banner'), 0)
-
-WebUI.verifyElementPresent(findTestObject('Procurement member listing page/Procurement Tile in home page'), 0)
 
 WebUI.closeBrowser()
 
