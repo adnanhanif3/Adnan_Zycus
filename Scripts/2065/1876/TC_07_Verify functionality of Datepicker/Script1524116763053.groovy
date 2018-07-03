@@ -49,7 +49,7 @@ WebUI.selectOptionByValue(findTestObject('Page_Edit request/Flexiform_fields/Yea
 
 WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Day_selecter'))
 
-WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
 WebUI.delay(5)
 

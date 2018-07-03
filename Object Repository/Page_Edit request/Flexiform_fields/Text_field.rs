@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Textarea_field</name>
+   <name>Text_field</name>
    <tag></tag>
    <elementGuidId>3b36c8dd-d4e2-447f-9258-300ccaec83c1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
