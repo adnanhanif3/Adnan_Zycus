@@ -35,13 +35,15 @@ WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 
 WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
-WebUI.delay(5)
+WebUI.delay(30)
 
-WebUI.verifyElementPresent(findTestObject('Page_Edit request/Flexiform_fields/Element_checkbox'), 0)
+WebUI.sendKeys(findTestObject('Page_Edit request/Flexiform_fields/Text_field'), 'Test')
 
-WebUI.delay(5)
+WebUI.delay(9)
 
 WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
+
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
 

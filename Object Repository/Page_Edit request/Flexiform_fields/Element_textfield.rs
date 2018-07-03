@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Element_textarea</name>
+   <name>Element_textfield</name>
    <tag></tag>
-   <elementGuidId>5be83026-24e8-4922-81e2-1fcefcce36b8</elementGuidId>
+   <elementGuidId>70a9ecd7-9d65-40a0-9eb5-cd63467fe821</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id='df_dfSection_DFSECTION_13_3_2018_17_48_26_726_pg27kl8sb']/div[2]/ul/li[2]/label</value>
+         <value>//label[contains(text(),'Name')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
