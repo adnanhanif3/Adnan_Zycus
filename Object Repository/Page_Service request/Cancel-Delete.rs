@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>html/body/app-root/div/ireq-confirm-dialog/div/div/div[2]/button[2]</value>
+         <value>//ireq-confirm-dialog/div/div/div[2]/button[text()='CANCEL']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
