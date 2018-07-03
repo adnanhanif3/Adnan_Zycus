@@ -41,7 +41,7 @@ WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Checkbox1'))
 
 WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Checkbox2'))
 
-WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
 WebUI.delay(5)
 

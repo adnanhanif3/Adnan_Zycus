@@ -27,6 +27,8 @@ WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
 WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdrops')
 
+WebUI.delay(9)
+
 WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
 WebUI.delay(3)
@@ -45,7 +47,7 @@ WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Dropdown2'))
 
 WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Dropdown2_value'))
 
-WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
+WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
 WebUI.delay(5)
 
