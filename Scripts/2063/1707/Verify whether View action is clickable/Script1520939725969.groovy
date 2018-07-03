@@ -21,15 +21,23 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'))
-
-WebUI.click(findTestObject('Page_Service request/Service request xpath'))
+WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Page_Service request/View Request'))
+WebUI.click(findTestObject('Page_Service request/Inprogress deselect'))
+
+WebUI.click(findTestObject('Page_Service request/Returned deselect '))
+
+WebUI.click(findTestObject('Page_Service request/With RM deselect '))
+
+WebUI.click(findTestObject('Page_Service request/Rejected deselect '))
+
+WebUI.click(findTestObject('Page_Service request/Draft deselect'))
 
 WebUI.delay(2)
+
+WebUI.verifyElementClickable(findTestObject('Page_Service request/View Request'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.closeBrowser()
 
