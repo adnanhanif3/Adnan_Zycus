@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Delete the request</name>
+   <name>Verify Delete request</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>c2e2337c-eb21-4413-b82e-ae67f49cb9bc</testCaseGuid>

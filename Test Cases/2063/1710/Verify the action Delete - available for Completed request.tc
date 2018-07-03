@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Delete action-Completed</name>
+   <name>Verify the action Delete - available for Completed request</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>96599038-c66d-4047-92ec-529fda52d560</testCaseGuid>
