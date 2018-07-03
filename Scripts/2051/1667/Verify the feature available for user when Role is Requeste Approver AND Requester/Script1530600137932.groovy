@@ -19,43 +19,17 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Frank L Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Diego Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.sendKeys(findTestObject('Page_Home/Top Nav/Globalsearch_box'), 'Definition to test')
+WebUI.maximizeWindow()
 
-WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
+WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/HOME'), 0)
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'New request by Katalon')
+WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/To Dos - Both'), 0)
 
-WebUI.click(findTestObject('Page_Create Request/btn_UrgentYes'))
+WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/HELP DESK - Both'), 0)
 
-WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Loreum Ipsum')
-
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
-
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
-
-WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
-
-String userDir = System.getProperty('user.dir')
-
-String filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\fp_dc_setup_guide - 5+.pdf'
-
-WebUI.uploadFile(findTestObject('Page_ReportAnIssuePopUp/AttachmentField'), filePath)
-
-WebUI.delay(15)
-
-WebUI.click(findTestObject('Page_Create Request/btn_Submit'))
-
-WebUI.delay(15)
-
-Text = WebUI.getText(findTestObject('Page_ReportAnIssuePopUp/ConfirmationPanel'))
-
-WebUI.verifyMatch(Text, 'Successfully submitted request.', false)
+WebUI.verifyElementPresent(findTestObject('Page_Home/Banner/BannerSection'), 0)
 
 WebUI.closeBrowser()
 

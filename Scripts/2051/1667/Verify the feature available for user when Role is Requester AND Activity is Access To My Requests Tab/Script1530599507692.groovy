@@ -21,6 +21,8 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Frank L Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.maximizeWindow()
+
 WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/HOME'), 0)
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/MY REQUESTS'), 0)
