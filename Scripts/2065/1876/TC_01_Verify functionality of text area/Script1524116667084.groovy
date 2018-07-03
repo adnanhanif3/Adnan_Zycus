@@ -37,7 +37,7 @@ WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
 
 WebUI.delay(30)
 
-WebUI.sendKeys(findTestObject('Page_Edit request/Flexiform_fields/Textarea_field'), 'Test')
+WebUI.sendKeys(findTestObject('Page_Edit request/Flexiform_fields/Text_area'), 'Test')
 
 WebUI.delay(9)
 

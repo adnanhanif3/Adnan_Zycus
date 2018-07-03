@@ -29,7 +29,7 @@ WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdr
 
 WebUI.delay(15)
 
-WebUI.sendKeys(findTestObject('Page_Edit request/Flexiform_fields/Textarea_field'), 'Test')
+WebUI.sendKeys(findTestObject('Page_Edit request/Flexiform_fields/Text_field'), 'Test')
 
 WebUI.sendKeys(findTestObject('Page_Edit request/Flexiform_fields/Numeric_field'), '24')
 
