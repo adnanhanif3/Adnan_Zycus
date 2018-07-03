@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Draft-View action</name>
+   <name>Verify action available for Draft request </name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>357a19e5-08dc-46be-91d9-40941dcc0877</testCaseGuid>
