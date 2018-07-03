@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the redirection of business user when, BUP flag is ON AND Role isequal to Requester</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>abfd2d67-d7c9-4df2-8218-845f09773725</testCaseGuid>
+</TestCaseEntity>
