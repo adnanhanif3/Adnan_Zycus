@@ -33,7 +33,7 @@ WebUI.sendKeys(findTestObject('Page_Create Request/txtarea_Desc'), 'Testing with
 
 WebUI.verifyElementText(findTestObject('Page_View request/WF Approver Name'), 'Super Users')
 
-WebUI.verifyElementText(findTestObject('Page_View request/More Approver Button'), '2 approvers')
+WebUI.verifyElementText(findTestObject('Page_View request/More Approver Button'), '3 approvers')
 
 WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
