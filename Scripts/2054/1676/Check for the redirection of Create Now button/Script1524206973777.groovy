@@ -19,13 +19,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Frank L Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Procurement Services/Request Type Field'), 0)
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Procurement Services/Request Definition Name'), 0)
-
-WebUI.scrollToElement(findTestObject('Page_Home/Procurement Services/Request Definition Name'), 0)
 
 WebUI.click(findTestObject('Page_Home/Procurement Services/Procurement Services Tile 1 Create New Button'), FailureHandling.STOP_ON_FAILURE)
 
