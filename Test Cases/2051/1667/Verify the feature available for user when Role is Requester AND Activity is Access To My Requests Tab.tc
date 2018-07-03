@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the feature available for user when Role is Requester AND Activity is Access To My Requests Tab</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eea0c36f-cf1e-46bf-8225-e307cb3ffee1</testCaseGuid>
+</TestCaseEntity>
