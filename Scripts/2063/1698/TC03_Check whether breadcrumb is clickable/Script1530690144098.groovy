@@ -19,15 +19,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'))
+WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
 
-WebUI.click(findTestObject('Page_Service request/Service request xpath'))
-
-WebUI.delay(5)
-
-WebUI.verifyElementPresent(findTestObject('Page_Service request/Service request xpath'), 0)
+WebUI.verifyElementClickable(findTestObject('Page_Service request/txt_BreadCrumb_Part1'))
 
 WebUI.closeBrowser()
 
