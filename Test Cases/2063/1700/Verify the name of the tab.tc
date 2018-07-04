@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>UI of My request page tabs</name>
+   <name>Verify the name of the tab</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>7d15ab9f-698d-4949-a547-7a551a31bbb2</testCaseGuid>
