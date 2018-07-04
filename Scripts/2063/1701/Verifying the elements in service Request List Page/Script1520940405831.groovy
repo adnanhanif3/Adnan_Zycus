@@ -19,8 +19,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [('QA') : 'http://test.irequest.zycus.net/#/home', ('QC') : 'http://dewdropsqc.zycus.net/irequest/ '
-        , ('Preprod') : 'dewdropspreprod.zycus.net'], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'))
 
