@@ -19,7 +19,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKe
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Common TC/Ronaldo Login'), [('QA') : 'http://test.irequest.zycus.net/#/home', ('QC') : 'http://dewdropsqc.zycus.net/irequest/ '
+        , ('Preprod') : 'dewdropspreprod.zycus.net'], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'))
 
@@ -32,6 +33,8 @@ WebUI.check(findTestObject('Page_Service request/Number of service requests'))
 WebUI.delay(2)
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Search all requests -search box'), 0)
+
+WebUI.verifyElementText(findTestObject('Page_Service request/Space inside the search box'), 'Search all request')
 
 WebUI.verifyElementPresent(findTestObject('Page_Home/Menu Nav/Add Filter click'), 0)
 
