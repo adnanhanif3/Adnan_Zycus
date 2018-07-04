@@ -21,9 +21,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Page_Home/Menu Nav/MY REQUESTS'))
-
-WebUI.click(findTestObject('Page_Service request/Service request xpath'))
+WebUI.click(findTestObject('Page_Service request/Requests list on homepage'))
 
 WebUI.delay(5)
 
