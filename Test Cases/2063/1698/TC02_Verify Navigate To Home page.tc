@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC02_Verify Navigate To Home page</name>
+   <tag></tag>
+   <comment>Verify Navigation to Home page</comment>
+   <testCaseGuid>093cb0cf-b28d-4891-b3a5-84921611a5d4</testCaseGuid>
+</TestCaseEntity>
