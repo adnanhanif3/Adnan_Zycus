@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC01_VerifyBreadCrumb</name>
+   <tag></tag>
+   <comment>Home>My Requests>ReqDef_Name</comment>
+   <testCaseGuid>9d9dfd6a-452d-4fdd-9b37-1202cc508204</testCaseGuid>
+</TestCaseEntity>
