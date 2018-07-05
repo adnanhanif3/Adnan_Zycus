@@ -18,6 +18,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUiBuiltInKeywords
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
 WebUI.callTestCase(findTestCase('Common TC/Login To irequest portal'), [:])
 
@@ -27,27 +28,28 @@ WebUI.click(findTestObject('Page_Home/Top Nav/Dropdown_create new btn'))
 
 WebUI.sendKeys(findTestObject('Page_Create Request/txt_RequestName'), 'Testdewdrops')
 
-WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
-
-WebUI.delay(3)
-
-WebUI.click(findTestObject('Page_Approval Listing/Alert_close'))
-
-WebUI.click(findTestObject('Page_Service request/Edit request button(Draft)'))
-
 WebUI.delay(10)
+
+WebUI.scrollToElement(findTestObject('Page_Edit request/Flexiform_fields/Text_field'), 1)
 
 WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Flexi_Attachment'))
 
-WebUI.delay(1)
+WebUI.switchToFrame(findTestObject('Page_Edit request/Flexiform_fields/iFrame'), 5)
 
-String userDir = System.getProperty('user.dir')
+CustomKeywords.'customKeywords.Uploadfile.uploadFile'(findTestObject('Page_Edit request/Flexiform_fields/Browse_button'), 
+    'D:\\Zycus-logo-optimized-300x160.png')
 
-String filePath = (userDir + '\\') + 'git\\iRequestAutomation\\Data Files\\App Test Data\\FilesToUpload\\iRequest_User_Manual'
+WebUI.delay(2)
 
-WebUI.uploadFile(findTestObject('Page_Edit request/Flexiform_fields/Browse_button'), filePath)
+CustomKeywords.'customKeywords.Enterkey.enter'()
 
-WebUI.delay(9)
+WebUI.delay(2)
+
+WebUI.switchToDefaultContent()
+
+WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Close attachment button'))
+
+WebUI.delay(4)
 
 WebUI.click(findTestObject('Page_Create Request/btn_SaveasDraft'))
 
