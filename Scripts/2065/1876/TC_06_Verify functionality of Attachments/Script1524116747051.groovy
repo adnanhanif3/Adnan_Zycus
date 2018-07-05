@@ -35,9 +35,12 @@ WebUI.scrollToElement(findTestObject('Page_Edit request/Flexiform_fields/Text_fi
 WebUI.click(findTestObject('Page_Edit request/Flexiform_fields/Flexi_Attachment'))
 
 WebUI.switchToFrame(findTestObject('Page_Edit request/Flexiform_fields/iFrame'), 5)
+String userDir = System.getProperty('user.dir')
+
+String filePath = (userDir + '\\') + 'Data Files\\App Test Data\\FilesToUpload\\eCatalogue_User_Guides.pdf'
 
 CustomKeywords.'customKeywords.Uploadfile.uploadFile'(findTestObject('Page_Edit request/Flexiform_fields/Browse_button'), 
-    'D:\\Zycus-logo-optimized-300x160.png')
+    filePath)
 
 WebUI.delay(2)
 
